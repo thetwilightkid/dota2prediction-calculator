@@ -1,0 +1,32 @@
+# Node / Next.js (website/)
+website/node_modules/
+website/.next/
+website/out/
+website/*.tsbuildinfo
+website/next-env.d.ts
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Bulky raw pipeline scratch data - not needed once website/data/*.ts is baked.
+# Regenerate via the compute_*.py / collect_*.py scripts if needed.
+h2h_matches.json
+team_match_history.json
+supplementary_matches.json
+processed_h2h_matches.json
+processed_supplementary_matches.json
+team_ratings.json
+_player_to_team_tmp.json
+*.bak
+*.bak2
+*.bak3
+*.bak4
+
+# Stray local planning artifact, not part of the project.
+generic-scribbling-hearth.md
+
+# OS
+.DS_Store
+Thumbs.db

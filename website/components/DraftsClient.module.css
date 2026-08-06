@@ -1,0 +1,81 @@
+.topRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.select {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--foreground);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+.tabs {
+  display: flex;
+  gap: 4px;
+}
+
+.tab,
+.tabActive {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.tabActive {
+  color: var(--foreground);
+  border-color: var(--accent);
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .grid3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid3 h3,
+.grid2 h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.miniTable th,
+.miniTable td {
+  padding: 5px 8px;
+  font-size: 13px;
+}
+
+.heroList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.heroList li {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}

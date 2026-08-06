@@ -1,0 +1,6242 @@
+{
+    "Satanic": {
+        "account_id": 1044002267,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Lifestealer",
+                "hero_id": 54,
+                "last_played": 1784483341,
+                "games": 132,
+                "win": 67
+            },
+            {
+                "hero": "Tiny",
+                "hero_id": 19,
+                "last_played": 1784478900,
+                "games": 189,
+                "win": 100
+            },
+            {
+                "hero": "Phantom Lancer",
+                "hero_id": 12,
+                "last_played": 1784468532,
+                "games": 346,
+                "win": 176
+            },
+            {
+                "hero": "Lone Druid",
+                "hero_id": 80,
+                "last_played": 1784392320,
+                "games": 26,
+                "win": 15
+            },
+            {
+                "hero": "Nature's Prophet",
+                "hero_id": 53,
+                "last_played": 1784386380,
+                "games": 80,
+                "win": 39
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Morphling",
+                "hero_id": 10,
+                "games": 1219,
+                "win": 663,
+                "last_played": 1778511819
+            },
+            {
+                "hero": "Terrorblade",
+                "hero_id": 109,
+                "games": 607,
+                "win": 313,
+                "last_played": 1779782487
+            },
+            {
+                "hero": "Slark",
+                "hero_id": 93,
+                "games": 575,
+                "win": 311,
+                "last_played": 1741732908
+            },
+            {
+                "hero": "Faceless Void",
+                "hero_id": 41,
+                "games": 543,
+                "win": 296,
+                "last_played": 1779876683
+            },
+            {
+                "hero": "Naga Siren",
+                "hero_id": 89,
+                "games": 521,
+                "win": 320,
+                "last_played": 1774732675
+            }
+        ]
+    },
+    "Noticed": {
+        "account_id": 195108598,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Slardar",
+                "hero_id": 28,
+                "last_played": 1784483341,
+                "games": 62,
+                "win": 32
+            },
+            {
+                "hero": "Necrophos",
+                "hero_id": 36,
+                "last_played": 1784478900,
+                "games": 16,
+                "win": 9
+            },
+            {
+                "hero": "Centaur Warrunner",
+                "hero_id": 96,
+                "last_played": 1784473262,
+                "games": 89,
+                "win": 46
+            },
+            {
+                "hero": "Beastmaster",
+                "hero_id": 38,
+                "last_played": 1784468532,
+                "games": 94,
+                "win": 57
+            },
+            {
+                "hero": "Axe",
+                "hero_id": 2,
+                "last_played": 1784392320,
+                "games": 95,
+                "win": 62
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Juggernaut",
+                "hero_id": 8,
+                "games": 170,
+                "win": 81,
+                "last_played": 1615899843
+            },
+            {
+                "hero": "Phantom Lancer",
+                "hero_id": 12,
+                "games": 168,
+                "win": 90,
+                "last_played": 1609956023
+            },
+            {
+                "hero": "Ursa",
+                "hero_id": 70,
+                "games": 168,
+                "win": 85,
+                "last_played": 1613657101
+            },
+            {
+                "hero": "Nature's Prophet",
+                "hero_id": 53,
+                "games": 160,
+                "win": 91,
+                "last_played": 1760113993
+            },
+            {
+                "hero": "Lifestealer",
+                "hero_id": 54,
+                "games": 146,
+                "win": 82,
+                "last_played": 1613300099
+            }
+        ]
+    },
+    "No[o]ne-": {
+        "account_id": 106573901,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Pangolier",
+                "hero_id": 120,
+                "last_played": 1784483341,
+                "games": 86,
+                "win": 63
+            },
+            {
+                "hero": "Puck",
+                "hero_id": 13,
+                "last_played": 1784478900,
+                "games": 306,
+                "win": 182
+            },
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "last_played": 1784473262,
+                "games": 381,
+                "win": 229
+            },
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "last_played": 1784468532,
+                "games": 204,
+                "win": 127
+            },
+            {
+                "hero": "Largo",
+                "hero_id": 155,
+                "last_played": 1783847223,
+                "games": 1,
+                "win": 0
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "games": 381,
+                "win": 229,
+                "last_played": 1784473262
+            },
+            {
+                "hero": "Storm Spirit",
+                "hero_id": 17,
+                "games": 350,
+                "win": 230,
+                "last_played": 1780065638
+            },
+            {
+                "hero": "Puck",
+                "hero_id": 13,
+                "games": 306,
+                "win": 182,
+                "last_played": 1784478900
+            },
+            {
+                "hero": "Shadow Fiend",
+                "hero_id": 11,
+                "games": 303,
+                "win": 155,
+                "last_played": 1680897967
+            },
+            {
+                "hero": "Queen of Pain",
+                "hero_id": 39,
+                "games": 236,
+                "win": 132,
+                "last_played": 1778777707
+            }
+        ]
+    },
+    "9Class": {
+        "account_id": 164199202,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Keeper of the Light",
+                "hero_id": 90,
+                "last_played": 1784483341,
+                "games": 88,
+                "win": 58
+            },
+            {
+                "hero": "Dark Willow",
+                "hero_id": 119,
+                "last_played": 1784478900,
+                "games": 174,
+                "win": 107
+            },
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "last_played": 1784473262,
+                "games": 441,
+                "win": 236
+            },
+            {
+                "hero": "Windranger",
+                "hero_id": 21,
+                "last_played": 1784392320,
+                "games": 74,
+                "win": 35
+            },
+            {
+                "hero": "Earth Spirit",
+                "hero_id": 107,
+                "last_played": 1784215740,
+                "games": 38,
+                "win": 17
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Pudge",
+                "hero_id": 14,
+                "games": 953,
+                "win": 567,
+                "last_played": 1765389388
+            },
+            {
+                "hero": "Techies",
+                "hero_id": 105,
+                "games": 534,
+                "win": 302,
+                "last_played": 1772979624
+            },
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "games": 441,
+                "win": 236,
+                "last_played": 1784473262
+            },
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "games": 290,
+                "win": 150,
+                "last_played": 1700157611
+            },
+            {
+                "hero": "Skywrath Mage",
+                "hero_id": 101,
+                "games": 221,
+                "win": 126,
+                "last_played": 1782399616
+            }
+        ]
+    },
+    "Dukalis": {
+        "account_id": 73401082,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Hoodwink",
+                "hero_id": 123,
+                "last_played": 1784483341,
+                "games": 302,
+                "win": 166
+            },
+            {
+                "hero": "Winter Wyvern",
+                "hero_id": 112,
+                "last_played": 1784468532,
+                "games": 340,
+                "win": 180
+            },
+            {
+                "hero": "Ogre Magi",
+                "hero_id": 84,
+                "last_played": 1784386380,
+                "games": 428,
+                "win": 243
+            },
+            {
+                "hero": "Clockwerk",
+                "hero_id": 51,
+                "last_played": 1784211550,
+                "games": 313,
+                "win": 165
+            },
+            {
+                "hero": "Grimstroke",
+                "hero_id": 121,
+                "last_played": 1783847223,
+                "games": 217,
+                "win": 102
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Bane",
+                "hero_id": 3,
+                "games": 926,
+                "win": 522,
+                "last_played": 1782399616
+            },
+            {
+                "hero": "Enchantress",
+                "hero_id": 58,
+                "games": 877,
+                "win": 437,
+                "last_played": 1778688599
+            },
+            {
+                "hero": "Treant Protector",
+                "hero_id": 83,
+                "games": 717,
+                "win": 396,
+                "last_played": 1780044663
+            },
+            {
+                "hero": "Crystal Maiden",
+                "hero_id": 5,
+                "games": 580,
+                "win": 324,
+                "last_played": 1743152424
+            },
+            {
+                "hero": "Nature's Prophet",
+                "hero_id": 53,
+                "games": 559,
+                "win": 268,
+                "last_played": 1757150500
+            }
+        ]
+    },
+    "Yuma": {
+        "account_id": 177203952,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Shadow Fiend",
+                "hero_id": 11,
+                "last_played": 1785788940,
+                "games": 432,
+                "win": 211
+            },
+            {
+                "hero": "Luna",
+                "hero_id": 48,
+                "last_played": 1785783780,
+                "games": 341,
+                "win": 182
+            },
+            {
+                "hero": "Lone Druid",
+                "hero_id": 80,
+                "last_played": 1785751169,
+                "games": 39,
+                "win": 17
+            },
+            {
+                "hero": "Sven",
+                "hero_id": 18,
+                "last_played": 1785703871,
+                "games": 453,
+                "win": 257
+            },
+            {
+                "hero": "Necrophos",
+                "hero_id": 36,
+                "last_played": 1785600484,
+                "games": 42,
+                "win": 19
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "games": 1165,
+                "win": 640,
+                "last_played": 1682493350
+            },
+            {
+                "hero": "Meepo",
+                "hero_id": 82,
+                "games": 1136,
+                "win": 689,
+                "last_played": 1779015601
+            },
+            {
+                "hero": "Pudge",
+                "hero_id": 14,
+                "games": 993,
+                "win": 532,
+                "last_played": 1764083184
+            },
+            {
+                "hero": "Morphling",
+                "hero_id": 10,
+                "games": 935,
+                "win": 473,
+                "last_played": 1785595598
+            },
+            {
+                "hero": "Terrorblade",
+                "hero_id": 109,
+                "games": 925,
+                "win": 487,
+                "last_played": 1783620996
+            }
+        ]
+    },
+    "Wisper": {
+        "account_id": 292921272,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Dark Seer",
+                "hero_id": 55,
+                "last_played": 1785788940,
+                "games": 401,
+                "win": 231
+            },
+            {
+                "hero": "Enigma",
+                "hero_id": 33,
+                "last_played": 1785783780,
+                "games": 298,
+                "win": 164
+            },
+            {
+                "hero": "Phoenix",
+                "hero_id": 110,
+                "last_played": 1785751169,
+                "games": 140,
+                "win": 73
+            },
+            {
+                "hero": "Batrider",
+                "hero_id": 65,
+                "last_played": 1785600484,
+                "games": 539,
+                "win": 309
+            },
+            {
+                "hero": "Beastmaster",
+                "hero_id": 38,
+                "last_played": 1785595598,
+                "games": 323,
+                "win": 186
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Tinker",
+                "hero_id": 34,
+                "games": 693,
+                "win": 405,
+                "last_played": 1741610382
+            },
+            {
+                "hero": "Timbersaw",
+                "hero_id": 98,
+                "games": 633,
+                "win": 384,
+                "last_played": 1781894824
+            },
+            {
+                "hero": "Magnus",
+                "hero_id": 97,
+                "games": 545,
+                "win": 305,
+                "last_played": 1785524117
+            },
+            {
+                "hero": "Batrider",
+                "hero_id": 65,
+                "games": 539,
+                "win": 309,
+                "last_played": 1785600484
+            },
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "games": 524,
+                "win": 295,
+                "last_played": 1740668105
+            }
+        ]
+    },
+    "TaiLung": {
+        "account_id": 1026694469,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "last_played": 1785788940,
+                "games": 62,
+                "win": 29
+            },
+            {
+                "hero": "Earth Spirit",
+                "hero_id": 107,
+                "last_played": 1785783780,
+                "games": 13,
+                "win": 9
+            },
+            {
+                "hero": "Viper",
+                "hero_id": 47,
+                "last_played": 1785779653,
+                "games": 31,
+                "win": 17
+            },
+            {
+                "hero": "Puck",
+                "hero_id": 13,
+                "last_played": 1785751169,
+                "games": 55,
+                "win": 36
+            },
+            {
+                "hero": "Keeper of the Light",
+                "hero_id": 90,
+                "last_played": 1785703871,
+                "games": 58,
+                "win": 35
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Tiny",
+                "hero_id": 19,
+                "games": 123,
+                "win": 91,
+                "last_played": 1783862341
+            },
+            {
+                "hero": "Pangolier",
+                "hero_id": 120,
+                "games": 77,
+                "win": 37,
+                "last_played": 1785412902
+            },
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "games": 62,
+                "win": 29,
+                "last_played": 1785788940
+            },
+            {
+                "hero": "Keeper of the Light",
+                "hero_id": 90,
+                "games": 58,
+                "win": 35,
+                "last_played": 1785703871
+            },
+            {
+                "hero": "Puck",
+                "hero_id": 13,
+                "games": 55,
+                "win": 36,
+                "last_played": 1785751169
+            }
+        ]
+    },
+    "Thiolicor": {
+        "account_id": 105045291,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Clockwerk",
+                "hero_id": 51,
+                "last_played": 1785788940,
+                "games": 175,
+                "win": 88
+            },
+            {
+                "hero": "Hoodwink",
+                "hero_id": 123,
+                "last_played": 1785783780,
+                "games": 79,
+                "win": 50
+            },
+            {
+                "hero": "Spirit Breaker",
+                "hero_id": 71,
+                "last_played": 1785779653,
+                "games": 141,
+                "win": 93
+            },
+            {
+                "hero": "Grimstroke",
+                "hero_id": 121,
+                "last_played": 1785747980,
+                "games": 36,
+                "win": 19
+            },
+            {
+                "hero": "Nyx Assassin",
+                "hero_id": 88,
+                "last_played": 1785699782,
+                "games": 135,
+                "win": 87
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "games": 731,
+                "win": 400,
+                "last_played": 1780402805
+            },
+            {
+                "hero": "Mirana",
+                "hero_id": 9,
+                "games": 276,
+                "win": 170,
+                "last_played": 1748880113
+            },
+            {
+                "hero": "Bounty Hunter",
+                "hero_id": 62,
+                "games": 270,
+                "win": 160,
+                "last_played": 1760012487
+            },
+            {
+                "hero": "Tinker",
+                "hero_id": 34,
+                "games": 218,
+                "win": 131,
+                "last_played": 1743504808
+            },
+            {
+                "hero": "Nature's Prophet",
+                "hero_id": 53,
+                "games": 214,
+                "win": 127,
+                "last_played": 1748987002
+            }
+        ]
+    },
+    "KingJungles": {
+        "account_id": 81306398,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Omniknight",
+                "hero_id": 57,
+                "last_played": 1785788940,
+                "games": 54,
+                "win": 41
+            },
+            {
+                "hero": "Winter Wyvern",
+                "hero_id": 112,
+                "last_played": 1785783780,
+                "games": 135,
+                "win": 81
+            },
+            {
+                "hero": "Hoodwink",
+                "hero_id": 123,
+                "last_played": 1785779653,
+                "games": 32,
+                "win": 19
+            },
+            {
+                "hero": "Treant Protector",
+                "hero_id": 83,
+                "last_played": 1785699782,
+                "games": 132,
+                "win": 85
+            },
+            {
+                "hero": "Oracle",
+                "hero_id": 111,
+                "last_played": 1785579831,
+                "games": 86,
+                "win": 50
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Pudge",
+                "hero_id": 14,
+                "games": 523,
+                "win": 319,
+                "last_played": 1730316540
+            },
+            {
+                "hero": "Io",
+                "hero_id": 91,
+                "games": 503,
+                "win": 284,
+                "last_played": 1740518940
+            },
+            {
+                "hero": "Nature's Prophet",
+                "hero_id": 53,
+                "games": 326,
+                "win": 180,
+                "last_played": 1780827193
+            },
+            {
+                "hero": "Enchantress",
+                "hero_id": 58,
+                "games": 302,
+                "win": 150,
+                "last_played": 1783625040
+            },
+            {
+                "hero": "Chen",
+                "hero_id": 66,
+                "games": 288,
+                "win": 166,
+                "last_played": 1771024868
+            }
+        ]
+    },
+    "Ame": {
+        "account_id": 898754153,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Templar Assassin",
+                "hero_id": 46,
+                "last_played": 1785758599,
+                "games": 60,
+                "win": 37
+            },
+            {
+                "hero": "Windranger",
+                "hero_id": 21,
+                "last_played": 1785754054,
+                "games": 13,
+                "win": 7
+            },
+            {
+                "hero": "Drow Ranger",
+                "hero_id": 6,
+                "last_played": 1785750409,
+                "games": 68,
+                "win": 49
+            },
+            {
+                "hero": "Juggernaut",
+                "hero_id": 8,
+                "last_played": 1785606626,
+                "games": 55,
+                "win": 36
+            },
+            {
+                "hero": "Morphling",
+                "hero_id": 10,
+                "last_played": 1785528851,
+                "games": 142,
+                "win": 102
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Morphling",
+                "hero_id": 10,
+                "games": 142,
+                "win": 102,
+                "last_played": 1785528851
+            },
+            {
+                "hero": "Monkey King",
+                "hero_id": 114,
+                "games": 119,
+                "win": 90,
+                "last_played": 1776688630
+            },
+            {
+                "hero": "Terrorblade",
+                "hero_id": 109,
+                "games": 112,
+                "win": 67,
+                "last_played": 1783766700
+            },
+            {
+                "hero": "Faceless Void",
+                "hero_id": 41,
+                "games": 70,
+                "win": 49,
+                "last_played": 1779787004
+            },
+            {
+                "hero": "Drow Ranger",
+                "hero_id": 6,
+                "games": 68,
+                "win": 49,
+                "last_played": 1785750409
+            }
+        ]
+    },
+    "Xxs": {
+        "account_id": 129958758,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Largo",
+                "hero_id": 155,
+                "last_played": 1785758599,
+                "games": 10,
+                "win": 5
+            },
+            {
+                "hero": "Centaur Warrunner",
+                "hero_id": 96,
+                "last_played": 1785750409,
+                "games": 271,
+                "win": 170
+            },
+            {
+                "hero": "Axe",
+                "hero_id": 2,
+                "last_played": 1785610179,
+                "games": 276,
+                "win": 146
+            },
+            {
+                "hero": "Dark Seer",
+                "hero_id": 55,
+                "last_played": 1785528851,
+                "games": 220,
+                "win": 118
+            },
+            {
+                "hero": "Doom",
+                "hero_id": 69,
+                "last_played": 1783674662,
+                "games": 320,
+                "win": 173
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "games": 439,
+                "win": 258,
+                "last_played": 1691758716
+            },
+            {
+                "hero": "Storm Spirit",
+                "hero_id": 17,
+                "games": 398,
+                "win": 252,
+                "last_played": 1730581440
+            },
+            {
+                "hero": "Mars",
+                "hero_id": 129,
+                "games": 354,
+                "win": 206,
+                "last_played": 1779799415
+            },
+            {
+                "hero": "Magnus",
+                "hero_id": 97,
+                "games": 323,
+                "win": 181,
+                "last_played": 1779882542
+            },
+            {
+                "hero": "Doom",
+                "hero_id": 69,
+                "games": 320,
+                "win": 173,
+                "last_played": 1783674662
+            }
+        ]
+    },
+    "NothingToSay": {
+        "account_id": 173978074,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Primal Beast",
+                "hero_id": 137,
+                "last_played": 1785758599,
+                "games": 259,
+                "win": 169
+            },
+            {
+                "hero": "Tinker",
+                "hero_id": 34,
+                "last_played": 1785754054,
+                "games": 615,
+                "win": 407
+            },
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "last_played": 1785750409,
+                "games": 563,
+                "win": 367
+            },
+            {
+                "hero": "Earthshaker",
+                "hero_id": 7,
+                "last_played": 1785528851,
+                "games": 261,
+                "win": 145
+            },
+            {
+                "hero": "Io",
+                "hero_id": 91,
+                "last_played": 1785524117,
+                "games": 3,
+                "win": 1
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Tinker",
+                "hero_id": 34,
+                "games": 615,
+                "win": 407,
+                "last_played": 1785754054
+            },
+            {
+                "hero": "Puck",
+                "hero_id": 13,
+                "games": 594,
+                "win": 337,
+                "last_played": 1783678860
+            },
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "games": 563,
+                "win": 367,
+                "last_played": 1785750409
+            },
+            {
+                "hero": "Pangolier",
+                "hero_id": 120,
+                "games": 432,
+                "win": 269,
+                "last_played": 1779986403
+            },
+            {
+                "hero": "Storm Spirit",
+                "hero_id": 17,
+                "games": 409,
+                "win": 224,
+                "last_played": 1783674662
+            }
+        ]
+    },
+    "fy": {
+        "account_id": 101695162,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Dark Willow",
+                "hero_id": 119,
+                "last_played": 1785758599,
+                "games": 269,
+                "win": 143
+            },
+            {
+                "hero": "Mirana",
+                "hero_id": 9,
+                "last_played": 1785750409,
+                "games": 264,
+                "win": 148
+            },
+            {
+                "hero": "Tusk",
+                "hero_id": 100,
+                "last_played": 1785528851,
+                "games": 290,
+                "win": 154
+            },
+            {
+                "hero": "Clockwerk",
+                "hero_id": 51,
+                "last_played": 1785524117,
+                "games": 191,
+                "win": 124
+            },
+            {
+                "hero": "Hoodwink",
+                "hero_id": 123,
+                "last_played": 1784040961,
+                "games": 239,
+                "win": 132
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "games": 784,
+                "win": 454,
+                "last_played": 1783766700
+            },
+            {
+                "hero": "Earthshaker",
+                "hero_id": 7,
+                "games": 296,
+                "win": 182,
+                "last_played": 1742312024
+            },
+            {
+                "hero": "Tusk",
+                "hero_id": 100,
+                "games": 290,
+                "win": 154,
+                "last_played": 1785528851
+            },
+            {
+                "hero": "Windranger",
+                "hero_id": 21,
+                "games": 273,
+                "win": 154,
+                "last_played": 1777711005
+            },
+            {
+                "hero": "Dark Willow",
+                "hero_id": 119,
+                "games": 269,
+                "win": 143,
+                "last_played": 1785758599
+            }
+        ]
+    },
+    "xNova": {
+        "account_id": 94296097,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Witch Doctor",
+                "hero_id": 30,
+                "last_played": 1785758599,
+                "games": 118,
+                "win": 67
+            },
+            {
+                "hero": "Undying",
+                "hero_id": 85,
+                "last_played": 1785754054,
+                "games": 93,
+                "win": 57
+            },
+            {
+                "hero": "Hoodwink",
+                "hero_id": 123,
+                "last_played": 1785750409,
+                "games": 29,
+                "win": 18
+            },
+            {
+                "hero": "Winter Wyvern",
+                "hero_id": 112,
+                "last_played": 1785606626,
+                "games": 150,
+                "win": 80
+            },
+            {
+                "hero": "Largo",
+                "hero_id": 155,
+                "last_played": 1784040961,
+                "games": 3,
+                "win": 1
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Earth Spirit",
+                "hero_id": 107,
+                "games": 507,
+                "win": 301,
+                "last_played": 1659463763
+            },
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "games": 379,
+                "win": 214,
+                "last_played": 1776589541
+            },
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "games": 329,
+                "win": 190,
+                "last_played": 1636465995
+            },
+            {
+                "hero": "Chen",
+                "hero_id": 66,
+                "games": 299,
+                "win": 180,
+                "last_played": 1773151503
+            },
+            {
+                "hero": "Disruptor",
+                "hero_id": 87,
+                "games": 283,
+                "win": 156,
+                "last_played": 1777714862
+            }
+        ]
+    },
+    "skiter": {
+        "account_id": 100058342,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Lifestealer",
+                "hero_id": 54,
+                "last_played": 1785959626,
+                "games": 458,
+                "win": 273
+            },
+            {
+                "hero": "Lone Druid",
+                "hero_id": 80,
+                "last_played": 1785956028,
+                "games": 56,
+                "win": 29
+            },
+            {
+                "hero": "Ursa",
+                "hero_id": 70,
+                "last_played": 1785949465,
+                "games": 260,
+                "win": 156
+            },
+            {
+                "hero": "Alchemist",
+                "hero_id": 73,
+                "last_played": 1785861843,
+                "games": 198,
+                "win": 115
+            },
+            {
+                "hero": "Vengeful Spirit",
+                "hero_id": 20,
+                "last_played": 1785858024,
+                "games": 142,
+                "win": 85
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Juggernaut",
+                "hero_id": 8,
+                "games": 498,
+                "win": 278,
+                "last_played": 1765655880
+            },
+            {
+                "hero": "Anti-Mage",
+                "hero_id": 1,
+                "games": 469,
+                "win": 270,
+                "last_played": 1681984178
+            },
+            {
+                "hero": "Lifestealer",
+                "hero_id": 54,
+                "games": 458,
+                "win": 273,
+                "last_played": 1785959626
+            },
+            {
+                "hero": "Spectre",
+                "hero_id": 67,
+                "games": 442,
+                "win": 276,
+                "last_played": 1783674001
+            },
+            {
+                "hero": "Slark",
+                "hero_id": 93,
+                "games": 398,
+                "win": 219,
+                "last_played": 1739722445
+            }
+        ]
+    },
+    "AMMAR_THE_F": {
+        "account_id": 183719386,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Necrophos",
+                "hero_id": 36,
+                "last_played": 1785959626,
+                "games": 120,
+                "win": 59
+            },
+            {
+                "hero": "Razor",
+                "hero_id": 15,
+                "last_played": 1785949465,
+                "games": 964,
+                "win": 531
+            },
+            {
+                "hero": "Timbersaw",
+                "hero_id": 98,
+                "last_played": 1785861843,
+                "games": 1330,
+                "win": 751
+            },
+            {
+                "hero": "Axe",
+                "hero_id": 2,
+                "last_played": 1785773641,
+                "games": 178,
+                "win": 88
+            },
+            {
+                "hero": "Pangolier",
+                "hero_id": 120,
+                "last_played": 1785682592,
+                "games": 495,
+                "win": 246
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Mars",
+                "hero_id": 129,
+                "games": 1368,
+                "win": 805,
+                "last_played": 1785601802
+            },
+            {
+                "hero": "Timbersaw",
+                "hero_id": 98,
+                "games": 1330,
+                "win": 751,
+                "last_played": 1785861843
+            },
+            {
+                "hero": "Razor",
+                "hero_id": 15,
+                "games": 964,
+                "win": 531,
+                "last_played": 1785949465
+            },
+            {
+                "hero": "Slardar",
+                "hero_id": 28,
+                "games": 731,
+                "win": 397,
+                "last_played": 1770214226
+            },
+            {
+                "hero": "Huskar",
+                "hero_id": 59,
+                "games": 692,
+                "win": 380,
+                "last_played": 1757698448
+            }
+        ]
+    },
+    "Malr1ne": {
+        "account_id": 898455820,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Pangolier",
+                "hero_id": 120,
+                "last_played": 1785959626,
+                "games": 772,
+                "win": 408
+            },
+            {
+                "hero": "Centaur Warrunner",
+                "hero_id": 96,
+                "last_played": 1785956028,
+                "games": 10,
+                "win": 6
+            },
+            {
+                "hero": "Primal Beast",
+                "hero_id": 137,
+                "last_played": 1785861843,
+                "games": 602,
+                "win": 326
+            },
+            {
+                "hero": "Earth Spirit",
+                "hero_id": 107,
+                "last_played": 1785773641,
+                "games": 157,
+                "win": 85
+            },
+            {
+                "hero": "Sand King",
+                "hero_id": 16,
+                "last_played": 1785609255,
+                "games": 260,
+                "win": 147
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Timbersaw",
+                "hero_id": 98,
+                "games": 1240,
+                "win": 757,
+                "last_played": 1771881360
+            },
+            {
+                "hero": "Puck",
+                "hero_id": 13,
+                "games": 880,
+                "win": 476,
+                "last_played": 1779537612
+            },
+            {
+                "hero": "Pangolier",
+                "hero_id": 120,
+                "games": 772,
+                "win": 408,
+                "last_played": 1785959626
+            },
+            {
+                "hero": "Batrider",
+                "hero_id": 65,
+                "games": 702,
+                "win": 405,
+                "last_played": 1777195660
+            },
+            {
+                "hero": "Lina",
+                "hero_id": 25,
+                "games": 667,
+                "win": 368,
+                "last_played": 1785601802
+            }
+        ]
+    },
+    "Cr1t-": {
+        "account_id": 25907144,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Clockwerk",
+                "hero_id": 51,
+                "last_played": 1785959626,
+                "games": 314,
+                "win": 172
+            },
+            {
+                "hero": "Hoodwink",
+                "hero_id": 123,
+                "last_played": 1785949465,
+                "games": 464,
+                "win": 263
+            },
+            {
+                "hero": "Enchantress",
+                "hero_id": 58,
+                "last_played": 1785861843,
+                "games": 148,
+                "win": 71
+            },
+            {
+                "hero": "Dark Willow",
+                "hero_id": 119,
+                "last_played": 1785682592,
+                "games": 751,
+                "win": 413
+            },
+            {
+                "hero": "Shadow Demon",
+                "hero_id": 79,
+                "last_played": 1785523355,
+                "games": 227,
+                "win": 125
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Earth Spirit",
+                "hero_id": 107,
+                "games": 1771,
+                "win": 1008,
+                "last_played": 1774627300
+            },
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "games": 909,
+                "win": 493,
+                "last_played": 1779530122
+            },
+            {
+                "hero": "Pangolier",
+                "hero_id": 120,
+                "games": 761,
+                "win": 419,
+                "last_played": 1739965979
+            },
+            {
+                "hero": "Dark Willow",
+                "hero_id": 119,
+                "games": 751,
+                "win": 413,
+                "last_played": 1785682592
+            },
+            {
+                "hero": "Io",
+                "hero_id": 91,
+                "games": 721,
+                "win": 416,
+                "last_played": 1767641909
+            }
+        ]
+    },
+    "Sneyking": {
+        "account_id": 10366616,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Mirana",
+                "hero_id": 9,
+                "last_played": 1785959626,
+                "games": 355,
+                "win": 243
+            },
+            {
+                "hero": "Oracle",
+                "hero_id": 111,
+                "last_played": 1785956028,
+                "games": 29,
+                "win": 16
+            },
+            {
+                "hero": "Pugna",
+                "hero_id": 45,
+                "last_played": 1785949465,
+                "games": 135,
+                "win": 82
+            },
+            {
+                "hero": "Undying",
+                "hero_id": 85,
+                "last_played": 1785861843,
+                "games": 40,
+                "win": 28
+            },
+            {
+                "hero": "Enchantress",
+                "hero_id": 58,
+                "last_played": 1785858024,
+                "games": 210,
+                "win": 129
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Mirana",
+                "hero_id": 9,
+                "games": 355,
+                "win": 243,
+                "last_played": 1785959626
+            },
+            {
+                "hero": "Nature's Prophet",
+                "hero_id": 53,
+                "games": 349,
+                "win": 213,
+                "last_played": 1707141167
+            },
+            {
+                "hero": "Storm Spirit",
+                "hero_id": 17,
+                "games": 342,
+                "win": 221,
+                "last_played": 1615702024
+            },
+            {
+                "hero": "Shadow Fiend",
+                "hero_id": 11,
+                "games": 336,
+                "win": 212,
+                "last_played": 1587350471
+            },
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "games": 308,
+                "win": 208,
+                "last_played": 1602449506
+            }
+        ]
+    },
+    "Pure": {
+        "account_id": 331855530,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Templar Assassin",
+                "hero_id": 46,
+                "last_played": 1785939546,
+                "games": 106,
+                "win": 64
+            },
+            {
+                "hero": "Sven",
+                "hero_id": 18,
+                "last_played": 1785935752,
+                "games": 50,
+                "win": 24
+            },
+            {
+                "hero": "Windranger",
+                "hero_id": 21,
+                "last_played": 1785928960,
+                "games": 55,
+                "win": 31
+            },
+            {
+                "hero": "Muerta",
+                "hero_id": 138,
+                "last_played": 1785850180,
+                "games": 28,
+                "win": 22
+            },
+            {
+                "hero": "Kez",
+                "hero_id": 145,
+                "last_played": 1785751169,
+                "games": 35,
+                "win": 21
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Morphling",
+                "hero_id": 10,
+                "games": 241,
+                "win": 147,
+                "last_played": 1762690759
+            },
+            {
+                "hero": "Kunkka",
+                "hero_id": 23,
+                "games": 122,
+                "win": 70,
+                "last_played": 1698526803
+            },
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "games": 110,
+                "win": 59,
+                "last_played": 1740571226
+            },
+            {
+                "hero": "Tinker",
+                "hero_id": 34,
+                "games": 107,
+                "win": 47,
+                "last_played": 1564129113
+            },
+            {
+                "hero": "Templar Assassin",
+                "hero_id": 46,
+                "games": 106,
+                "win": 64,
+                "last_played": 1785939546
+            }
+        ]
+    },
+    "33": {
+        "account_id": 86698277,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Necrophos",
+                "hero_id": 36,
+                "last_played": 1785939546,
+                "games": 116,
+                "win": 66
+            },
+            {
+                "hero": "Dark Seer",
+                "hero_id": 55,
+                "last_played": 1785935752,
+                "games": 582,
+                "win": 342
+            },
+            {
+                "hero": "Largo",
+                "hero_id": 155,
+                "last_played": 1785928960,
+                "games": 32,
+                "win": 21
+            },
+            {
+                "hero": "Centaur Warrunner",
+                "hero_id": 96,
+                "last_played": 1785920619,
+                "games": 124,
+                "win": 71
+            },
+            {
+                "hero": "Night Stalker",
+                "hero_id": 60,
+                "last_played": 1785751169,
+                "games": 153,
+                "win": 74
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Doom",
+                "hero_id": 69,
+                "games": 908,
+                "win": 505,
+                "last_played": 1785407804
+            },
+            {
+                "hero": "Beastmaster",
+                "hero_id": 38,
+                "games": 693,
+                "win": 386,
+                "last_played": 1780147020
+            },
+            {
+                "hero": "Visage",
+                "hero_id": 92,
+                "games": 636,
+                "win": 365,
+                "last_played": 1774366320
+            },
+            {
+                "hero": "Dark Seer",
+                "hero_id": 55,
+                "games": 582,
+                "win": 342,
+                "last_played": 1785935752
+            },
+            {
+                "hero": "Batrider",
+                "hero_id": 65,
+                "games": 575,
+                "win": 343,
+                "last_played": 1779025321
+            }
+        ]
+    },
+    "bzm": {
+        "account_id": 93618577,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Earth Spirit",
+                "hero_id": 107,
+                "last_played": 1785939546,
+                "games": 305,
+                "win": 156
+            },
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "last_played": 1785935752,
+                "games": 1743,
+                "win": 1029
+            },
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "last_played": 1785928960,
+                "games": 701,
+                "win": 385
+            },
+            {
+                "hero": "Io",
+                "hero_id": 91,
+                "last_played": 1785925420,
+                "games": 86,
+                "win": 46
+            },
+            {
+                "hero": "Earthshaker",
+                "hero_id": 7,
+                "last_played": 1785920619,
+                "games": 245,
+                "win": 146
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "games": 1743,
+                "win": 1029,
+                "last_played": 1785935752
+            },
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "games": 701,
+                "win": 385,
+                "last_played": 1785928960
+            },
+            {
+                "hero": "Templar Assassin",
+                "hero_id": 46,
+                "games": 603,
+                "win": 339,
+                "last_played": 1746551884
+            },
+            {
+                "hero": "Storm Spirit",
+                "hero_id": 17,
+                "games": 579,
+                "win": 310,
+                "last_played": 1785505289
+            },
+            {
+                "hero": "Puck",
+                "hero_id": 13,
+                "games": 561,
+                "win": 311,
+                "last_played": 1785583802
+            }
+        ]
+    },
+    "Ari": {
+        "account_id": 346412363,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Hoodwink",
+                "hero_id": 123,
+                "last_played": 1785939546,
+                "games": 369,
+                "win": 185
+            },
+            {
+                "hero": "Dark Willow",
+                "hero_id": 119,
+                "last_played": 1785935752,
+                "games": 61,
+                "win": 29
+            },
+            {
+                "hero": "Tusk",
+                "hero_id": 100,
+                "last_played": 1785925420,
+                "games": 112,
+                "win": 57
+            },
+            {
+                "hero": "Keeper of the Light",
+                "hero_id": 90,
+                "last_played": 1785751169,
+                "games": 389,
+                "win": 209
+            },
+            {
+                "hero": "Grimstroke",
+                "hero_id": 121,
+                "last_played": 1785678515,
+                "games": 107,
+                "win": 58
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Slark",
+                "hero_id": 93,
+                "games": 642,
+                "win": 356,
+                "last_played": 1766166969
+            },
+            {
+                "hero": "Anti-Mage",
+                "hero_id": 1,
+                "games": 618,
+                "win": 350,
+                "last_played": 1703189352
+            },
+            {
+                "hero": "Pangolier",
+                "hero_id": 120,
+                "games": 611,
+                "win": 342,
+                "last_played": 1741344234
+            },
+            {
+                "hero": "Phantom Assassin",
+                "hero_id": 44,
+                "games": 563,
+                "win": 327,
+                "last_played": 1738766637
+            },
+            {
+                "hero": "Faceless Void",
+                "hero_id": 41,
+                "games": 551,
+                "win": 317,
+                "last_played": 1774282736
+            }
+        ]
+    },
+    "Whitemon": {
+        "account_id": 136829091,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Ringmaster",
+                "hero_id": 131,
+                "last_played": 1785939546,
+                "games": 65,
+                "win": 34
+            },
+            {
+                "hero": "Bane",
+                "hero_id": 3,
+                "last_played": 1785935752,
+                "games": 312,
+                "win": 200
+            },
+            {
+                "hero": "Lion",
+                "hero_id": 26,
+                "last_played": 1785925420,
+                "games": 584,
+                "win": 318
+            },
+            {
+                "hero": "Mirana",
+                "hero_id": 9,
+                "last_played": 1785920619,
+                "games": 382,
+                "win": 208
+            },
+            {
+                "hero": "Winter Wyvern",
+                "hero_id": 112,
+                "last_played": 1785747980,
+                "games": 183,
+                "win": 102
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Lion",
+                "hero_id": 26,
+                "games": 584,
+                "win": 318,
+                "last_played": 1785925420
+            },
+            {
+                "hero": "Disruptor",
+                "hero_id": 87,
+                "games": 557,
+                "win": 331,
+                "last_played": 1771932783
+            },
+            {
+                "hero": "Mirana",
+                "hero_id": 9,
+                "games": 382,
+                "win": 208,
+                "last_played": 1785920619
+            },
+            {
+                "hero": "Phoenix",
+                "hero_id": 110,
+                "games": 340,
+                "win": 194,
+                "last_played": 1780151101
+            },
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "games": 331,
+                "win": 155,
+                "last_played": 1753867116
+            }
+        ]
+    },
+    "Yatoro": {
+        "account_id": 321580662,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Faceless Void",
+                "hero_id": 41,
+                "last_played": 1784204826,
+                "games": 1140,
+                "win": 669
+            },
+            {
+                "hero": "Kez",
+                "hero_id": 145,
+                "last_played": 1784200005,
+                "games": 32,
+                "win": 13
+            },
+            {
+                "hero": "Gyrocopter",
+                "hero_id": 72,
+                "last_played": 1784123767,
+                "games": 164,
+                "win": 79
+            },
+            {
+                "hero": "Morphling",
+                "hero_id": 10,
+                "last_played": 1784119160,
+                "games": 1854,
+                "win": 1112
+            },
+            {
+                "hero": "Tiny",
+                "hero_id": 19,
+                "last_played": 1784113637,
+                "games": 116,
+                "win": 50
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Morphling",
+                "hero_id": 10,
+                "games": 1854,
+                "win": 1112,
+                "last_played": 1784119160
+            },
+            {
+                "hero": "Anti-Mage",
+                "hero_id": 1,
+                "games": 1280,
+                "win": 675,
+                "last_played": 1771440475
+            },
+            {
+                "hero": "Faceless Void",
+                "hero_id": 41,
+                "games": 1140,
+                "win": 669,
+                "last_played": 1784204826
+            },
+            {
+                "hero": "Phantom Assassin",
+                "hero_id": 44,
+                "games": 868,
+                "win": 470,
+                "last_played": 1766328901
+            },
+            {
+                "hero": "Terrorblade",
+                "hero_id": 109,
+                "games": 788,
+                "win": 404,
+                "last_played": 1783615381
+            }
+        ]
+    },
+    "Collapse": {
+        "account_id": 302214028,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Pangolier",
+                "hero_id": 120,
+                "last_played": 1784204826,
+                "games": 180,
+                "win": 104
+            },
+            {
+                "hero": "Tidehunter",
+                "hero_id": 29,
+                "last_played": 1784200005,
+                "games": 153,
+                "win": 102
+            },
+            {
+                "hero": "Centaur Warrunner",
+                "hero_id": 96,
+                "last_played": 1784123767,
+                "games": 246,
+                "win": 156
+            },
+            {
+                "hero": "Axe",
+                "hero_id": 2,
+                "last_played": 1783851300,
+                "games": 509,
+                "win": 303
+            },
+            {
+                "hero": "Dark Seer",
+                "hero_id": 55,
+                "last_played": 1783699976,
+                "games": 93,
+                "win": 59
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Magnus",
+                "hero_id": 97,
+                "games": 753,
+                "win": 458,
+                "last_played": 1777751477
+            },
+            {
+                "hero": "Axe",
+                "hero_id": 2,
+                "games": 509,
+                "win": 303,
+                "last_played": 1783851300
+            },
+            {
+                "hero": "Mars",
+                "hero_id": 129,
+                "games": 507,
+                "win": 294,
+                "last_played": 1782229423
+            },
+            {
+                "hero": "Earthshaker",
+                "hero_id": 7,
+                "games": 319,
+                "win": 191,
+                "last_played": 1756973096
+            },
+            {
+                "hero": "Doom",
+                "hero_id": 69,
+                "games": 255,
+                "win": 157,
+                "last_played": 1783695507
+            }
+        ]
+    },
+    "Larl": {
+        "account_id": 106305042,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Snapfire",
+                "hero_id": 128,
+                "last_played": 1784204826,
+                "games": 49,
+                "win": 32
+            },
+            {
+                "hero": "Earth Spirit",
+                "hero_id": 107,
+                "last_played": 1784200005,
+                "games": 128,
+                "win": 63
+            },
+            {
+                "hero": "Monkey King",
+                "hero_id": 114,
+                "last_played": 1784119160,
+                "games": 143,
+                "win": 100
+            },
+            {
+                "hero": "Lina",
+                "hero_id": 25,
+                "last_played": 1784113637,
+                "games": 85,
+                "win": 43
+            },
+            {
+                "hero": "Puck",
+                "hero_id": 13,
+                "last_played": 1783851300,
+                "games": 175,
+                "win": 103
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Storm Spirit",
+                "hero_id": 17,
+                "games": 204,
+                "win": 128,
+                "last_played": 1779547700
+            },
+            {
+                "hero": "Puck",
+                "hero_id": 13,
+                "games": 175,
+                "win": 103,
+                "last_played": 1783851300
+            },
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "games": 152,
+                "win": 84,
+                "last_played": 1783847223
+            },
+            {
+                "hero": "Monkey King",
+                "hero_id": 114,
+                "games": 143,
+                "win": 100,
+                "last_played": 1784119160
+            },
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "games": 141,
+                "win": 91,
+                "last_played": 1783610778
+            }
+        ]
+    },
+    "rue": {
+        "account_id": 847565596,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Lich",
+                "hero_id": 31,
+                "last_played": 1784204826,
+                "games": 10,
+                "win": 3
+            },
+            {
+                "hero": "Witch Doctor",
+                "hero_id": 30,
+                "last_played": 1784200005,
+                "games": 8,
+                "win": 5
+            },
+            {
+                "hero": "Bane",
+                "hero_id": 3,
+                "last_played": 1784123767,
+                "games": 37,
+                "win": 28
+            },
+            {
+                "hero": "Clockwerk",
+                "hero_id": 51,
+                "last_played": 1784119160,
+                "games": 107,
+                "win": 64
+            },
+            {
+                "hero": "Phoenix",
+                "hero_id": 110,
+                "last_played": 1783851300,
+                "games": 53,
+                "win": 29
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Hoodwink",
+                "hero_id": 123,
+                "games": 248,
+                "win": 132,
+                "last_played": 1780155602
+            },
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "games": 217,
+                "win": 116,
+                "last_played": 1779623768
+            },
+            {
+                "hero": "Dark Willow",
+                "hero_id": 119,
+                "games": 202,
+                "win": 117,
+                "last_played": 1774642740
+            },
+            {
+                "hero": "Keeper of the Light",
+                "hero_id": 90,
+                "games": 193,
+                "win": 119,
+                "last_played": 1774535940
+            },
+            {
+                "hero": "Techies",
+                "hero_id": 105,
+                "games": 161,
+                "win": 80,
+                "last_played": 1779884711
+            }
+        ]
+    },
+    "not_me": {
+        "account_id": 218231587,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Hoodwink",
+                "hero_id": 123,
+                "last_played": 1784204826,
+                "games": 140,
+                "win": 70
+            },
+            {
+                "hero": "Ringmaster",
+                "hero_id": 131,
+                "last_played": 1784123767,
+                "games": 27,
+                "win": 16
+            },
+            {
+                "hero": "Dark Willow",
+                "hero_id": 119,
+                "last_played": 1784119160,
+                "games": 135,
+                "win": 62
+            },
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "last_played": 1783851300,
+                "games": 117,
+                "win": 62
+            },
+            {
+                "hero": "Techies",
+                "hero_id": 105,
+                "last_played": 1783443540,
+                "games": 192,
+                "win": 112
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "games": 1230,
+                "win": 737,
+                "last_played": 1742200696
+            },
+            {
+                "hero": "Marci",
+                "hero_id": 136,
+                "games": 381,
+                "win": 212,
+                "last_played": 1779623768
+            },
+            {
+                "hero": "Phoenix",
+                "hero_id": 110,
+                "games": 294,
+                "win": 199,
+                "last_played": 1762543600
+            },
+            {
+                "hero": "Pudge",
+                "hero_id": 14,
+                "games": 250,
+                "win": 136,
+                "last_played": 1756551920
+            },
+            {
+                "hero": "Techies",
+                "hero_id": 105,
+                "games": 192,
+                "win": 112,
+                "last_played": 1783443540
+            }
+        ]
+    },
+    "Natsumi": {
+        "account_id": 355168766,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Kez",
+                "hero_id": 145,
+                "last_played": 1785845294,
+                "games": 12,
+                "win": 5
+            },
+            {
+                "hero": "Tiny",
+                "hero_id": 19,
+                "last_played": 1785840074,
+                "games": 123,
+                "win": 61
+            },
+            {
+                "hero": "Drow Ranger",
+                "hero_id": 6,
+                "last_played": 1785834183,
+                "games": 240,
+                "win": 131
+            },
+            {
+                "hero": "Terrorblade",
+                "hero_id": 109,
+                "last_played": 1785762299,
+                "games": 318,
+                "win": 167
+            },
+            {
+                "hero": "Necrophos",
+                "hero_id": 36,
+                "last_played": 1785693297,
+                "games": 25,
+                "win": 11
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Morphling",
+                "hero_id": 10,
+                "games": 613,
+                "win": 351,
+                "last_played": 1774386240
+            },
+            {
+                "hero": "Phantom Assassin",
+                "hero_id": 44,
+                "games": 346,
+                "win": 209,
+                "last_played": 1745085862
+            },
+            {
+                "hero": "Faceless Void",
+                "hero_id": 41,
+                "games": 328,
+                "win": 192,
+                "last_played": 1776067234
+            },
+            {
+                "hero": "Troll Warlord",
+                "hero_id": 95,
+                "games": 327,
+                "win": 173,
+                "last_played": 1764173733
+            },
+            {
+                "hero": "Nature's Prophet",
+                "hero_id": 53,
+                "games": 324,
+                "win": 176,
+                "last_played": 1785661502
+            }
+        ]
+    },
+    "Raven": {
+        "account_id": 132309493,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Night Stalker",
+                "hero_id": 60,
+                "last_played": 1785845294,
+                "games": 22,
+                "win": 12
+            },
+            {
+                "hero": "Enigma",
+                "hero_id": 33,
+                "last_played": 1785840074,
+                "games": 60,
+                "win": 29
+            },
+            {
+                "hero": "Beastmaster",
+                "hero_id": 38,
+                "last_played": 1785834183,
+                "games": 52,
+                "win": 30
+            },
+            {
+                "hero": "Dark Seer",
+                "hero_id": 55,
+                "last_played": 1785762299,
+                "games": 47,
+                "win": 26
+            },
+            {
+                "hero": "Lycan",
+                "hero_id": 77,
+                "last_played": 1785693297,
+                "games": 163,
+                "win": 102
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "games": 284,
+                "win": 157,
+                "last_played": 1476173428
+            },
+            {
+                "hero": "Juggernaut",
+                "hero_id": 8,
+                "games": 238,
+                "win": 135,
+                "last_played": 1656759798
+            },
+            {
+                "hero": "Slark",
+                "hero_id": 93,
+                "games": 233,
+                "win": 138,
+                "last_played": 1674194932
+            },
+            {
+                "hero": "Morphling",
+                "hero_id": 10,
+                "games": 212,
+                "win": 115,
+                "last_played": 1705295134
+            },
+            {
+                "hero": "Queen of Pain",
+                "hero_id": 39,
+                "games": 191,
+                "win": 111,
+                "last_played": 1465574289
+            }
+        ]
+    },
+    "Yopaj-": {
+        "account_id": 324277900,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Tiny",
+                "hero_id": 19,
+                "last_played": 1786013909,
+                "games": 654,
+                "win": 352
+            },
+            {
+                "hero": "Primal Beast",
+                "hero_id": 137,
+                "last_played": 1785964052,
+                "games": 129,
+                "win": 64
+            },
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "last_played": 1785960488,
+                "games": 866,
+                "win": 501
+            },
+            {
+                "hero": "Earth Spirit",
+                "hero_id": 107,
+                "last_played": 1785957168,
+                "games": 526,
+                "win": 269
+            },
+            {
+                "hero": "Void Spirit",
+                "hero_id": 126,
+                "last_played": 1785953708,
+                "games": 383,
+                "win": 196
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Puck",
+                "hero_id": 13,
+                "games": 966,
+                "win": 563,
+                "last_played": 1785826906
+            },
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "games": 866,
+                "win": 501,
+                "last_played": 1785960488
+            },
+            {
+                "hero": "Queen of Pain",
+                "hero_id": 39,
+                "games": 670,
+                "win": 366,
+                "last_played": 1779978051
+            },
+            {
+                "hero": "Storm Spirit",
+                "hero_id": 17,
+                "games": 666,
+                "win": 370,
+                "last_played": 1785823536
+            },
+            {
+                "hero": "Tiny",
+                "hero_id": 19,
+                "games": 654,
+                "win": 352,
+                "last_played": 1786013909
+            }
+        ]
+    },
+    "TIMS": {
+        "account_id": 155494381,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Windranger",
+                "hero_id": 21,
+                "last_played": 1785845294,
+                "games": 147,
+                "win": 82
+            },
+            {
+                "hero": "Nyx Assassin",
+                "hero_id": 88,
+                "last_played": 1785762299,
+                "games": 498,
+                "win": 304
+            },
+            {
+                "hero": "Clockwerk",
+                "hero_id": 51,
+                "last_played": 1785693297,
+                "games": 285,
+                "win": 159
+            },
+            {
+                "hero": "Dark Willow",
+                "hero_id": 119,
+                "last_played": 1785688438,
+                "games": 149,
+                "win": 83
+            },
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "last_played": 1785665829,
+                "games": 529,
+                "win": 263
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Earth Spirit",
+                "hero_id": 107,
+                "games": 536,
+                "win": 285,
+                "last_played": 1663761136
+            },
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "games": 529,
+                "win": 263,
+                "last_played": 1785665829
+            },
+            {
+                "hero": "Nyx Assassin",
+                "hero_id": 88,
+                "games": 498,
+                "win": 304,
+                "last_played": 1785762299
+            },
+            {
+                "hero": "Earthshaker",
+                "hero_id": 7,
+                "games": 439,
+                "win": 255,
+                "last_played": 1757090834
+            },
+            {
+                "hero": "Mirana",
+                "hero_id": 9,
+                "games": 421,
+                "win": 251,
+                "last_played": 1771077425
+            }
+        ]
+    },
+    "skem": {
+        "account_id": 100594231,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Enchantress",
+                "hero_id": 58,
+                "last_played": 1785845294,
+                "games": 389,
+                "win": 219
+            },
+            {
+                "hero": "Venomancer",
+                "hero_id": 40,
+                "last_played": 1785840074,
+                "games": 276,
+                "win": 165
+            },
+            {
+                "hero": "Snapfire",
+                "hero_id": 128,
+                "last_played": 1785834183,
+                "games": 106,
+                "win": 55
+            },
+            {
+                "hero": "Nature's Prophet",
+                "hero_id": 53,
+                "last_played": 1785762299,
+                "games": 796,
+                "win": 457
+            },
+            {
+                "hero": "Mirana",
+                "hero_id": 9,
+                "last_played": 1785693297,
+                "games": 627,
+                "win": 342
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Nature's Prophet",
+                "hero_id": 53,
+                "games": 796,
+                "win": 457,
+                "last_played": 1785762299
+            },
+            {
+                "hero": "Mirana",
+                "hero_id": 9,
+                "games": 627,
+                "win": 342,
+                "last_played": 1785693297
+            },
+            {
+                "hero": "Drow Ranger",
+                "hero_id": 6,
+                "games": 476,
+                "win": 279,
+                "last_played": 1734622760
+            },
+            {
+                "hero": "Chen",
+                "hero_id": 66,
+                "games": 452,
+                "win": 273,
+                "last_played": 1783858806
+            },
+            {
+                "hero": "Bounty Hunter",
+                "hero_id": 62,
+                "games": 438,
+                "win": 255,
+                "last_played": 1741953188
+            }
+        ]
+    },
+    "m1CKe": {
+        "account_id": 152962063,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Windranger",
+                "hero_id": 21,
+                "last_played": 1785959626,
+                "games": 115,
+                "win": 70
+            },
+            {
+                "hero": "Sven",
+                "hero_id": 18,
+                "last_played": 1785949465,
+                "games": 92,
+                "win": 57
+            },
+            {
+                "hero": "Tiny",
+                "hero_id": 19,
+                "last_played": 1785939546,
+                "games": 149,
+                "win": 92
+            },
+            {
+                "hero": "Spectre",
+                "hero_id": 67,
+                "last_played": 1785861843,
+                "games": 73,
+                "win": 41
+            },
+            {
+                "hero": "Kez",
+                "hero_id": 145,
+                "last_played": 1785787085,
+                "games": 40,
+                "win": 25
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "games": 396,
+                "win": 212,
+                "last_played": 1778698741
+            },
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "games": 240,
+                "win": 132,
+                "last_played": 1740230710
+            },
+            {
+                "hero": "Morphling",
+                "hero_id": 10,
+                "games": 233,
+                "win": 137,
+                "last_played": 1773506722
+            },
+            {
+                "hero": "Puck",
+                "hero_id": 13,
+                "games": 221,
+                "win": 137,
+                "last_played": 1666525260
+            },
+            {
+                "hero": "Juggernaut",
+                "hero_id": 8,
+                "games": 201,
+                "win": 110,
+                "last_played": 1760545792
+            }
+        ]
+    },
+    "Ace ♠": {
+        "account_id": 97590558,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Centaur Warrunner",
+                "hero_id": 96,
+                "last_played": 1785959626,
+                "games": 208,
+                "win": 131
+            },
+            {
+                "hero": "Lycan",
+                "hero_id": 77,
+                "last_played": 1785956028,
+                "games": 112,
+                "win": 71
+            },
+            {
+                "hero": "Timbersaw",
+                "hero_id": 98,
+                "last_played": 1785949465,
+                "games": 278,
+                "win": 185
+            },
+            {
+                "hero": "Underlord",
+                "hero_id": 108,
+                "last_played": 1785939546,
+                "games": 115,
+                "win": 83
+            },
+            {
+                "hero": "Doom",
+                "hero_id": 69,
+                "last_played": 1785858024,
+                "games": 105,
+                "win": 61
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Meepo",
+                "hero_id": 82,
+                "games": 385,
+                "win": 266,
+                "last_played": 1690127669
+            },
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "games": 281,
+                "win": 194,
+                "last_played": 1528996570
+            },
+            {
+                "hero": "Timbersaw",
+                "hero_id": 98,
+                "games": 278,
+                "win": 185,
+                "last_played": 1785949465
+            },
+            {
+                "hero": "Lone Druid",
+                "hero_id": 80,
+                "games": 242,
+                "win": 138,
+                "last_played": 1725463226
+            },
+            {
+                "hero": "Phantom Assassin",
+                "hero_id": 44,
+                "games": 218,
+                "win": 150,
+                "last_played": 1621339798
+            }
+        ]
+    },
+    "Nisha": {
+        "account_id": 201358612,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Storm Spirit",
+                "hero_id": 17,
+                "last_played": 1785959626,
+                "games": 168,
+                "win": 100
+            },
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "last_played": 1785956028,
+                "games": 194,
+                "win": 124
+            },
+            {
+                "hero": "Puck",
+                "hero_id": 13,
+                "last_played": 1785949465,
+                "games": 142,
+                "win": 87
+            },
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "last_played": 1785858024,
+                "games": 125,
+                "win": 78
+            },
+            {
+                "hero": "Earthshaker",
+                "hero_id": 7,
+                "last_played": 1785791599,
+                "games": 80,
+                "win": 48
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "games": 194,
+                "win": 124,
+                "last_played": 1785956028
+            },
+            {
+                "hero": "Storm Spirit",
+                "hero_id": 17,
+                "games": 168,
+                "win": 100,
+                "last_played": 1785959626
+            },
+            {
+                "hero": "Earth Spirit",
+                "hero_id": 107,
+                "games": 154,
+                "win": 67,
+                "last_played": 1783772700
+            },
+            {
+                "hero": "Puck",
+                "hero_id": 13,
+                "games": 142,
+                "win": 87,
+                "last_played": 1785949465
+            },
+            {
+                "hero": "Void Spirit",
+                "hero_id": 126,
+                "games": 137,
+                "win": 80,
+                "last_played": 1785617139
+            }
+        ]
+    },
+    "Boxi": {
+        "account_id": 77490514,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Skywrath Mage",
+                "hero_id": 101,
+                "last_played": 1785959626,
+                "games": 41,
+                "win": 22
+            },
+            {
+                "hero": "Tusk",
+                "hero_id": 100,
+                "last_played": 1785956028,
+                "games": 165,
+                "win": 96
+            },
+            {
+                "hero": "Spirit Breaker",
+                "hero_id": 71,
+                "last_played": 1785949465,
+                "games": 44,
+                "win": 24
+            },
+            {
+                "hero": "Keeper of the Light",
+                "hero_id": 90,
+                "last_played": 1785939546,
+                "games": 29,
+                "win": 15
+            },
+            {
+                "hero": "Clockwerk",
+                "hero_id": 51,
+                "last_played": 1785861843,
+                "games": 98,
+                "win": 60
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "games": 350,
+                "win": 192,
+                "last_played": 1755680518
+            },
+            {
+                "hero": "Tiny",
+                "hero_id": 19,
+                "games": 195,
+                "win": 111,
+                "last_played": 1773606284
+            },
+            {
+                "hero": "Tusk",
+                "hero_id": 100,
+                "games": 165,
+                "win": 96,
+                "last_played": 1785956028
+            },
+            {
+                "hero": "Puck",
+                "hero_id": 13,
+                "games": 155,
+                "win": 99,
+                "last_played": 1760875458
+            },
+            {
+                "hero": "Pangolier",
+                "hero_id": 120,
+                "games": 152,
+                "win": 81,
+                "last_played": 1639427811
+            }
+        ]
+    },
+    "tOfu": {
+        "account_id": 16497807,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Tusk",
+                "hero_id": 100,
+                "last_played": 1785959626,
+                "games": 144,
+                "win": 72
+            },
+            {
+                "hero": "Mirana",
+                "hero_id": 9,
+                "last_played": 1785956028,
+                "games": 429,
+                "win": 277
+            },
+            {
+                "hero": "Witch Doctor",
+                "hero_id": 30,
+                "last_played": 1785939546,
+                "games": 87,
+                "win": 54
+            },
+            {
+                "hero": "Hoodwink",
+                "hero_id": 123,
+                "last_played": 1785935752,
+                "games": 71,
+                "win": 39
+            },
+            {
+                "hero": "Winter Wyvern",
+                "hero_id": 112,
+                "last_played": 1785787085,
+                "games": 132,
+                "win": 87
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Mirana",
+                "hero_id": 9,
+                "games": 429,
+                "win": 277,
+                "last_played": 1785956028
+            },
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "games": 267,
+                "win": 166,
+                "last_played": 1779962861
+            },
+            {
+                "hero": "Oracle",
+                "hero_id": 111,
+                "games": 199,
+                "win": 118,
+                "last_played": 1784123767
+            },
+            {
+                "hero": "Dark Willow",
+                "hero_id": 119,
+                "games": 163,
+                "win": 100,
+                "last_played": 1753866144
+            },
+            {
+                "hero": "Tusk",
+                "hero_id": 100,
+                "games": 144,
+                "win": 72,
+                "last_played": 1785959626
+            }
+        ]
+    },
+    "医者watson`": {
+        "account_id": 171262902,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Tiny",
+                "hero_id": 19,
+                "last_played": 1784459701,
+                "games": 145,
+                "win": 66
+            },
+            {
+                "hero": "Kez",
+                "hero_id": 145,
+                "last_played": 1784455780,
+                "games": 29,
+                "win": 16
+            },
+            {
+                "hero": "Phantom Lancer",
+                "hero_id": 12,
+                "last_played": 1784392320,
+                "games": 652,
+                "win": 366
+            },
+            {
+                "hero": "Shadow Fiend",
+                "hero_id": 11,
+                "last_played": 1784386380,
+                "games": 325,
+                "win": 165
+            },
+            {
+                "hero": "Templar Assassin",
+                "hero_id": 46,
+                "last_played": 1784382596,
+                "games": 352,
+                "win": 209
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Morphling",
+                "hero_id": 10,
+                "games": 746,
+                "win": 389,
+                "last_played": 1771348861
+            },
+            {
+                "hero": "Terrorblade",
+                "hero_id": 109,
+                "games": 665,
+                "win": 374,
+                "last_played": 1783453680
+            },
+            {
+                "hero": "Phantom Lancer",
+                "hero_id": 12,
+                "games": 652,
+                "win": 366,
+                "last_played": 1784392320
+            },
+            {
+                "hero": "Faceless Void",
+                "hero_id": 41,
+                "games": 553,
+                "win": 307,
+                "last_played": 1772901460
+            },
+            {
+                "hero": "Slark",
+                "hero_id": 93,
+                "games": 491,
+                "win": 305,
+                "last_played": 1766080493
+            }
+        ]
+    },
+    "DM": {
+        "account_id": 56351509,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Enigma",
+                "hero_id": 33,
+                "last_played": 1784459701,
+                "games": 432,
+                "win": 258
+            },
+            {
+                "hero": "Axe",
+                "hero_id": 2,
+                "last_played": 1784455780,
+                "games": 156,
+                "win": 74
+            },
+            {
+                "hero": "Kunkka",
+                "hero_id": 23,
+                "last_played": 1784386380,
+                "games": 385,
+                "win": 218
+            },
+            {
+                "hero": "Dark Seer",
+                "hero_id": 55,
+                "last_played": 1784382596,
+                "games": 405,
+                "win": 238
+            },
+            {
+                "hero": "Centaur Warrunner",
+                "hero_id": 96,
+                "last_played": 1784204826,
+                "games": 368,
+                "win": 219
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Phantom Lancer",
+                "hero_id": 12,
+                "games": 970,
+                "win": 571,
+                "last_played": 1713464433
+            },
+            {
+                "hero": "Venomancer",
+                "hero_id": 40,
+                "games": 808,
+                "win": 455,
+                "last_played": 1748549100
+            },
+            {
+                "hero": "Slark",
+                "hero_id": 93,
+                "games": 661,
+                "win": 380,
+                "last_played": 1739963153
+            },
+            {
+                "hero": "Sand King",
+                "hero_id": 16,
+                "games": 519,
+                "win": 317,
+                "last_played": 1748124660
+            },
+            {
+                "hero": "Beastmaster",
+                "hero_id": 38,
+                "games": 492,
+                "win": 300,
+                "last_played": 1783453680
+            }
+        ]
+    },
+    "CHIRA_JUNIOR": {
+        "account_id": 312436974,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Earthshaker",
+                "hero_id": 7,
+                "last_played": 1784459701,
+                "games": 128,
+                "win": 72
+            },
+            {
+                "hero": "Monkey King",
+                "hero_id": 114,
+                "last_played": 1784455780,
+                "games": 412,
+                "win": 229
+            },
+            {
+                "hero": "Pangolier",
+                "hero_id": 120,
+                "last_played": 1784392320,
+                "games": 613,
+                "win": 316
+            },
+            {
+                "hero": "Slardar",
+                "hero_id": 28,
+                "last_played": 1784382596,
+                "games": 138,
+                "win": 76
+            },
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "last_played": 1784204826,
+                "games": 1520,
+                "win": 857
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "games": 1520,
+                "win": 857,
+                "last_played": 1784204826
+            },
+            {
+                "hero": "Storm Spirit",
+                "hero_id": 17,
+                "games": 810,
+                "win": 439,
+                "last_played": 1780857145
+            },
+            {
+                "hero": "Pangolier",
+                "hero_id": 120,
+                "games": 613,
+                "win": 316,
+                "last_played": 1784392320
+            },
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "games": 608,
+                "win": 328,
+                "last_played": 1784200005
+            },
+            {
+                "hero": "Tiny",
+                "hero_id": 19,
+                "games": 537,
+                "win": 303,
+                "last_played": 1774192141
+            }
+        ]
+    },
+    "Saksa": {
+        "account_id": 103735745,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Hoodwink",
+                "hero_id": 123,
+                "last_played": 1784459701,
+                "games": 61,
+                "win": 42
+            },
+            {
+                "hero": "Nature's Prophet",
+                "hero_id": 53,
+                "last_played": 1784455780,
+                "games": 67,
+                "win": 39
+            },
+            {
+                "hero": "Keeper of the Light",
+                "hero_id": 90,
+                "last_played": 1784392320,
+                "games": 174,
+                "win": 106
+            },
+            {
+                "hero": "Mirana",
+                "hero_id": 9,
+                "last_played": 1784382596,
+                "games": 113,
+                "win": 65
+            },
+            {
+                "hero": "Techies",
+                "hero_id": 105,
+                "last_played": 1784204826,
+                "games": 10,
+                "win": 6
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Tusk",
+                "hero_id": 100,
+                "games": 305,
+                "win": 195,
+                "last_played": 1776607112
+            },
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "games": 192,
+                "win": 98,
+                "last_played": 1780846198
+            },
+            {
+                "hero": "Keeper of the Light",
+                "hero_id": 90,
+                "games": 174,
+                "win": 106,
+                "last_played": 1784392320
+            },
+            {
+                "hero": "Shadow Shaman",
+                "hero_id": 27,
+                "games": 154,
+                "win": 98,
+                "last_played": 1774801859
+            },
+            {
+                "hero": "Tiny",
+                "hero_id": 19,
+                "games": 147,
+                "win": 82,
+                "last_played": 1774362599
+            }
+        ]
+    },
+    "Maladych": {
+        "account_id": 93817671,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Winter Wyvern",
+                "hero_id": 112,
+                "last_played": 1784459701,
+                "games": 114,
+                "win": 73
+            },
+            {
+                "hero": "Jakiro",
+                "hero_id": 64,
+                "last_played": 1784392320,
+                "games": 176,
+                "win": 109
+            },
+            {
+                "hero": "Enchantress",
+                "hero_id": 58,
+                "last_played": 1784386380,
+                "games": 114,
+                "win": 57
+            },
+            {
+                "hero": "Tusk",
+                "hero_id": 100,
+                "last_played": 1784382596,
+                "games": 153,
+                "win": 72
+            },
+            {
+                "hero": "Undying",
+                "hero_id": 85,
+                "last_played": 1784204826,
+                "games": 205,
+                "win": 116
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Treant Protector",
+                "hero_id": 83,
+                "games": 482,
+                "win": 292,
+                "last_played": 1783704199
+            },
+            {
+                "hero": "Faceless Void",
+                "hero_id": 41,
+                "games": 297,
+                "win": 190,
+                "last_played": 1741381239
+            },
+            {
+                "hero": "Bane",
+                "hero_id": 3,
+                "games": 206,
+                "win": 115,
+                "last_played": 1780851079
+            },
+            {
+                "hero": "Spirit Breaker",
+                "hero_id": 71,
+                "games": 205,
+                "win": 135,
+                "last_played": 1722433682
+            },
+            {
+                "hero": "Undying",
+                "hero_id": 85,
+                "games": 205,
+                "win": 116,
+                "last_played": 1784204826
+            }
+        ]
+    },
+    "Kiritych~": {
+        "account_id": 172099728,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Lone Druid",
+                "hero_id": 80,
+                "last_played": 1785928960,
+                "games": 72,
+                "win": 26
+            },
+            {
+                "hero": "Lifestealer",
+                "hero_id": 54,
+                "last_played": 1785925420,
+                "games": 664,
+                "win": 357
+            },
+            {
+                "hero": "Io",
+                "hero_id": 91,
+                "last_played": 1785845294,
+                "games": 59,
+                "win": 19
+            },
+            {
+                "hero": "Shadow Fiend",
+                "hero_id": 11,
+                "last_played": 1785773641,
+                "games": 174,
+                "win": 83
+            },
+            {
+                "hero": "Necrophos",
+                "hero_id": 36,
+                "last_played": 1785592865,
+                "games": 77,
+                "win": 43
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Juggernaut",
+                "hero_id": 8,
+                "games": 681,
+                "win": 356,
+                "last_played": 1765818844
+            },
+            {
+                "hero": "Morphling",
+                "hero_id": 10,
+                "games": 679,
+                "win": 338,
+                "last_played": 1753364305
+            },
+            {
+                "hero": "Lifestealer",
+                "hero_id": 54,
+                "games": 664,
+                "win": 357,
+                "last_played": 1785925420
+            },
+            {
+                "hero": "Slark",
+                "hero_id": 93,
+                "games": 619,
+                "win": 365,
+                "last_played": 1774439995
+            },
+            {
+                "hero": "Ursa",
+                "hero_id": 70,
+                "games": 609,
+                "win": 348,
+                "last_played": 1776172826
+            }
+        ]
+    },
+    "MieRo": {
+        "account_id": 165564598,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Centaur Warrunner",
+                "hero_id": 96,
+                "last_played": 1785928960,
+                "games": 219,
+                "win": 120
+            },
+            {
+                "hero": "Underlord",
+                "hero_id": 108,
+                "last_played": 1785920619,
+                "games": 68,
+                "win": 30
+            },
+            {
+                "hero": "Largo",
+                "hero_id": 155,
+                "last_played": 1785845294,
+                "games": 23,
+                "win": 16
+            },
+            {
+                "hero": "Axe",
+                "hero_id": 2,
+                "last_played": 1785840074,
+                "games": 296,
+                "win": 158
+            },
+            {
+                "hero": "Timbersaw",
+                "hero_id": 98,
+                "last_played": 1785769378,
+                "games": 594,
+                "win": 311
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Beastmaster",
+                "hero_id": 38,
+                "games": 730,
+                "win": 430,
+                "last_played": 1785596952
+            },
+            {
+                "hero": "Mars",
+                "hero_id": 129,
+                "games": 685,
+                "win": 332,
+                "last_played": 1778777700
+            },
+            {
+                "hero": "Timbersaw",
+                "hero_id": 98,
+                "games": 594,
+                "win": 311,
+                "last_played": 1785769378
+            },
+            {
+                "hero": "Doom",
+                "hero_id": 69,
+                "games": 486,
+                "win": 257,
+                "last_played": 1775994921
+            },
+            {
+                "hero": "Tiny",
+                "hero_id": 19,
+                "games": 467,
+                "win": 255,
+                "last_played": 1745067090
+            }
+        ]
+    },
+    "gpk~": {
+        "account_id": 480412663,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Slardar",
+                "hero_id": 28,
+                "last_played": 1785928960,
+                "games": 33,
+                "win": 17
+            },
+            {
+                "hero": "Kunkka",
+                "hero_id": 23,
+                "last_played": 1785925420,
+                "games": 194,
+                "win": 105
+            },
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "last_played": 1785845294,
+                "games": 526,
+                "win": 302
+            },
+            {
+                "hero": "Outworld Destroyer",
+                "hero_id": 76,
+                "last_played": 1785840074,
+                "games": 316,
+                "win": 191
+            },
+            {
+                "hero": "Pangolier",
+                "hero_id": 120,
+                "last_played": 1785592865,
+                "games": 251,
+                "win": 144
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "games": 526,
+                "win": 302,
+                "last_played": 1785845294
+            },
+            {
+                "hero": "Storm Spirit",
+                "hero_id": 17,
+                "games": 490,
+                "win": 254,
+                "last_played": 1785495882
+            },
+            {
+                "hero": "Templar Assassin",
+                "hero_id": 46,
+                "games": 453,
+                "win": 270,
+                "last_played": 1748525220
+            },
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "games": 430,
+                "win": 232,
+                "last_played": 1784483341
+            },
+            {
+                "hero": "Shadow Fiend",
+                "hero_id": 11,
+                "games": 391,
+                "win": 220,
+                "last_played": 1774267197
+            }
+        ]
+    },
+    "Save-": {
+        "account_id": 317880638,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "last_played": 1785928960,
+                "games": 1000,
+                "win": 528
+            },
+            {
+                "hero": "Bane",
+                "hero_id": 3,
+                "last_played": 1785925420,
+                "games": 265,
+                "win": 143
+            },
+            {
+                "hero": "Shadow Shaman",
+                "hero_id": 27,
+                "last_played": 1785920619,
+                "games": 331,
+                "win": 188
+            },
+            {
+                "hero": "Keeper of the Light",
+                "hero_id": 90,
+                "last_played": 1785845294,
+                "games": 495,
+                "win": 286
+            },
+            {
+                "hero": "Mirana",
+                "hero_id": 9,
+                "last_played": 1785840074,
+                "games": 214,
+                "win": 107
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Windranger",
+                "hero_id": 21,
+                "games": 1502,
+                "win": 802,
+                "last_played": 1784473262
+            },
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "games": 1000,
+                "win": 528,
+                "last_played": 1785928960
+            },
+            {
+                "hero": "Earth Spirit",
+                "hero_id": 107,
+                "games": 805,
+                "win": 435,
+                "last_played": 1730030025
+            },
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "games": 799,
+                "win": 442,
+                "last_played": 1739405468
+            },
+            {
+                "hero": "Grimstroke",
+                "hero_id": 121,
+                "games": 762,
+                "win": 389,
+                "last_played": 1760635483
+            }
+        ]
+    },
+    "Kataomi`": {
+        "account_id": 196878136,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Hoodwink",
+                "hero_id": 123,
+                "last_played": 1785928960,
+                "games": 103,
+                "win": 47
+            },
+            {
+                "hero": "Ancient Apparition",
+                "hero_id": 68,
+                "last_played": 1785925420,
+                "games": 125,
+                "win": 63
+            },
+            {
+                "hero": "Undying",
+                "hero_id": 85,
+                "last_played": 1785920619,
+                "games": 88,
+                "win": 47
+            },
+            {
+                "hero": "Elder Titan",
+                "hero_id": 103,
+                "last_played": 1785845294,
+                "games": 12,
+                "win": 5
+            },
+            {
+                "hero": "Bane",
+                "hero_id": 3,
+                "last_played": 1785834183,
+                "games": 727,
+                "win": 467
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Bane",
+                "hero_id": 3,
+                "games": 727,
+                "win": 467,
+                "last_played": 1785834183
+            },
+            {
+                "hero": "Oracle",
+                "hero_id": 111,
+                "games": 514,
+                "win": 267,
+                "last_played": 1779876939
+            },
+            {
+                "hero": "Lich",
+                "hero_id": 31,
+                "games": 419,
+                "win": 231,
+                "last_played": 1780822835
+            },
+            {
+                "hero": "Tinker",
+                "hero_id": 34,
+                "games": 384,
+                "win": 233,
+                "last_played": 1769867056
+            },
+            {
+                "hero": "Enchantress",
+                "hero_id": 58,
+                "games": 372,
+                "win": 199,
+                "last_played": 1760532990
+            }
+        ]
+    },
+    "Nightfall": {
+        "account_id": 124801257,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Shadow Fiend",
+                "hero_id": 11,
+                "last_played": 1784118474,
+                "games": 395,
+                "win": 209
+            },
+            {
+                "hero": "Naga Siren",
+                "hero_id": 89,
+                "last_played": 1784113191,
+                "games": 233,
+                "win": 133
+            },
+            {
+                "hero": "Windranger",
+                "hero_id": 21,
+                "last_played": 1783777029,
+                "games": 152,
+                "win": 83
+            },
+            {
+                "hero": "Phantom Lancer",
+                "hero_id": 12,
+                "last_played": 1783772700,
+                "games": 719,
+                "win": 445
+            },
+            {
+                "hero": "Alchemist",
+                "hero_id": 73,
+                "last_played": 1783688406,
+                "games": 113,
+                "win": 66
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Morphling",
+                "hero_id": 10,
+                "games": 795,
+                "win": 444,
+                "last_played": 1748263867
+            },
+            {
+                "hero": "Phantom Lancer",
+                "hero_id": 12,
+                "games": 719,
+                "win": 445,
+                "last_played": 1783772700
+            },
+            {
+                "hero": "Ursa",
+                "hero_id": 70,
+                "games": 713,
+                "win": 405,
+                "last_played": 1780570019
+            },
+            {
+                "hero": "Faceless Void",
+                "hero_id": 41,
+                "games": 499,
+                "win": 295,
+                "last_played": 1779620103
+            },
+            {
+                "hero": "Terrorblade",
+                "hero_id": 109,
+                "games": 435,
+                "win": 217,
+                "last_played": 1780563592
+            }
+        ]
+    },
+    "Ws`": {
+        "account_id": 126842529,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Axe",
+                "hero_id": 2,
+                "last_played": 1784118474,
+                "games": 63,
+                "win": 37
+            },
+            {
+                "hero": "Centaur Warrunner",
+                "hero_id": 96,
+                "last_played": 1784113191,
+                "games": 65,
+                "win": 37
+            },
+            {
+                "hero": "Timbersaw",
+                "hero_id": 98,
+                "last_played": 1783777029,
+                "games": 470,
+                "win": 291
+            },
+            {
+                "hero": "Undying",
+                "hero_id": 85,
+                "last_played": 1783772700,
+                "games": 25,
+                "win": 14
+            },
+            {
+                "hero": "Largo",
+                "hero_id": 155,
+                "last_played": 1783683635,
+                "games": 34,
+                "win": 24
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Timbersaw",
+                "hero_id": 98,
+                "games": 470,
+                "win": 291,
+                "last_played": 1783777029
+            },
+            {
+                "hero": "Mars",
+                "hero_id": 129,
+                "games": 216,
+                "win": 133,
+                "last_played": 1778696230
+            },
+            {
+                "hero": "Marci",
+                "hero_id": 136,
+                "games": 209,
+                "win": 133,
+                "last_played": 1761232414
+            },
+            {
+                "hero": "Primal Beast",
+                "hero_id": 137,
+                "games": 123,
+                "win": 72,
+                "last_played": 1772970648
+            },
+            {
+                "hero": "Brewmaster",
+                "hero_id": 78,
+                "games": 116,
+                "win": 74,
+                "last_played": 1775122236
+            }
+        ]
+    },
+    "Mikoto": {
+        "account_id": 301750126,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Lina",
+                "hero_id": 25,
+                "last_played": 1784118474,
+                "games": 412,
+                "win": 249
+            },
+            {
+                "hero": "Viper",
+                "hero_id": 47,
+                "last_played": 1784113191,
+                "games": 39,
+                "win": 25
+            },
+            {
+                "hero": "Puck",
+                "hero_id": 13,
+                "last_played": 1783777029,
+                "games": 664,
+                "win": 381
+            },
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "last_played": 1783688406,
+                "games": 788,
+                "win": 448
+            },
+            {
+                "hero": "Necrophos",
+                "hero_id": 36,
+                "last_played": 1783602360,
+                "games": 43,
+                "win": 28
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "games": 788,
+                "win": 448,
+                "last_played": 1783688406
+            },
+            {
+                "hero": "Templar Assassin",
+                "hero_id": 46,
+                "games": 703,
+                "win": 436,
+                "last_played": 1752051603
+            },
+            {
+                "hero": "Puck",
+                "hero_id": 13,
+                "games": 664,
+                "win": 381,
+                "last_played": 1783777029
+            },
+            {
+                "hero": "Storm Spirit",
+                "hero_id": 17,
+                "games": 626,
+                "win": 342,
+                "last_played": 1780762402
+            },
+            {
+                "hero": "Queen of Pain",
+                "hero_id": 39,
+                "games": 609,
+                "win": 306,
+                "last_played": 1780570019
+            }
+        ]
+    },
+    "Mira": {
+        "account_id": 256156323,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Dark Willow",
+                "hero_id": 119,
+                "last_played": 1784118474,
+                "games": 97,
+                "win": 66
+            },
+            {
+                "hero": "Bane",
+                "hero_id": 3,
+                "last_played": 1784113191,
+                "games": 21,
+                "win": 14
+            },
+            {
+                "hero": "Hoodwink",
+                "hero_id": 123,
+                "last_played": 1783777029,
+                "games": 128,
+                "win": 76
+            },
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "last_played": 1783683635,
+                "games": 192,
+                "win": 119
+            },
+            {
+                "hero": "Lion",
+                "hero_id": 26,
+                "last_played": 1783602360,
+                "games": 147,
+                "win": 94
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Slark",
+                "hero_id": 93,
+                "games": 224,
+                "win": 121,
+                "last_played": 1602094886
+            },
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "games": 192,
+                "win": 119,
+                "last_played": 1783683635
+            },
+            {
+                "hero": "Phantom Assassin",
+                "hero_id": 44,
+                "games": 170,
+                "win": 100,
+                "last_played": 1741770222
+            },
+            {
+                "hero": "Lion",
+                "hero_id": 26,
+                "games": 147,
+                "win": 94,
+                "last_played": 1783602360
+            },
+            {
+                "hero": "Tiny",
+                "hero_id": 19,
+                "games": 129,
+                "win": 67,
+                "last_played": 1773406209
+            }
+        ]
+    },
+    "kaori": {
+        "account_id": 320219866,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Oracle",
+                "hero_id": 111,
+                "last_played": 1784118474,
+                "games": 244,
+                "win": 133
+            },
+            {
+                "hero": "Jakiro",
+                "hero_id": 64,
+                "last_played": 1784113191,
+                "games": 94,
+                "win": 65
+            },
+            {
+                "hero": "Warlock",
+                "hero_id": 37,
+                "last_played": 1783688406,
+                "games": 108,
+                "win": 68
+            },
+            {
+                "hero": "Winter Wyvern",
+                "hero_id": 112,
+                "last_played": 1783602360,
+                "games": 12,
+                "win": 8
+            },
+            {
+                "hero": "Phoenix",
+                "hero_id": 110,
+                "last_played": 1783518544,
+                "games": 388,
+                "win": 235
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Phantom Lancer",
+                "hero_id": 12,
+                "games": 600,
+                "win": 357,
+                "last_played": 1627117977
+            },
+            {
+                "hero": "Phoenix",
+                "hero_id": 110,
+                "games": 388,
+                "win": 235,
+                "last_played": 1783518544
+            },
+            {
+                "hero": "Shadow Shaman",
+                "hero_id": 27,
+                "games": 256,
+                "win": 136,
+                "last_played": 1769976587
+            },
+            {
+                "hero": "Oracle",
+                "hero_id": 111,
+                "games": 244,
+                "win": 133,
+                "last_played": 1784118474
+            },
+            {
+                "hero": "Naga Siren",
+                "hero_id": 89,
+                "games": 223,
+                "win": 123,
+                "last_played": 1763904686
+            }
+        ]
+    },
+    "shiro": {
+        "account_id": 320252024,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Tiny",
+                "hero_id": 19,
+                "last_played": 1785945454,
+                "games": 210,
+                "win": 113
+            },
+            {
+                "hero": "Lifestealer",
+                "hero_id": 54,
+                "last_played": 1785942984,
+                "games": 316,
+                "win": 164
+            },
+            {
+                "hero": "Nature's Prophet",
+                "hero_id": 53,
+                "last_played": 1785929228,
+                "games": 146,
+                "win": 71
+            },
+            {
+                "hero": "Luna",
+                "hero_id": 48,
+                "last_played": 1785921658,
+                "games": 155,
+                "win": 85
+            },
+            {
+                "hero": "Kez",
+                "hero_id": 145,
+                "last_played": 1785850180,
+                "games": 34,
+                "win": 19
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Morphling",
+                "hero_id": 10,
+                "games": 1173,
+                "win": 624,
+                "last_played": 1781619692
+            },
+            {
+                "hero": "Faceless Void",
+                "hero_id": 41,
+                "games": 514,
+                "win": 273,
+                "last_played": 1783846800
+            },
+            {
+                "hero": "Templar Assassin",
+                "hero_id": 46,
+                "games": 460,
+                "win": 255,
+                "last_played": 1785678876
+            },
+            {
+                "hero": "Phantom Assassin",
+                "hero_id": 44,
+                "games": 409,
+                "win": 218,
+                "last_played": 1779564210
+            },
+            {
+                "hero": "Terrorblade",
+                "hero_id": 109,
+                "games": 393,
+                "win": 203,
+                "last_played": 1785693297
+            }
+        ]
+    },
+    "Bach": {
+        "account_id": 118134220,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Beastmaster",
+                "hero_id": 38,
+                "last_played": 1785870797,
+                "games": 538,
+                "win": 337
+            },
+            {
+                "hero": "Necrophos",
+                "hero_id": 36,
+                "last_played": 1785853963,
+                "games": 84,
+                "win": 48
+            },
+            {
+                "hero": "Primal Beast",
+                "hero_id": 137,
+                "last_played": 1785850180,
+                "games": 89,
+                "win": 46
+            },
+            {
+                "hero": "Doom",
+                "hero_id": 69,
+                "last_played": 1785845193,
+                "games": 331,
+                "win": 198
+            },
+            {
+                "hero": "Centaur Warrunner",
+                "hero_id": 96,
+                "last_played": 1785791599,
+                "games": 291,
+                "win": 174
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Beastmaster",
+                "hero_id": 38,
+                "games": 538,
+                "win": 337,
+                "last_played": 1785870797
+            },
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "games": 538,
+                "win": 282,
+                "last_played": 1764773346
+            },
+            {
+                "hero": "Tiny",
+                "hero_id": 19,
+                "games": 366,
+                "win": 211,
+                "last_played": 1742304269
+            },
+            {
+                "hero": "Magnus",
+                "hero_id": 97,
+                "games": 351,
+                "win": 199,
+                "last_played": 1750666014
+            },
+            {
+                "hero": "Doom",
+                "hero_id": 69,
+                "games": 331,
+                "win": 198,
+                "last_played": 1785845193
+            }
+        ]
+    },
+    "Xm": {
+        "account_id": 137129583,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Slardar",
+                "hero_id": 28,
+                "last_played": 1785853963,
+                "games": 96,
+                "win": 52
+            },
+            {
+                "hero": "Necrophos",
+                "hero_id": 36,
+                "last_played": 1785850180,
+                "games": 148,
+                "win": 84
+            },
+            {
+                "hero": "Snapfire",
+                "hero_id": 128,
+                "last_played": 1785791599,
+                "games": 43,
+                "win": 22
+            },
+            {
+                "hero": "Storm Spirit",
+                "hero_id": 17,
+                "last_played": 1785787085,
+                "games": 724,
+                "win": 393
+            },
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "last_played": 1785781921,
+                "games": 164,
+                "win": 85
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Storm Spirit",
+                "hero_id": 17,
+                "games": 724,
+                "win": 393,
+                "last_played": 1785787085
+            },
+            {
+                "hero": "Puck",
+                "hero_id": 13,
+                "games": 719,
+                "win": 381,
+                "last_played": 1785693297
+            },
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "games": 699,
+                "win": 392,
+                "last_played": 1785434857
+            },
+            {
+                "hero": "Queen of Pain",
+                "hero_id": 39,
+                "games": 605,
+                "win": 337,
+                "last_played": 1785688438
+            },
+            {
+                "hero": "Templar Assassin",
+                "hero_id": 46,
+                "games": 447,
+                "win": 248,
+                "last_played": 1746087170
+            }
+        ]
+    },
+    "XinQ": {
+        "account_id": 157475523,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Clockwerk",
+                "hero_id": 51,
+                "last_played": 1785853963,
+                "games": 97,
+                "win": 49
+            },
+            {
+                "hero": "Hoodwink",
+                "hero_id": 123,
+                "last_played": 1785791599,
+                "games": 143,
+                "win": 78
+            },
+            {
+                "hero": "Tusk",
+                "hero_id": 100,
+                "last_played": 1785787085,
+                "games": 138,
+                "win": 79
+            },
+            {
+                "hero": "Mirana",
+                "hero_id": 9,
+                "last_played": 1785781921,
+                "games": 679,
+                "win": 381
+            },
+            {
+                "hero": "Keeper of the Light",
+                "hero_id": 90,
+                "last_played": 1785772521,
+                "games": 82,
+                "win": 49
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Mirana",
+                "hero_id": 9,
+                "games": 679,
+                "win": 381,
+                "last_played": 1785781921
+            },
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "games": 661,
+                "win": 392,
+                "last_played": 1785746934
+            },
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "games": 476,
+                "win": 245,
+                "last_played": 1785768675
+            },
+            {
+                "hero": "Storm Spirit",
+                "hero_id": 17,
+                "games": 342,
+                "win": 198,
+                "last_played": 1785670540
+            },
+            {
+                "hero": "Windranger",
+                "hero_id": 21,
+                "games": 338,
+                "win": 178,
+                "last_played": 1783615381
+            }
+        ]
+    },
+    "y`": {
+        "account_id": 111114687,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Mirana",
+                "hero_id": 9,
+                "last_played": 1785853963,
+                "games": 288,
+                "win": 169
+            },
+            {
+                "hero": "Witch Doctor",
+                "hero_id": 30,
+                "last_played": 1785850180,
+                "games": 138,
+                "win": 79
+            },
+            {
+                "hero": "Undying",
+                "hero_id": 85,
+                "last_played": 1785791599,
+                "games": 178,
+                "win": 107
+            },
+            {
+                "hero": "Crystal Maiden",
+                "hero_id": 5,
+                "last_played": 1785787085,
+                "games": 211,
+                "win": 127
+            },
+            {
+                "hero": "Tusk",
+                "hero_id": 100,
+                "last_played": 1785781921,
+                "games": 178,
+                "win": 85
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "games": 540,
+                "win": 305,
+                "last_played": 1720634580
+            },
+            {
+                "hero": "Windranger",
+                "hero_id": 21,
+                "games": 332,
+                "win": 154,
+                "last_played": 1745145396
+            },
+            {
+                "hero": "Disruptor",
+                "hero_id": 87,
+                "games": 311,
+                "win": 177,
+                "last_played": 1776582163
+            },
+            {
+                "hero": "Mirana",
+                "hero_id": 9,
+                "games": 288,
+                "win": 169,
+                "last_played": 1785853963
+            },
+            {
+                "hero": "Lion",
+                "hero_id": 26,
+                "games": 269,
+                "win": 149,
+                "last_played": 1736745589
+            }
+        ]
+    },
+    "Ghost": {
+        "account_id": 206642367,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Shadow Fiend",
+                "hero_id": 11,
+                "last_played": 1785762299,
+                "games": 250,
+                "win": 127
+            },
+            {
+                "hero": "Lina",
+                "hero_id": 25,
+                "last_played": 1785669809,
+                "games": 213,
+                "win": 95
+            },
+            {
+                "hero": "Tiny",
+                "hero_id": 19,
+                "last_played": 1785617139,
+                "games": 293,
+                "win": 157
+            },
+            {
+                "hero": "Windranger",
+                "hero_id": 21,
+                "last_played": 1785613575,
+                "games": 273,
+                "win": 161
+            },
+            {
+                "hero": "Drow Ranger",
+                "hero_id": 6,
+                "last_played": 1785592865,
+                "games": 542,
+                "win": 324
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Morphling",
+                "hero_id": 10,
+                "games": 993,
+                "win": 520,
+                "last_played": 1779995929
+            },
+            {
+                "hero": "Juggernaut",
+                "hero_id": 8,
+                "games": 754,
+                "win": 397,
+                "last_played": 1760173194
+            },
+            {
+                "hero": "Lifestealer",
+                "hero_id": 54,
+                "games": 641,
+                "win": 366,
+                "last_played": 1782344101
+            },
+            {
+                "hero": "Faceless Void",
+                "hero_id": 41,
+                "games": 621,
+                "win": 352,
+                "last_played": 1778773030
+            },
+            {
+                "hero": "Phantom Assassin",
+                "hero_id": 44,
+                "games": 607,
+                "win": 331,
+                "last_played": 1745143136
+            }
+        ]
+    },
+    "Fayde": {
+        "account_id": 160119017,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Slardar",
+                "hero_id": 28,
+                "last_played": 1785762299,
+                "games": 97,
+                "win": 43
+            },
+            {
+                "hero": "Death Prophet",
+                "hero_id": 43,
+                "last_played": 1785758628,
+                "games": 359,
+                "win": 192
+            },
+            {
+                "hero": "Centaur Warrunner",
+                "hero_id": 96,
+                "last_played": 1785674251,
+                "games": 76,
+                "win": 46
+            },
+            {
+                "hero": "Beastmaster",
+                "hero_id": 38,
+                "last_played": 1785669809,
+                "games": 336,
+                "win": 194
+            },
+            {
+                "hero": "Lycan",
+                "hero_id": 77,
+                "last_played": 1785596952,
+                "games": 245,
+                "win": 155
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Terrorblade",
+                "hero_id": 109,
+                "games": 438,
+                "win": 241,
+                "last_played": 1750748405
+            },
+            {
+                "hero": "Death Prophet",
+                "hero_id": 43,
+                "games": 359,
+                "win": 192,
+                "last_played": 1785758628
+            },
+            {
+                "hero": "Beastmaster",
+                "hero_id": 38,
+                "games": 336,
+                "win": 194,
+                "last_played": 1785669809
+            },
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "games": 336,
+                "win": 161,
+                "last_played": 1777248270
+            },
+            {
+                "hero": "Shadow Fiend",
+                "hero_id": 11,
+                "games": 318,
+                "win": 157,
+                "last_played": 1607500604
+            }
+        ]
+    },
+    "RCY": {
+        "account_id": 154974246,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "last_played": 1785762299,
+                "games": 106,
+                "win": 49
+            },
+            {
+                "hero": "Largo",
+                "hero_id": 155,
+                "last_played": 1785758628,
+                "games": 3,
+                "win": 1
+            },
+            {
+                "hero": "Slark",
+                "hero_id": 93,
+                "last_played": 1785669809,
+                "games": 2,
+                "win": 1
+            },
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "last_played": 1785617139,
+                "games": 158,
+                "win": 87
+            },
+            {
+                "hero": "Kez",
+                "hero_id": 145,
+                "last_played": 1785613575,
+                "games": 16,
+                "win": 12
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Puck",
+                "hero_id": 13,
+                "games": 208,
+                "win": 117,
+                "last_played": 1780517333
+            },
+            {
+                "hero": "Tinker",
+                "hero_id": 34,
+                "games": 176,
+                "win": 129,
+                "last_played": 1774196986
+            },
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "games": 158,
+                "win": 87,
+                "last_played": 1785617139
+            },
+            {
+                "hero": "Pangolier",
+                "hero_id": 120,
+                "games": 107,
+                "win": 66,
+                "last_played": 1778773030
+            },
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "games": 106,
+                "win": 49,
+                "last_played": 1785762299
+            }
+        ]
+    },
+    "Bignum": {
+        "account_id": 90423751,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Dark Willow",
+                "hero_id": 119,
+                "last_played": 1785762299,
+                "games": 625,
+                "win": 345
+            },
+            {
+                "hero": "Tusk",
+                "hero_id": 100,
+                "last_played": 1785758628,
+                "games": 393,
+                "win": 206
+            },
+            {
+                "hero": "Hoodwink",
+                "hero_id": 123,
+                "last_played": 1785617139,
+                "games": 306,
+                "win": 154
+            },
+            {
+                "hero": "Bane",
+                "hero_id": 3,
+                "last_played": 1785596952,
+                "games": 265,
+                "win": 156
+            },
+            {
+                "hero": "Mirana",
+                "hero_id": 9,
+                "last_played": 1785574097,
+                "games": 613,
+                "win": 327
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "games": 1030,
+                "win": 529,
+                "last_played": 1782347203
+            },
+            {
+                "hero": "Batrider",
+                "hero_id": 65,
+                "games": 737,
+                "win": 383,
+                "last_played": 1768755677
+            },
+            {
+                "hero": "Earth Spirit",
+                "hero_id": 107,
+                "games": 635,
+                "win": 340,
+                "last_played": 1717972318
+            },
+            {
+                "hero": "Dark Willow",
+                "hero_id": 119,
+                "games": 625,
+                "win": 345,
+                "last_played": 1785762299
+            },
+            {
+                "hero": "Mirana",
+                "hero_id": 9,
+                "games": 613,
+                "win": 327,
+                "last_played": 1785574097
+            }
+        ]
+    },
+    "Speeed": {
+        "account_id": 191362875,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Clockwerk",
+                "hero_id": 51,
+                "last_played": 1785762299,
+                "games": 111,
+                "win": 61
+            },
+            {
+                "hero": "Batrider",
+                "hero_id": 65,
+                "last_played": 1785758628,
+                "games": 195,
+                "win": 108
+            },
+            {
+                "hero": "Bounty Hunter",
+                "hero_id": 62,
+                "last_played": 1785674251,
+                "games": 65,
+                "win": 43
+            },
+            {
+                "hero": "Undying",
+                "hero_id": 85,
+                "last_played": 1785669809,
+                "games": 97,
+                "win": 53
+            },
+            {
+                "hero": "Winter Wyvern",
+                "hero_id": 112,
+                "last_played": 1785617139,
+                "games": 88,
+                "win": 49
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Nature's Prophet",
+                "hero_id": 53,
+                "games": 627,
+                "win": 378,
+                "last_played": 1780603266
+            },
+            {
+                "hero": "Timbersaw",
+                "hero_id": 98,
+                "games": 326,
+                "win": 188,
+                "last_played": 1732125742
+            },
+            {
+                "hero": "Alchemist",
+                "hero_id": 73,
+                "games": 260,
+                "win": 167,
+                "last_played": 1738006239
+            },
+            {
+                "hero": "Beastmaster",
+                "hero_id": 38,
+                "games": 196,
+                "win": 116,
+                "last_played": 1736137810
+            },
+            {
+                "hero": "Batrider",
+                "hero_id": 65,
+                "games": 195,
+                "win": 108,
+                "last_played": 1785758628
+            }
+        ]
+    },
+    "SumaiL-": {
+        "account_id": 111620041,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Shadow Fiend",
+                "hero_id": 11,
+                "last_played": 1785665829,
+                "games": 327,
+                "win": 174
+            },
+            {
+                "hero": "Lifestealer",
+                "hero_id": 54,
+                "last_played": 1785661502,
+                "games": 72,
+                "win": 39
+            },
+            {
+                "hero": "Lone Druid",
+                "hero_id": 80,
+                "last_played": 1785523355,
+                "games": 52,
+                "win": 24
+            },
+            {
+                "hero": "Tiny",
+                "hero_id": 19,
+                "last_played": 1785426177,
+                "games": 84,
+                "win": 35
+            },
+            {
+                "hero": "Nature's Prophet",
+                "hero_id": 53,
+                "last_played": 1785422334,
+                "games": 112,
+                "win": 48
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "games": 649,
+                "win": 339,
+                "last_played": 1784297631
+            },
+            {
+                "hero": "Storm Spirit",
+                "hero_id": 17,
+                "games": 429,
+                "win": 283,
+                "last_played": 1770907711
+            },
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "games": 391,
+                "win": 230,
+                "last_played": 1780674970
+            },
+            {
+                "hero": "Puck",
+                "hero_id": 13,
+                "games": 386,
+                "win": 208,
+                "last_played": 1769430501
+            },
+            {
+                "hero": "Mirana",
+                "hero_id": 9,
+                "games": 382,
+                "win": 213,
+                "last_played": 1683280825
+            }
+        ]
+    },
+    "Davai": {
+        "account_id": 138880576,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Necrophos",
+                "hero_id": 36,
+                "last_played": 1785696238,
+                "games": 181,
+                "win": 109
+            },
+            {
+                "hero": "Slardar",
+                "hero_id": 28,
+                "last_played": 1785665829,
+                "games": 189,
+                "win": 100
+            },
+            {
+                "hero": "Centaur Warrunner",
+                "hero_id": 96,
+                "last_played": 1785623767,
+                "games": 162,
+                "win": 91
+            },
+            {
+                "hero": "Timbersaw",
+                "hero_id": 98,
+                "last_played": 1785618142,
+                "games": 861,
+                "win": 542
+            },
+            {
+                "hero": "Axe",
+                "hero_id": 2,
+                "last_played": 1785426177,
+                "games": 263,
+                "win": 146
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Timbersaw",
+                "hero_id": 98,
+                "games": 861,
+                "win": 542,
+                "last_played": 1785618142
+            },
+            {
+                "hero": "Undying",
+                "hero_id": 85,
+                "games": 471,
+                "win": 252,
+                "last_played": 1700937957
+            },
+            {
+                "hero": "Shadow Fiend",
+                "hero_id": 11,
+                "games": 384,
+                "win": 176,
+                "last_played": 1690055415
+            },
+            {
+                "hero": "Magnus",
+                "hero_id": 97,
+                "games": 366,
+                "win": 208,
+                "last_played": 1778787120
+            },
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "games": 340,
+                "win": 182,
+                "last_played": 1775409771
+            }
+        ]
+    },
+    "lorenof": {
+        "account_id": 210053851,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Lina",
+                "hero_id": 25,
+                "last_played": 1785665829,
+                "games": 110,
+                "win": 61
+            },
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "last_played": 1785661502,
+                "games": 990,
+                "win": 609
+            },
+            {
+                "hero": "Puck",
+                "hero_id": 13,
+                "last_played": 1785527051,
+                "games": 157,
+                "win": 78
+            },
+            {
+                "hero": "Sniper",
+                "hero_id": 35,
+                "last_played": 1785407804,
+                "games": 47,
+                "win": 26
+            },
+            {
+                "hero": "Storm Spirit",
+                "hero_id": 17,
+                "last_played": 1785402206,
+                "games": 646,
+                "win": 391
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "games": 990,
+                "win": 609,
+                "last_played": 1785661502
+            },
+            {
+                "hero": "Storm Spirit",
+                "hero_id": 17,
+                "games": 646,
+                "win": 391,
+                "last_played": 1785402206
+            },
+            {
+                "hero": "Morphling",
+                "hero_id": 10,
+                "games": 380,
+                "win": 215,
+                "last_played": 1747309359
+            },
+            {
+                "hero": "Enchantress",
+                "hero_id": 58,
+                "games": 348,
+                "win": 198,
+                "last_played": 1563891311
+            },
+            {
+                "hero": "Shadow Fiend",
+                "hero_id": 11,
+                "games": 320,
+                "win": 149,
+                "last_played": 1771971382
+            }
+        ]
+    },
+    "OmaR": {
+        "account_id": 152168157,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Windranger",
+                "hero_id": 21,
+                "last_played": 1785665829,
+                "games": 119,
+                "win": 72
+            },
+            {
+                "hero": "Hoodwink",
+                "hero_id": 123,
+                "last_played": 1785661502,
+                "games": 367,
+                "win": 187
+            },
+            {
+                "hero": "Ringmaster",
+                "hero_id": 131,
+                "last_played": 1785523355,
+                "games": 41,
+                "win": 17
+            },
+            {
+                "hero": "Clockwerk",
+                "hero_id": 51,
+                "last_played": 1785407804,
+                "games": 135,
+                "win": 79
+            },
+            {
+                "hero": "Dark Willow",
+                "hero_id": 119,
+                "last_played": 1785402206,
+                "games": 264,
+                "win": 161
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "games": 653,
+                "win": 353,
+                "last_played": 1779025144
+            },
+            {
+                "hero": "Earth Spirit",
+                "hero_id": 107,
+                "games": 481,
+                "win": 267,
+                "last_played": 1738227501
+            },
+            {
+                "hero": "Mirana",
+                "hero_id": 9,
+                "games": 415,
+                "win": 236,
+                "last_played": 1769098566
+            },
+            {
+                "hero": "Hoodwink",
+                "hero_id": 123,
+                "games": 367,
+                "win": 187,
+                "last_played": 1785661502
+            },
+            {
+                "hero": "Tusk",
+                "hero_id": 100,
+                "games": 340,
+                "win": 191,
+                "last_played": 1784974192
+            }
+        ]
+    },
+    "GH": {
+        "account_id": 101356886,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Bane",
+                "hero_id": 3,
+                "last_played": 1785665829,
+                "games": 93,
+                "win": 51
+            },
+            {
+                "hero": "Winter Wyvern",
+                "hero_id": 112,
+                "last_played": 1785661502,
+                "games": 140,
+                "win": 79
+            },
+            {
+                "hero": "Phoenix",
+                "hero_id": 110,
+                "last_played": 1785527051,
+                "games": 902,
+                "win": 467
+            },
+            {
+                "hero": "Tusk",
+                "hero_id": 100,
+                "last_played": 1785523355,
+                "games": 636,
+                "win": 343
+            },
+            {
+                "hero": "Undying",
+                "hero_id": 85,
+                "last_played": 1785426177,
+                "games": 41,
+                "win": 25
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Io",
+                "hero_id": 91,
+                "games": 1555,
+                "win": 958,
+                "last_played": 1783690208
+            },
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "games": 957,
+                "win": 525,
+                "last_played": 1740679421
+            },
+            {
+                "hero": "Earthshaker",
+                "hero_id": 7,
+                "games": 956,
+                "win": 543,
+                "last_played": 1742417326
+            },
+            {
+                "hero": "Phoenix",
+                "hero_id": 110,
+                "games": 902,
+                "win": 467,
+                "last_played": 1785527051
+            },
+            {
+                "hero": "Keeper of the Light",
+                "hero_id": 90,
+                "games": 788,
+                "win": 430,
+                "last_played": 1783430880
+            }
+        ]
+    },
+    "YSR-04E": {
+        "account_id": 170896543,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Lina",
+                "hero_id": 25,
+                "last_played": 1785921088,
+                "games": 152,
+                "win": 71
+            },
+            {
+                "hero": "Spectre",
+                "hero_id": 67,
+                "last_played": 1785917258,
+                "games": 221,
+                "win": 130
+            },
+            {
+                "hero": "Nature's Prophet",
+                "hero_id": 53,
+                "last_played": 1785846575,
+                "games": 84,
+                "win": 50
+            },
+            {
+                "hero": "Clinkz",
+                "hero_id": 56,
+                "last_played": 1785841955,
+                "games": 132,
+                "win": 88
+            },
+            {
+                "hero": "Shadow Fiend",
+                "hero_id": 11,
+                "last_played": 1785754054,
+                "games": 230,
+                "win": 132
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Slark",
+                "hero_id": 93,
+                "games": 415,
+                "win": 245,
+                "last_played": 1741361545
+            },
+            {
+                "hero": "Morphling",
+                "hero_id": 10,
+                "games": 408,
+                "win": 214,
+                "last_played": 1764273956
+            },
+            {
+                "hero": "Storm Spirit",
+                "hero_id": 17,
+                "games": 354,
+                "win": 216,
+                "last_played": 1737565972
+            },
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "games": 349,
+                "win": 209,
+                "last_played": 1737397309
+            },
+            {
+                "hero": "Juggernaut",
+                "hero_id": 8,
+                "games": 346,
+                "win": 204,
+                "last_played": 1764507281
+            }
+        ]
+    },
+    "niu": {
+        "account_id": 145957968,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Centaur Warrunner",
+                "hero_id": 96,
+                "last_played": 1785921088,
+                "games": 152,
+                "win": 90
+            },
+            {
+                "hero": "Timbersaw",
+                "hero_id": 98,
+                "last_played": 1785917258,
+                "games": 126,
+                "win": 68
+            },
+            {
+                "hero": "Bristleback",
+                "hero_id": 99,
+                "last_played": 1785846575,
+                "games": 51,
+                "win": 26
+            },
+            {
+                "hero": "Slardar",
+                "hero_id": 28,
+                "last_played": 1785841955,
+                "games": 57,
+                "win": 30
+            },
+            {
+                "hero": "Lycan",
+                "hero_id": 77,
+                "last_played": 1785750409,
+                "games": 23,
+                "win": 11
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Pangolier",
+                "hero_id": 120,
+                "games": 327,
+                "win": 199,
+                "last_played": 1781762799
+            },
+            {
+                "hero": "Mars",
+                "hero_id": 129,
+                "games": 280,
+                "win": 158,
+                "last_played": 1769839976
+            },
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "games": 264,
+                "win": 172,
+                "last_played": 1649776298
+            },
+            {
+                "hero": "Tiny",
+                "hero_id": 19,
+                "games": 233,
+                "win": 147,
+                "last_played": 1739707802
+            },
+            {
+                "hero": "Juggernaut",
+                "hero_id": 8,
+                "games": 193,
+                "win": 120,
+                "last_played": 1596207252
+            }
+        ]
+    },
+    "Echozz": {
+        "account_id": 315272623,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Earthshaker",
+                "hero_id": 7,
+                "last_played": 1785921088,
+                "games": 30,
+                "win": 14
+            },
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "last_played": 1785917258,
+                "games": 282,
+                "win": 144
+            },
+            {
+                "hero": "Earth Spirit",
+                "hero_id": 107,
+                "last_played": 1785846575,
+                "games": 141,
+                "win": 83
+            },
+            {
+                "hero": "Puck",
+                "hero_id": 13,
+                "last_played": 1785841955,
+                "games": 148,
+                "win": 86
+            },
+            {
+                "hero": "Pangolier",
+                "hero_id": 120,
+                "last_played": 1785666610,
+                "games": 89,
+                "win": 44
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Broodmother",
+                "hero_id": 61,
+                "games": 366,
+                "win": 238,
+                "last_played": 1762891418
+            },
+            {
+                "hero": "Ember Spirit",
+                "hero_id": 106,
+                "games": 282,
+                "win": 144,
+                "last_played": 1785917258
+            },
+            {
+                "hero": "Storm Spirit",
+                "hero_id": 17,
+                "games": 262,
+                "win": 156,
+                "last_played": 1769498901
+            },
+            {
+                "hero": "Shadow Fiend",
+                "hero_id": 11,
+                "games": 233,
+                "win": 103,
+                "last_played": 1764104289
+            },
+            {
+                "hero": "Outworld Destroyer",
+                "hero_id": 76,
+                "games": 211,
+                "win": 110,
+                "last_played": 1710741756
+            }
+        ]
+    },
+    "planet": {
+        "account_id": 150961567,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Mirana",
+                "hero_id": 9,
+                "last_played": 1785921088,
+                "games": 298,
+                "win": 178
+            },
+            {
+                "hero": "Keeper of the Light",
+                "hero_id": 90,
+                "last_played": 1785917258,
+                "games": 227,
+                "win": 140
+            },
+            {
+                "hero": "Hoodwink",
+                "hero_id": 123,
+                "last_played": 1785846575,
+                "games": 145,
+                "win": 61
+            },
+            {
+                "hero": "Techies",
+                "hero_id": 105,
+                "last_played": 1785758599,
+                "games": 121,
+                "win": 71
+            },
+            {
+                "hero": "Earthshaker",
+                "hero_id": 7,
+                "last_played": 1785754054,
+                "games": 240,
+                "win": 162
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "games": 721,
+                "win": 431,
+                "last_played": 1777711005
+            },
+            {
+                "hero": "Mirana",
+                "hero_id": 9,
+                "games": 298,
+                "win": 178,
+                "last_played": 1785921088
+            },
+            {
+                "hero": "Phoenix",
+                "hero_id": 110,
+                "games": 288,
+                "win": 144,
+                "last_played": 1773396923
+            },
+            {
+                "hero": "Nyx Assassin",
+                "hero_id": 88,
+                "games": 279,
+                "win": 177,
+                "last_played": 1785671122
+            },
+            {
+                "hero": "Earthshaker",
+                "hero_id": 7,
+                "games": 240,
+                "win": 162,
+                "last_played": 1785754054
+            }
+        ]
+    },
+    "zzq": {
+        "account_id": 249835593,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Hoodwink",
+                "hero_id": 123,
+                "last_played": 1785945454,
+                "games": 42,
+                "win": 24
+            },
+            {
+                "hero": "Ringmaster",
+                "hero_id": 131,
+                "last_played": 1785921088,
+                "games": 6,
+                "win": 5
+            },
+            {
+                "hero": "Witch Doctor",
+                "hero_id": 30,
+                "last_played": 1785917258,
+                "games": 162,
+                "win": 94
+            },
+            {
+                "hero": "Bane",
+                "hero_id": 3,
+                "last_played": 1785846575,
+                "games": 178,
+                "win": 103
+            },
+            {
+                "hero": "Techies",
+                "hero_id": 105,
+                "last_played": 1785841955,
+                "games": 163,
+                "win": 82
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Nyx Assassin",
+                "hero_id": 88,
+                "games": 415,
+                "win": 235,
+                "last_played": 1736230401
+            },
+            {
+                "hero": "Clockwerk",
+                "hero_id": 51,
+                "games": 359,
+                "win": 199,
+                "last_played": 1785597908
+            },
+            {
+                "hero": "Bounty Hunter",
+                "hero_id": 62,
+                "games": 351,
+                "win": 204,
+                "last_played": 1739597403
+            },
+            {
+                "hero": "Disruptor",
+                "hero_id": 87,
+                "games": 317,
+                "win": 153,
+                "last_played": 1769254729
+            },
+            {
+                "hero": "Phoenix",
+                "hero_id": 110,
+                "games": 294,
+                "win": 154,
+                "last_played": 1785750409
+            }
+        ]
+    },
+    "ssnovv1": {
+        "account_id": 320017600,
+        "resolution_method": "fallback_most_recent_activity",
+        "top5_recent": [
+            {
+                "hero": "Gyrocopter",
+                "hero_id": 72,
+                "last_played": 1785600484,
+                "games": 145,
+                "win": 80
+            },
+            {
+                "hero": "Alchemist",
+                "hero_id": 73,
+                "last_played": 1785595598,
+                "games": 287,
+                "win": 168
+            },
+            {
+                "hero": "Lone Druid",
+                "hero_id": 80,
+                "last_played": 1785590222,
+                "games": 50,
+                "win": 28
+            },
+            {
+                "hero": "Lina",
+                "hero_id": 25,
+                "last_played": 1785508808,
+                "games": 103,
+                "win": 58
+            },
+            {
+                "hero": "Luna",
+                "hero_id": 48,
+                "last_played": 1785504501,
+                "games": 110,
+                "win": 66
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Morphling",
+                "hero_id": 10,
+                "games": 717,
+                "win": 406,
+                "last_played": 1770301529
+            },
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "games": 429,
+                "win": 231,
+                "last_played": 1769548819
+            },
+            {
+                "hero": "Terrorblade",
+                "hero_id": 109,
+                "games": 380,
+                "win": 198,
+                "last_played": 1783511220
+            },
+            {
+                "hero": "Anti-Mage",
+                "hero_id": 1,
+                "games": 303,
+                "win": 179,
+                "last_played": 1766761292
+            },
+            {
+                "hero": "Alchemist",
+                "hero_id": 73,
+                "games": 287,
+                "win": 168,
+                "last_played": 1785595598
+            }
+        ]
+    },
+    "Corrupted": {
+        "account_id": 92487440,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Beastmaster",
+                "hero_id": 38,
+                "last_played": 1785600484,
+                "games": 529,
+                "win": 279
+            },
+            {
+                "hero": "Slardar",
+                "hero_id": 28,
+                "last_played": 1785595598,
+                "games": 603,
+                "win": 341
+            },
+            {
+                "hero": "Death Prophet",
+                "hero_id": 43,
+                "last_played": 1785590222,
+                "games": 336,
+                "win": 176
+            },
+            {
+                "hero": "Centaur Warrunner",
+                "hero_id": 96,
+                "last_played": 1785504501,
+                "games": 961,
+                "win": 545
+            },
+            {
+                "hero": "Axe",
+                "hero_id": 2,
+                "last_played": 1785500868,
+                "games": 597,
+                "win": 325
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Centaur Warrunner",
+                "hero_id": 96,
+                "games": 961,
+                "win": 545,
+                "last_played": 1785504501
+            },
+            {
+                "hero": "Doom",
+                "hero_id": 69,
+                "games": 858,
+                "win": 452,
+                "last_played": 1783515062
+            },
+            {
+                "hero": "Sand King",
+                "hero_id": 16,
+                "games": 820,
+                "win": 461,
+                "last_played": 1778328330
+            },
+            {
+                "hero": "Mars",
+                "hero_id": 129,
+                "games": 755,
+                "win": 366,
+                "last_played": 1775829660
+            },
+            {
+                "hero": "Necrophos",
+                "hero_id": 36,
+                "games": 664,
+                "win": 368,
+                "last_played": 1776783391
+            }
+        ]
+    },
+    "Mirage`雨": {
+        "account_id": 140251702,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Slardar",
+                "hero_id": 28,
+                "last_played": 1785600484,
+                "games": 132,
+                "win": 77
+            },
+            {
+                "hero": "Puck",
+                "hero_id": 13,
+                "last_played": 1785595598,
+                "games": 653,
+                "win": 368
+            },
+            {
+                "hero": "Leshrac",
+                "hero_id": 52,
+                "last_played": 1785590222,
+                "games": 513,
+                "win": 288
+            },
+            {
+                "hero": "Void Spirit",
+                "hero_id": 126,
+                "last_played": 1785508808,
+                "games": 731,
+                "win": 384
+            },
+            {
+                "hero": "Lina",
+                "hero_id": 25,
+                "last_played": 1785500868,
+                "games": 343,
+                "win": 165
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Shadow Fiend",
+                "hero_id": 11,
+                "games": 1225,
+                "win": 626,
+                "last_played": 1780060545
+            },
+            {
+                "hero": "Invoker",
+                "hero_id": 74,
+                "games": 1191,
+                "win": 606,
+                "last_played": 1783515062
+            },
+            {
+                "hero": "Storm Spirit",
+                "hero_id": 17,
+                "games": 999,
+                "win": 542,
+                "last_played": 1782146907
+            },
+            {
+                "hero": "Outworld Destroyer",
+                "hero_id": 76,
+                "games": 884,
+                "win": 501,
+                "last_played": 1708656692
+            },
+            {
+                "hero": "Void Spirit",
+                "hero_id": 126,
+                "games": 731,
+                "win": 384,
+                "last_played": 1785508808
+            }
+        ]
+    },
+    "sayuw": {
+        "account_id": 145065875,
+        "resolution_method": "matched_team",
+        "top5_recent": [
+            {
+                "hero": "Keeper of the Light",
+                "hero_id": 90,
+                "last_played": 1785600484,
+                "games": 196,
+                "win": 108
+            },
+            {
+                "hero": "Dark Willow",
+                "hero_id": 119,
+                "last_played": 1785595598,
+                "games": 205,
+                "win": 116
+            },
+            {
+                "hero": "Clockwerk",
+                "hero_id": 51,
+                "last_played": 1785504501,
+                "games": 363,
+                "win": 217
+            },
+            {
+                "hero": "Treant Protector",
+                "hero_id": 83,
+                "last_played": 1785002537,
+                "games": 95,
+                "win": 65
+            },
+            {
+                "hero": "Spirit Breaker",
+                "hero_id": 71,
+                "last_played": 1783794971,
+                "games": 65,
+                "win": 39
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Tusk",
+                "hero_id": 100,
+                "games": 722,
+                "win": 441,
+                "last_played": 1777395937
+            },
+            {
+                "hero": "Earthshaker",
+                "hero_id": 7,
+                "games": 561,
+                "win": 344,
+                "last_played": 1779559215
+            },
+            {
+                "hero": "Earth Spirit",
+                "hero_id": 107,
+                "games": 467,
+                "win": 277,
+                "last_played": 1783792812
+            },
+            {
+                "hero": "Tiny",
+                "hero_id": 19,
+                "games": 422,
+                "win": 235,
+                "last_played": 1773926767
+            },
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "games": 381,
+                "win": 192,
+                "last_played": 1778332517
+            }
+        ]
+    },
+    "RESPECT": {
+        "account_id": 123787715,
+        "resolution_method": "fallback_most_recent_activity",
+        "top5_recent": [
+            {
+                "hero": "Winter Wyvern",
+                "hero_id": 112,
+                "last_played": 1785600484,
+                "games": 63,
+                "win": 36
+            },
+            {
+                "hero": "Ringmaster",
+                "hero_id": 131,
+                "last_played": 1785590222,
+                "games": 42,
+                "win": 21
+            },
+            {
+                "hero": "Undying",
+                "hero_id": 85,
+                "last_played": 1785508808,
+                "games": 133,
+                "win": 68
+            },
+            {
+                "hero": "Bane",
+                "hero_id": 3,
+                "last_played": 1785500868,
+                "games": 153,
+                "win": 92
+            },
+            {
+                "hero": "Enchantress",
+                "hero_id": 58,
+                "last_played": 1783598100,
+                "games": 198,
+                "win": 113
+            }
+        ],
+        "top5_by_volume": [
+            {
+                "hero": "Rubick",
+                "hero_id": 86,
+                "games": 342,
+                "win": 188,
+                "last_played": 1778014344
+            },
+            {
+                "hero": "Primal Beast",
+                "hero_id": 137,
+                "games": 313,
+                "win": 180,
+                "last_played": 1731682044
+            },
+            {
+                "hero": "Marci",
+                "hero_id": 136,
+                "games": 217,
+                "win": 130,
+                "last_played": 1761421986
+            },
+            {
+                "hero": "Enchantress",
+                "hero_id": 58,
+                "games": 198,
+                "win": 113,
+                "last_played": 1783598100
+            },
+            {
+                "hero": "Clockwerk",
+                "hero_id": 51,
+                "games": 185,
+                "win": 96,
+                "last_played": 1782563399
+            }
+        ]
+    }
+}

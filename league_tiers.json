@@ -1,0 +1,356 @@
+{
+    "19101": {
+        "name": "BLAST SLAM VII",
+        "tier": "A",
+        "tier_weight": 0.8
+    },
+    "19543": {
+        "name": "PGL Wallachia 2026 Season 8",
+        "tier": "A",
+        "tier_weight": 0.8
+    },
+    "19696": {
+        "name": "DreamLeague Season 29",
+        "tier": "A",
+        "tier_weight": 0.8
+    },
+    "19785": {
+        "name": "Esports World Cup 2026",
+        "tier": "S",
+        "tier_weight": 1.0
+    },
+    "19435": {
+        "name": "PGL Wallachia 2026 Season 7",
+        "tier": "A",
+        "tier_weight": 0.8
+    },
+    "18920": {
+        "name": "PGL Wallachia 2025 Season 6",
+        "tier": "A",
+        "tier_weight": 0.8
+    },
+    "19099": {
+        "name": "BLAST SLAM VI",
+        "tier": "A",
+        "tier_weight": 0.8
+    },
+    "17420": {
+        "name": "SLAM V",
+        "tier": "A",
+        "tier_weight": 0.8
+    },
+    "17419": {
+        "name": "SLAM IV",
+        "tier": "A",
+        "tier_weight": 0.8
+    },
+    "19269": {
+        "name": "DreamLeague Season 28",
+        "tier": "A",
+        "tier_weight": 0.8
+    },
+    "18988": {
+        "name": "DreamLeague Season 27",
+        "tier": "A",
+        "tier_weight": 0.8
+    },
+    "18863": {
+        "name": "FISSURE PLAYGROUND 2",
+        "tier": "B",
+        "tier_weight": 0.5
+    },
+    "19422": {
+        "name": "ESL One Birmingham 2026",
+        "tier": "A",
+        "tier_weight": 0.8
+    },
+    "19892": {
+        "name": "The International 2026 - Regional Qualifier Europe",
+        "tier": "B",
+        "tier_weight": 0.5
+    },
+    "19893": {
+        "name": "The International 2026 - Regional Qualifier China",
+        "tier": "B",
+        "tier_weight": 0.5
+    },
+    "19890": {
+        "name": "The International 2026 - Regional Qualifier North America",
+        "tier": "B",
+        "tier_weight": 0.5
+    },
+    "19891": {
+        "name": "The International 2026 - Regional Qualifier South America",
+        "tier": "B",
+        "tier_weight": 0.5
+    },
+    "19894": {
+        "name": "The International 2026 - Regional Qualifier Southeast Asia",
+        "tier": "B",
+        "tier_weight": 0.5
+    },
+    "19130": {
+        "name": "ESL challenger China",
+        "tier": "C",
+        "tier_weight": 0.25
+    },
+    "19255": {
+        "name": "Premier Series",
+        "tier": "C",
+        "tier_weight": 0.25
+    },
+    "19248": {
+        "name": "PGL Wallachia Season #7 AMER Closed Qualifiers",
+        "tier": "B",
+        "tier_weight": 0.5
+    },
+    "19575": {
+        "name": "ESL challenger China powered By ACL",
+        "tier": "B",
+        "tier_weight": 0.5
+    },
+    "19656": {
+        "name": "1win Essence I",
+        "tier": "B",
+        "tier_weight": 0.5
+    },
+    "19532": {
+        "name": "DreamLeague Division 2 Season 4",
+        "tier": "C",
+        "tier_weight": 0.25
+    },
+    "19448": {
+        "name": "DreamLeague Season 29 Qualifiers",
+        "tier": "B",
+        "tier_weight": 0.5
+    },
+    "19539": {
+        "name": "A Blast Dota Slam VII Qualifier EU",
+        "tier": "B",
+        "tier_weight": 0.5
+    },
+    "19520": {
+        "name": "BLAST Slam VII China Qualifier",
+        "tier": "B",
+        "tier_weight": 0.5
+    },
+    "20009": {
+        "name": "1win Essence II",
+        "tier": "B",
+        "tier_weight": 0.5
+    },
+    "19917": {
+        "name": "The Games of the Future 2026",
+        "tier": "B",
+        "tier_weight": 0.5
+    },
+    "19089": {
+        "name": "DreamLeague Season 28 Qualifiers",
+        "tier": "B",
+        "tier_weight": 0.5
+    },
+    "19090": {
+        "name": "ESL One Birmingham 2026 Qualifiers",
+        "tier": "B",
+        "tier_weight": 0.5
+    },
+    "19148": {
+        "name": "BLAST Slam VI China Qualifier",
+        "tier": "B",
+        "tier_weight": 0.5
+    },
+    "19155": {
+        "name": "RES Unchained - A Blast Dota Slam VI Qualifier EU",
+        "tier": "B",
+        "tier_weight": 0.5
+    },
+    "19239": {
+        "name": "FISSURE Universe Episode 8",
+        "tier": "C",
+        "tier_weight": 0.25
+    },
+    "19245": {
+        "name": "PGL Wallachia Season #7 Asia Closed Qualifiers",
+        "tier": "B",
+        "tier_weight": 0.5
+    },
+    "19290": {
+        "name": "DreamLeague Division 2 Season 3",
+        "tier": "C",
+        "tier_weight": 0.25
+    },
+    "18324": {
+        "name": "The International 2025",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14, the earliest match date among the originally-curated leagues.json tournaments - discarded per user decision rather than merely recency-floored, since it's from before the tracked current season."
+    },
+    "18375": {
+        "name": "Esports World Cup 2025",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "17765": {
+        "name": "DreamLeague Season 25 powered by Intel",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "18111": {
+        "name": "DreamLeague Season 26",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "17795": {
+        "name": "ESL One Raleigh 2025",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "17891": {
+        "name": "PGL Wallachia 2025 Season 3",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "18058": {
+        "name": "PGL Wallachia 2025 Season 4",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "18358": {
+        "name": "PGL Wallachia 2025 Season 5",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "17417": {
+        "name": "SLAM II",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "17418": {
+        "name": "SLAM III",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "17588": {
+        "name": "FISSURE PLAYGROUND 1 - Dota",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "17907": {
+        "name": "FISSURE Universe Episode 4",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "18107": {
+        "name": "FISSURE Universe Episode 5",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "18433": {
+        "name": "FISSURE Universe Episode 6",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "18633": {
+        "name": "FISSURE Universe Episode 7",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "18046": {
+        "name": "FISSURE Special",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "17768": {
+        "name": "FISSURE Universe Ep.4 - Closed Qualifiers - WEU",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "18359": {
+        "name": "Clavision DOTA2 Masters 2025: Snow-Ruyi",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "18524": {
+        "name": "CCT Dota 2 Season 2 Series 4",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "18592": {
+        "name": "BetBoom RU Battle",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "17628": {
+        "name": "DreamLeague Season 25 Qualifiers powered by Intel",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "17874": {
+        "name": "DreamLeague Season 26 Qualifiers",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "18761": {
+        "name": "RES Unchained - A Blast Dota Slam V Qualifier EU",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "18702": {
+        "name": "RES Unchained - A Blast Dota Slam IV Qualifier EU",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "17673": {
+        "name": "PGL Wallachia Season #3 WEU Closed Qualifiers",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "17774": {
+        "name": "PGL Wallachia Season #4 EEU Closed Qualifiers",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "18309": {
+        "name": "Road To The International 2025 - Regional Qualifiers Western Europe",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "18304": {
+        "name": "Road To The International 2025 - Regional Qualifiers Eastern Europe",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    },
+    "18306": {
+        "name": "Road To The International 2025 - Regional Qualifiers China",
+        "tier": "excluded",
+        "tier_weight": 0.0,
+        "excluded_reason": "predates 2025-10-14 (see 18324 note)."
+    }
+}

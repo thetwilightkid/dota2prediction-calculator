@@ -1,0 +1,53 @@
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.controlGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.toggle,
+.toggleActive {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--foreground);
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.toggleActive {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.select {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--foreground);
+  border-radius: 6px;
+  padding: 5px 8px;
+  font-size: 13px;
+}
+
+.runBtn {
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  color: #0b0d12;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 5px 12px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.runBtn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
