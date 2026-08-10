@@ -3,13 +3,13 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import styles from "./SimulationClient.module.css";
+import TeamLogo from "./TeamLogo";
 import { TEAM_CANONICAL } from "@/data/teams";
 import { precomputedSimulation } from "@/data/simulation";
 import { useWeights } from "@/lib/WeightsContext";
 import { computeComposite } from "@/lib/rating";
-import { runSwissSimulation } from "@/lib/simulate";
+import { advanceChance, OUTCOME_ORDER, outcomeLabel, runSwissSimulation } from "@/lib/simulate";
 
-const OUTCOME_ORDER = ["4-0", "4-1", "4-2", "4-3", "3-4", "2-4", "1-4", "0-4"];
 const DAY1_PAIRINGS = precomputedSimulation.meta.day1_pairings as [number, number][];
 const TEAM_POD = precomputedSimulation.meta.team_pod;
 
@@ -37,11 +37,6 @@ export default function SimulationClient() {
 
   function getOutcomePct(tid: number): Record<string, number> | undefined {
     return liveResult ? liveResult.teams[String(tid)] : precomputedSimulation.teams[String(tid)]?.outcome_pct;
-  }
-
-  function advanceChance(outcomePct: Record<string, number> | undefined): number {
-    if (!outcomePct) return 0;
-    return OUTCOME_ORDER.filter((o) => o.startsWith("4-")).reduce((sum, o) => sum + (outcomePct[o] ?? 0), 0);
   }
 
   const orderedTeamIds = useMemo(() => {
@@ -83,9 +78,10 @@ export default function SimulationClient() {
           <thead>
             <tr>
               <th>Team</th>
+              <th title="Which half of the draw they play in">Group</th>
               <th>Chance to advance</th>
               {OUTCOME_ORDER.map((o) => (
-                <th key={o}>{o}</th>
+                <th key={o}>{outcomeLabel(o)}</th>
               ))}
             </tr>
           </thead>
@@ -96,8 +92,12 @@ export default function SimulationClient() {
               return (
                 <tr key={tid}>
                   <td>
-                    <Link href={`/teams/${tid}`}>{TEAM_CANONICAL[tid]}</Link>
+                    <Link href={`/teams/${tid}`} className={styles.teamCell}>
+                      <TeamLogo teamId={tid} />
+                      {TEAM_CANONICAL[tid]}
+                    </Link>
                   </td>
+                  <td className="muted">{TEAM_POD[String(tid)] ?? "-"}</td>
                   <td className="mono">{advance.toFixed(1)}%</td>
                   {OUTCOME_ORDER.map((o) => (
                     <td key={o} className="mono muted">

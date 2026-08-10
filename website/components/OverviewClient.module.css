@@ -42,3 +42,13 @@
   position: sticky;
   top: 76px;
 }
+
+.teamCell {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.teamCell:hover {
+  color: var(--accent);
+}

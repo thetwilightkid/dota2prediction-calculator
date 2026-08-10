@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import styles from "./MatchPredictionsClient.module.css";
+import TeamLogo from "./TeamLogo";
 import { TEAM_CANONICAL } from "@/data/teams";
 import { precomputedSimulation } from "@/data/simulation";
 import { useWeights } from "@/lib/WeightsContext";
@@ -81,9 +82,10 @@ export default function MatchPredictionsClient() {
       <div className="card" style={{ marginBottom: 20 }}>
         <h2 style={{ fontSize: 16, marginBottom: 8 }}>Day 1 - August 13 (announced)</h2>
         <p className="muted" style={{ fontSize: 13, marginBottom: 14 }}>
-          These 8 matchups are confirmed for the first day of the group stage. Their predicted winners are already
-          baked into the &quot;chance to advance&quot; numbers elsewhere on this site, since knowing a team&apos;s
-          real first opponent makes the whole-tournament prediction more accurate.
+          These 8 matchups are confirmed for the first day of the group stage - and every one of them is between two
+          teams from the same half of the draw, which is how we worked out the two groups. Their predicted winners are
+          already baked into the &quot;chance to advance&quot; numbers elsewhere on this site, since knowing a
+          team&apos;s real first opponent makes the whole-tournament prediction more accurate.
         </p>
         <div className={styles.matchList}>
           {DAY1_PAIRINGS.map(([a, b], idx) => (
@@ -153,7 +155,11 @@ function MatchRow({
   return (
     <div className={styles.matchRow}>
       <div className={styles.teamSide}>
-        <Link href={`/teams/${teamA}`} className={favored === teamA ? styles.favored : undefined}>
+        <Link
+          href={`/teams/${teamA}`}
+          className={`${styles.teamLink} ${favored === teamA ? styles.favored : ""}`}
+        >
+          <TeamLogo teamId={teamA} size="md" />
           {TEAM_CANONICAL[teamA]}
         </Link>
         <span className="mono muted">{pctA.toFixed(0)}%</span>
@@ -163,7 +169,11 @@ function MatchRow({
       </div>
       <div className={styles.teamSide}>
         <span className="mono muted">{pctB.toFixed(0)}%</span>
-        <Link href={`/teams/${teamB}`} className={favored === teamB ? styles.favored : undefined}>
+        <Link
+          href={`/teams/${teamB}`}
+          className={`${styles.teamLink} ${favored === teamB ? styles.favored : ""}`}
+        >
+          <TeamLogo teamId={teamB} size="md" />
           {TEAM_CANONICAL[teamB]}
         </Link>
       </div>

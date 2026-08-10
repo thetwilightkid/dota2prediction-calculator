@@ -8,6 +8,8 @@ import { teamStability } from "@/data/stability";
 import { leagueDataMode } from "@/data/pickBans";
 import { teamPatchImpact } from "@/data/patchImpact";
 import { overallWinrate } from "@/data/overallWinrate";
+import { precomputedSimulation } from "@/data/simulation";
+import TeamLogo from "@/components/TeamLogo";
 
 export function generateStaticParams() {
   return Object.keys(TEAM_CANONICAL).map((teamId) => ({ teamId }));
@@ -35,6 +37,7 @@ export default async function TeamDetailPage({ params }: PageProps<"/teams/[team
   const patch = teamPatchImpact[teamIdStr];
   const winrate = overallWinrate[teamIdStr];
   const h2hRow = h2hGrid[teamIdStr] ?? {};
+  const pod = precomputedSimulation.meta.team_pod[teamIdStr];
 
   const topPicks = Object.entries(drafts?.picks ?? {})
     .sort((a, b) => b[1].weighted_pick_count - a[1].weighted_pick_count)
@@ -43,7 +46,13 @@ export default async function TeamDetailPage({ params }: PageProps<"/teams/[team
   return (
     <div className="page">
       <div className={styles.header}>
-        <h1>{teamName}</h1>
+        <div className={styles.identity}>
+          <TeamLogo teamId={teamId} size="lg" />
+          <div>
+            <h1>{teamName}</h1>
+            {pod && <span className="muted">Group {pod}</span>}
+          </div>
+        </div>
         <Link href="/" className="pill">
           &larr; back to ranking
         </Link>

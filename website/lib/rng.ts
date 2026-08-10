@@ -24,6 +24,16 @@ export class Rng {
     return Math.floor(this.random() * n);
   }
 
+  // In-place Fisher-Yates, matching Python's random.shuffle (same direction, so
+  // the TS and Python simulators stay structurally identical).
+  shuffle<T>(items: T[]): T[] {
+    for (let i = items.length - 1; i > 0; i--) {
+      const j = this.randInt(i + 1);
+      [items[i], items[j]] = [items[j], items[i]];
+    }
+    return items;
+  }
+
   // Normal(mean, sigma) via Box-Muller, caching the second sample per pair of draws.
   gauss(mean: number, sigma: number): number {
     if (this.cachedGaussian !== null) {
