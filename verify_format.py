@@ -38,9 +38,36 @@ def loadRatings():
     }
 
 
+# The real TI2025 bracket shape, taken from the actual results. With strict
+# same-record pairing these counts are forced, not merely likely - 16 teams and
+# 8 slots can't produce anything else - so they make a hard regression check.
+TI2025_BEFORE_ROUND_5 = {"4:0": 1, "3:1": 4, "2:2": 6, "1:3": 4, "0:4": 1}
+TI2025_BEFORE_ELIMINATION_DAY = {"3:2": 5, "2:3": 5}
+
+
+def recordCounts(records, teams=None):
+    counts = {}
+    for tid, (w, l) in records.items():
+        if teams is not None and tid not in teams:
+            continue
+        counts[f"{w}:{l}"] = counts.get(f"{w}:{l}", 0) + 1
+    return counts
+
+
 def auditTrial(round_log, failures):
     """round_log: [(round_index, pairings, records_before), ...] for one trial."""
     for round_num, pairings, records in round_log:
+        if round_num == sim.DECIDER_ROUND - 1:
+            if recordCounts(records) != TI2025_BEFORE_ROUND_5:
+                failures["round5_shape"] += 1
+        if round_num == sim.DECIDER_ROUND:
+            undecided = {tid for tid, rec in records.items() if not sim.isTerminal(rec)}
+            if recordCounts(records, undecided) != TI2025_BEFORE_ELIMINATION_DAY:
+                failures["elimination_day_shape"] += 1
+            for a, b, update_b in pairings:
+                if update_b and {f"{records[a][0]}:{records[a][1]}", f"{records[b][0]}:{records[b][1]}"} != {"3:2", "2:3"}:
+                    failures["elimination_day_not_cross"] += 1
+
         for a, b, update_b in pairings:
             if not update_b:
                 continue  # borrowed already-finished opponent, not a real Swiss pair
@@ -122,6 +149,9 @@ if __name__ == "__main__":
         ("Round 6 pairs best-remaining vs worst-remaining", failures["decider_gap"]),
         ("Exactly 8 teams qualify, every trial", TRIALS - advancer_counts[8]),
         ("No team finishes past 6 games", sum(v for k, v in games_played.items() if k > 6)),
+        ("Standings entering round 5 match TI2025 (1x 4:0, 4x 3:1, 6x 2:2, 4x 1:3, 1x 0:4)", failures["round5_shape"]),
+        ("Elimination day starts 5x 3:2 vs 5x 2:3, as at TI2025", failures["elimination_day_shape"]),
+        ("Every elimination-day match is 3:2 against 2:3", failures["elimination_day_not_cross"]),
     ]
     print()
     for label, bad in checks:
