@@ -4,13 +4,27 @@ import random
 import sys
 from collections import Counter
 
-from team_config import TEAM_CANONICAL
+from team_config import TEAM_CANONICAL, TEAM_POD
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_NUM_TRIALS = 1_000_000
-MAX_ROUNDS = 5
+# Real TI Swiss format has no fixed round cap - a team keeps playing until it
+# hits 4 wins or 4 losses. 7 is a safe upper bound, not a termination trigger:
+# after 7 games a team can no longer be at a non-terminal 3-3 (pigeonhole -
+# someone must have reached 4 by then), confirmed against real TI2025 results
+# (final records included 4:2 and 3:3, i.e. 6-7 games - a fixed 5-game cap,
+# which this script used to have, was cutting those trials off too early).
+MAX_ROUNDS = 7
 WINS_TO_ADVANCE = 4
 LOSSES_TO_ELIMINATE = 4
+# TI's group stage splits teams into two hidden seeding pods (confirmed from
+# TI2025 results and cross-checked against TI2026's real announced Day 1
+# pairings - every one of the 8 matches is within-pod). Swiss pairing stays
+# within a team's own pod for these first PODDED_ROUNDS rounds; from then on
+# it's a single merged 16-team Swiss. No team can be terminal before round 4
+# (impossible to reach 4 wins/losses in under 4 games), so pods are guaranteed
+# to still have all 8 members active throughout the podded phase.
+PODDED_ROUNDS = 3
 
 # TI2026 group-stage Round 1 pairings, announced for August 13 - these are real,
 # not simulated, so every trial's first round uses them directly instead of the
@@ -41,7 +55,7 @@ def winProbability(rating_a, rating_b):
 
 def isTerminal(record):
     wins, losses = record
-    return wins >= WINS_TO_ADVANCE or losses >= LOSSES_TO_ELIMINATE or (wins + losses) >= MAX_ROUNDS
+    return wins >= WINS_TO_ADVANCE or losses >= LOSSES_TO_ELIMINATE
 
 
 def pairRound(active_teams, all_teams, records, played_pairs, rng):
@@ -93,6 +107,13 @@ def runSwissTrial(trial_ratings, rng, forced_first_round=None):
 
         if round_num == 0 and forced_first_round:
             pairings = [(a, b, True) for a, b in forced_first_round]
+        elif round_num < PODDED_ROUNDS:
+            # within-pod only - safe to assume all 8 pod members are still
+            # active this early (nobody can be terminal before round 4)
+            pairings = []
+            for pod in ("A", "B"):
+                pod_teams = [tid for tid in active if TEAM_POD.get(tid) == pod]
+                pairings += pairRound(pod_teams, pod_teams, records, played_pairs, rng)
         else:
             pairings = pairRound(active, all_teams, records, played_pairs, rng)
         for a, b, update_b in pairings:
@@ -182,6 +203,9 @@ if __name__ == "__main__":
                 "day1_pairings_forced": True,
                 "day1_pairings": [[a, b] for a, b in DAY1_PAIRINGS],
                 "day1_note": "Round 1 of every trial uses these announced Day 1 (Aug 13) pairings directly instead of the standings-based approximation, so the outcome distribution already reflects each team's real first opponent.",
+                "podded_rounds": PODDED_ROUNDS,
+                "team_pod": {str(tid): pod for tid, pod in TEAM_POD.items()},
+                "pod_note": "Rounds 1-3 (0-indexed 0..2) pair teams only against others in their own pod (A/B, confirmed from real TI2025 results and TI2026's announced Day 1 pairings). From round 4 on it's a single merged 16-team Swiss. No fixed round cap - a team plays until it reaches 4 wins or 4 losses (up to 7 rounds).",
             },
             "teams": results,
         }, f, ensure_ascii=False, indent=4)

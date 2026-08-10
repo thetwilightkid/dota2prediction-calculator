@@ -22,6 +22,31 @@ TEAM_CANONICAL = {
     10149530: "HULIGANI",
 }
 
+# 2026-08-07: TI2026's group stage uses two hidden seeding pods (A plays
+# morning sessions, B plays afternoon), same structure user identified from
+# TI2025 results. Confirmed against the real announced Day 1 Round 1 pairings -
+# all 8 matches are within-pod. Swiss pairing is constrained to stay within a
+# team's own pod for the first 3 rounds; from round 4 on it's a fully merged
+# 16-team Swiss. See simulate_group_stage.py.
+TEAM_POD = {
+    9572001: "A",   # Team Vision
+    9247354: "A",   # Team Falcons
+    8255888: "A",   # BoomBoys
+    10150413: "A",  # Iron Wing
+    10136357: "A",  # Nigma Galaxy
+    2586976: "A",   # OG
+    10150538: "A",  # LGD Gaming
+    5017210: "A",   # Team Resilience
+    9823272: "B",   # Team Yandex
+    2163: "B",      # Team Liquid
+    9467224: "B",   # Aurora Gaming
+    7119388: "B",   # Team Spirit
+    8261500: "B",   # Xtreme Gaming
+    726228: "B",    # Vici Gaming
+    9964962: "B",   # GamerLegion
+    10149530: "B",  # HULIGANI
+}
+
 # every known team_id registration per canonical team (rebrand/re-registration
 # fragmentation) - needed because external rating sources like datdota track
 # rating per exact team_id, not per underlying roster/org.

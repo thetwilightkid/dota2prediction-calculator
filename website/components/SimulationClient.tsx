@@ -9,8 +9,9 @@ import { useWeights } from "@/lib/WeightsContext";
 import { computeComposite } from "@/lib/rating";
 import { runSwissSimulation } from "@/lib/simulate";
 
-const OUTCOME_ORDER = ["4-0", "4-1", "3-2", "2-3", "1-4", "0-4"];
+const OUTCOME_ORDER = ["4-0", "4-1", "4-2", "4-3", "3-4", "2-4", "1-4", "0-4"];
 const DAY1_PAIRINGS = precomputedSimulation.meta.day1_pairings as [number, number][];
+const TEAM_POD = precomputedSimulation.meta.team_pod;
 
 export default function SimulationClient() {
   const { weights } = useWeights();
@@ -26,7 +27,7 @@ export default function SimulationClient() {
     setTimeout(() => {
       const composite = computeComposite(weights);
       const ratings = composite.map((c) => ({ teamId: c.teamId, mean: c.ratingScaleMean, sigma: c.ratingScaleSigma }));
-      const results = runSwissSimulation(ratings, liveTrials, Date.now() & 0xffffffff, DAY1_PAIRINGS);
+      const results = runSwissSimulation(ratings, liveTrials, Date.now() & 0xffffffff, DAY1_PAIRINGS, TEAM_POD);
       const teams: Record<string, Record<string, number>> = {};
       for (const r of results) teams[String(r.teamId)] = r.outcomePct;
       setLiveResult({ trials: liveTrials, teams });
@@ -40,7 +41,7 @@ export default function SimulationClient() {
 
   function advanceChance(outcomePct: Record<string, number> | undefined): number {
     if (!outcomePct) return 0;
-    return (outcomePct["4-0"] ?? 0) + (outcomePct["4-1"] ?? 0) + (outcomePct["3-2"] ?? 0);
+    return OUTCOME_ORDER.filter((o) => o.startsWith("4-")).reduce((sum, o) => sum + (outcomePct[o] ?? 0), 0);
   }
 
   const orderedTeamIds = useMemo(() => {

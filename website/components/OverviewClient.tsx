@@ -10,11 +10,12 @@ import { runSwissSimulation } from "@/lib/simulate";
 import { precomputedSimulation } from "@/data/simulation";
 
 const LIVE_TRIALS = 4000;
-const OUTCOME_ORDER = ["4-0", "4-1", "3-2", "2-3", "1-4", "0-4"];
+const OUTCOME_ORDER = ["4-0", "4-1", "4-2", "4-3", "3-4", "2-4", "1-4", "0-4"];
 const DAY1_PAIRINGS = precomputedSimulation.meta.day1_pairings as [number, number][];
+const TEAM_POD = precomputedSimulation.meta.team_pod;
 
 function advanceChance(outcomePct: Record<string, number>): number {
-  return (outcomePct["4-0"] ?? 0) + (outcomePct["4-1"] ?? 0) + (outcomePct["3-2"] ?? 0);
+  return OUTCOME_ORDER.filter((o) => o.startsWith("4-")).reduce((sum, o) => sum + (outcomePct[o] ?? 0), 0);
 }
 
 export default function OverviewClient() {
@@ -31,7 +32,7 @@ export default function OverviewClient() {
     const startHandle = setTimeout(() => setIsSimulating(true), 0);
     const runHandle = setTimeout(() => {
       const ratings = composite.map((c) => ({ teamId: c.teamId, mean: c.ratingScaleMean, sigma: c.ratingScaleSigma }));
-      const results = runSwissSimulation(ratings, LIVE_TRIALS, 42, DAY1_PAIRINGS);
+      const results = runSwissSimulation(ratings, LIVE_TRIALS, 42, DAY1_PAIRINGS, TEAM_POD);
       const map = new Map(results.map((r) => [r.teamId, r.outcomePct]));
       setLiveOutcomes(map);
       setIsSimulating(false);
@@ -69,7 +70,8 @@ export default function OverviewClient() {
           </span>
         </div>
         <p className={styles.legend}>
-          Records show wins-losses. 4-0 through 3-2 advance to the next stage; 2-3 through 0-4 are eliminated.
+          Records show wins-losses. Reaching 4 wins first advances them; reaching 4 losses first eliminates them (so
+          it can take anywhere from 4 to 7 matches to know either way).
         </p>
         <div className="tableWrap">
           <table className="dataTable">
@@ -81,7 +83,7 @@ export default function OverviewClient() {
                 <th title="Based on an independent rating service that tracks pro matches">Track record</th>
                 <th title="How well they've played recently">Recent form</th>
                 <th title="What other prediction sites think of them">Experts</th>
-                <th title="Chance of finishing 3-2 or better">Chance to advance</th>
+                <th title="Chance of reaching 4 wins before 4 losses">Chance to advance</th>
                 {OUTCOME_ORDER.map((o) => (
                   <th key={o}>{o}</th>
                 ))}

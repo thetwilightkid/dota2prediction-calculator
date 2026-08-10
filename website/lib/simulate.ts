@@ -6,9 +6,19 @@
 import { Rng } from "./rng";
 import { winProbability } from "./rating";
 
-export const MAX_ROUNDS = 5;
+// Real TI Swiss format has no fixed round cap - a team plays until it hits 4
+// wins or 4 losses. 7 is a safe upper bound (after 7 games nobody can still be
+// at a non-terminal 3-3), matching prediction/simulate_group_stage.py - this
+// used to be capped at 5, which was cutting trials off before teams reached a
+// real terminal record (confirmed wrong against real TI2025 results, which
+// include 4-2 and 3-3-then-decided records needing 6-7 games).
+export const MAX_ROUNDS = 7;
 export const WINS_TO_ADVANCE = 4;
 export const LOSSES_TO_ELIMINATE = 4;
+// TI's group stage splits teams into two hidden seeding pods for the first
+// few rounds (confirmed from real TI2025 results and TI2026's announced Day 1
+// pairings, which are 100% within-pod) - see PODDED_ROUNDS usage below.
+export const PODDED_ROUNDS = 3;
 
 export interface TeamRatingInput {
   teamId: number;
@@ -19,7 +29,7 @@ export interface TeamRatingInput {
 type Record2 = [wins: number, losses: number];
 
 function isTerminal([wins, losses]: Record2): boolean {
-  return wins >= WINS_TO_ADVANCE || losses >= LOSSES_TO_ELIMINATE || wins + losses >= MAX_ROUNDS;
+  return wins >= WINS_TO_ADVANCE || losses >= LOSSES_TO_ELIMINATE;
 }
 
 interface Pairing {
@@ -77,7 +87,8 @@ function pairRound(
 function runSwissTrial(
   trialRatings: Map<number, number>,
   rng: Rng,
-  forcedFirstRound?: [number, number][]
+  forcedFirstRound?: [number, number][],
+  teamPod?: Record<string, string>
 ): Map<number, Record2> {
   const records = new Map<number, Record2>();
   const allTeams = [...trialRatings.keys()];
@@ -88,10 +99,20 @@ function runSwissTrial(
     const active = allTeams.filter((tid) => !isTerminal(records.get(tid)!));
     if (active.length === 0) break;
 
-    const pairings: Pairing[] =
-      round === 0 && forcedFirstRound
-        ? forcedFirstRound.map(([a, b]) => ({ a, b, updateB: true }))
-        : pairRound(active, allTeams, records, playedPairs, rng);
+    let pairings: Pairing[];
+    if (round === 0 && forcedFirstRound) {
+      pairings = forcedFirstRound.map(([a, b]) => ({ a, b, updateB: true }));
+    } else if (round < PODDED_ROUNDS && teamPod) {
+      // within-pod only - safe to assume all 8 pod members are still active
+      // this early (nobody can be terminal before round 4)
+      pairings = [];
+      for (const pod of ["A", "B"]) {
+        const podTeams = active.filter((tid) => teamPod[String(tid)] === pod);
+        pairings.push(...pairRound(podTeams, podTeams, records, playedPairs, rng));
+      }
+    } else {
+      pairings = pairRound(active, allTeams, records, playedPairs, rng);
+    }
     for (const { a, b, updateB } of pairings) {
       playedPairs.add(`${a}_${b}`);
       const pA = winProbability(trialRatings.get(a)!, trialRatings.get(b)!);
@@ -119,7 +140,8 @@ export function runSwissSimulation(
   teamRatings: TeamRatingInput[],
   numTrials: number,
   seed = 42,
-  forcedFirstRound?: [number, number][]
+  forcedFirstRound?: [number, number][],
+  teamPod?: Record<string, string>
 ): SimulationOutcome[] {
   const rng = new Rng(seed);
   const outcomeCounts = new Map<number, Map<string, number>>();
@@ -129,7 +151,7 @@ export function runSwissSimulation(
     const trialRatings = new Map<number, number>();
     for (const t of teamRatings) trialRatings.set(t.teamId, rng.gauss(t.mean, t.sigma));
 
-    const finalRecords = runSwissTrial(trialRatings, rng, forcedFirstRound);
+    const finalRecords = runSwissTrial(trialRatings, rng, forcedFirstRound, teamPod);
     for (const [tid, [w, l]] of finalRecords) {
       const key = `${w}-${l}`;
       const counts = outcomeCounts.get(tid)!;
