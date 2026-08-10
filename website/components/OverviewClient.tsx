@@ -54,16 +54,21 @@ export default function OverviewClient() {
   }, [composite, displayOutcomes]);
 
   // Keeps the groups card in step with whatever the rankings table is showing
-  // (precomputed by default, live re-simulation once a slider moves).
+  // (precomputed by default, live re-simulation/re-rating once a slider moves).
   const advanceByTeam = useMemo(() => {
     const map = new Map<number, number>();
     for (const r of rows) map.set(r.teamId, advanceChance(r.outcomePct));
     return map;
   }, [rows]);
+  const powerByTeam = useMemo(() => {
+    const map = new Map<number, number>();
+    for (const c of composite) map.set(c.teamId, c.ratingScaleMean);
+    return map;
+  }, [composite]);
 
   return (
     <>
-      <GroupsCard advanceByTeam={advanceByTeam} />
+      <GroupsCard advanceByTeam={advanceByTeam} powerByTeam={powerByTeam} />
       <div className={styles.layout}>
         <div className={styles.tableSection}>
           <div className={styles.tableHeader}>

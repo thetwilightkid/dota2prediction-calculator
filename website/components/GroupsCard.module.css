@@ -58,6 +58,45 @@
   font-size: 12px;
 }
 
+.groupStat {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.groupStatLabel {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.groupStatValue {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+}
+
+.groupStatStrong {
+  color: var(--accent-2);
+}
+
+.groupStatTag {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent-2);
+  border: 1px solid var(--accent-2);
+  border-radius: 999px;
+  padding: 1px 6px;
+}
+
 .teamList {
   display: grid;
   gap: 2px;
