@@ -42,55 +42,55 @@ export const heroTrends: Record<string, HeroTrend> = {
   "1": {
     "hero_name": "Anti-Mage",
     "pub_pick_trend": [
-      74852,
-      81359,
-      87340,
-      76848,
       76078,
       74330,
-      70302
+      76079,
+      72184,
+      86183,
+      85626,
+      59366
     ],
     "pub_win_trend": [
-      37536,
-      40317,
-      43562,
-      38392,
       37972,
       36970,
-      35203
+      38092,
+      36053,
+      42993,
+      42558,
+      29569
     ],
-    "early_window_pick_count": 243551,
-    "early_window_win_rate": 0.4985,
-    "late_window_pick_count": 220710,
-    "late_window_win_rate": 0.499,
-    "winrate_delta": 0.0005,
+    "early_window_pick_count": 226487,
+    "early_window_win_rate": 0.4991,
+    "late_window_pick_count": 231175,
+    "late_window_win_rate": 0.498,
+    "winrate_delta": -0.0011,
     "patch_notes_context": null
   },
   "2": {
     "hero_name": "Axe",
     "pub_pick_trend": [
-      113962,
-      125348,
-      132081,
-      110723,
       110285,
       107268,
-      102798
+      110639,
+      106380,
+      129156,
+      127645,
+      87250
     ],
     "pub_win_trend": [
-      57274,
-      62848,
-      66023,
-      55833,
       55480,
       54091,
-      51436
+      55440,
+      53304,
+      64672,
+      64091,
+      43627
     ],
-    "early_window_pick_count": 371391,
-    "early_window_win_rate": 0.5012,
-    "late_window_pick_count": 320351,
-    "late_window_win_rate": 0.5026,
-    "winrate_delta": 0.0014,
+    "early_window_pick_count": 328192,
+    "early_window_win_rate": 0.5028,
+    "late_window_pick_count": 344051,
+    "late_window_win_rate": 0.5011,
+    "winrate_delta": -0.0017,
     "patch_notes_context": {
       "direction": "nerfed",
       "summary": "Base agility reduced from 20 to 18; Battle Hunger damage scaling reduced across levels."
@@ -99,28 +99,28 @@ export const heroTrends: Record<string, HeroTrend> = {
   "3": {
     "hero_name": "Bane",
     "pub_pick_trend": [
-      25399,
-      27426,
-      30271,
-      25867,
       26456,
       25422,
-      23898
+      25728,
+      24371,
+      29747,
+      28347,
+      19712
     ],
     "pub_win_trend": [
-      12614,
-      13619,
-      14892,
-      12838,
       13028,
       12502,
-      11866
+      12812,
+      12045,
+      14791,
+      14079,
+      9771
     ],
-    "early_window_pick_count": 83096,
-    "early_window_win_rate": 0.4949,
-    "late_window_pick_count": 75776,
-    "late_window_win_rate": 0.4935,
-    "winrate_delta": -0.0014,
+    "early_window_pick_count": 77606,
+    "early_window_win_rate": 0.4941,
+    "late_window_pick_count": 77806,
+    "late_window_win_rate": 0.4966,
+    "winrate_delta": 0.0026,
     "patch_notes_context": {
       "direction": "mixed",
       "summary": "Ichor stacks increased to 6 but status resistance reduction per stack lowered; Nightmare duration reduced; Scepter upgrade cooldown bonus decreased."
@@ -129,82 +129,82 @@ export const heroTrends: Record<string, HeroTrend> = {
   "4": {
     "hero_name": "Bloodseeker",
     "pub_pick_trend": [
-      25817,
-      28246,
-      30341,
-      26514,
       26176,
       25413,
-      24686
+      26811,
+      25426,
+      30549,
+      31057,
+      21598
     ],
     "pub_win_trend": [
-      13461,
-      14649,
-      15785,
-      13603,
       13432,
       13186,
-      12709
+      13743,
+      13082,
+      15746,
+      16161,
+      11254
     ],
-    "early_window_pick_count": 84404,
-    "early_window_win_rate": 0.5201,
-    "late_window_pick_count": 76275,
-    "late_window_win_rate": 0.5156,
-    "winrate_delta": -0.0045,
+    "early_window_pick_count": 78400,
+    "early_window_win_rate": 0.5148,
+    "late_window_pick_count": 83204,
+    "late_window_win_rate": 0.5187,
+    "winrate_delta": 0.0039,
     "patch_notes_context": null
   },
   "5": {
     "hero_name": "Crystal Maiden",
     "pub_pick_trend": [
-      80649,
-      89769,
-      94699,
-      79791,
       79093,
       77205,
-      75038
+      80609,
+      78349,
+      96334,
+      95602,
+      65776
     ],
     "pub_win_trend": [
-      41683,
-      46303,
-      48848,
-      41330,
       40737,
       39728,
-      38696
+      41615,
+      40286,
+      49689,
+      49422,
+      33870
     ],
-    "early_window_pick_count": 265117,
-    "early_window_win_rate": 0.5161,
-    "late_window_pick_count": 231336,
-    "late_window_win_rate": 0.5151,
-    "winrate_delta": -0.001,
+    "early_window_pick_count": 236907,
+    "early_window_win_rate": 0.5153,
+    "late_window_pick_count": 257712,
+    "late_window_win_rate": 0.516,
+    "winrate_delta": 0.0007,
     "patch_notes_context": null
   },
   "6": {
     "hero_name": "Drow Ranger",
     "pub_pick_trend": [
-      95126,
-      102972,
-      105018,
-      86076,
       84356,
       80161,
-      75308
+      80693,
+      76267,
+      93004,
+      91349,
+      62280
     ],
     "pub_win_trend": [
-      44073,
-      47783,
-      48769,
-      39880,
       39197,
       37170,
-      35014
+      37516,
+      35435,
+      43362,
+      42343,
+      28903
     ],
-    "early_window_pick_count": 303116,
-    "early_window_win_rate": 0.4639,
-    "late_window_pick_count": 239825,
-    "late_window_win_rate": 0.4644,
-    "winrate_delta": 0.0005,
+    "early_window_pick_count": 245210,
+    "early_window_win_rate": 0.4644,
+    "late_window_pick_count": 246633,
+    "late_window_win_rate": 0.4647,
+    "winrate_delta": 0.0003,
     "patch_notes_context": {
       "direction": "nerfed",
       "summary": "Multishot damage factor reduced from 1/1.2/1.4/1.6 to 0.8/1/1.2/1.4; mana cost increased."
@@ -213,109 +213,109 @@ export const heroTrends: Record<string, HeroTrend> = {
   "7": {
     "hero_name": "Earthshaker",
     "pub_pick_trend": [
-      87480,
-      97095,
-      103889,
-      90443,
       89930,
       88305,
-      85140
+      91714,
+      88655,
+      107734,
+      106461,
+      74595
     ],
     "pub_win_trend": [
-      44425,
-      48843,
-      52485,
-      45694,
       45533,
       44642,
-      42948
+      46302,
+      44730,
+      54479,
+      53577,
+      37423
     ],
-    "early_window_pick_count": 288464,
-    "early_window_win_rate": 0.5053,
-    "late_window_pick_count": 263375,
-    "late_window_win_rate": 0.5055,
-    "winrate_delta": 0.0002,
+    "early_window_pick_count": 269949,
+    "early_window_win_rate": 0.5056,
+    "late_window_pick_count": 288790,
+    "late_window_win_rate": 0.5038,
+    "winrate_delta": -0.0018,
     "patch_notes_context": null
   },
   "8": {
     "hero_name": "Juggernaut",
     "pub_pick_trend": [
-      98076,
-      109122,
-      115081,
-      96246,
       95837,
       94118,
-      91173
+      97564,
+      94910,
+      116772,
+      114830,
+      81052
     ],
     "pub_win_trend": [
-      50665,
-      56658,
-      59648,
-      49636,
       49457,
       48742,
-      47282
+      50600,
+      49179,
+      60386,
+      59778,
+      41941
     ],
-    "early_window_pick_count": 322279,
-    "early_window_win_rate": 0.5181,
-    "late_window_pick_count": 281128,
-    "late_window_win_rate": 0.5175,
-    "winrate_delta": -0.0006,
+    "early_window_pick_count": 287519,
+    "early_window_win_rate": 0.5175,
+    "late_window_pick_count": 312654,
+    "late_window_win_rate": 0.5185,
+    "winrate_delta": 0.001,
     "patch_notes_context": null
   },
   "9": {
     "hero_name": "Mirana",
     "pub_pick_trend": [
-      51770,
-      58161,
-      61726,
-      52804,
       52791,
       52702,
-      52507
+      55991,
+      55537,
+      67065,
+      66992,
+      46968
     ],
     "pub_win_trend": [
-      26477,
-      29849,
-      31704,
-      27212,
       27229,
       27226,
-      27160
+      28916,
+      28638,
+      34550,
+      34444,
+      24197
     ],
-    "early_window_pick_count": 171657,
-    "early_window_win_rate": 0.5128,
-    "late_window_pick_count": 158000,
-    "late_window_win_rate": 0.5166,
-    "winrate_delta": 0.0037,
+    "early_window_pick_count": 161484,
+    "early_window_win_rate": 0.5163,
+    "late_window_pick_count": 181025,
+    "late_window_win_rate": 0.5148,
+    "winrate_delta": -0.0015,
     "patch_notes_context": null
   },
   "10": {
     "hero_name": "Morphling",
     "pub_pick_trend": [
-      24040,
-      27164,
-      29197,
-      28100,
       28539,
       26721,
-      25100
+      27123,
+      26179,
+      30306,
+      29554,
+      20907
     ],
     "pub_win_trend": [
-      11326,
-      13004,
-      13978,
-      13298,
       13441,
       12706,
-      11760
+      12748,
+      12403,
+      14331,
+      14036,
+      9893
     ],
-    "early_window_pick_count": 80401,
-    "early_window_win_rate": 0.4765,
-    "late_window_pick_count": 80360,
-    "late_window_win_rate": 0.4717,
-    "winrate_delta": -0.0047,
+    "early_window_pick_count": 82383,
+    "early_window_win_rate": 0.4721,
+    "late_window_pick_count": 80767,
+    "late_window_win_rate": 0.4737,
+    "winrate_delta": 0.0016,
     "patch_notes_context": {
       "direction": "buffed",
       "summary": "Morph cooldown reduced from 140/100/60 to 125/90/55."
@@ -324,379 +324,379 @@ export const heroTrends: Record<string, HeroTrend> = {
   "11": {
     "hero_name": "Shadow Fiend",
     "pub_pick_trend": [
-      106656,
-      116362,
-      123916,
-      110333,
       110157,
       107217,
-      102641
+      111155,
+      104780,
+      125889,
+      123313,
+      86880
     ],
     "pub_win_trend": [
-      51389,
-      55821,
-      59474,
-      52984,
       53388,
       51667,
-      49513
+      53625,
+      50576,
+      60593,
+      59519,
+      42069
     ],
-    "early_window_pick_count": 346934,
-    "early_window_win_rate": 0.4804,
-    "late_window_pick_count": 320015,
-    "late_window_win_rate": 0.483,
-    "winrate_delta": 0.0026,
+    "early_window_pick_count": 328529,
+    "early_window_win_rate": 0.483,
+    "late_window_pick_count": 336082,
+    "late_window_win_rate": 0.4826,
+    "winrate_delta": -0.0004,
     "patch_notes_context": null
   },
   "12": {
     "hero_name": "Phantom Lancer",
     "pub_pick_trend": [
-      66273,
-      70680,
-      76541,
-      68945,
       68315,
       67587,
-      66357
+      71776,
+      68735,
+      84313,
+      83387,
+      59731
     ],
     "pub_win_trend": [
-      35386,
-      37657,
-      40583,
-      36738,
       36647,
       35944,
-      35254
+      38150,
+      36152,
+      44424,
+      43719,
+      31148
     ],
-    "early_window_pick_count": 213494,
-    "early_window_win_rate": 0.5322,
-    "late_window_pick_count": 202259,
-    "late_window_win_rate": 0.5332,
-    "winrate_delta": 0.001,
+    "early_window_pick_count": 207678,
+    "early_window_win_rate": 0.5332,
+    "late_window_pick_count": 227431,
+    "late_window_win_rate": 0.5245,
+    "winrate_delta": -0.0087,
     "patch_notes_context": null
   },
   "13": {
     "hero_name": "Puck",
     "pub_pick_trend": [
-      24356,
-      26064,
-      27499,
-      24594,
       23798,
       23358,
-      23033
+      24769,
+      23612,
+      27852,
+      27362,
+      19443
     ],
     "pub_win_trend": [
-      11256,
-      12098,
-      12826,
-      11644,
       10990,
       10821,
-      10661
+      11462,
+      10951,
+      12953,
+      12819,
+      9110
     ],
-    "early_window_pick_count": 77919,
-    "early_window_win_rate": 0.4643,
-    "late_window_pick_count": 70189,
-    "late_window_win_rate": 0.4626,
-    "winrate_delta": -0.0017,
+    "early_window_pick_count": 71925,
+    "early_window_win_rate": 0.4626,
+    "late_window_pick_count": 74657,
+    "late_window_win_rate": 0.4672,
+    "winrate_delta": 0.0046,
     "patch_notes_context": null
   },
   "14": {
     "hero_name": "Pudge",
     "pub_pick_trend": [
-      167824,
-      183187,
-      194285,
-      166537,
       164764,
       161523,
-      155339
+      167365,
+      161069,
+      196043,
+      194856,
+      135114
     ],
     "pub_win_trend": [
-      86553,
-      94373,
-      100147,
-      85414,
       84873,
       83090,
-      79966
+      86184,
+      82961,
+      100779,
+      100495,
+      69611
     ],
-    "early_window_pick_count": 545296,
-    "early_window_win_rate": 0.5155,
-    "late_window_pick_count": 481626,
-    "late_window_win_rate": 0.5148,
-    "winrate_delta": -0.0007,
+    "early_window_pick_count": 493652,
+    "early_window_win_rate": 0.5148,
+    "late_window_pick_count": 526013,
+    "late_window_win_rate": 0.515,
+    "winrate_delta": 0.0001,
     "patch_notes_context": null
   },
   "15": {
     "hero_name": "Razor",
     "pub_pick_trend": [
-      36217,
-      41277,
-      42997,
-      36156,
       35534,
       36072,
-      37323
+      39825,
+      39177,
+      48280,
+      48295,
+      33843
     ],
     "pub_win_trend": [
-      18237,
-      20949,
-      21795,
-      18310,
       17851,
       18316,
-      18955
+      20196,
+      19757,
+      24368,
+      24458,
+      17044
     ],
-    "early_window_pick_count": 120491,
-    "early_window_win_rate": 0.5061,
-    "late_window_pick_count": 108929,
-    "late_window_win_rate": 0.506,
-    "winrate_delta": -0.0001,
+    "early_window_pick_count": 111431,
+    "early_window_win_rate": 0.5058,
+    "late_window_pick_count": 130418,
+    "late_window_win_rate": 0.5051,
+    "winrate_delta": -0.0007,
     "patch_notes_context": null
   },
   "16": {
     "hero_name": "Sand King",
     "pub_pick_trend": [
-      26559,
-      30520,
-      32595,
-      28583,
       28915,
       28013,
-      27137
+      29292,
+      28218,
+      34857,
+      34569,
+      23592
     ],
     "pub_win_trend": [
-      13171,
-      15013,
-      15936,
-      14139,
       14198,
       13811,
-      13254
+      14303,
+      13911,
+      17003,
+      16901,
+      11670
     ],
-    "early_window_pick_count": 89674,
-    "early_window_win_rate": 0.492,
-    "late_window_pick_count": 84065,
-    "late_window_win_rate": 0.4908,
-    "winrate_delta": -0.0012,
+    "early_window_pick_count": 86220,
+    "early_window_win_rate": 0.4907,
+    "late_window_pick_count": 93018,
+    "late_window_win_rate": 0.4899,
+    "winrate_delta": -0.0008,
     "patch_notes_context": null
   },
   "17": {
     "hero_name": "Storm Spirit",
     "pub_pick_trend": [
-      45173,
-      47658,
-      49088,
-      41514,
       41563,
       40987,
-      39725
+      42612,
+      39584,
+      47758,
+      45786,
+      32276
     ],
     "pub_win_trend": [
-      20656,
-      22040,
-      22836,
-      19123,
       19341,
       18923,
-      18280
+      19615,
+      18405,
+      22343,
+      21206,
+      15118
     ],
-    "early_window_pick_count": 141919,
-    "early_window_win_rate": 0.4618,
-    "late_window_pick_count": 122275,
-    "late_window_win_rate": 0.4624,
-    "winrate_delta": 0.0007,
+    "early_window_pick_count": 125162,
+    "early_window_win_rate": 0.4624,
+    "late_window_pick_count": 125820,
+    "late_window_win_rate": 0.4663,
+    "winrate_delta": 0.0038,
     "patch_notes_context": null
   },
   "18": {
     "hero_name": "Sven",
     "pub_pick_trend": [
-      43137,
-      48550,
-      51869,
-      44635,
       44807,
       44616,
-      43723
+      46924,
+      45942,
+      56981,
+      57899,
+      41507
     ],
     "pub_win_trend": [
-      21707,
-      24728,
-      26493,
-      22779,
       22748,
       22729,
-      22335
+      23955,
+      23370,
+      29134,
+      29410,
+      21335
     ],
-    "early_window_pick_count": 143556,
-    "early_window_win_rate": 0.508,
-    "late_window_pick_count": 133146,
-    "late_window_win_rate": 0.5093,
-    "winrate_delta": 0.0013,
+    "early_window_pick_count": 136347,
+    "early_window_win_rate": 0.5092,
+    "late_window_pick_count": 156387,
+    "late_window_win_rate": 0.5108,
+    "winrate_delta": 0.0015,
     "patch_notes_context": null
   },
   "19": {
     "hero_name": "Tiny",
     "pub_pick_trend": [
-      34284,
-      37219,
-      39522,
-      32922,
       32791,
       32197,
-      32043
+      34433,
+      32434,
+      38846,
+      37956,
+      26569
     ],
     "pub_win_trend": [
-      15339,
-      16585,
-      17555,
-      14691,
       14670,
       14290,
-      14311
+      15373,
+      14434,
+      17552,
+      16875,
+      11843
     ],
-    "early_window_pick_count": 111025,
-    "early_window_win_rate": 0.4457,
-    "late_window_pick_count": 97031,
-    "late_window_win_rate": 0.446,
-    "winrate_delta": 0.0003,
+    "early_window_pick_count": 99421,
+    "early_window_win_rate": 0.4459,
+    "late_window_pick_count": 103371,
+    "late_window_win_rate": 0.4476,
+    "winrate_delta": 0.0017,
     "patch_notes_context": null
   },
   "20": {
     "hero_name": "Vengeful Spirit",
     "pub_pick_trend": [
-      79660,
-      87959,
-      91502,
-      75816,
       76033,
       74418,
-      71861
+      76989,
+      75272,
+      91750,
+      90663,
+      62044
     ],
     "pub_win_trend": [
-      42636,
-      47166,
-      48819,
-      40275,
       40561,
       39761,
-      38226
+      40997,
+      40041,
+      48888,
+      48090,
+      32899
     ],
-    "early_window_pick_count": 259121,
-    "early_window_win_rate": 0.535,
-    "late_window_pick_count": 222312,
-    "late_window_win_rate": 0.5333,
-    "winrate_delta": -0.0017,
+    "early_window_pick_count": 227440,
+    "early_window_win_rate": 0.5334,
+    "late_window_pick_count": 244457,
+    "late_window_win_rate": 0.5313,
+    "winrate_delta": -0.0021,
     "patch_notes_context": null
   },
   "21": {
     "hero_name": "Windranger",
     "pub_pick_trend": [
-      85948,
-      97082,
-      104150,
-      87507,
       86563,
       85352,
-      84458
+      90698,
+      88752,
+      108045,
+      107918,
+      74545
     ],
     "pub_win_trend": [
-      41832,
-      46882,
-      50283,
-      42700,
       42143,
       41355,
-      41319
+      44326,
+      43036,
+      52679,
+      52583,
+      36165
     ],
-    "early_window_pick_count": 287180,
-    "early_window_win_rate": 0.484,
-    "late_window_pick_count": 256373,
-    "late_window_win_rate": 0.4869,
-    "winrate_delta": 0.0029,
+    "early_window_pick_count": 262613,
+    "early_window_win_rate": 0.4867,
+    "late_window_pick_count": 290508,
+    "late_window_win_rate": 0.4868,
+    "winrate_delta": 0.0001,
     "patch_notes_context": null
   },
   "22": {
     "hero_name": "Zeus",
     "pub_pick_trend": [
-      99118,
-      109300,
-      114152,
-      94826,
       92959,
       90757,
-      87590
+      93782,
+      90394,
+      110727,
+      110129,
+      75892
     ],
     "pub_win_trend": [
-      49309,
-      54543,
-      57182,
-      47401,
       46375,
       45174,
-      43729
+      46785,
+      45179,
+      55288,
+      55156,
+      37986
     ],
-    "early_window_pick_count": 322570,
-    "early_window_win_rate": 0.4992,
-    "late_window_pick_count": 271306,
-    "late_window_win_rate": 0.4986,
-    "winrate_delta": -0.0006,
+    "early_window_pick_count": 277498,
+    "early_window_win_rate": 0.4985,
+    "late_window_pick_count": 296748,
+    "late_window_win_rate": 0.5002,
+    "winrate_delta": 0.0017,
     "patch_notes_context": null
   },
   "23": {
     "hero_name": "Kunkka",
     "pub_pick_trend": [
-      29360,
-      33035,
-      35300,
-      29635,
       29545,
       29561,
-      28377
+      30734,
+      29528,
+      36032,
+      35335,
+      24128
     ],
     "pub_win_trend": [
-      14457,
-      16433,
-      17453,
-      14632,
       14787,
       14661,
-      14007
+      15167,
+      14719,
+      17960,
+      17501,
+      11968
     ],
-    "early_window_pick_count": 97695,
-    "early_window_win_rate": 0.4948,
-    "late_window_pick_count": 87483,
+    "early_window_pick_count": 89840,
+    "early_window_win_rate": 0.4966,
+    "late_window_pick_count": 95495,
     "late_window_win_rate": 0.4967,
-    "winrate_delta": 0.0019,
+    "winrate_delta": 0.0001,
     "patch_notes_context": null
   },
   "25": {
     "hero_name": "Lina",
     "pub_pick_trend": [
-      106236,
-      118232,
-      126165,
-      108524,
       108390,
       105774,
-      101983
+      109793,
+      107568,
+      132342,
+      133370,
+      91991
     ],
     "pub_win_trend": [
-      52076,
-      58244,
-      61818,
-      53468,
       53522,
       52030,
-      50606
+      54439,
+      52990,
+      65443,
+      65814,
+      45644
     ],
-    "early_window_pick_count": 350633,
-    "early_window_win_rate": 0.4909,
-    "late_window_pick_count": 316147,
-    "late_window_win_rate": 0.4939,
-    "winrate_delta": 0.003,
+    "early_window_pick_count": 323957,
+    "early_window_win_rate": 0.4939,
+    "late_window_pick_count": 357703,
+    "late_window_win_rate": 0.4945,
+    "winrate_delta": 0.0007,
     "patch_notes_context": {
       "direction": "nerfed",
       "summary": "Base agility reduced from 23 to 21."
@@ -705,298 +705,298 @@ export const heroTrends: Record<string, HeroTrend> = {
   "26": {
     "hero_name": "Lion",
     "pub_pick_trend": [
-      153617,
-      169911,
-      179666,
-      152173,
       151565,
       149335,
-      143981
+      155521,
+      148484,
+      182089,
+      182483,
+      125639
     ],
     "pub_win_trend": [
-      75144,
-      83041,
-      87637,
-      74034,
       74120,
       73352,
-      70168
+      75862,
+      72653,
+      88444,
+      88921,
+      61364
     ],
-    "early_window_pick_count": 503194,
-    "early_window_win_rate": 0.4885,
-    "late_window_pick_count": 444881,
-    "late_window_win_rate": 0.4892,
-    "winrate_delta": 0.0007,
+    "early_window_pick_count": 456421,
+    "early_window_win_rate": 0.4893,
+    "late_window_pick_count": 490211,
+    "late_window_win_rate": 0.487,
+    "winrate_delta": -0.0023,
     "patch_notes_context": null
   },
   "27": {
     "hero_name": "Shadow Shaman",
     "pub_pick_trend": [
-      95166,
-      104707,
-      111464,
-      94944,
       94080,
       92372,
-      89175
+      96579,
+      91866,
+      112381,
+      112085,
+      76840
     ],
     "pub_win_trend": [
-      49592,
-      54118,
-      58020,
-      49466,
       48942,
       47883,
-      46548
+      50380,
+      47941,
+      58090,
+      58149,
+      39993
     ],
-    "early_window_pick_count": 311337,
-    "early_window_win_rate": 0.5195,
-    "late_window_pick_count": 275627,
-    "late_window_win_rate": 0.5202,
-    "winrate_delta": 0.0007,
+    "early_window_pick_count": 283031,
+    "early_window_win_rate": 0.5201,
+    "late_window_pick_count": 301306,
+    "late_window_win_rate": 0.5185,
+    "winrate_delta": -0.0016,
     "patch_notes_context": null
   },
   "28": {
     "hero_name": "Slardar",
     "pub_pick_trend": [
-      47911,
-      53747,
-      55995,
-      47658,
       47585,
       46459,
-      44638
+      47923,
+      46207,
+      56808,
+      56182,
+      39028
     ],
     "pub_win_trend": [
-      24035,
-      26963,
-      28232,
-      24038,
       24074,
       23557,
-      22511
+      24151,
+      23267,
+      28481,
+      28223,
+      19706
     ],
-    "early_window_pick_count": 157653,
-    "early_window_win_rate": 0.5026,
-    "late_window_pick_count": 138682,
-    "late_window_win_rate": 0.5058,
-    "winrate_delta": 0.0032,
+    "early_window_pick_count": 141967,
+    "early_window_win_rate": 0.5056,
+    "late_window_pick_count": 152018,
+    "late_window_win_rate": 0.5026,
+    "winrate_delta": -0.003,
     "patch_notes_context": null
   },
   "29": {
     "hero_name": "Tidehunter",
     "pub_pick_trend": [
-      52894,
-      58023,
-      60524,
-      50796,
       50055,
       49232,
-      47420
+      50662,
+      49772,
+      61431,
+      60287,
+      41725
     ],
     "pub_win_trend": [
-      26649,
-      29067,
-      30333,
-      25787,
       25348,
       24692,
-      23769
+      25413,
+      24989,
+      30774,
+      30328,
+      20902
     ],
-    "early_window_pick_count": 171441,
-    "early_window_win_rate": 0.5019,
-    "late_window_pick_count": 146707,
-    "late_window_win_rate": 0.5031,
-    "winrate_delta": 0.0012,
+    "early_window_pick_count": 149949,
+    "early_window_win_rate": 0.5032,
+    "late_window_pick_count": 163443,
+    "late_window_win_rate": 0.5017,
+    "winrate_delta": -0.0015,
     "patch_notes_context": null
   },
   "30": {
     "hero_name": "Witch Doctor",
     "pub_pick_trend": [
-      93599,
-      103587,
-      110839,
-      92906,
       92386,
       90804,
-      87331
+      94209,
+      90528,
+      111349,
+      111359,
+      74870
     ],
     "pub_win_trend": [
-      48527,
-      53465,
-      57519,
-      48245,
       48017,
       46922,
-      45077
+      48569,
+      46983,
+      58021,
+      57994,
+      38878
     ],
-    "early_window_pick_count": 308025,
-    "early_window_win_rate": 0.5179,
-    "late_window_pick_count": 270521,
-    "late_window_win_rate": 0.5176,
-    "winrate_delta": -0.0003,
+    "early_window_pick_count": 277399,
+    "early_window_win_rate": 0.5173,
+    "late_window_pick_count": 297578,
+    "late_window_win_rate": 0.5205,
+    "winrate_delta": 0.0032,
     "patch_notes_context": null
   },
   "31": {
     "hero_name": "Lich",
     "pub_pick_trend": [
-      64962,
-      73469,
-      77204,
-      64534,
       64510,
       63271,
-      60865
+      65460,
+      63709,
+      79156,
+      79088,
+      53485
     ],
     "pub_win_trend": [
-      34176,
-      38374,
-      40550,
-      34024,
       33822,
       33267,
-      32081
+      34518,
+      33410,
+      41531,
+      41586,
+      28059
     ],
-    "early_window_pick_count": 215635,
-    "early_window_win_rate": 0.5245,
-    "late_window_pick_count": 188646,
-    "late_window_win_rate": 0.5257,
-    "winrate_delta": 0.0012,
+    "early_window_pick_count": 193241,
+    "early_window_win_rate": 0.5258,
+    "late_window_pick_count": 211729,
+    "late_window_win_rate": 0.5251,
+    "winrate_delta": -0.0007,
     "patch_notes_context": null
   },
   "32": {
     "hero_name": "Riki",
     "pub_pick_trend": [
-      34732,
-      39284,
-      41549,
-      35267,
       35843,
       34923,
-      33268
+      35556,
+      34947,
+      43162,
+      42736,
+      30116
     ],
     "pub_win_trend": [
-      18355,
-      20759,
-      21830,
-      18700,
       18815,
       18399,
-      17441
+      18671,
+      18427,
+      22770,
+      22473,
+      15815
     ],
-    "early_window_pick_count": 115565,
-    "early_window_win_rate": 0.5274,
-    "late_window_pick_count": 104034,
-    "late_window_win_rate": 0.5254,
-    "winrate_delta": -0.002,
+    "early_window_pick_count": 106322,
+    "early_window_win_rate": 0.5256,
+    "late_window_pick_count": 116014,
+    "late_window_win_rate": 0.5263,
+    "winrate_delta": 0.0007,
     "patch_notes_context": null
   },
   "33": {
     "hero_name": "Enigma",
     "pub_pick_trend": [
-      22190,
-      24776,
-      26870,
-      24275,
       24232,
       23685,
-      22541
+      24579,
+      23209,
+      28853,
+      28185,
+      19572
     ],
     "pub_win_trend": [
-      11183,
-      12483,
-      13548,
-      12275,
       12295,
       12044,
-      11548
+      12579,
+      11687,
+      14758,
+      14385,
+      9933
     ],
-    "early_window_pick_count": 73836,
-    "early_window_win_rate": 0.504,
-    "late_window_pick_count": 70458,
-    "late_window_win_rate": 0.5093,
-    "winrate_delta": 0.0053,
+    "early_window_pick_count": 72496,
+    "early_window_win_rate": 0.5092,
+    "late_window_pick_count": 76610,
+    "late_window_win_rate": 0.5101,
+    "winrate_delta": 0.0008,
     "patch_notes_context": null
   },
   "34": {
     "hero_name": "Tinker",
     "pub_pick_trend": [
-      33844,
-      34242,
-      37155,
-      34960,
       34626,
       33677,
-      31579
+      34245,
+      31862,
+      37117,
+      35975,
+      25842
     ],
     "pub_win_trend": [
-      15944,
-      16098,
-      17473,
-      16402,
       16122,
       15775,
-      14600
+      15903,
+      14981,
+      17533,
+      16835,
+      12057
     ],
-    "early_window_pick_count": 105241,
-    "early_window_win_rate": 0.4705,
-    "late_window_pick_count": 99882,
-    "late_window_win_rate": 0.4655,
-    "winrate_delta": -0.005,
+    "early_window_pick_count": 102548,
+    "early_window_win_rate": 0.4661,
+    "late_window_pick_count": 98934,
+    "late_window_win_rate": 0.4693,
+    "winrate_delta": 0.0031,
     "patch_notes_context": null
   },
   "35": {
     "hero_name": "Sniper",
     "pub_pick_trend": [
-      123750,
-      139102,
-      147834,
-      122444,
       121883,
       120013,
-      115406
+      124005,
+      119647,
+      148014,
+      147899,
+      100636
     ],
     "pub_win_trend": [
-      62781,
-      70199,
-      74905,
-      62164,
       61396,
       60423,
-      58253
+      62543,
+      60158,
+      74247,
+      74922,
+      50674
     ],
-    "early_window_pick_count": 410686,
-    "early_window_win_rate": 0.5062,
-    "late_window_pick_count": 357302,
+    "early_window_pick_count": 365901,
+    "early_window_win_rate": 0.5039,
+    "late_window_pick_count": 396549,
     "late_window_win_rate": 0.504,
-    "winrate_delta": -0.0022,
+    "winrate_delta": 0.0001,
     "patch_notes_context": null
   },
   "36": {
     "hero_name": "Necrophos",
     "pub_pick_trend": [
-      101077,
-      113879,
-      118318,
-      98862,
       98523,
       96266,
-      93451
+      100267,
+      96539,
+      118073,
+      116190,
+      80967
     ],
     "pub_win_trend": [
-      51148,
-      58188,
-      60148,
-      50218,
       50166,
       48908,
-      47837
+      51224,
+      49179,
+      60452,
+      59103,
+      41317
     ],
-    "early_window_pick_count": 333274,
-    "early_window_win_rate": 0.5085,
-    "late_window_pick_count": 288240,
-    "late_window_win_rate": 0.5097,
-    "winrate_delta": 0.0011,
+    "early_window_pick_count": 295056,
+    "early_window_win_rate": 0.5094,
+    "late_window_pick_count": 315230,
+    "late_window_win_rate": 0.5103,
+    "winrate_delta": 0.0009,
     "patch_notes_context": {
       "direction": "nerfed",
       "summary": "Sadist regeneration scaling adjusted downward."
@@ -1005,55 +1005,55 @@ export const heroTrends: Record<string, HeroTrend> = {
   "37": {
     "hero_name": "Warlock",
     "pub_pick_trend": [
-      39584,
-      45356,
-      47955,
-      39465,
       39195,
       38084,
-      37192
+      39853,
+      38676,
+      47784,
+      47742,
+      32087
     ],
     "pub_win_trend": [
-      19678,
-      22522,
-      23985,
-      19591,
       19522,
       18864,
-      18362
+      19656,
+      19229,
+      23603,
+      23736,
+      15900
     ],
-    "early_window_pick_count": 132895,
-    "early_window_win_rate": 0.498,
-    "late_window_pick_count": 114471,
-    "late_window_win_rate": 0.4957,
-    "winrate_delta": -0.0023,
+    "early_window_pick_count": 117132,
+    "early_window_win_rate": 0.4955,
+    "late_window_pick_count": 127613,
+    "late_window_win_rate": 0.4956,
+    "winrate_delta": 0,
     "patch_notes_context": null
   },
   "38": {
     "hero_name": "Beastmaster",
     "pub_pick_trend": [
-      18084,
-      19349,
-      20700,
-      18554,
       18118,
       17982,
-      17357
+      18825,
+      17536,
+      21015,
+      20219,
+      14487
     ],
     "pub_win_trend": [
-      8089,
-      8614,
-      9261,
-      8376,
       8138,
       8120,
-      7803
+      8457,
+      7974,
+      9377,
+      9094,
+      6470
     ],
-    "early_window_pick_count": 58133,
-    "early_window_win_rate": 0.4466,
-    "late_window_pick_count": 53457,
-    "late_window_win_rate": 0.4501,
-    "winrate_delta": 0.0035,
+    "early_window_pick_count": 54925,
+    "early_window_win_rate": 0.45,
+    "late_window_pick_count": 55721,
+    "late_window_win_rate": 0.4476,
+    "winrate_delta": -0.0024,
     "patch_notes_context": {
       "direction": "nerfed",
       "summary": "Level 20 talent (+30 Damage Aura) reduced to +25; Level 25 talent (-25s Primal Roar cooldown) reduced to -20s."
@@ -1062,136 +1062,136 @@ export const heroTrends: Record<string, HeroTrend> = {
   "39": {
     "hero_name": "Queen of Pain",
     "pub_pick_trend": [
-      67840,
-      72808,
-      76373,
-      63912,
       62626,
       61568,
-      59488
+      63472,
+      61465,
+      75663,
+      74530,
+      51566
     ],
     "pub_win_trend": [
-      32090,
-      34539,
-      35816,
-      29884,
       29321,
       29213,
-      28122
+      30018,
+      29114,
+      35499,
+      34990,
+      24344
     ],
-    "early_window_pick_count": 217021,
-    "early_window_win_rate": 0.4721,
-    "late_window_pick_count": 183682,
-    "late_window_win_rate": 0.4718,
-    "winrate_delta": -0.0003,
+    "early_window_pick_count": 187666,
+    "early_window_win_rate": 0.4719,
+    "late_window_pick_count": 201759,
+    "late_window_win_rate": 0.47,
+    "winrate_delta": -0.0018,
     "patch_notes_context": null
   },
   "40": {
     "hero_name": "Venomancer",
     "pub_pick_trend": [
-      47843,
-      54215,
-      57376,
-      47284,
       46607,
       46273,
-      45072
+      48070,
+      46834,
+      57821,
+      58246,
+      39477
     ],
     "pub_win_trend": [
-      22976,
-      25898,
-      27473,
-      22551,
       22233,
       21909,
-      21438
+      22918,
+      22101,
+      27451,
+      27592,
+      18977
     ],
-    "early_window_pick_count": 159434,
-    "early_window_win_rate": 0.4789,
-    "late_window_pick_count": 137952,
-    "late_window_win_rate": 0.4754,
-    "winrate_delta": -0.0035,
+    "early_window_pick_count": 140950,
+    "early_window_win_rate": 0.4758,
+    "late_window_pick_count": 155544,
+    "late_window_win_rate": 0.4759,
+    "winrate_delta": 0.0001,
     "patch_notes_context": null
   },
   "41": {
     "hero_name": "Faceless Void",
     "pub_pick_trend": [
-      60201,
-      67318,
-      71300,
-      59428,
       59671,
       58390,
-      55916
+      60132,
+      58942,
+      71711,
+      71020,
+      48578
     ],
     "pub_win_trend": [
-      29611,
-      33149,
-      35209,
-      29584,
       29201,
       28603,
-      27782
+      29889,
+      28916,
+      35017,
+      34738,
+      23721
     ],
-    "early_window_pick_count": 198819,
-    "early_window_win_rate": 0.4928,
-    "late_window_pick_count": 173977,
-    "late_window_win_rate": 0.4919,
-    "winrate_delta": -0.0008,
+    "early_window_pick_count": 178193,
+    "early_window_win_rate": 0.4921,
+    "late_window_pick_count": 191309,
+    "late_window_win_rate": 0.4886,
+    "winrate_delta": -0.0035,
     "patch_notes_context": null
   },
   "42": {
     "hero_name": "Wraith King",
     "pub_pick_trend": [
-      75785,
-      86156,
-      91379,
-      75494,
       75741,
       74506,
-      72760
+      77728,
+      75024,
+      92223,
+      91351,
+      63489
     ],
     "pub_win_trend": [
-      41621,
-      47368,
-      50021,
-      41443,
       41389,
       40787,
-      39799
+      42582,
+      41221,
+      50845,
+      50191,
+      34720
     ],
-    "early_window_pick_count": 253320,
-    "early_window_win_rate": 0.5488,
-    "late_window_pick_count": 223007,
-    "late_window_win_rate": 0.547,
-    "winrate_delta": -0.0018,
+    "early_window_pick_count": 227975,
+    "early_window_win_rate": 0.5472,
+    "late_window_pick_count": 247063,
+    "late_window_win_rate": 0.5495,
+    "winrate_delta": 0.0022,
     "patch_notes_context": null
   },
   "43": {
     "hero_name": "Death Prophet",
     "pub_pick_trend": [
-      25722,
-      29127,
-      30321,
-      25352,
       25482,
       24707,
-      24275
+      26022,
+      24729,
+      30655,
+      30324,
+      20550
     ],
     "pub_win_trend": [
-      12482,
-      14338,
-      14679,
-      12305,
       12439,
       12061,
-      11882
+      12719,
+      12015,
+      14803,
+      14703,
+      9915
     ],
-    "early_window_pick_count": 85170,
-    "early_window_win_rate": 0.4872,
-    "late_window_pick_count": 74464,
-    "late_window_win_rate": 0.4886,
-    "winrate_delta": 0.0013,
+    "early_window_pick_count": 76211,
+    "early_window_win_rate": 0.4884,
+    "late_window_pick_count": 81529,
+    "late_window_win_rate": 0.4835,
+    "winrate_delta": -0.0048,
     "patch_notes_context": {
       "direction": "buffed",
       "summary": "Agility gain increased from 2 to 2.3."
@@ -1200,163 +1200,163 @@ export const heroTrends: Record<string, HeroTrend> = {
   "44": {
     "hero_name": "Phantom Assassin",
     "pub_pick_trend": [
-      89385,
-      98195,
-      105433,
-      88797,
       88194,
       86590,
-      83076
+      89665,
+      86362,
+      105817,
+      104894,
+      71250
     ],
     "pub_win_trend": [
-      45739,
-      50322,
-      54019,
-      45621,
       45336,
       44358,
-      42946
+      46425,
+      44717,
+      54230,
+      53855,
+      36458
     ],
-    "early_window_pick_count": 293013,
-    "early_window_win_rate": 0.5122,
-    "late_window_pick_count": 257860,
-    "late_window_win_rate": 0.5144,
-    "winrate_delta": 0.0022,
+    "early_window_pick_count": 264449,
+    "early_window_win_rate": 0.5147,
+    "late_window_pick_count": 281961,
+    "late_window_win_rate": 0.5126,
+    "winrate_delta": -0.0021,
     "patch_notes_context": null
   },
   "45": {
     "hero_name": "Pugna",
     "pub_pick_trend": [
-      25265,
-      28966,
-      30340,
-      26038,
       25940,
       25188,
-      24715
+      26598,
+      25499,
+      30924,
+      30520,
+      21209
     ],
     "pub_win_trend": [
-      12638,
-      14553,
-      15193,
-      13047,
       12823,
       12731,
-      12245
+      13219,
+      13033,
+      15603,
+      15215,
+      10736
     ],
-    "early_window_pick_count": 84571,
-    "early_window_win_rate": 0.5012,
-    "late_window_pick_count": 75843,
-    "late_window_win_rate": 0.4984,
-    "winrate_delta": -0.0028,
+    "early_window_pick_count": 77726,
+    "early_window_win_rate": 0.4988,
+    "late_window_pick_count": 82653,
+    "late_window_win_rate": 0.5028,
+    "winrate_delta": 0.0039,
     "patch_notes_context": null
   },
   "46": {
     "hero_name": "Templar Assassin",
     "pub_pick_trend": [
-      25113,
-      27378,
-      29124,
-      26606,
       26483,
       26422,
-      25453
+      27636,
+      25606,
+      31041,
+      29994,
+      20710
     ],
     "pub_win_trend": [
-      11672,
-      12708,
-      13479,
-      12293,
       12203,
       12379,
-      11807
+      12802,
+      11920,
+      14409,
+      13917,
+      9526
     ],
-    "early_window_pick_count": 81615,
-    "early_window_win_rate": 0.4639,
-    "late_window_pick_count": 78358,
-    "late_window_win_rate": 0.4644,
-    "winrate_delta": 0.0005,
+    "early_window_pick_count": 80541,
+    "early_window_win_rate": 0.4642,
+    "late_window_pick_count": 81745,
+    "late_window_win_rate": 0.463,
+    "winrate_delta": -0.0011,
     "patch_notes_context": null
   },
   "47": {
     "hero_name": "Viper",
     "pub_pick_trend": [
-      49333,
-      56282,
-      58850,
-      48843,
       48649,
       47964,
-      46169
+      49380,
+      48231,
+      59185,
+      58530,
+      40112
     ],
     "pub_win_trend": [
-      24152,
-      27367,
-      28757,
-      23873,
       23831,
       23433,
-      22370
+      23898,
+      23522,
+      28693,
+      28390,
+      19548
     ],
-    "early_window_pick_count": 164465,
-    "early_window_win_rate": 0.4881,
-    "late_window_pick_count": 142782,
-    "late_window_win_rate": 0.4877,
-    "winrate_delta": -0.0004,
+    "early_window_pick_count": 145993,
+    "early_window_win_rate": 0.4874,
+    "late_window_pick_count": 157827,
+    "late_window_win_rate": 0.4855,
+    "winrate_delta": -0.0019,
     "patch_notes_context": null
   },
   "48": {
     "hero_name": "Luna",
     "pub_pick_trend": [
-      65800,
-      71673,
-      75892,
-      66510,
       64756,
       62813,
-      59896
+      64359,
+      62483,
+      76298,
+      76346,
+      53061
     ],
     "pub_win_trend": [
-      33218,
-      36070,
-      38071,
-      33258,
       32794,
       31402,
-      29939
+      32140,
+      31372,
+      38184,
+      38187,
+      26526
     ],
-    "early_window_pick_count": 213365,
-    "early_window_win_rate": 0.5032,
-    "late_window_pick_count": 187465,
-    "late_window_win_rate": 0.5021,
-    "winrate_delta": -0.001,
+    "early_window_pick_count": 191928,
+    "early_window_win_rate": 0.5019,
+    "late_window_pick_count": 205705,
+    "late_window_win_rate": 0.5002,
+    "winrate_delta": -0.0017,
     "patch_notes_context": null
   },
   "49": {
     "hero_name": "Dragon Knight",
     "pub_pick_trend": [
-      23898,
-      27147,
-      28954,
-      23177,
       22909,
       22696,
-      22620
+      24317,
+      24071,
+      30831,
+      31489,
+      21457
     ],
     "pub_win_trend": [
-      11908,
-      13580,
-      14492,
-      11644,
       11489,
       11490,
-      11451
+      12282,
+      12056,
+      15437,
+      15954,
+      10796
     ],
-    "early_window_pick_count": 79999,
-    "early_window_win_rate": 0.4998,
-    "late_window_pick_count": 68225,
-    "late_window_win_rate": 0.5047,
-    "winrate_delta": 0.0049,
+    "early_window_pick_count": 69922,
+    "early_window_win_rate": 0.5043,
+    "late_window_pick_count": 83777,
+    "late_window_win_rate": 0.5036,
+    "winrate_delta": -0.0007,
     "patch_notes_context": {
       "direction": "buffed",
       "summary": "Wyrm's Wrath area-of-effect bonus increased from 25/50/75/100 to 30/60/90/120."
@@ -1365,55 +1365,55 @@ export const heroTrends: Record<string, HeroTrend> = {
   "50": {
     "hero_name": "Dazzle",
     "pub_pick_trend": [
-      29553,
-      31767,
-      34201,
-      29571,
       29383,
       28929,
-      27423
+      29754,
+      28810,
+      34714,
+      34055,
+      23028
     ],
     "pub_win_trend": [
-      14917,
-      16141,
-      17195,
-      15155,
       15010,
       14760,
-      13998
+      15204,
+      14608,
+      17566,
+      17256,
+      11751
     ],
-    "early_window_pick_count": 95521,
-    "early_window_win_rate": 0.5052,
-    "late_window_pick_count": 85735,
-    "late_window_win_rate": 0.5105,
-    "winrate_delta": 0.0053,
+    "early_window_pick_count": 88066,
+    "early_window_win_rate": 0.5107,
+    "late_window_pick_count": 91797,
+    "late_window_win_rate": 0.5073,
+    "winrate_delta": -0.0033,
     "patch_notes_context": null
   },
   "51": {
     "hero_name": "Clockwerk",
     "pub_pick_trend": [
-      22220,
-      25227,
-      25970,
-      21597,
       21783,
       20545,
-      20002
+      21589,
+      20715,
+      24938,
+      24589,
+      16885
     ],
     "pub_win_trend": [
-      10808,
-      12008,
-      12690,
-      10416,
       10482,
       9914,
-      9730
+      10524,
+      10053,
+      12160,
+      11861,
+      8194
     ],
-    "early_window_pick_count": 73417,
-    "early_window_win_rate": 0.4836,
-    "late_window_pick_count": 62330,
-    "late_window_win_rate": 0.4833,
-    "winrate_delta": -0.0003,
+    "early_window_pick_count": 63917,
+    "early_window_win_rate": 0.4838,
+    "late_window_pick_count": 66412,
+    "late_window_win_rate": 0.4851,
+    "winrate_delta": 0.0013,
     "patch_notes_context": {
       "direction": "nerfed",
       "summary": "Mana Shock mana burn reduced; attack push distance decreased progressively; Power Cogs no longer block neutral camps."
@@ -1422,163 +1422,163 @@ export const heroTrends: Record<string, HeroTrend> = {
   "52": {
     "hero_name": "Leshrac",
     "pub_pick_trend": [
-      16937,
-      18420,
-      18371,
-      15841,
       15807,
       15741,
-      14736
+      15928,
+      14808,
+      17993,
+      17799,
+      12566
     ],
     "pub_win_trend": [
-      8769,
-      9444,
-      9460,
-      8154,
       8069,
       8004,
-      7574
+      8175,
+      7464,
+      9103,
+      8942,
+      6423
     ],
-    "early_window_pick_count": 53728,
-    "early_window_win_rate": 0.5151,
-    "late_window_pick_count": 46284,
-    "late_window_win_rate": 0.5109,
-    "winrate_delta": -0.0041,
+    "early_window_pick_count": 47476,
+    "early_window_win_rate": 0.5107,
+    "late_window_pick_count": 48358,
+    "late_window_win_rate": 0.506,
+    "winrate_delta": -0.0048,
     "patch_notes_context": null
   },
   "53": {
     "hero_name": "Nature's Prophet",
     "pub_pick_trend": [
-      50688,
-      55693,
-      59424,
-      50819,
       50202,
       49593,
-      46735
+      50434,
+      47528,
+      57916,
+      57080,
+      40008
     ],
     "pub_win_trend": [
-      22166,
-      24249,
-      25594,
-      22058,
       22065,
       21486,
-      20303
+      21892,
+      20571,
+      25215,
+      24750,
+      17441
     ],
-    "early_window_pick_count": 165805,
-    "early_window_win_rate": 0.4343,
-    "late_window_pick_count": 146530,
-    "late_window_win_rate": 0.4358,
-    "winrate_delta": 0.0015,
+    "early_window_pick_count": 150229,
+    "early_window_win_rate": 0.4356,
+    "late_window_pick_count": 155004,
+    "late_window_win_rate": 0.4349,
+    "winrate_delta": -0.0008,
     "patch_notes_context": null
   },
   "54": {
     "hero_name": "Lifestealer",
     "pub_pick_trend": [
-      67556,
-      74093,
-      79327,
-      68281,
       68379,
       68999,
-      67228
+      72184,
+      69233,
+      84617,
+      84463,
+      58536
     ],
     "pub_win_trend": [
-      35726,
-      39128,
-      42026,
-      35769,
       36223,
       36318,
-      35090
+      37729,
+      36591,
+      44360,
+      44541,
+      30649
     ],
-    "early_window_pick_count": 220976,
-    "early_window_win_rate": 0.5289,
-    "late_window_pick_count": 204606,
-    "late_window_win_rate": 0.526,
-    "winrate_delta": -0.0029,
+    "early_window_pick_count": 209562,
+    "early_window_win_rate": 0.5262,
+    "late_window_pick_count": 227616,
+    "late_window_win_rate": 0.5252,
+    "winrate_delta": -0.001,
     "patch_notes_context": null
   },
   "55": {
     "hero_name": "Dark Seer",
     "pub_pick_trend": [
-      18467,
-      21446,
-      22596,
-      20290,
       19672,
       18843,
-      17732
+      19124,
+      18039,
+      21715,
+      21541,
+      15371
     ],
     "pub_win_trend": [
-      9050,
-      10455,
-      11186,
-      10007,
       9623,
       9372,
-      8723
+      9389,
+      8869,
+      10820,
+      10662,
+      7506
     ],
-    "early_window_pick_count": 62509,
-    "early_window_win_rate": 0.491,
-    "late_window_pick_count": 56247,
-    "late_window_win_rate": 0.4928,
-    "winrate_delta": 0.0018,
+    "early_window_pick_count": 57639,
+    "early_window_win_rate": 0.4924,
+    "late_window_pick_count": 58627,
+    "late_window_win_rate": 0.4944,
+    "winrate_delta": 0.002,
     "patch_notes_context": null
   },
   "56": {
     "hero_name": "Clinkz",
     "pub_pick_trend": [
-      32204,
-      35799,
-      37839,
-      31974,
       32467,
       31950,
-      30193
+      32515,
+      31360,
+      38066,
+      37493,
+      25739
     ],
     "pub_win_trend": [
-      16037,
-      17907,
-      18797,
-      15899,
       16147,
       16003,
-      15057
+      16187,
+      15611,
+      18899,
+      18630,
+      12688
     ],
-    "early_window_pick_count": 105842,
-    "early_window_win_rate": 0.4983,
-    "late_window_pick_count": 94610,
-    "late_window_win_rate": 0.499,
-    "winrate_delta": 0.0007,
+    "early_window_pick_count": 96932,
+    "early_window_win_rate": 0.4987,
+    "late_window_pick_count": 101298,
+    "late_window_win_rate": 0.4957,
+    "winrate_delta": -0.0029,
     "patch_notes_context": null
   },
   "57": {
     "hero_name": "Omniknight",
     "pub_pick_trend": [
-      17889,
-      19280,
-      20330,
-      16686,
       16838,
       16515,
-      15454
+      16710,
+      15989,
+      19752,
+      19343,
+      13247
     ],
     "pub_win_trend": [
-      9022,
-      9647,
-      10354,
-      8331,
       8720,
       8345,
-      7790
+      8400,
+      8020,
+      9962,
+      9812,
+      6792
     ],
-    "early_window_pick_count": 57499,
-    "early_window_win_rate": 0.5048,
-    "late_window_pick_count": 48807,
-    "late_window_win_rate": 0.5093,
-    "winrate_delta": 0.0045,
+    "early_window_pick_count": 50063,
+    "early_window_win_rate": 0.5087,
+    "late_window_pick_count": 52342,
+    "late_window_win_rate": 0.5075,
+    "winrate_delta": -0.0011,
     "patch_notes_context": {
       "direction": "buffed",
       "summary": "Purification damage-to-heal factor increased from 0.35 to 0.4."
@@ -1587,82 +1587,82 @@ export const heroTrends: Record<string, HeroTrend> = {
   "58": {
     "hero_name": "Enchantress",
     "pub_pick_trend": [
-      14752,
-      16688,
-      18726,
-      16226,
       16887,
       18026,
-      17399
+      18607,
+      17786,
+      20950,
+      20358,
+      14131
     ],
     "pub_win_trend": [
-      7144,
-      8044,
-      9111,
-      7845,
       8046,
       8518,
-      8271
+      8837,
+      8571,
+      10134,
+      9710,
+      6872
     ],
-    "early_window_pick_count": 50166,
-    "early_window_win_rate": 0.4844,
-    "late_window_pick_count": 52312,
-    "late_window_win_rate": 0.4747,
-    "winrate_delta": -0.0096,
+    "early_window_pick_count": 53520,
+    "early_window_win_rate": 0.4746,
+    "late_window_pick_count": 55439,
+    "late_window_win_rate": 0.4819,
+    "winrate_delta": 0.0073,
     "patch_notes_context": null
   },
   "59": {
     "hero_name": "Huskar",
     "pub_pick_trend": [
-      25142,
-      27731,
-      28645,
-      24669,
       24954,
       24597,
-      23657
+      25511,
+      24202,
+      28773,
+      28154,
+      19807
     ],
     "pub_win_trend": [
-      11360,
-      12731,
-      12906,
-      11255,
       11421,
       11212,
-      10745
+      11615,
+      10995,
+      13041,
+      12806,
+      8970
     ],
-    "early_window_pick_count": 81518,
-    "early_window_win_rate": 0.4539,
-    "late_window_pick_count": 73208,
-    "late_window_win_rate": 0.4559,
-    "winrate_delta": 0.0021,
+    "early_window_pick_count": 75062,
+    "early_window_win_rate": 0.4563,
+    "late_window_pick_count": 76734,
+    "late_window_win_rate": 0.4537,
+    "winrate_delta": -0.0025,
     "patch_notes_context": null
   },
   "60": {
     "hero_name": "Night Stalker",
     "pub_pick_trend": [
-      44325,
-      48185,
-      50917,
-      43256,
       44070,
       42828,
-      40481
+      43480,
+      41452,
+      51473,
+      51358,
+      36596
     ],
     "pub_win_trend": [
-      23056,
-      24951,
-      26326,
-      22426,
       22814,
       22279,
-      21018
+      22522,
+      21550,
+      26694,
+      26864,
+      19111
     ],
-    "early_window_pick_count": 143427,
-    "early_window_win_rate": 0.5183,
-    "late_window_pick_count": 127379,
-    "late_window_win_rate": 0.519,
-    "winrate_delta": 0.0007,
+    "early_window_pick_count": 130378,
+    "early_window_win_rate": 0.5186,
+    "late_window_pick_count": 139427,
+    "late_window_win_rate": 0.5212,
+    "winrate_delta": 0.0026,
     "patch_notes_context": {
       "direction": "nerfed",
       "summary": "Crippling Fear radius reduced from 375 to 350."
@@ -1671,109 +1671,109 @@ export const heroTrends: Record<string, HeroTrend> = {
   "61": {
     "hero_name": "Broodmother",
     "pub_pick_trend": [
-      13835,
-      14409,
-      15557,
-      14833,
       14833,
       14328,
-      13526
+      14725,
+      13455,
+      15590,
+      14850,
+      10982
     ],
     "pub_win_trend": [
-      6965,
-      7236,
-      7781,
-      7345,
       7472,
       7203,
-      6735
+      7324,
+      6647,
+      7727,
+      7439,
+      5513
     ],
-    "early_window_pick_count": 43801,
-    "early_window_win_rate": 0.5019,
-    "late_window_pick_count": 42687,
-    "late_window_win_rate": 0.5016,
-    "winrate_delta": -0.0003,
+    "early_window_pick_count": 43886,
+    "early_window_win_rate": 0.5013,
+    "late_window_pick_count": 41422,
+    "late_window_win_rate": 0.4992,
+    "winrate_delta": -0.002,
     "patch_notes_context": null
   },
   "62": {
     "hero_name": "Bounty Hunter",
     "pub_pick_trend": [
-      28668,
-      32209,
-      35068,
-      30498,
       30492,
       30092,
-      28981
+      31075,
+      29890,
+      37107,
+      36816,
+      26375
     ],
     "pub_win_trend": [
-      14795,
-      16887,
-      18014,
-      15607,
       15620,
       15667,
-      15172
+      16247,
+      15409,
+      19315,
+      18937,
+      13761
     ],
-    "early_window_pick_count": 95945,
-    "early_window_win_rate": 0.518,
-    "late_window_pick_count": 89565,
-    "late_window_win_rate": 0.5187,
-    "winrate_delta": 0.0008,
+    "early_window_pick_count": 91659,
+    "early_window_win_rate": 0.5186,
+    "late_window_pick_count": 100298,
+    "late_window_win_rate": 0.5186,
+    "winrate_delta": 0,
     "patch_notes_context": null
   },
   "63": {
     "hero_name": "Weaver",
     "pub_pick_trend": [
-      36591,
-      41305,
-      43838,
-      36988,
       36488,
       35353,
-      33496
+      36151,
+      34845,
+      42497,
+      42933,
+      29248
     ],
     "pub_win_trend": [
-      17451,
-      19662,
-      20940,
-      17750,
       17282,
       16709,
-      15944
+      17198,
+      16469,
+      20174,
+      20459,
+      13824
     ],
-    "early_window_pick_count": 121734,
-    "early_window_win_rate": 0.4769,
-    "late_window_pick_count": 105337,
-    "late_window_win_rate": 0.474,
-    "winrate_delta": -0.0028,
+    "early_window_pick_count": 107992,
+    "early_window_win_rate": 0.474,
+    "late_window_pick_count": 114678,
+    "late_window_win_rate": 0.4749,
+    "winrate_delta": 0.0009,
     "patch_notes_context": null
   },
   "64": {
     "hero_name": "Jakiro",
     "pub_pick_trend": [
-      60116,
-      66911,
-      70977,
-      57681,
       57230,
       55360,
-      53640
+      57784,
+      54792,
+      68529,
+      68340,
+      45817
     ],
     "pub_win_trend": [
-      28866,
-      32010,
-      34376,
-      27857,
       27858,
       26987,
-      25890
+      27903,
+      26635,
+      33383,
+      32884,
+      22184
     ],
-    "early_window_pick_count": 198004,
-    "early_window_win_rate": 0.4811,
-    "late_window_pick_count": 166230,
-    "late_window_win_rate": 0.4857,
-    "winrate_delta": 0.0046,
+    "early_window_pick_count": 170374,
+    "early_window_win_rate": 0.4857,
+    "late_window_pick_count": 182686,
+    "late_window_win_rate": 0.4842,
+    "winrate_delta": -0.0015,
     "patch_notes_context": {
       "direction": "buffed",
       "summary": "Intelligence gain increased from 3 to 3.3."
@@ -1782,28 +1782,28 @@ export const heroTrends: Record<string, HeroTrend> = {
   "65": {
     "hero_name": "Batrider",
     "pub_pick_trend": [
-      8114,
-      8970,
-      9322,
-      8126,
       8206,
       7929,
-      7669
+      8296,
+      7615,
+      9280,
+      8847,
+      6346
     ],
     "pub_win_trend": [
-      3547,
-      3993,
-      4083,
-      3572,
       3556,
       3546,
-      3367
+      3624,
+      3348,
+      4186,
+      3891,
+      2788
     ],
-    "early_window_pick_count": 26406,
-    "early_window_win_rate": 0.4402,
-    "late_window_pick_count": 23804,
-    "late_window_win_rate": 0.4398,
-    "winrate_delta": -0.0004,
+    "early_window_pick_count": 24431,
+    "early_window_win_rate": 0.439,
+    "late_window_pick_count": 24473,
+    "late_window_win_rate": 0.444,
+    "winrate_delta": 0.0049,
     "patch_notes_context": {
       "direction": "nerfed",
       "summary": "Smoldering Resin no longer applies when attacking allied units."
@@ -1812,82 +1812,82 @@ export const heroTrends: Record<string, HeroTrend> = {
   "66": {
     "hero_name": "Chen",
     "pub_pick_trend": [
-      3055,
-      3271,
-      3434,
-      3044,
       3101,
       3097,
-      2939
+      3185,
+      3059,
+      3549,
+      3547,
+      2573
     ],
     "pub_win_trend": [
-      1371,
-      1491,
-      1545,
-      1388,
       1370,
       1384,
-      1289
+      1386,
+      1388,
+      1623,
+      1622,
+      1166
     ],
-    "early_window_pick_count": 9760,
-    "early_window_win_rate": 0.4515,
-    "late_window_pick_count": 9137,
-    "late_window_win_rate": 0.4425,
-    "winrate_delta": -0.0091,
+    "early_window_pick_count": 9383,
+    "early_window_win_rate": 0.4412,
+    "late_window_pick_count": 9669,
+    "late_window_win_rate": 0.4562,
+    "winrate_delta": 0.015,
     "patch_notes_context": null
   },
   "67": {
     "hero_name": "Spectre",
     "pub_pick_trend": [
-      79050,
-      87159,
-      91991,
-      78582,
       78919,
       77540,
-      73627
+      79053,
+      76511,
+      96608,
+      97376,
+      67843
     ],
     "pub_win_trend": [
-      42884,
-      47530,
-      50190,
-      42796,
       42842,
       42000,
-      39905
+      42889,
+      41409,
+      52411,
+      53098,
+      36691
     ],
-    "early_window_pick_count": 258200,
-    "early_window_win_rate": 0.5446,
-    "late_window_pick_count": 230086,
-    "late_window_win_rate": 0.5422,
-    "winrate_delta": -0.0024,
+    "early_window_pick_count": 235512,
+    "early_window_win_rate": 0.5424,
+    "late_window_pick_count": 261827,
+    "late_window_win_rate": 0.5431,
+    "winrate_delta": 0.0008,
     "patch_notes_context": null
   },
   "68": {
     "hero_name": "Ancient Apparition",
     "pub_pick_trend": [
-      43176,
-      50500,
-      52684,
-      43499,
       42539,
       41857,
-      40107
+      43141,
+      41887,
+      52271,
+      51661,
+      34799
     ],
     "pub_win_trend": [
-      22585,
-      26177,
-      27200,
-      22543,
       21938,
       21662,
-      20618
+      22155,
+      21777,
+      27094,
+      26837,
+      17961
     ],
-    "early_window_pick_count": 146360,
-    "early_window_win_rate": 0.519,
-    "late_window_pick_count": 124503,
-    "late_window_win_rate": 0.5158,
-    "winrate_delta": -0.0032,
+    "early_window_pick_count": 127537,
+    "early_window_win_rate": 0.5156,
+    "late_window_pick_count": 138731,
+    "late_window_win_rate": 0.5182,
+    "winrate_delta": 0.0026,
     "patch_notes_context": {
       "direction": "buffed",
       "summary": "Ice Blast cooldown reduced from 60/50/40 to 50/45/40."
@@ -1896,28 +1896,28 @@ export const heroTrends: Record<string, HeroTrend> = {
   "69": {
     "hero_name": "Doom",
     "pub_pick_trend": [
-      32948,
-      36728,
-      37909,
-      30696,
       30396,
       30896,
-      30128
+      32103,
+      31484,
+      39587,
+      38778,
+      27463
     ],
     "pub_win_trend": [
-      15385,
-      17221,
-      17785,
-      14225,
       14178,
       14433,
-      14194
+      15119,
+      14671,
+      18664,
+      18289,
+      12988
     ],
-    "early_window_pick_count": 107585,
-    "early_window_win_rate": 0.4684,
-    "late_window_pick_count": 91420,
-    "late_window_win_rate": 0.4682,
-    "winrate_delta": -0.0002,
+    "early_window_pick_count": 93395,
+    "early_window_win_rate": 0.4682,
+    "late_window_pick_count": 105828,
+    "late_window_win_rate": 0.4719,
+    "winrate_delta": 0.0037,
     "patch_notes_context": {
       "direction": "mixed",
       "summary": "Base attack range reduced from 200 to 175; Infernal Blade base damage increased but its health-scaling component rescaled downward."
@@ -1926,82 +1926,82 @@ export const heroTrends: Record<string, HeroTrend> = {
   "70": {
     "hero_name": "Ursa",
     "pub_pick_trend": [
-      41202,
-      45004,
-      47877,
-      41097,
       40574,
       39300,
-      38070
+      41536,
+      38779,
+      47201,
+      46534,
+      31302
     ],
     "pub_win_trend": [
-      19512,
-      21307,
-      22622,
-      19630,
       19174,
       18663,
-      18076
+      19712,
+      18300,
+      22327,
+      22016,
+      14814
     ],
-    "early_window_pick_count": 134083,
-    "early_window_win_rate": 0.4731,
-    "late_window_pick_count": 117944,
-    "late_window_win_rate": 0.4741,
-    "winrate_delta": 0.0009,
+    "early_window_pick_count": 121410,
+    "early_window_win_rate": 0.474,
+    "late_window_pick_count": 125037,
+    "late_window_win_rate": 0.4731,
+    "winrate_delta": -0.0009,
     "patch_notes_context": null
   },
   "71": {
     "hero_name": "Spirit Breaker",
     "pub_pick_trend": [
-      90489,
-      100999,
-      106856,
-      90967,
       92159,
       89797,
-      87810
+      94760,
+      90237,
+      110162,
+      110023,
+      76468
     ],
     "pub_win_trend": [
-      46855,
-      52107,
-      55500,
-      47036,
       48095,
       46906,
-      45475
+      49106,
+      46922,
+      57002,
+      57049,
+      40017
     ],
-    "early_window_pick_count": 298344,
-    "early_window_win_rate": 0.5177,
-    "late_window_pick_count": 269766,
-    "late_window_win_rate": 0.5207,
-    "winrate_delta": 0.003,
+    "early_window_pick_count": 276716,
+    "early_window_win_rate": 0.5208,
+    "late_window_pick_count": 296653,
+    "late_window_win_rate": 0.5194,
+    "winrate_delta": -0.0014,
     "patch_notes_context": null
   },
   "72": {
     "hero_name": "Gyrocopter",
     "pub_pick_trend": [
-      19347,
-      21493,
-      22304,
-      18776,
       18285,
       17426,
-      16984
+      18331,
+      18211,
+      23093,
+      22740,
+      15534
     ],
     "pub_win_trend": [
-      8589,
-      9680,
-      10029,
-      8428,
       8210,
       7862,
-      7715
+      8320,
+      8254,
+      10361,
+      10209,
+      7051
     ],
-    "early_window_pick_count": 63144,
-    "early_window_win_rate": 0.4482,
-    "late_window_pick_count": 52695,
-    "late_window_win_rate": 0.4514,
-    "winrate_delta": 0.0033,
+    "early_window_pick_count": 54042,
+    "early_window_win_rate": 0.4514,
+    "late_window_pick_count": 61367,
+    "late_window_win_rate": 0.4501,
+    "winrate_delta": -0.0013,
     "patch_notes_context": {
       "direction": "buffed",
       "summary": "Rocket Barrage mana cost reduced from 85 to 75; Homing Missile cooldown flattened and mana cost reduced."
@@ -2010,55 +2010,55 @@ export const heroTrends: Record<string, HeroTrend> = {
   "73": {
     "hero_name": "Alchemist",
     "pub_pick_trend": [
-      22411,
-      25648,
-      27265,
-      23478,
       23200,
       23475,
-      21916
+      23668,
+      22304,
+      27533,
+      27563,
+      19118
     ],
     "pub_win_trend": [
-      10712,
-      12179,
-      12909,
-      11170,
       10973,
       11202,
-      10503
+      11347,
+      10569,
+      13086,
+      12962,
+      8984
     ],
-    "early_window_pick_count": 75324,
-    "early_window_win_rate": 0.4753,
-    "late_window_pick_count": 68591,
-    "late_window_win_rate": 0.4764,
-    "winrate_delta": 0.0011,
+    "early_window_pick_count": 70343,
+    "early_window_win_rate": 0.4766,
+    "late_window_pick_count": 74214,
+    "late_window_win_rate": 0.472,
+    "winrate_delta": -0.0045,
     "patch_notes_context": null
   },
   "74": {
     "hero_name": "Invoker",
     "pub_pick_trend": [
-      112629,
-      121092,
-      129800,
-      113853,
       113412,
       111376,
-      105758
+      114712,
+      107747,
+      130891,
+      128515,
+      89366
     ],
     "pub_win_trend": [
-      56828,
-      61342,
-      65387,
-      57433,
       57416,
       56348,
-      53294
+      57779,
+      54302,
+      66192,
+      64963,
+      45082
     ],
-    "early_window_pick_count": 363521,
-    "early_window_win_rate": 0.5049,
-    "late_window_pick_count": 330546,
-    "late_window_win_rate": 0.5054,
-    "winrate_delta": 0.0005,
+    "early_window_pick_count": 339500,
+    "early_window_win_rate": 0.5053,
+    "late_window_pick_count": 348772,
+    "late_window_win_rate": 0.5053,
+    "winrate_delta": 0,
     "patch_notes_context": {
       "direction": "nerfed",
       "summary": "Ghost Walk duration reduced from 60 to 50; Shard no longer adds slow radius."
@@ -2067,55 +2067,55 @@ export const heroTrends: Record<string, HeroTrend> = {
   "75": {
     "hero_name": "Silencer",
     "pub_pick_trend": [
-      67737,
-      77532,
-      81561,
-      67538,
       68589,
       66876,
-      65411
+      69606,
+      68026,
+      83943,
+      82968,
+      57090
     ],
     "pub_win_trend": [
-      34499,
-      39341,
-      41761,
-      34328,
       34834,
       34150,
-      33219
+      35401,
+      34486,
+      42554,
+      41938,
+      28898
     ],
-    "early_window_pick_count": 226830,
-    "early_window_win_rate": 0.5096,
-    "late_window_pick_count": 200876,
-    "late_window_win_rate": 0.5088,
-    "winrate_delta": -0.0009,
+    "early_window_pick_count": 205071,
+    "early_window_win_rate": 0.509,
+    "late_window_pick_count": 224001,
+    "late_window_win_rate": 0.5062,
+    "winrate_delta": -0.0028,
     "patch_notes_context": null
   },
   "76": {
     "hero_name": "Outworld Destroyer",
     "pub_pick_trend": [
-      30149,
-      35387,
-      38598,
-      33155,
       34200,
       34795,
-      34226
+      36657,
+      36303,
+      45064,
+      45183,
+      31270
     ],
     "pub_win_trend": [
-      15819,
-      18486,
-      20367,
-      17458,
       17782,
       18204,
-      17997
+      19310,
+      19084,
+      23725,
+      23711,
+      16483
     ],
-    "early_window_pick_count": 104134,
-    "early_window_win_rate": 0.525,
-    "late_window_pick_count": 103221,
-    "late_window_win_rate": 0.523,
-    "winrate_delta": -0.002,
+    "early_window_pick_count": 105652,
+    "early_window_win_rate": 0.5234,
+    "late_window_pick_count": 121517,
+    "late_window_win_rate": 0.526,
+    "winrate_delta": 0.0026,
     "patch_notes_context": {
       "direction": "buffed",
       "summary": "Objurgation barrier increased from 120/180/240/300 to 150/200/250/300."
@@ -2124,109 +2124,109 @@ export const heroTrends: Record<string, HeroTrend> = {
   "77": {
     "hero_name": "Lycan",
     "pub_pick_trend": [
-      9673,
-      10194,
-      10828,
-      10070,
       9820,
       9447,
-      8799
+      9453,
+      9047,
+      10596,
+      10115,
+      7193
     ],
     "pub_win_trend": [
-      4741,
-      5053,
-      5297,
-      4882,
       4700,
       4625,
-      4213
+      4533,
+      4336,
+      5250,
+      4945,
+      3491
     ],
-    "early_window_pick_count": 30695,
-    "early_window_win_rate": 0.4916,
-    "late_window_pick_count": 28066,
-    "late_window_win_rate": 0.4824,
-    "winrate_delta": -0.0093,
+    "early_window_pick_count": 28720,
+    "early_window_win_rate": 0.4825,
+    "late_window_pick_count": 27904,
+    "late_window_win_rate": 0.4905,
+    "winrate_delta": 0.0079,
     "patch_notes_context": null
   },
   "78": {
     "hero_name": "Brewmaster",
     "pub_pick_trend": [
-      10240,
-      11219,
-      11852,
-      10447,
       10053,
       10094,
-      9771
+      10540,
+      10197,
+      12372,
+      12221,
+      8595
     ],
     "pub_win_trend": [
-      5231,
-      5723,
-      6009,
-      5254,
       5004,
       5118,
-      4927
+      5319,
+      5194,
+      6199,
+      6201,
+      4299
     ],
-    "early_window_pick_count": 33311,
-    "early_window_win_rate": 0.5092,
-    "late_window_pick_count": 29918,
-    "late_window_win_rate": 0.503,
-    "winrate_delta": -0.0062,
+    "early_window_pick_count": 30687,
+    "early_window_win_rate": 0.5032,
+    "late_window_pick_count": 33188,
+    "late_window_win_rate": 0.5032,
+    "winrate_delta": 0,
     "patch_notes_context": null
   },
   "79": {
     "hero_name": "Shadow Demon",
     "pub_pick_trend": [
-      13565,
-      15263,
-      15966,
-      13504,
       13171,
       13117,
-      12676
+      13662,
+      13041,
+      15975,
+      15852,
+      10573
     ],
     "pub_win_trend": [
-      6025,
-      6825,
-      7138,
-      6029,
       5945,
       5867,
-      5751
+      6191,
+      5830,
+      7263,
+      7069,
+      4737
     ],
-    "early_window_pick_count": 44794,
-    "early_window_win_rate": 0.4462,
-    "late_window_pick_count": 38964,
-    "late_window_win_rate": 0.4507,
-    "winrate_delta": 0.0045,
+    "early_window_pick_count": 39950,
+    "early_window_win_rate": 0.4506,
+    "late_window_pick_count": 42400,
+    "late_window_win_rate": 0.4497,
+    "winrate_delta": -0.0009,
     "patch_notes_context": null
   },
   "80": {
     "hero_name": "Lone Druid",
     "pub_pick_trend": [
-      12779,
-      14069,
-      15184,
-      14002,
       14943,
       14495,
-      14420
+      15555,
+      14508,
+      17258,
+      16440,
+      11672
     ],
     "pub_win_trend": [
-      6236,
-      6837,
-      7274,
-      6635,
       7101,
       6927,
-      6978
+      7506,
+      6962,
+      8357,
+      7913,
+      5603
     ],
-    "early_window_pick_count": 42032,
-    "early_window_win_rate": 0.4841,
-    "late_window_pick_count": 43858,
-    "late_window_win_rate": 0.479,
-    "winrate_delta": -0.0051,
+    "early_window_pick_count": 44993,
+    "early_window_win_rate": 0.4786,
+    "late_window_pick_count": 45370,
+    "late_window_win_rate": 0.4821,
+    "winrate_delta": 0.0035,
     "patch_notes_context": {
       "direction": "nerfed",
       "summary": "Spirit Bear base armor reduced from 0 to -1."
@@ -2235,28 +2235,28 @@ export const heroTrends: Record<string, HeroTrend> = {
   "81": {
     "hero_name": "Chaos Knight",
     "pub_pick_trend": [
-      28593,
-      32793,
-      34465,
-      28923,
       28987,
       28242,
-      27214
+      29380,
+      28920,
+      35420,
+      35293,
+      23699
     ],
     "pub_win_trend": [
-      14902,
-      16999,
-      17833,
-      14947,
       15200,
       14431,
-      14013
+      15087,
+      15122,
+      18330,
+      18285,
+      12279
     ],
-    "early_window_pick_count": 95851,
-    "early_window_win_rate": 0.5189,
-    "late_window_pick_count": 84443,
-    "late_window_win_rate": 0.5168,
-    "winrate_delta": -0.002,
+    "early_window_pick_count": 86609,
+    "early_window_win_rate": 0.5163,
+    "late_window_pick_count": 94412,
+    "late_window_win_rate": 0.5179,
+    "winrate_delta": 0.0016,
     "patch_notes_context": {
       "direction": "buffed",
       "summary": "Chaos Bolt projectile speed increased from 700 to 900."
@@ -2265,244 +2265,244 @@ export const heroTrends: Record<string, HeroTrend> = {
   "82": {
     "hero_name": "Meepo",
     "pub_pick_trend": [
-      11325,
-      11875,
-      12757,
-      11658,
       11613,
       11606,
-      10919
+      11821,
+      11198,
+      12796,
+      12508,
+      9156
     ],
     "pub_win_trend": [
-      5842,
-      6099,
-      6526,
-      6110,
       5988,
       5966,
-      5624
+      6074,
+      5791,
+      6625,
+      6611,
+      4807
     ],
-    "early_window_pick_count": 35957,
-    "early_window_win_rate": 0.5136,
-    "late_window_pick_count": 34138,
-    "late_window_win_rate": 0.5149,
-    "winrate_delta": 0.0013,
+    "early_window_pick_count": 35040,
+    "early_window_win_rate": 0.5145,
+    "late_window_pick_count": 34460,
+    "late_window_win_rate": 0.5236,
+    "winrate_delta": 0.0091,
     "patch_notes_context": null
   },
   "83": {
     "hero_name": "Treant Protector",
     "pub_pick_trend": [
-      25624,
-      27517,
-      28704,
-      25045,
       24913,
       23503,
-      22443
+      24224,
+      22702,
+      28485,
+      28572,
+      20370
     ],
     "pub_win_trend": [
-      12661,
-      13721,
-      14243,
-      12605,
       12351,
       11615,
-      11194
+      12105,
+      11353,
+      14111,
+      14296,
+      10028
     ],
-    "early_window_pick_count": 81845,
-    "early_window_win_rate": 0.4964,
-    "late_window_pick_count": 70859,
-    "late_window_win_rate": 0.4962,
+    "early_window_pick_count": 72640,
+    "early_window_win_rate": 0.4966,
+    "late_window_pick_count": 77427,
+    "late_window_win_rate": 0.4964,
     "winrate_delta": -0.0002,
     "patch_notes_context": null
   },
   "84": {
     "hero_name": "Ogre Magi",
     "pub_pick_trend": [
-      102347,
-      113367,
-      120049,
-      100898,
       102534,
       100338,
-      96494
+      103675,
+      100094,
+      122375,
+      121620,
+      83720
     ],
     "pub_win_trend": [
-      52094,
-      57916,
-      61306,
-      51283,
       52246,
       50797,
-      49190
+      52890,
+      50906,
+      62041,
+      61990,
+      42282
     ],
-    "early_window_pick_count": 335763,
-    "early_window_win_rate": 0.5102,
-    "late_window_pick_count": 299366,
-    "late_window_win_rate": 0.5085,
-    "winrate_delta": -0.0017,
+    "early_window_pick_count": 306547,
+    "early_window_win_rate": 0.5087,
+    "late_window_pick_count": 327715,
+    "late_window_win_rate": 0.5075,
+    "winrate_delta": -0.0012,
     "patch_notes_context": null
   },
   "85": {
     "hero_name": "Undying",
     "pub_pick_trend": [
-      77471,
-      84809,
-      89376,
-      79434,
       78945,
       76030,
-      73089
+      78662,
+      76095,
+      91308,
+      90007,
+      62324
     ],
     "pub_win_trend": [
-      40030,
-      43925,
-      46511,
-      41165,
       40949,
       39524,
-      37814
+      40727,
+      39333,
+      47161,
+      46258,
+      32212
     ],
-    "early_window_pick_count": 251656,
-    "early_window_win_rate": 0.5184,
-    "late_window_pick_count": 228064,
-    "late_window_win_rate": 0.5187,
-    "winrate_delta": 0.0002,
+    "early_window_pick_count": 233637,
+    "early_window_win_rate": 0.5188,
+    "late_window_pick_count": 243639,
+    "late_window_win_rate": 0.5156,
+    "winrate_delta": -0.0031,
     "patch_notes_context": null
   },
   "86": {
     "hero_name": "Rubick",
     "pub_pick_trend": [
-      109628,
-      121349,
-      128397,
-      110025,
       109397,
       107686,
-      103935
+      112164,
+      108767,
+      133139,
+      132020,
+      92088
     ],
     "pub_win_trend": [
-      54305,
-      60102,
-      63603,
-      54650,
       54148,
       53399,
-      51491
+      55533,
+      53684,
+      65973,
+      65482,
+      45688
     ],
-    "early_window_pick_count": 359374,
+    "early_window_pick_count": 329247,
     "early_window_win_rate": 0.4953,
-    "late_window_pick_count": 321018,
-    "late_window_win_rate": 0.4954,
-    "winrate_delta": 0.0001,
+    "late_window_pick_count": 357247,
+    "late_window_win_rate": 0.4959,
+    "winrate_delta": 0.0005,
     "patch_notes_context": null
   },
   "87": {
     "hero_name": "Disruptor",
     "pub_pick_trend": [
-      46083,
-      52318,
-      55286,
-      45128,
       44479,
       43276,
-      41802
+      44982,
+      44091,
+      55359,
+      55020,
+      37480
     ],
     "pub_win_trend": [
-      23047,
-      26231,
-      27555,
-      22450,
       22144,
       21604,
-      20811
+      22356,
+      22180,
+      27526,
+      27514,
+      18648
     ],
-    "early_window_pick_count": 153687,
-    "early_window_win_rate": 0.4999,
-    "late_window_pick_count": 129557,
-    "late_window_win_rate": 0.4983,
-    "winrate_delta": -0.0016,
+    "early_window_pick_count": 132737,
+    "early_window_win_rate": 0.498,
+    "late_window_pick_count": 147859,
+    "late_window_win_rate": 0.4984,
+    "winrate_delta": 0.0004,
     "patch_notes_context": null
   },
   "88": {
     "hero_name": "Nyx Assassin",
     "pub_pick_trend": [
-      39438,
-      44487,
-      47049,
-      39246,
       39924,
       39072,
-      37926
+      40610,
+      39857,
+      48214,
+      47794,
+      33354
     ],
     "pub_win_trend": [
-      20508,
-      23396,
-      24585,
-      20506,
       20966,
       20267,
-      19847
+      21239,
+      20697,
+      25137,
+      24957,
+      17458
     ],
-    "early_window_pick_count": 130974,
-    "early_window_win_rate": 0.5229,
-    "late_window_pick_count": 116922,
-    "late_window_win_rate": 0.5224,
-    "winrate_delta": -0.0005,
+    "early_window_pick_count": 119606,
+    "early_window_win_rate": 0.5223,
+    "late_window_pick_count": 129362,
+    "late_window_win_rate": 0.5222,
+    "winrate_delta": -0.0001,
     "patch_notes_context": null
   },
   "89": {
     "hero_name": "Naga Siren",
     "pub_pick_trend": [
-      12264,
-      13100,
-      14030,
-      12627,
       12490,
       12265,
-      11730
+      12644,
+      11977,
+      14228,
+      13902,
+      10043
     ],
     "pub_win_trend": [
-      5965,
-      6452,
-      6927,
-      6175,
       6188,
       5929,
-      5818
+      6273,
+      5953,
+      6963,
+      6880,
+      4888
     ],
-    "early_window_pick_count": 39394,
-    "early_window_win_rate": 0.491,
-    "late_window_pick_count": 36485,
-    "late_window_win_rate": 0.4916,
-    "winrate_delta": 0.0005,
+    "early_window_pick_count": 37399,
+    "early_window_win_rate": 0.4917,
+    "late_window_pick_count": 38173,
+    "late_window_win_rate": 0.4907,
+    "winrate_delta": -0.001,
     "patch_notes_context": null
   },
   "90": {
     "hero_name": "Keeper of the Light",
     "pub_pick_trend": [
-      43629,
-      45902,
-      47859,
-      43864,
       44353,
       43066,
-      40285
+      43514,
+      40684,
+      48053,
+      46426,
+      33896
     ],
     "pub_win_trend": [
-      21906,
-      23040,
-      23835,
-      21757,
       22284,
       21233,
-      20125
+      21737,
+      20290,
+      23783,
+      23020,
+      16907
     ],
-    "early_window_pick_count": 137390,
-    "early_window_win_rate": 0.5006,
-    "late_window_pick_count": 127704,
-    "late_window_win_rate": 0.4984,
-    "winrate_delta": -0.0023,
+    "early_window_pick_count": 130933,
+    "early_window_win_rate": 0.4984,
+    "late_window_pick_count": 128375,
+    "late_window_win_rate": 0.4963,
+    "winrate_delta": -0.0021,
     "patch_notes_context": {
       "direction": "mixed",
       "summary": "False Promise cast range increased from 700/800/900 to 800/850/900 (buff), but Solar Bind cast range reduced from 850 to 750 and Chakra Magic cooldown increased (nerf). See known_review_flags."
@@ -2511,109 +2511,109 @@ export const heroTrends: Record<string, HeroTrend> = {
   "91": {
     "hero_name": "Io",
     "pub_pick_trend": [
-      28795,
-      29620,
-      31119,
-      29093,
       29892,
       29923,
-      31867
+      34682,
+      32459,
+      40170,
+      41106,
+      30194
     ],
     "pub_win_trend": [
-      14771,
-      14911,
-      15884,
-      14556,
       15036,
       15053,
-      15682
+      17050,
+      15849,
+      19673,
+      20038,
+      14565
     ],
-    "early_window_pick_count": 89534,
-    "early_window_win_rate": 0.5089,
-    "late_window_pick_count": 91682,
-    "late_window_win_rate": 0.4992,
-    "winrate_delta": -0.0097,
+    "early_window_pick_count": 94497,
+    "early_window_win_rate": 0.4988,
+    "late_window_pick_count": 111470,
+    "late_window_win_rate": 0.4869,
+    "winrate_delta": -0.0119,
     "patch_notes_context": null
   },
   "92": {
     "hero_name": "Visage",
     "pub_pick_trend": [
-      9737,
-      9999,
-      10472,
-      9893,
       9790,
       9586,
-      9087
+      9886,
+      9204,
+      10664,
+      10484,
+      7451
     ],
     "pub_win_trend": [
-      5074,
-      5236,
-      5579,
-      5247,
       5165,
       4921,
-      4701
+      5121,
+      4902,
+      5509,
+      5468,
+      3885
     ],
-    "early_window_pick_count": 30208,
-    "early_window_win_rate": 0.526,
-    "late_window_pick_count": 28463,
-    "late_window_win_rate": 0.5195,
-    "winrate_delta": -0.0065,
+    "early_window_pick_count": 29262,
+    "early_window_win_rate": 0.5197,
+    "late_window_pick_count": 28599,
+    "late_window_win_rate": 0.5197,
+    "winrate_delta": 0,
     "patch_notes_context": null
   },
   "93": {
     "hero_name": "Slark",
     "pub_pick_trend": [
-      60799,
-      69197,
-      72883,
-      61132,
       60113,
       59250,
-      57650
+      62011,
+      59960,
+      74019,
+      73576,
+      51543
     ],
     "pub_win_trend": [
-      30432,
-      34529,
-      36443,
-      30349,
       29852,
       29478,
-      28777
+      30949,
+      30076,
+      37043,
+      36560,
+      25604
     ],
-    "early_window_pick_count": 202879,
-    "early_window_win_rate": 0.4998,
-    "late_window_pick_count": 177013,
-    "late_window_win_rate": 0.4977,
-    "winrate_delta": -0.0021,
+    "early_window_pick_count": 181374,
+    "early_window_win_rate": 0.4978,
+    "late_window_pick_count": 199138,
+    "late_window_win_rate": 0.4982,
+    "winrate_delta": 0.0004,
     "patch_notes_context": null
   },
   "94": {
     "hero_name": "Medusa",
     "pub_pick_trend": [
-      21711,
-      24345,
-      25536,
-      21027,
       20979,
       20702,
-      20206
+      21680,
+      20623,
+      25614,
+      25363,
+      17501
     ],
     "pub_win_trend": [
-      10855,
-      12050,
-      12591,
-      10481,
       10430,
       10467,
-      10032
+      10767,
+      10301,
+      12739,
+      12651,
+      8778
     ],
-    "early_window_pick_count": 71592,
-    "early_window_win_rate": 0.4958,
-    "late_window_pick_count": 61887,
-    "late_window_win_rate": 0.4998,
-    "winrate_delta": 0.004,
+    "early_window_pick_count": 63361,
+    "early_window_win_rate": 0.4997,
+    "late_window_pick_count": 68478,
+    "late_window_win_rate": 0.499,
+    "winrate_delta": -0.0008,
     "patch_notes_context": {
       "direction": "mixed",
       "summary": "Split Shot toggle functionality changed (QoL rework), not mechanically weakened."
@@ -2622,55 +2622,55 @@ export const heroTrends: Record<string, HeroTrend> = {
   "95": {
     "hero_name": "Troll Warlord",
     "pub_pick_trend": [
-      19735,
-      21784,
-      22702,
-      19699,
       20020,
       19580,
-      18852
+      20382,
+      19122,
+      23183,
+      23270,
+      15764
     ],
     "pub_win_trend": [
-      10093,
-      11263,
-      11639,
-      10314,
       10459,
       10081,
-      9723
+      10544,
+      9910,
+      11963,
+      12098,
+      8258
     ],
-    "early_window_pick_count": 64221,
-    "early_window_win_rate": 0.5138,
-    "late_window_pick_count": 58452,
-    "late_window_win_rate": 0.5177,
-    "winrate_delta": 0.004,
+    "early_window_pick_count": 59982,
+    "early_window_win_rate": 0.5182,
+    "late_window_pick_count": 62217,
+    "late_window_win_rate": 0.5195,
+    "winrate_delta": 0.0012,
     "patch_notes_context": null
   },
   "96": {
     "hero_name": "Centaur Warrunner",
     "pub_pick_trend": [
-      50548,
-      56636,
-      58523,
-      48387,
       48725,
       48249,
-      47725
+      50984,
+      50001,
+      60649,
+      61089,
+      42117
     ],
     "pub_win_trend": [
-      25678,
-      28674,
-      29381,
-      24405,
       24725,
       24369,
-      24161
+      25781,
+      25340,
+      30793,
+      30845,
+      21359
     ],
-    "early_window_pick_count": 165707,
-    "early_window_win_rate": 0.5053,
-    "late_window_pick_count": 144699,
-    "late_window_win_rate": 0.5063,
-    "winrate_delta": 0.001,
+    "early_window_pick_count": 147958,
+    "early_window_win_rate": 0.5061,
+    "late_window_pick_count": 163855,
+    "late_window_win_rate": 0.5065,
+    "winrate_delta": 0.0005,
     "patch_notes_context": {
       "direction": "nerfed",
       "summary": "Retaliate strength-based bonus damage reduced from 16/24/32/40% to 14/21/28/35%; Shard Double Edge buff duration decreased."
@@ -2679,28 +2679,28 @@ export const heroTrends: Record<string, HeroTrend> = {
   "97": {
     "hero_name": "Magnus",
     "pub_pick_trend": [
-      65992,
-      72943,
-      77147,
-      67489,
       67058,
       65453,
-      63143
+      68454,
+      65270,
+      79456,
+      78333,
+      54114
     ],
     "pub_win_trend": [
-      32218,
-      35309,
-      37797,
-      33017,
       32808,
       32078,
-      30986
+      33574,
+      31836,
+      38747,
+      38391,
+      26520
     ],
-    "early_window_pick_count": 216082,
-    "early_window_win_rate": 0.4874,
-    "late_window_pick_count": 195654,
-    "late_window_win_rate": 0.49,
-    "winrate_delta": 0.0026,
+    "early_window_pick_count": 200965,
+    "early_window_win_rate": 0.4899,
+    "late_window_pick_count": 211903,
+    "late_window_win_rate": 0.4892,
+    "winrate_delta": -0.0008,
     "patch_notes_context": {
       "direction": "buffed",
       "summary": "Aghanim's Scepter Horn Toss damage increased."
@@ -2709,163 +2709,163 @@ export const heroTrends: Record<string, HeroTrend> = {
   "98": {
     "hero_name": "Timbersaw",
     "pub_pick_trend": [
-      27893,
-      30383,
-      31414,
-      27119,
       27023,
       26969,
-      26101
+      28202,
+      26477,
+      32194,
+      31481,
+      21995
     ],
     "pub_win_trend": [
-      12458,
-      13724,
-      13979,
-      12238,
       11978,
       12144,
-      11782
+      12718,
+      11885,
+      14388,
+      14100,
+      9835
     ],
-    "early_window_pick_count": 89690,
-    "early_window_win_rate": 0.4478,
-    "late_window_pick_count": 80093,
-    "late_window_win_rate": 0.4483,
-    "winrate_delta": 0.0005,
+    "early_window_pick_count": 82194,
+    "early_window_win_rate": 0.4482,
+    "late_window_pick_count": 85670,
+    "late_window_win_rate": 0.4473,
+    "winrate_delta": -0.0009,
     "patch_notes_context": null
   },
   "99": {
     "hero_name": "Bristleback",
     "pub_pick_trend": [
-      50427,
-      55228,
-      58650,
-      49396,
       49490,
       48476,
-      46151
+      49845,
+      47925,
+      58425,
+      57454,
+      39347
     ],
     "pub_win_trend": [
-      25076,
-      27065,
-      29017,
-      24378,
       24540,
       23938,
-      22588
+      24416,
+      23800,
+      28760,
+      28264,
+      19468
     ],
-    "early_window_pick_count": 164305,
-    "early_window_win_rate": 0.4939,
-    "late_window_pick_count": 144117,
-    "late_window_win_rate": 0.4931,
-    "winrate_delta": -0.0008,
+    "early_window_pick_count": 147811,
+    "early_window_win_rate": 0.4932,
+    "late_window_pick_count": 155226,
+    "late_window_win_rate": 0.4928,
+    "winrate_delta": -0.0004,
     "patch_notes_context": null
   },
   "100": {
     "hero_name": "Tusk",
     "pub_pick_trend": [
-      32978,
-      36096,
-      38241,
-      33092,
       32740,
       31961,
-      30971
+      33732,
+      31590,
+      39088,
+      38749,
+      26715
     ],
     "pub_win_trend": [
-      15766,
-      17167,
-      18237,
-      15911,
       15593,
       15595,
-      14849
+      16205,
+      15200,
+      18757,
+      18389,
+      12672
     ],
-    "early_window_pick_count": 107315,
-    "early_window_win_rate": 0.4768,
-    "late_window_pick_count": 95672,
-    "late_window_win_rate": 0.4812,
-    "winrate_delta": 0.0044,
+    "early_window_pick_count": 98433,
+    "early_window_win_rate": 0.4815,
+    "late_window_pick_count": 104552,
+    "late_window_win_rate": 0.4765,
+    "winrate_delta": -0.005,
     "patch_notes_context": null
   },
   "101": {
     "hero_name": "Skywrath Mage",
     "pub_pick_trend": [
-      76819,
-      85327,
-      90472,
-      75057,
       75287,
       73839,
-      70930
+      76425,
+      73508,
+      90254,
+      89470,
+      61016
     ],
     "pub_win_trend": [
-      38259,
-      42514,
-      45278,
-      37535,
       37373,
       36818,
-      35225
+      37985,
+      36572,
+      44743,
+      44701,
+      30291
     ],
-    "early_window_pick_count": 252618,
-    "early_window_win_rate": 0.499,
-    "late_window_pick_count": 220056,
-    "late_window_win_rate": 0.4972,
-    "winrate_delta": -0.0018,
+    "early_window_pick_count": 225551,
+    "early_window_win_rate": 0.4973,
+    "late_window_pick_count": 240740,
+    "late_window_win_rate": 0.4974,
+    "winrate_delta": 0,
     "patch_notes_context": null
   },
   "102": {
     "hero_name": "Abaddon",
     "pub_pick_trend": [
-      25130,
-      28439,
-      29525,
-      25271,
       24843,
       24210,
-      23392
+      25091,
+      23818,
+      29090,
+      28524,
+      19969
     ],
     "pub_win_trend": [
-      12850,
-      14757,
-      14953,
-      12987,
       12796,
       12375,
-      11985
+      12900,
+      12155,
+      15064,
+      14498,
+      10242
     ],
-    "early_window_pick_count": 83094,
-    "early_window_win_rate": 0.5122,
-    "late_window_pick_count": 72445,
-    "late_window_win_rate": 0.5129,
-    "winrate_delta": 0.0007,
+    "early_window_pick_count": 74144,
+    "early_window_win_rate": 0.5135,
+    "late_window_pick_count": 77583,
+    "late_window_win_rate": 0.5131,
+    "winrate_delta": -0.0004,
     "patch_notes_context": null
   },
   "103": {
     "hero_name": "Elder Titan",
     "pub_pick_trend": [
-      7053,
-      7910,
-      8306,
-      7418,
       7334,
       7173,
-      6927
+      7433,
+      7188,
+      8917,
+      8584,
+      5889
     ],
     "pub_win_trend": [
-      3601,
-      4053,
-      4216,
-      3695,
       3698,
       3573,
-      3508
+      3767,
+      3639,
+      4545,
+      4385,
+      3015
     ],
-    "early_window_pick_count": 23269,
-    "early_window_win_rate": 0.5101,
-    "late_window_pick_count": 21434,
-    "late_window_win_rate": 0.5029,
-    "winrate_delta": -0.0072,
+    "early_window_pick_count": 21940,
+    "early_window_win_rate": 0.5031,
+    "late_window_pick_count": 23390,
+    "late_window_win_rate": 0.5107,
+    "winrate_delta": 0.0076,
     "patch_notes_context": {
       "direction": "buffed",
       "summary": "Momentum armor-to-movement-speed conversion improved; Return/Move Astral Spirit sub-abilities no longer break invisibility."
@@ -2874,28 +2874,28 @@ export const heroTrends: Record<string, HeroTrend> = {
   "104": {
     "hero_name": "Legion Commander",
     "pub_pick_trend": [
-      86377,
-      94629,
-      101966,
-      86367,
       86062,
       84044,
-      80999
+      87831,
+      82902,
+      101828,
+      102011,
+      69894
     ],
     "pub_win_trend": [
-      45870,
-      50367,
-      54151,
-      45705,
       45719,
       44448,
-      42905
+      46552,
+      43556,
+      54055,
+      53927,
+      37041
     ],
-    "early_window_pick_count": 282972,
-    "early_window_win_rate": 0.5315,
-    "late_window_pick_count": 251105,
-    "late_window_win_rate": 0.5299,
-    "winrate_delta": -0.0015,
+    "early_window_pick_count": 257937,
+    "early_window_win_rate": 0.53,
+    "late_window_pick_count": 273733,
+    "late_window_win_rate": 0.5298,
+    "winrate_delta": -0.0003,
     "patch_notes_context": {
       "direction": "mixed",
       "summary": "Strength-related stats rescaled slightly; base attack speed increased; Level 25 talent changed from a cooldown-refresh mechanic to a cooldown-skip mechanic."
@@ -2904,55 +2904,55 @@ export const heroTrends: Record<string, HeroTrend> = {
   "105": {
     "hero_name": "Techies",
     "pub_pick_trend": [
-      60582,
-      63535,
-      68068,
-      60083,
       59981,
       58182,
-      55429
+      60017,
+      56151,
+      68113,
+      67123,
+      47261
     ],
     "pub_win_trend": [
-      30599,
-      32447,
-      34681,
-      30688,
       30507,
       29760,
-      28059
+      30318,
+      28560,
+      34616,
+      34319,
+      24052
     ],
-    "early_window_pick_count": 192185,
-    "early_window_win_rate": 0.5085,
-    "late_window_pick_count": 173592,
-    "late_window_win_rate": 0.5088,
-    "winrate_delta": 0.0003,
+    "early_window_pick_count": 178180,
+    "early_window_win_rate": 0.5084,
+    "late_window_pick_count": 182497,
+    "late_window_win_rate": 0.5095,
+    "winrate_delta": 0.0011,
     "patch_notes_context": null
   },
   "106": {
     "hero_name": "Ember Spirit",
     "pub_pick_trend": [
-      39500,
-      44150,
-      46962,
-      40744,
       40098,
       39594,
-      38381
+      41073,
+      39589,
+      48551,
+      47223,
+      34092
     ],
     "pub_win_trend": [
-      19449,
-      22001,
-      23145,
-      19944,
       19564,
       19350,
-      18813
+      20115,
+      19382,
+      23868,
+      23232,
+      16914
     ],
-    "early_window_pick_count": 130612,
-    "early_window_win_rate": 0.4946,
-    "late_window_pick_count": 118073,
-    "late_window_win_rate": 0.4889,
-    "winrate_delta": -0.0056,
+    "early_window_pick_count": 120765,
+    "early_window_win_rate": 0.4888,
+    "late_window_pick_count": 129866,
+    "late_window_win_rate": 0.4929,
+    "winrate_delta": 0.0041,
     "patch_notes_context": {
       "direction": "nerfed",
       "summary": "Base movement speed reduced from 300 to 295."
@@ -2961,28 +2961,28 @@ export const heroTrends: Record<string, HeroTrend> = {
   "107": {
     "hero_name": "Earth Spirit",
     "pub_pick_trend": [
-      31770,
-      34287,
-      36249,
-      32529,
       32821,
       32513,
-      31374
+      33778,
+      32199,
+      40812,
+      39311,
+      27840
     ],
     "pub_win_trend": [
-      15855,
-      17130,
-      18088,
-      16285,
       16312,
       16187,
-      15475
+      16650,
+      16101,
+      20389,
+      19558,
+      13814
     ],
-    "early_window_pick_count": 102306,
-    "early_window_win_rate": 0.4992,
-    "late_window_pick_count": 96708,
-    "late_window_win_rate": 0.4961,
-    "winrate_delta": -0.0031,
+    "early_window_pick_count": 99112,
+    "early_window_win_rate": 0.4959,
+    "late_window_pick_count": 107963,
+    "late_window_win_rate": 0.498,
+    "winrate_delta": 0.0021,
     "patch_notes_context": {
       "direction": "nerfed",
       "summary": "Base intelligence reduced from 18 to 17; Magnetize talent bonus decreased by 5%."
@@ -2991,109 +2991,109 @@ export const heroTrends: Record<string, HeroTrend> = {
   "108": {
     "hero_name": "Underlord",
     "pub_pick_trend": [
-      38325,
-      44706,
-      46637,
-      38416,
       38941,
       39266,
-      38836
+      41201,
+      40567,
+      49487,
+      49104,
+      34420
     ],
     "pub_win_trend": [
-      19362,
-      22562,
-      23416,
-      19358,
       19446,
       19698,
-      19441
+      20632,
+      20382,
+      24925,
+      24889,
+      17195
     ],
-    "early_window_pick_count": 129668,
-    "early_window_win_rate": 0.5039,
-    "late_window_pick_count": 117043,
-    "late_window_win_rate": 0.5005,
-    "winrate_delta": -0.0034,
+    "early_window_pick_count": 119408,
+    "early_window_win_rate": 0.5006,
+    "late_window_pick_count": 133011,
+    "late_window_win_rate": 0.5038,
+    "winrate_delta": 0.0032,
     "patch_notes_context": null
   },
   "109": {
     "hero_name": "Terrorblade",
     "pub_pick_trend": [
-      19813,
-      21100,
-      22679,
-      20782,
       20519,
       20015,
-      19253
+      20942,
+      20011,
+      23572,
+      23365,
+      17831
     ],
     "pub_win_trend": [
-      9434,
-      10007,
-      10851,
-      9893,
       9684,
       9557,
-      9134
+      9909,
+      9489,
+      11233,
+      10763,
+      8287
     ],
-    "early_window_pick_count": 63592,
-    "early_window_win_rate": 0.4763,
-    "late_window_pick_count": 59787,
-    "late_window_win_rate": 0.4746,
-    "winrate_delta": -0.0017,
+    "early_window_pick_count": 61476,
+    "early_window_win_rate": 0.4742,
+    "late_window_pick_count": 64768,
+    "late_window_win_rate": 0.4676,
+    "winrate_delta": -0.0066,
     "patch_notes_context": null
   },
   "110": {
     "hero_name": "Phoenix",
     "pub_pick_trend": [
-      32656,
-      36071,
-      38316,
-      32792,
       32459,
       32239,
-      31031
+      33588,
+      31920,
+      39505,
+      38738,
+      26509
     ],
     "pub_win_trend": [
-      16645,
-      18573,
-      19424,
-      16883,
       16552,
       16453,
-      15830
+      17141,
+      16343,
+      20023,
+      19791,
+      13441
     ],
-    "early_window_pick_count": 107043,
-    "early_window_win_rate": 0.5105,
-    "late_window_pick_count": 95729,
-    "late_window_win_rate": 0.5101,
-    "winrate_delta": -0.0003,
+    "early_window_pick_count": 98286,
+    "early_window_win_rate": 0.5102,
+    "late_window_pick_count": 104752,
+    "late_window_win_rate": 0.5084,
+    "winrate_delta": -0.0018,
     "patch_notes_context": null
   },
   "111": {
     "hero_name": "Oracle",
     "pub_pick_trend": [
-      25402,
-      27535,
-      28726,
-      24756,
       24260,
       23820,
-      22226
+      24104,
+      23149,
+      28087,
+      27355,
+      18512
     ],
     "pub_win_trend": [
-      12461,
-      13553,
-      14319,
-      12329,
       12082,
       11782,
-      11127
+      12076,
+      11486,
+      13881,
+      13599,
+      9140
     ],
-    "early_window_pick_count": 81663,
-    "early_window_win_rate": 0.4939,
-    "late_window_pick_count": 70306,
-    "late_window_win_rate": 0.4977,
-    "winrate_delta": 0.0038,
+    "early_window_pick_count": 72184,
+    "early_window_win_rate": 0.4979,
+    "late_window_pick_count": 73954,
+    "late_window_win_rate": 0.4952,
+    "winrate_delta": -0.0027,
     "patch_notes_context": {
       "direction": "buffed",
       "summary": "False Promise cast range increased; Fate's Edict dispel mechanics adjusted favorably."
@@ -3102,163 +3102,163 @@ export const heroTrends: Record<string, HeroTrend> = {
   "112": {
     "hero_name": "Winter Wyvern",
     "pub_pick_trend": [
-      25178,
-      28241,
-      30626,
-      26171,
       25732,
       25382,
-      24375
+      26324,
+      25096,
+      31393,
+      30560,
+      21137
     ],
     "pub_win_trend": [
-      12400,
-      14038,
-      15219,
-      12987,
       12727,
       12775,
-      12176
+      13132,
+      12418,
+      15563,
+      15195,
+      10403
     ],
-    "early_window_pick_count": 84045,
-    "early_window_win_rate": 0.4957,
-    "late_window_pick_count": 75489,
-    "late_window_win_rate": 0.4991,
-    "winrate_delta": 0.0035,
+    "early_window_pick_count": 77438,
+    "early_window_win_rate": 0.4989,
+    "late_window_pick_count": 83090,
+    "late_window_win_rate": 0.4954,
+    "winrate_delta": -0.0035,
     "patch_notes_context": null
   },
   "113": {
     "hero_name": "Arc Warden",
     "pub_pick_trend": [
-      23065,
-      24513,
-      26589,
-      24625,
       24868,
       25072,
-      23463
+      25554,
+      23859,
+      28175,
+      27927,
+      19903
     ],
     "pub_win_trend": [
-      11993,
-      12642,
-      13757,
-      12626,
       12713,
       12965,
-      12243
+      13371,
+      12266,
+      14548,
+      14381,
+      10204
     ],
-    "early_window_pick_count": 74167,
-    "early_window_win_rate": 0.5176,
-    "late_window_pick_count": 73403,
-    "late_window_win_rate": 0.5166,
-    "winrate_delta": -0.001,
+    "early_window_pick_count": 75494,
+    "early_window_win_rate": 0.5172,
+    "late_window_pick_count": 76005,
+    "late_window_win_rate": 0.5149,
+    "winrate_delta": -0.0024,
     "patch_notes_context": null
   },
   "114": {
     "hero_name": "Monkey King",
     "pub_pick_trend": [
-      32769,
-      36321,
-      38230,
-      32506,
       32866,
       31184,
-      29901
+      32359,
+      31073,
+      36883,
+      36781,
+      25367
     ],
     "pub_win_trend": [
-      14870,
-      16497,
-      17266,
-      14694,
       14936,
       14210,
-      13587
+      14710,
+      14079,
+      16712,
+      16570,
+      11585
     ],
-    "early_window_pick_count": 107320,
-    "early_window_win_rate": 0.4532,
-    "late_window_pick_count": 93951,
-    "late_window_win_rate": 0.4548,
-    "winrate_delta": 0.0017,
+    "early_window_pick_count": 96409,
+    "early_window_win_rate": 0.4549,
+    "late_window_pick_count": 99031,
+    "late_window_win_rate": 0.4531,
+    "winrate_delta": -0.0018,
     "patch_notes_context": null
   },
   "119": {
     "hero_name": "Dark Willow",
     "pub_pick_trend": [
-      31359,
-      34631,
-      36926,
-      31340,
       30825,
       29982,
-      28968
+      31224,
+      30219,
+      36778,
+      36170,
+      24579
     ],
     "pub_win_trend": [
-      15132,
-      16721,
-      18056,
-      15094,
       14892,
       14545,
-      14080
+      15136,
+      14708,
+      17941,
+      17638,
+      11826
     ],
-    "early_window_pick_count": 102916,
-    "early_window_win_rate": 0.4849,
-    "late_window_pick_count": 89775,
-    "late_window_win_rate": 0.4847,
-    "winrate_delta": -0.0002,
+    "early_window_pick_count": 92031,
+    "early_window_win_rate": 0.4843,
+    "late_window_pick_count": 97527,
+    "late_window_win_rate": 0.4861,
+    "winrate_delta": 0.0017,
     "patch_notes_context": null
   },
   "120": {
     "hero_name": "Pangolier",
     "pub_pick_trend": [
-      18812,
-      20727,
-      22117,
-      19483,
       19171,
       18791,
-      18390
+      19940,
+      18586,
+      22233,
+      21707,
+      14934
     ],
     "pub_win_trend": [
-      8648,
-      9619,
-      10222,
-      8981,
       8915,
       8687,
-      8597
+      9290,
+      8681,
+      10335,
+      9942,
+      6945
     ],
-    "early_window_pick_count": 61656,
-    "early_window_win_rate": 0.4621,
-    "late_window_pick_count": 56352,
-    "late_window_win_rate": 0.4649,
-    "winrate_delta": 0.0029,
+    "early_window_pick_count": 57902,
+    "early_window_win_rate": 0.4644,
+    "late_window_pick_count": 58874,
+    "late_window_win_rate": 0.4624,
+    "winrate_delta": -0.0021,
     "patch_notes_context": null
   },
   "121": {
     "hero_name": "Grimstroke",
     "pub_pick_trend": [
-      39430,
-      43358,
-      46413,
-      39907,
       39184,
       38210,
-      36234
+      39128,
+      37986,
+      46509,
+      46081,
+      31118
     ],
     "pub_win_trend": [
-      20162,
-      22362,
-      23816,
-      20479,
       19883,
       19856,
-      18537
+      20082,
+      19517,
+      23978,
+      23663,
+      16003
     ],
-    "early_window_pick_count": 129201,
-    "early_window_win_rate": 0.5135,
-    "late_window_pick_count": 113628,
-    "late_window_win_rate": 0.5129,
-    "winrate_delta": -0.0006,
+    "early_window_pick_count": 116522,
+    "early_window_win_rate": 0.5134,
+    "late_window_pick_count": 123708,
+    "late_window_win_rate": 0.5145,
+    "winrate_delta": 0.0011,
     "patch_notes_context": {
       "direction": "buffed",
       "summary": "Scepter Dark Portrait illusions now use (doubled) real vision ranges."
@@ -3267,28 +3267,28 @@ export const heroTrends: Record<string, HeroTrend> = {
   "123": {
     "hero_name": "Hoodwink",
     "pub_pick_trend": [
-      61066,
-      65671,
-      70049,
-      62163,
       61270,
       60873,
-      58670
+      63379,
+      59604,
+      71725,
+      70640,
+      50239
     ],
     "pub_win_trend": [
-      29017,
-      31106,
-      33424,
-      29655,
       29258,
       29104,
-      28070
+      30294,
+      28443,
+      33959,
+      33637,
+      24056
     ],
-    "early_window_pick_count": 196786,
-    "early_window_win_rate": 0.4754,
-    "late_window_pick_count": 180813,
-    "late_window_win_rate": 0.478,
-    "winrate_delta": 0.0026,
+    "early_window_pick_count": 185522,
+    "early_window_win_rate": 0.4779,
+    "late_window_pick_count": 192604,
+    "late_window_win_rate": 0.4759,
+    "winrate_delta": -0.002,
     "patch_notes_context": {
       "direction": "mixed",
       "summary": "Mistwoods Wayfarer proc chance slightly reduced; Sharpshooter mana cost increased; Shard Hunter's Boomerang cooldown increased."
@@ -3297,82 +3297,82 @@ export const heroTrends: Record<string, HeroTrend> = {
   "126": {
     "hero_name": "Void Spirit",
     "pub_pick_trend": [
-      26989,
-      30159,
-      31376,
-      27013,
       26645,
       25747,
-      25465
+      27560,
+      26465,
+      32039,
+      31649,
+      22238
     ],
     "pub_win_trend": [
-      13366,
-      15052,
-      15382,
-      13367,
       13110,
       12563,
-      12574
+      13590,
+      13096,
+      15774,
+      15498,
+      10965
     ],
-    "early_window_pick_count": 88524,
-    "early_window_win_rate": 0.4948,
-    "late_window_pick_count": 77857,
-    "late_window_win_rate": 0.4912,
-    "winrate_delta": -0.0035,
+    "early_window_pick_count": 79952,
+    "early_window_win_rate": 0.4911,
+    "late_window_pick_count": 85926,
+    "late_window_win_rate": 0.4916,
+    "winrate_delta": 0.0005,
     "patch_notes_context": null
   },
   "128": {
     "hero_name": "Snapfire",
     "pub_pick_trend": [
-      97995,
-      104845,
-      107457,
-      89491,
       87255,
       84739,
-      81038
+      87527,
+      82123,
+      99295,
+      96341,
+      65878
     ],
     "pub_win_trend": [
-      48662,
-      51696,
-      52923,
-      44227,
       43013,
       41686,
-      40122
+      43327,
+      40365,
+      48885,
+      47369,
+      32524
     ],
-    "early_window_pick_count": 310297,
-    "early_window_win_rate": 0.494,
-    "late_window_pick_count": 253032,
-    "late_window_win_rate": 0.4933,
-    "winrate_delta": -0.0007,
+    "early_window_pick_count": 259521,
+    "early_window_win_rate": 0.4933,
+    "late_window_pick_count": 261514,
+    "late_window_win_rate": 0.4924,
+    "winrate_delta": -0.0009,
     "patch_notes_context": null
   },
   "129": {
     "hero_name": "Mars",
     "pub_pick_trend": [
-      29592,
-      32328,
-      34126,
-      29220,
       28533,
       27910,
-      26664
+      28980,
+      27530,
+      33958,
+      33203,
+      22687
     ],
     "pub_win_trend": [
-      13910,
-      15114,
-      16029,
-      13735,
       13440,
       13137,
-      12643
+      13720,
+      12763,
+      15987,
+      15590,
+      10542
     ],
-    "early_window_pick_count": 96046,
-    "early_window_win_rate": 0.4691,
-    "late_window_pick_count": 83107,
-    "late_window_win_rate": 0.4719,
-    "winrate_delta": 0.0028,
+    "early_window_pick_count": 85423,
+    "early_window_win_rate": 0.4717,
+    "late_window_pick_count": 89848,
+    "late_window_win_rate": 0.4688,
+    "winrate_delta": -0.003,
     "patch_notes_context": {
       "direction": "buffed",
       "summary": "Intelligence gain increased from 2.2 to 2.4."
@@ -3381,136 +3381,136 @@ export const heroTrends: Record<string, HeroTrend> = {
   "131": {
     "hero_name": "Ringmaster",
     "pub_pick_trend": [
-      32398,
-      34818,
-      36096,
-      31668,
       32084,
       31353,
-      29400
+      31834,
+      30466,
+      36819,
+      35713,
+      24609
     ],
     "pub_win_trend": [
-      15698,
-      16851,
-      17490,
-      15304,
       15400,
       14992,
-      14062
+      15248,
+      14677,
+      17821,
+      17081,
+      12034
     ],
-    "early_window_pick_count": 103312,
-    "early_window_win_rate": 0.4843,
-    "late_window_pick_count": 92837,
-    "late_window_win_rate": 0.4788,
-    "winrate_delta": -0.0055,
+    "early_window_pick_count": 95271,
+    "early_window_win_rate": 0.4791,
+    "late_window_pick_count": 97141,
+    "late_window_win_rate": 0.4832,
+    "winrate_delta": 0.0041,
     "patch_notes_context": null
   },
   "135": {
     "hero_name": "Dawnbreaker",
     "pub_pick_trend": [
-      53758,
-      59460,
-      64638,
-      55418,
       54112,
       53308,
-      51190
+      55370,
+      54352,
+      66402,
+      65521,
+      44919
     ],
     "pub_win_trend": [
-      27896,
-      30933,
-      33510,
-      28795,
       27951,
       27662,
-      26634
+      28815,
+      28361,
+      34710,
+      34091,
+      23471
     ],
-    "early_window_pick_count": 177856,
-    "early_window_win_rate": 0.5192,
-    "late_window_pick_count": 158610,
-    "late_window_win_rate": 0.5185,
-    "winrate_delta": -0.0006,
+    "early_window_pick_count": 162790,
+    "early_window_win_rate": 0.5186,
+    "late_window_pick_count": 176842,
+    "late_window_win_rate": 0.5218,
+    "winrate_delta": 0.0031,
     "patch_notes_context": null
   },
   "136": {
     "hero_name": "Marci",
     "pub_pick_trend": [
-      25361,
-      27514,
-      28515,
-      25567,
       25527,
       24629,
-      23736
+      25724,
+      24331,
+      30003,
+      29957,
+      21501
     ],
     "pub_win_trend": [
-      12735,
-      13816,
-      14261,
-      12659,
       12834,
       12341,
-      11762
+      12778,
+      12081,
+      15100,
+      14817,
+      10765
     ],
-    "early_window_pick_count": 81390,
-    "early_window_win_rate": 0.5014,
-    "late_window_pick_count": 73892,
-    "late_window_win_rate": 0.4999,
-    "winrate_delta": -0.0016,
+    "early_window_pick_count": 75880,
+    "early_window_win_rate": 0.5002,
+    "late_window_pick_count": 81461,
+    "late_window_win_rate": 0.4994,
+    "winrate_delta": -0.0008,
     "patch_notes_context": null
   },
   "137": {
     "hero_name": "Primal Beast",
     "pub_pick_trend": [
-      20474,
-      21212,
-      22512,
-      19927,
       20104,
       19679,
-      18678
+      20149,
+      19188,
+      22662,
+      22672,
+      15956
     ],
     "pub_win_trend": [
-      10035,
-      10207,
-      11010,
-      9760,
       9703,
       9598,
-      9047
+      9784,
+      9453,
+      11131,
+      11056,
+      7780
     ],
-    "early_window_pick_count": 64198,
-    "early_window_win_rate": 0.4868,
-    "late_window_pick_count": 58461,
-    "late_window_win_rate": 0.4849,
-    "winrate_delta": -0.0019,
+    "early_window_pick_count": 59932,
+    "early_window_win_rate": 0.4853,
+    "late_window_pick_count": 61290,
+    "late_window_win_rate": 0.4889,
+    "winrate_delta": 0.0036,
     "patch_notes_context": null
   },
   "138": {
     "hero_name": "Muerta",
     "pub_pick_trend": [
-      22972,
-      25757,
-      26600,
-      22385,
       22276,
       21740,
-      20793
+      22396,
+      21099,
+      26049,
+      25714,
+      17519
     ],
     "pub_win_trend": [
-      10902,
-      12236,
-      12747,
-      10574,
       10651,
       10254,
-      9916
+      10668,
+      10092,
+      12453,
+      12230,
+      8320
     ],
-    "early_window_pick_count": 75329,
-    "early_window_win_rate": 0.4764,
-    "late_window_pick_count": 64809,
-    "late_window_win_rate": 0.4756,
-    "winrate_delta": -0.0008,
+    "early_window_pick_count": 66412,
+    "early_window_win_rate": 0.4754,
+    "late_window_pick_count": 69282,
+    "late_window_win_rate": 0.4764,
+    "winrate_delta": 0.0009,
     "patch_notes_context": {
       "direction": "buffed",
       "summary": "Gunslinger toggle no longer breaks invisibility."
@@ -3519,55 +3519,55 @@ export const heroTrends: Record<string, HeroTrend> = {
   "145": {
     "hero_name": "Kez",
     "pub_pick_trend": [
-      29958,
-      30759,
-      32369,
-      29716,
       29440,
       28242,
-      26136
+      28248,
+      26858,
+      31692,
+      30346,
+      21864
     ],
     "pub_win_trend": [
-      13111,
-      13528,
-      14246,
-      13052,
       12804,
       12518,
-      11413
+      12382,
+      12061,
+      14339,
+      13648,
+      9988
     ],
-    "early_window_pick_count": 93086,
-    "early_window_win_rate": 0.4392,
-    "late_window_pick_count": 83818,
-    "late_window_win_rate": 0.4383,
-    "winrate_delta": -0.0009,
+    "early_window_pick_count": 85930,
+    "early_window_win_rate": 0.4388,
+    "late_window_pick_count": 83902,
+    "late_window_win_rate": 0.4526,
+    "winrate_delta": 0.0138,
     "patch_notes_context": null
   },
   "155": {
     "hero_name": "Largo",
     "pub_pick_trend": [
-      11655,
-      12556,
-      13156,
-      11548,
       11845,
       11805,
-      11431
+      12345,
+      11696,
+      14123,
+      13566,
+      9730
     ],
     "pub_win_trend": [
-      5675,
-      6070,
-      6360,
-      5546,
       5679,
       5579,
-      5536
+      5984,
+      5451,
+      6780,
+      6519,
+      4710
     ],
-    "early_window_pick_count": 37367,
-    "early_window_win_rate": 0.4845,
-    "late_window_pick_count": 35081,
-    "late_window_win_rate": 0.4787,
-    "winrate_delta": -0.0058,
+    "early_window_pick_count": 35995,
+    "early_window_win_rate": 0.479,
+    "late_window_pick_count": 37419,
+    "late_window_win_rate": 0.4813,
+    "winrate_delta": 0.0023,
     "patch_notes_context": null
   }
 };
@@ -3575,31 +3575,31 @@ export const heroTrends: Record<string, HeroTrend> = {
 export const teamPatchImpact: Record<string, TeamPatchImpact> = {
   "2163": {
     "team_name": "Team Liquid",
-    "patch_impact_score": 0.00044,
+    "patch_impact_score": 0.00062,
     "scored_pick_weight_coverage": 1,
     "pool_heroes": [
       {
         "hero_id": 19,
         "hero_name": "Tiny",
-        "pick_weight_share": 0.1605,
-        "winrate_delta": 0.0003,
-        "contribution": 0.00005,
+        "pick_weight_share": 0.1604,
+        "winrate_delta": 0.0017,
+        "contribution": 0.00027,
         "patch_notes_context": null
       },
       {
         "hero_id": 100,
         "hero_name": "Tusk",
-        "pick_weight_share": 0.1408,
-        "winrate_delta": 0.0044,
-        "contribution": 0.00062,
+        "pick_weight_share": 0.1409,
+        "winrate_delta": -0.005,
+        "contribution": -0.0007,
         "patch_notes_context": null
       },
       {
         "hero_id": 106,
         "hero_name": "Ember Spirit",
         "pick_weight_share": 0.1313,
-        "winrate_delta": -0.0056,
-        "contribution": -0.00074,
+        "winrate_delta": 0.0041,
+        "contribution": 0.00054,
         "patch_notes_context": {
           "direction": "nerfed",
           "summary": "Base movement speed reduced from 300 to 295."
@@ -3608,9 +3608,9 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 123,
         "hero_name": "Hoodwink",
-        "pick_weight_share": 0.1176,
-        "winrate_delta": 0.0026,
-        "contribution": 0.00031,
+        "pick_weight_share": 0.1175,
+        "winrate_delta": -0.002,
+        "contribution": -0.00024,
         "patch_notes_context": {
           "direction": "mixed",
           "summary": "Mistwoods Wayfarer proc chance slightly reduced; Sharpshooter mana cost increased; Shard Hunter's Boomerang cooldown increased."
@@ -3620,16 +3620,16 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
         "hero_id": 13,
         "hero_name": "Puck",
         "pick_weight_share": 0.116,
-        "winrate_delta": -0.0017,
-        "contribution": -0.0002,
+        "winrate_delta": 0.0046,
+        "contribution": 0.00053,
         "patch_notes_context": null
       },
       {
         "hero_id": 96,
         "hero_name": "Centaur Warrunner",
-        "pick_weight_share": 0.113,
-        "winrate_delta": 0.001,
-        "contribution": 0.00011,
+        "pick_weight_share": 0.1131,
+        "winrate_delta": 0.0005,
+        "contribution": 0.00006,
         "patch_notes_context": {
           "direction": "nerfed",
           "summary": "Retaliate strength-based bonus damage reduced from 16/24/32/40% to 14/21/28/35%; Shard Double Edge buff duration decreased."
@@ -3638,9 +3638,9 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 51,
         "hero_name": "Clockwerk",
-        "pick_weight_share": 0.1107,
-        "winrate_delta": -0.0003,
-        "contribution": -0.00003,
+        "pick_weight_share": 0.1106,
+        "winrate_delta": 0.0013,
+        "contribution": 0.00014,
         "patch_notes_context": {
           "direction": "nerfed",
           "summary": "Mana Shock mana burn reduced; attack push distance decreased progressively; Power Cogs no longer block neutral camps."
@@ -3650,31 +3650,31 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
         "hero_id": 21,
         "hero_name": "Windranger",
         "pick_weight_share": 0.1101,
-        "winrate_delta": 0.0029,
-        "contribution": 0.00032,
+        "winrate_delta": 0.0001,
+        "contribution": 0.00001,
         "patch_notes_context": null
       }
     ]
   },
   "726228": {
     "team_name": "Vici Gaming",
-    "patch_impact_score": 0.00092,
+    "patch_impact_score": 0.00032,
     "scored_pick_weight_coverage": 1,
     "pool_heroes": [
       {
         "hero_id": 21,
         "hero_name": "Windranger",
-        "pick_weight_share": 0.1719,
-        "winrate_delta": 0.0029,
-        "contribution": 0.0005,
+        "pick_weight_share": 0.172,
+        "winrate_delta": 0.0001,
+        "contribution": 0.00002,
         "patch_notes_context": null
       },
       {
         "hero_id": 38,
         "hero_name": "Beastmaster",
         "pick_weight_share": 0.1637,
-        "winrate_delta": 0.0035,
-        "contribution": 0.00057,
+        "winrate_delta": -0.0024,
+        "contribution": -0.00039,
         "patch_notes_context": {
           "direction": "nerfed",
           "summary": "Level 20 talent (+30 Damage Aura) reduced to +25; Level 25 talent (-25s Primal Roar cooldown) reduced to -20s."
@@ -3684,32 +3684,32 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
         "hero_id": 19,
         "hero_name": "Tiny",
         "pick_weight_share": 0.1545,
-        "winrate_delta": 0.0003,
-        "contribution": 0.00005,
+        "winrate_delta": 0.0017,
+        "contribution": 0.00026,
         "patch_notes_context": null
       },
       {
         "hero_id": 17,
         "hero_name": "Storm Spirit",
         "pick_weight_share": 0.1325,
-        "winrate_delta": 0.0007,
-        "contribution": 0.00009,
+        "winrate_delta": 0.0038,
+        "contribution": 0.0005,
         "patch_notes_context": null
       },
       {
         "hero_id": 86,
         "hero_name": "Rubick",
         "pick_weight_share": 0.1181,
-        "winrate_delta": 0.0001,
-        "contribution": 0.00001,
+        "winrate_delta": 0.0005,
+        "contribution": 0.00006,
         "patch_notes_context": null
       },
       {
         "hero_id": 123,
         "hero_name": "Hoodwink",
-        "pick_weight_share": 0.0885,
-        "winrate_delta": 0.0026,
-        "contribution": 0.00023,
+        "pick_weight_share": 0.0884,
+        "winrate_delta": -0.002,
+        "contribution": -0.00018,
         "patch_notes_context": {
           "direction": "mixed",
           "summary": "Mistwoods Wayfarer proc chance slightly reduced; Sharpshooter mana cost increased; Shard Hunter's Boomerang cooldown increased."
@@ -3718,48 +3718,48 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 155,
         "hero_name": "Largo",
-        "pick_weight_share": 0.0872,
-        "winrate_delta": -0.0058,
-        "contribution": -0.00051,
+        "pick_weight_share": 0.0871,
+        "winrate_delta": 0.0023,
+        "contribution": 0.0002,
         "patch_notes_context": null
       },
       {
         "hero_id": 110,
         "hero_name": "Phoenix",
-        "pick_weight_share": 0.0836,
-        "winrate_delta": -0.0003,
-        "contribution": -0.00003,
+        "pick_weight_share": 0.0837,
+        "winrate_delta": -0.0018,
+        "contribution": -0.00015,
         "patch_notes_context": null
       }
     ]
   },
   "2586976": {
     "team_name": "OG",
-    "patch_impact_score": 0.00002,
+    "patch_impact_score": 0.00211,
     "scored_pick_weight_coverage": 1,
     "pool_heroes": [
       {
         "hero_id": 19,
         "hero_name": "Tiny",
-        "pick_weight_share": 0.1672,
-        "winrate_delta": 0.0003,
-        "contribution": 0.00005,
+        "pick_weight_share": 0.1669,
+        "winrate_delta": 0.0017,
+        "contribution": 0.00028,
         "patch_notes_context": null
       },
       {
         "hero_id": 21,
         "hero_name": "Windranger",
-        "pick_weight_share": 0.1497,
-        "winrate_delta": 0.0029,
-        "contribution": 0.00043,
+        "pick_weight_share": 0.1496,
+        "winrate_delta": 0.0001,
+        "contribution": 0.00001,
         "patch_notes_context": null
       },
       {
         "hero_id": 51,
         "hero_name": "Clockwerk",
-        "pick_weight_share": 0.1157,
-        "winrate_delta": -0.0003,
-        "contribution": -0.00003,
+        "pick_weight_share": 0.1156,
+        "winrate_delta": 0.0013,
+        "contribution": 0.00015,
         "patch_notes_context": {
           "direction": "nerfed",
           "summary": "Mana Shock mana burn reduced; attack push distance decreased progressively; Power Cogs no longer block neutral camps."
@@ -3768,67 +3768,67 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 66,
         "hero_name": "Chen",
-        "pick_weight_share": 0.1149,
-        "winrate_delta": -0.0091,
-        "contribution": -0.00105,
+        "pick_weight_share": 0.115,
+        "winrate_delta": 0.015,
+        "contribution": 0.00173,
         "patch_notes_context": null
       },
       {
         "hero_id": 137,
         "hero_name": "Primal Beast",
         "pick_weight_share": 0.1142,
-        "winrate_delta": -0.0019,
-        "contribution": -0.00022,
+        "winrate_delta": 0.0036,
+        "contribution": 0.00041,
+        "patch_notes_context": null
+      },
+      {
+        "hero_id": 79,
+        "hero_name": "Shadow Demon",
+        "pick_weight_share": 0.1139,
+        "winrate_delta": -0.0009,
+        "contribution": -0.0001,
         "patch_notes_context": null
       },
       {
         "hero_id": 38,
         "hero_name": "Beastmaster",
-        "pick_weight_share": 0.1137,
-        "winrate_delta": 0.0035,
-        "contribution": 0.0004,
+        "pick_weight_share": 0.1136,
+        "winrate_delta": -0.0024,
+        "contribution": -0.00027,
         "patch_notes_context": {
           "direction": "nerfed",
           "summary": "Level 20 talent (+30 Damage Aura) reduced to +25; Level 25 talent (-25s Primal Roar cooldown) reduced to -20s."
         }
       },
       {
-        "hero_id": 79,
-        "hero_name": "Shadow Demon",
-        "pick_weight_share": 0.1136,
-        "winrate_delta": 0.0045,
-        "contribution": 0.00051,
-        "patch_notes_context": null
-      },
-      {
         "hero_id": 128,
         "hero_name": "Snapfire",
-        "pick_weight_share": 0.1111,
-        "winrate_delta": -0.0007,
-        "contribution": -0.00008,
+        "pick_weight_share": 0.1112,
+        "winrate_delta": -0.0009,
+        "contribution": -0.0001,
         "patch_notes_context": null
       }
     ]
   },
   "5017210": {
     "team_name": "Team Resilience",
-    "patch_impact_score": 0.00077,
+    "patch_impact_score": 0.00106,
     "scored_pick_weight_coverage": 1,
     "pool_heroes": [
       {
         "hero_id": 120,
         "hero_name": "Pangolier",
         "pick_weight_share": 0.198,
-        "winrate_delta": 0.0029,
-        "contribution": 0.00057,
+        "winrate_delta": -0.0021,
+        "contribution": -0.00042,
         "patch_notes_context": null
       },
       {
         "hero_id": 123,
         "hero_name": "Hoodwink",
-        "pick_weight_share": 0.143,
-        "winrate_delta": 0.0026,
-        "contribution": 0.00037,
+        "pick_weight_share": 0.1429,
+        "winrate_delta": -0.002,
+        "contribution": -0.00029,
         "patch_notes_context": {
           "direction": "mixed",
           "summary": "Mistwoods Wayfarer proc chance slightly reduced; Sharpshooter mana cost increased; Shard Hunter's Boomerang cooldown increased."
@@ -3838,24 +3838,24 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
         "hero_id": 145,
         "hero_name": "Kez",
         "pick_weight_share": 0.1358,
-        "winrate_delta": -0.0009,
-        "contribution": -0.00012,
+        "winrate_delta": 0.0138,
+        "contribution": 0.00187,
         "patch_notes_context": null
       },
       {
         "hero_id": 112,
         "hero_name": "Winter Wyvern",
         "pick_weight_share": 0.1275,
-        "winrate_delta": 0.0035,
-        "contribution": 0.00045,
+        "winrate_delta": -0.0035,
+        "contribution": -0.00045,
         "patch_notes_context": null
       },
       {
         "hero_id": 107,
         "hero_name": "Earth Spirit",
         "pick_weight_share": 0.1045,
-        "winrate_delta": -0.0031,
-        "contribution": -0.00032,
+        "winrate_delta": 0.0021,
+        "contribution": 0.00022,
         "patch_notes_context": {
           "direction": "nerfed",
           "summary": "Base intelligence reduced from 18 to 17; Magnetize talent bonus decreased by 5%."
@@ -3864,40 +3864,40 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 99,
         "hero_name": "Bristleback",
-        "pick_weight_share": 0.1044,
-        "winrate_delta": -0.0008,
-        "contribution": -0.00008,
+        "pick_weight_share": 0.1043,
+        "winrate_delta": -0.0004,
+        "contribution": -0.00004,
         "patch_notes_context": null
       },
       {
         "hero_id": 56,
         "hero_name": "Clinkz",
-        "pick_weight_share": 0.0936,
-        "winrate_delta": 0.0007,
-        "contribution": 0.00007,
+        "pick_weight_share": 0.0937,
+        "winrate_delta": -0.0029,
+        "contribution": -0.00027,
         "patch_notes_context": null
       },
       {
         "hero_id": 13,
         "hero_name": "Puck",
-        "pick_weight_share": 0.0932,
-        "winrate_delta": -0.0017,
-        "contribution": -0.00016,
+        "pick_weight_share": 0.0933,
+        "winrate_delta": 0.0046,
+        "contribution": 0.00043,
         "patch_notes_context": null
       }
     ]
   },
   "7119388": {
     "team_name": "Team Spirit",
-    "patch_impact_score": 0.00013,
+    "patch_impact_score": -0.00024,
     "scored_pick_weight_coverage": 1,
     "pool_heroes": [
       {
         "hero_id": 123,
         "hero_name": "Hoodwink",
-        "pick_weight_share": 0.2326,
-        "winrate_delta": 0.0026,
-        "contribution": 0.0006,
+        "pick_weight_share": 0.2325,
+        "winrate_delta": -0.002,
+        "contribution": -0.00047,
         "patch_notes_context": {
           "direction": "mixed",
           "summary": "Mistwoods Wayfarer proc chance slightly reduced; Sharpshooter mana cost increased; Shard Hunter's Boomerang cooldown increased."
@@ -3906,49 +3906,49 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 131,
         "hero_name": "Ringmaster",
-        "pick_weight_share": 0.1536,
-        "winrate_delta": -0.0055,
-        "contribution": -0.00084,
+        "pick_weight_share": 0.1537,
+        "winrate_delta": 0.0041,
+        "contribution": 0.00063,
         "patch_notes_context": null
       },
       {
         "hero_id": 120,
         "hero_name": "Pangolier",
-        "pick_weight_share": 0.1153,
-        "winrate_delta": 0.0029,
-        "contribution": 0.00033,
+        "pick_weight_share": 0.1152,
+        "winrate_delta": -0.0021,
+        "contribution": -0.00024,
         "patch_notes_context": null
       },
       {
         "hero_id": 100,
         "hero_name": "Tusk",
-        "pick_weight_share": 0.1087,
-        "winrate_delta": 0.0044,
-        "contribution": 0.00048,
+        "pick_weight_share": 0.1088,
+        "winrate_delta": -0.005,
+        "contribution": -0.00054,
         "patch_notes_context": null
       },
       {
         "hero_id": 28,
         "hero_name": "Slardar",
-        "pick_weight_share": 0.1028,
-        "winrate_delta": 0.0032,
-        "contribution": 0.00033,
+        "pick_weight_share": 0.1029,
+        "winrate_delta": -0.003,
+        "contribution": -0.00031,
         "patch_notes_context": null
       },
       {
         "hero_id": 155,
         "hero_name": "Largo",
-        "pick_weight_share": 0.0974,
-        "winrate_delta": -0.0058,
-        "contribution": -0.00056,
+        "pick_weight_share": 0.0973,
+        "winrate_delta": 0.0023,
+        "contribution": 0.00022,
         "patch_notes_context": null
       },
       {
         "hero_id": 51,
         "hero_name": "Clockwerk",
-        "pick_weight_share": 0.095,
-        "winrate_delta": -0.0003,
-        "contribution": -0.00003,
+        "pick_weight_share": 0.0949,
+        "winrate_delta": 0.0013,
+        "contribution": 0.00012,
         "patch_notes_context": {
           "direction": "nerfed",
           "summary": "Mana Shock mana burn reduced; attack push distance decreased progressively; Power Cogs no longer block neutral camps."
@@ -3958,39 +3958,39 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
         "hero_id": 137,
         "hero_name": "Primal Beast",
         "pick_weight_share": 0.0947,
-        "winrate_delta": -0.0019,
-        "contribution": -0.00018,
+        "winrate_delta": 0.0036,
+        "contribution": 0.00034,
         "patch_notes_context": null
       }
     ]
   },
   "8255888": {
     "team_name": "BoomBoys",
-    "patch_impact_score": 0.00172,
+    "patch_impact_score": 0.00122,
     "scored_pick_weight_coverage": 1,
     "pool_heroes": [
       {
         "hero_id": 28,
         "hero_name": "Slardar",
-        "pick_weight_share": 0.1343,
-        "winrate_delta": 0.0032,
-        "contribution": 0.00043,
+        "pick_weight_share": 0.1341,
+        "winrate_delta": -0.003,
+        "contribution": -0.0004,
         "patch_notes_context": null
       },
       {
         "hero_id": 145,
         "hero_name": "Kez",
-        "pick_weight_share": 0.1322,
-        "winrate_delta": -0.0009,
-        "contribution": -0.00012,
+        "pick_weight_share": 0.132,
+        "winrate_delta": 0.0138,
+        "contribution": 0.00182,
         "patch_notes_context": null
       },
       {
         "hero_id": 123,
         "hero_name": "Hoodwink",
-        "pick_weight_share": 0.1319,
-        "winrate_delta": 0.0026,
-        "contribution": 0.00034,
+        "pick_weight_share": 0.132,
+        "winrate_delta": -0.002,
+        "contribution": -0.00026,
         "patch_notes_context": {
           "direction": "mixed",
           "summary": "Mistwoods Wayfarer proc chance slightly reduced; Sharpshooter mana cost increased; Shard Hunter's Boomerang cooldown increased."
@@ -3999,17 +3999,17 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 21,
         "hero_name": "Windranger",
-        "pick_weight_share": 0.1301,
-        "winrate_delta": 0.0029,
-        "contribution": 0.00038,
+        "pick_weight_share": 0.13,
+        "winrate_delta": 0.0001,
+        "contribution": 0.00001,
         "patch_notes_context": null
       },
       {
         "hero_id": 3,
         "hero_name": "Bane",
-        "pick_weight_share": 0.1265,
-        "winrate_delta": -0.0014,
-        "contribution": -0.00018,
+        "pick_weight_share": 0.1264,
+        "winrate_delta": 0.0026,
+        "contribution": 0.00033,
         "patch_notes_context": {
           "direction": "mixed",
           "summary": "Ichor stacks increased to 6 but status resistance reduction per stack lowered; Nightmare duration reduced; Scepter upgrade cooldown bonus decreased."
@@ -4018,17 +4018,17 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 100,
         "hero_name": "Tusk",
-        "pick_weight_share": 0.1241,
-        "winrate_delta": 0.0044,
-        "contribution": 0.00055,
+        "pick_weight_share": 0.1242,
+        "winrate_delta": -0.005,
+        "contribution": -0.00062,
         "patch_notes_context": null
       },
       {
         "hero_id": 64,
         "hero_name": "Jakiro",
-        "pick_weight_share": 0.1105,
-        "winrate_delta": 0.0046,
-        "contribution": 0.00051,
+        "pick_weight_share": 0.1107,
+        "winrate_delta": -0.0015,
+        "contribution": -0.00017,
         "patch_notes_context": {
           "direction": "buffed",
           "summary": "Intelligence gain increased from 3 to 3.3."
@@ -4038,31 +4038,31 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
         "hero_id": 13,
         "hero_name": "Puck",
         "pick_weight_share": 0.1104,
-        "winrate_delta": -0.0017,
-        "contribution": -0.00019,
+        "winrate_delta": 0.0046,
+        "contribution": 0.00051,
         "patch_notes_context": null
       }
     ]
   },
   "8261500": {
     "team_name": "Xtreme Gaming",
-    "patch_impact_score": 0.00077,
+    "patch_impact_score": 0.00083,
     "scored_pick_weight_coverage": 1,
     "pool_heroes": [
       {
         "hero_id": 110,
         "hero_name": "Phoenix",
         "pick_weight_share": 0.1825,
-        "winrate_delta": -0.0003,
-        "contribution": -0.00005,
+        "winrate_delta": -0.0018,
+        "contribution": -0.00033,
         "patch_notes_context": null
       },
       {
         "hero_id": 123,
         "hero_name": "Hoodwink",
-        "pick_weight_share": 0.1755,
-        "winrate_delta": 0.0026,
-        "contribution": 0.00046,
+        "pick_weight_share": 0.1753,
+        "winrate_delta": -0.002,
+        "contribution": -0.00035,
         "patch_notes_context": {
           "direction": "mixed",
           "summary": "Mistwoods Wayfarer proc chance slightly reduced; Sharpshooter mana cost increased; Shard Hunter's Boomerang cooldown increased."
@@ -4072,40 +4072,40 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
         "hero_id": 145,
         "hero_name": "Kez",
         "pick_weight_share": 0.1119,
-        "winrate_delta": -0.0009,
-        "contribution": -0.0001,
+        "winrate_delta": 0.0138,
+        "contribution": 0.00154,
         "patch_notes_context": null
       },
       {
         "hero_id": 37,
         "hero_name": "Warlock",
-        "pick_weight_share": 0.1114,
-        "winrate_delta": -0.0023,
-        "contribution": -0.00026,
+        "pick_weight_share": 0.1116,
+        "winrate_delta": 0,
+        "contribution": 0,
         "patch_notes_context": null
       },
       {
         "hero_id": 17,
         "hero_name": "Storm Spirit",
-        "pick_weight_share": 0.1073,
-        "winrate_delta": 0.0007,
-        "contribution": 0.00008,
+        "pick_weight_share": 0.1072,
+        "winrate_delta": 0.0038,
+        "contribution": 0.00041,
         "patch_notes_context": null
       },
       {
         "hero_id": 19,
         "hero_name": "Tiny",
-        "pick_weight_share": 0.1047,
-        "winrate_delta": 0.0003,
-        "contribution": 0.00003,
+        "pick_weight_share": 0.1048,
+        "winrate_delta": 0.0017,
+        "contribution": 0.00018,
         "patch_notes_context": null
       },
       {
         "hero_id": 129,
         "hero_name": "Mars",
-        "pick_weight_share": 0.1038,
-        "winrate_delta": 0.0028,
-        "contribution": 0.00029,
+        "pick_weight_share": 0.1039,
+        "winrate_delta": -0.003,
+        "contribution": -0.00031,
         "patch_notes_context": {
           "direction": "buffed",
           "summary": "Intelligence gain increased from 2.2 to 2.4."
@@ -4114,24 +4114,24 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 28,
         "hero_name": "Slardar",
-        "pick_weight_share": 0.1028,
-        "winrate_delta": 0.0032,
-        "contribution": 0.00033,
+        "pick_weight_share": 0.1029,
+        "winrate_delta": -0.003,
+        "contribution": -0.00031,
         "patch_notes_context": null
       }
     ]
   },
   "9247354": {
     "team_name": "Team Falcons",
-    "patch_impact_score": -0.0008,
+    "patch_impact_score": 0.00158,
     "scored_pick_weight_coverage": 1,
     "pool_heroes": [
       {
         "hero_id": 51,
         "hero_name": "Clockwerk",
-        "pick_weight_share": 0.1699,
-        "winrate_delta": -0.0003,
-        "contribution": -0.00005,
+        "pick_weight_share": 0.1696,
+        "winrate_delta": 0.0013,
+        "contribution": 0.00022,
         "patch_notes_context": {
           "direction": "nerfed",
           "summary": "Mana Shock mana burn reduced; attack push distance decreased progressively; Power Cogs no longer block neutral camps."
@@ -4140,25 +4140,25 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 19,
         "hero_name": "Tiny",
-        "pick_weight_share": 0.1542,
-        "winrate_delta": 0.0003,
-        "contribution": 0.00005,
+        "pick_weight_share": 0.1541,
+        "winrate_delta": 0.0017,
+        "contribution": 0.00026,
         "patch_notes_context": null
       },
       {
         "hero_id": 120,
         "hero_name": "Pangolier",
-        "pick_weight_share": 0.1417,
-        "winrate_delta": 0.0029,
-        "contribution": 0.00041,
+        "pick_weight_share": 0.1418,
+        "winrate_delta": -0.0021,
+        "contribution": -0.0003,
         "patch_notes_context": null
       },
       {
         "hero_id": 123,
         "hero_name": "Hoodwink",
         "pick_weight_share": 0.1157,
-        "winrate_delta": 0.0026,
-        "contribution": 0.0003,
+        "winrate_delta": -0.002,
+        "contribution": -0.00023,
         "patch_notes_context": {
           "direction": "mixed",
           "summary": "Mistwoods Wayfarer proc chance slightly reduced; Sharpshooter mana cost increased; Shard Hunter's Boomerang cooldown increased."
@@ -4167,48 +4167,48 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 66,
         "hero_name": "Chen",
-        "pick_weight_share": 0.1084,
-        "winrate_delta": -0.0091,
-        "contribution": -0.00099,
+        "pick_weight_share": 0.1086,
+        "winrate_delta": 0.015,
+        "contribution": 0.00163,
         "patch_notes_context": null
       },
       {
         "hero_id": 26,
         "hero_name": "Lion",
-        "pick_weight_share": 0.1044,
-        "winrate_delta": 0.0007,
-        "contribution": 0.00007,
+        "pick_weight_share": 0.1043,
+        "winrate_delta": -0.0023,
+        "contribution": -0.00024,
         "patch_notes_context": null
       },
       {
         "hero_id": 131,
         "hero_name": "Ringmaster",
-        "pick_weight_share": 0.1029,
-        "winrate_delta": -0.0055,
-        "contribution": -0.00057,
+        "pick_weight_share": 0.1031,
+        "winrate_delta": 0.0041,
+        "contribution": 0.00042,
         "patch_notes_context": null
       },
       {
         "hero_id": 110,
         "hero_name": "Phoenix",
         "pick_weight_share": 0.1028,
-        "winrate_delta": -0.0003,
-        "contribution": -0.00003,
+        "winrate_delta": -0.0018,
+        "contribution": -0.00018,
         "patch_notes_context": null
       }
     ]
   },
   "9467224": {
     "team_name": "Aurora Gaming",
-    "patch_impact_score": 0.00091,
+    "patch_impact_score": -0.00009,
     "scored_pick_weight_coverage": 1,
     "pool_heroes": [
       {
         "hero_id": 123,
         "hero_name": "Hoodwink",
         "pick_weight_share": 0.1745,
-        "winrate_delta": 0.0026,
-        "contribution": 0.00045,
+        "winrate_delta": -0.002,
+        "contribution": -0.00035,
         "patch_notes_context": {
           "direction": "mixed",
           "summary": "Mistwoods Wayfarer proc chance slightly reduced; Sharpshooter mana cost increased; Shard Hunter's Boomerang cooldown increased."
@@ -4218,48 +4218,48 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
         "hero_id": 110,
         "hero_name": "Phoenix",
         "pick_weight_share": 0.1496,
-        "winrate_delta": -0.0003,
-        "contribution": -0.00004,
+        "winrate_delta": -0.0018,
+        "contribution": -0.00027,
         "patch_notes_context": null
       },
       {
         "hero_id": 21,
         "hero_name": "Windranger",
-        "pick_weight_share": 0.1264,
-        "winrate_delta": 0.0029,
-        "contribution": 0.00037,
+        "pick_weight_share": 0.1263,
+        "winrate_delta": 0.0001,
+        "contribution": 0.00001,
         "patch_notes_context": null
       },
       {
         "hero_id": 13,
         "hero_name": "Puck",
-        "pick_weight_share": 0.1219,
-        "winrate_delta": -0.0017,
-        "contribution": -0.00021,
+        "pick_weight_share": 0.122,
+        "winrate_delta": 0.0046,
+        "contribution": 0.00056,
         "patch_notes_context": null
       },
       {
         "hero_id": 37,
         "hero_name": "Warlock",
-        "pick_weight_share": 0.1161,
-        "winrate_delta": -0.0023,
-        "contribution": -0.00027,
+        "pick_weight_share": 0.1162,
+        "winrate_delta": 0,
+        "contribution": 0,
         "patch_notes_context": null
       },
       {
         "hero_id": 26,
         "hero_name": "Lion",
-        "pick_weight_share": 0.1149,
-        "winrate_delta": 0.0007,
-        "contribution": 0.00008,
+        "pick_weight_share": 0.1148,
+        "winrate_delta": -0.0023,
+        "contribution": -0.00026,
         "patch_notes_context": null
       },
       {
         "hero_id": 64,
         "hero_name": "Jakiro",
-        "pick_weight_share": 0.0998,
-        "winrate_delta": 0.0046,
-        "contribution": 0.00046,
+        "pick_weight_share": 0.0999,
+        "winrate_delta": -0.0015,
+        "contribution": -0.00015,
         "patch_notes_context": {
           "direction": "buffed",
           "summary": "Intelligence gain increased from 3 to 3.3."
@@ -4269,39 +4269,39 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
         "hero_id": 17,
         "hero_name": "Storm Spirit",
         "pick_weight_share": 0.0968,
-        "winrate_delta": 0.0007,
-        "contribution": 0.00007,
+        "winrate_delta": 0.0038,
+        "contribution": 0.00037,
         "patch_notes_context": null
       }
     ]
   },
   "9572001": {
     "team_name": "Team Vision",
-    "patch_impact_score": 0.00108,
+    "patch_impact_score": 0.00068,
     "scored_pick_weight_coverage": 1,
     "pool_heroes": [
       {
         "hero_id": 120,
         "hero_name": "Pangolier",
-        "pick_weight_share": 0.1526,
-        "winrate_delta": 0.0029,
-        "contribution": 0.00044,
+        "pick_weight_share": 0.1524,
+        "winrate_delta": -0.0021,
+        "contribution": -0.00032,
         "patch_notes_context": null
       },
       {
         "hero_id": 145,
         "hero_name": "Kez",
-        "pick_weight_share": 0.1425,
-        "winrate_delta": -0.0009,
-        "contribution": -0.00013,
+        "pick_weight_share": 0.1426,
+        "winrate_delta": 0.0138,
+        "contribution": 0.00197,
         "patch_notes_context": null
       },
       {
         "hero_id": 90,
         "hero_name": "Keeper of the Light",
         "pick_weight_share": 0.1393,
-        "winrate_delta": -0.0023,
-        "contribution": -0.00032,
+        "winrate_delta": -0.0021,
+        "contribution": -0.00029,
         "patch_notes_context": {
           "direction": "mixed",
           "summary": "False Promise cast range increased from 700/800/900 to 800/850/900 (buff), but Solar Bind cast range reduced from 850 to 750 and Chakra Magic cooldown increased (nerf). See known_review_flags."
@@ -4310,17 +4310,17 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 28,
         "hero_name": "Slardar",
-        "pick_weight_share": 0.1347,
-        "winrate_delta": 0.0032,
-        "contribution": 0.00043,
+        "pick_weight_share": 0.1348,
+        "winrate_delta": -0.003,
+        "contribution": -0.0004,
         "patch_notes_context": null
       },
       {
         "hero_id": 38,
         "hero_name": "Beastmaster",
         "pick_weight_share": 0.1276,
-        "winrate_delta": 0.0035,
-        "contribution": 0.00045,
+        "winrate_delta": -0.0024,
+        "contribution": -0.00031,
         "patch_notes_context": {
           "direction": "nerfed",
           "summary": "Level 20 talent (+30 Damage Aura) reduced to +25; Level 25 talent (-25s Primal Roar cooldown) reduced to -20s."
@@ -4329,48 +4329,48 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 86,
         "hero_name": "Rubick",
-        "pick_weight_share": 0.1035,
-        "winrate_delta": 0.0001,
-        "contribution": 0.00001,
+        "pick_weight_share": 0.1034,
+        "winrate_delta": 0.0005,
+        "contribution": 0.00005,
         "patch_notes_context": null
       },
       {
         "hero_id": 114,
         "hero_name": "Monkey King",
-        "pick_weight_share": 0.1013,
-        "winrate_delta": 0.0017,
-        "contribution": 0.00017,
+        "pick_weight_share": 0.1016,
+        "winrate_delta": -0.0018,
+        "contribution": -0.00018,
         "patch_notes_context": null
       },
       {
         "hero_id": 19,
         "hero_name": "Tiny",
-        "pick_weight_share": 0.0984,
-        "winrate_delta": 0.0003,
-        "contribution": 0.00003,
+        "pick_weight_share": 0.0983,
+        "winrate_delta": 0.0017,
+        "contribution": 0.00017,
         "patch_notes_context": null
       }
     ]
   },
   "9823272": {
     "team_name": "Team Yandex",
-    "patch_impact_score": 0.00149,
+    "patch_impact_score": -0.00095,
     "scored_pick_weight_coverage": 1,
     "pool_heroes": [
       {
         "hero_id": 28,
         "hero_name": "Slardar",
-        "pick_weight_share": 0.1612,
-        "winrate_delta": 0.0032,
-        "contribution": 0.00052,
+        "pick_weight_share": 0.1613,
+        "winrate_delta": -0.003,
+        "contribution": -0.00048,
         "patch_notes_context": null
       },
       {
         "hero_id": 64,
         "hero_name": "Jakiro",
-        "pick_weight_share": 0.1432,
-        "winrate_delta": 0.0046,
-        "contribution": 0.00066,
+        "pick_weight_share": 0.1434,
+        "winrate_delta": -0.0015,
+        "contribution": -0.00022,
         "patch_notes_context": {
           "direction": "buffed",
           "summary": "Intelligence gain increased from 3 to 3.3."
@@ -4379,17 +4379,17 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 19,
         "hero_name": "Tiny",
-        "pick_weight_share": 0.1332,
-        "winrate_delta": 0.0003,
-        "contribution": 0.00004,
+        "pick_weight_share": 0.1333,
+        "winrate_delta": 0.0017,
+        "contribution": 0.00023,
         "patch_notes_context": null
       },
       {
         "hero_id": 74,
         "hero_name": "Invoker",
-        "pick_weight_share": 0.131,
-        "winrate_delta": 0.0005,
-        "contribution": 0.00007,
+        "pick_weight_share": 0.1309,
+        "winrate_delta": 0,
+        "contribution": 0,
         "patch_notes_context": {
           "direction": "nerfed",
           "summary": "Ghost Walk duration reduced from 60 to 50; Shard no longer adds slow radius."
@@ -4398,9 +4398,9 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 96,
         "hero_name": "Centaur Warrunner",
-        "pick_weight_share": 0.1176,
-        "winrate_delta": 0.001,
-        "contribution": 0.00012,
+        "pick_weight_share": 0.1175,
+        "winrate_delta": 0.0005,
+        "contribution": 0.00006,
         "patch_notes_context": {
           "direction": "nerfed",
           "summary": "Retaliate strength-based bonus damage reduced from 16/24/32/40% to 14/21/28/35%; Shard Double Edge buff duration decreased."
@@ -4409,17 +4409,17 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 46,
         "hero_name": "Templar Assassin",
-        "pick_weight_share": 0.1111,
-        "winrate_delta": 0.0005,
-        "contribution": 0.00006,
+        "pick_weight_share": 0.1112,
+        "winrate_delta": -0.0011,
+        "contribution": -0.00012,
         "patch_notes_context": null
       },
       {
         "hero_id": 123,
         "hero_name": "Hoodwink",
-        "pick_weight_share": 0.1027,
-        "winrate_delta": 0.0026,
-        "contribution": 0.00027,
+        "pick_weight_share": 0.1026,
+        "winrate_delta": -0.002,
+        "contribution": -0.00021,
         "patch_notes_context": {
           "direction": "mixed",
           "summary": "Mistwoods Wayfarer proc chance slightly reduced; Sharpshooter mana cost increased; Shard Hunter's Boomerang cooldown increased."
@@ -4428,9 +4428,9 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 90,
         "hero_name": "Keeper of the Light",
-        "pick_weight_share": 0.1,
-        "winrate_delta": -0.0023,
-        "contribution": -0.00023,
+        "pick_weight_share": 0.0998,
+        "winrate_delta": -0.0021,
+        "contribution": -0.00021,
         "patch_notes_context": {
           "direction": "mixed",
           "summary": "False Promise cast range increased from 700/800/900 to 800/850/900 (buff), but Solar Bind cast range reduced from 850 to 750 and Chakra Magic cooldown increased (nerf). See known_review_flags."
@@ -4440,47 +4440,47 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
   },
   "9964962": {
     "team_name": "GamerLegion",
-    "patch_impact_score": 0.00027,
+    "patch_impact_score": 0.00051,
     "scored_pick_weight_coverage": 1,
     "pool_heroes": [
       {
         "hero_id": 119,
         "hero_name": "Dark Willow",
-        "pick_weight_share": 0.1646,
-        "winrate_delta": -0.0002,
-        "contribution": -0.00003,
+        "pick_weight_share": 0.1643,
+        "winrate_delta": 0.0017,
+        "contribution": 0.00028,
         "patch_notes_context": null
       },
       {
         "hero_id": 37,
         "hero_name": "Warlock",
-        "pick_weight_share": 0.1281,
-        "winrate_delta": -0.0023,
-        "contribution": -0.00029,
+        "pick_weight_share": 0.1284,
+        "winrate_delta": 0,
+        "contribution": 0,
         "patch_notes_context": null
       },
       {
         "hero_id": 79,
         "hero_name": "Shadow Demon",
-        "pick_weight_share": 0.12,
-        "winrate_delta": 0.0045,
-        "contribution": 0.00054,
+        "pick_weight_share": 0.1202,
+        "winrate_delta": -0.0009,
+        "contribution": -0.00011,
         "patch_notes_context": null
       },
       {
         "hero_id": 17,
         "hero_name": "Storm Spirit",
         "pick_weight_share": 0.1197,
-        "winrate_delta": 0.0007,
-        "contribution": 0.00008,
+        "winrate_delta": 0.0038,
+        "contribution": 0.00045,
         "patch_notes_context": null
       },
       {
         "hero_id": 106,
         "hero_name": "Ember Spirit",
         "pick_weight_share": 0.1189,
-        "winrate_delta": -0.0056,
-        "contribution": -0.00067,
+        "winrate_delta": 0.0041,
+        "contribution": 0.00049,
         "patch_notes_context": {
           "direction": "nerfed",
           "summary": "Base movement speed reduced from 300 to 295."
@@ -4489,40 +4489,40 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 110,
         "hero_name": "Phoenix",
-        "pick_weight_share": 0.1171,
-        "winrate_delta": -0.0003,
-        "contribution": -0.00004,
+        "pick_weight_share": 0.117,
+        "winrate_delta": -0.0018,
+        "contribution": -0.00021,
         "patch_notes_context": null
       },
       {
         "hero_id": 28,
         "hero_name": "Slardar",
-        "pick_weight_share": 0.1169,
-        "winrate_delta": 0.0032,
-        "contribution": 0.00037,
+        "pick_weight_share": 0.117,
+        "winrate_delta": -0.003,
+        "contribution": -0.00035,
         "patch_notes_context": null
       },
       {
         "hero_id": 11,
         "hero_name": "Shadow Fiend",
-        "pick_weight_share": 0.1146,
-        "winrate_delta": 0.0026,
-        "contribution": 0.0003,
+        "pick_weight_share": 0.1145,
+        "winrate_delta": -0.0004,
+        "contribution": -0.00005,
         "patch_notes_context": null
       }
     ]
   },
   "10136357": {
     "team_name": "Nigma Galaxy",
-    "patch_impact_score": -0.00065,
+    "patch_impact_score": -0.00142,
     "scored_pick_weight_coverage": 1,
     "pool_heroes": [
       {
         "hero_id": 123,
         "hero_name": "Hoodwink",
-        "pick_weight_share": 0.2578,
-        "winrate_delta": 0.0026,
-        "contribution": 0.00067,
+        "pick_weight_share": 0.2577,
+        "winrate_delta": -0.002,
+        "contribution": -0.00052,
         "patch_notes_context": {
           "direction": "mixed",
           "summary": "Mistwoods Wayfarer proc chance slightly reduced; Sharpshooter mana cost increased; Shard Hunter's Boomerang cooldown increased."
@@ -4531,49 +4531,49 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 13,
         "hero_name": "Puck",
-        "pick_weight_share": 0.1464,
-        "winrate_delta": -0.0017,
-        "contribution": -0.00025,
+        "pick_weight_share": 0.1465,
+        "winrate_delta": 0.0046,
+        "contribution": 0.00067,
         "patch_notes_context": null
       },
       {
         "hero_id": 91,
         "hero_name": "Io",
-        "pick_weight_share": 0.1097,
-        "winrate_delta": -0.0097,
-        "contribution": -0.00106,
+        "pick_weight_share": 0.1098,
+        "winrate_delta": -0.0119,
+        "contribution": -0.00131,
         "patch_notes_context": null
       },
       {
         "hero_id": 21,
         "hero_name": "Windranger",
-        "pick_weight_share": 0.1062,
-        "winrate_delta": 0.0029,
-        "contribution": 0.00031,
+        "pick_weight_share": 0.1061,
+        "winrate_delta": 0.0001,
+        "contribution": 0.00001,
         "patch_notes_context": null
       },
       {
         "hero_id": 110,
         "hero_name": "Phoenix",
         "pick_weight_share": 0.099,
-        "winrate_delta": -0.0003,
-        "contribution": -0.00003,
+        "winrate_delta": -0.0018,
+        "contribution": -0.00018,
         "patch_notes_context": null
       },
       {
         "hero_id": 27,
         "hero_name": "Shadow Shaman",
-        "pick_weight_share": 0.0937,
-        "winrate_delta": 0.0007,
-        "contribution": 0.00007,
+        "pick_weight_share": 0.0939,
+        "winrate_delta": -0.0016,
+        "contribution": -0.00015,
         "patch_notes_context": null
       },
       {
         "hero_id": 90,
         "hero_name": "Keeper of the Light",
-        "pick_weight_share": 0.0937,
-        "winrate_delta": -0.0023,
-        "contribution": -0.00022,
+        "pick_weight_share": 0.0938,
+        "winrate_delta": -0.0021,
+        "contribution": -0.0002,
         "patch_notes_context": {
           "direction": "mixed",
           "summary": "False Promise cast range increased from 700/800/900 to 800/850/900 (buff), but Solar Bind cast range reduced from 850 to 750 and Chakra Magic cooldown increased (nerf). See known_review_flags."
@@ -4582,9 +4582,9 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 3,
         "hero_name": "Bane",
-        "pick_weight_share": 0.0935,
-        "winrate_delta": -0.0014,
-        "contribution": -0.00013,
+        "pick_weight_share": 0.0934,
+        "winrate_delta": 0.0026,
+        "contribution": 0.00024,
         "patch_notes_context": {
           "direction": "mixed",
           "summary": "Ichor stacks increased to 6 but status resistance reduction per stack lowered; Nightmare duration reduced; Scepter upgrade cooldown bonus decreased."
@@ -4594,15 +4594,15 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
   },
   "10149530": {
     "team_name": "HULIGANI",
-    "patch_impact_score": -0.00239,
+    "patch_impact_score": 0.00192,
     "scored_pick_weight_coverage": 1,
     "pool_heroes": [
       {
         "hero_id": 123,
         "hero_name": "Hoodwink",
-        "pick_weight_share": 0.1702,
-        "winrate_delta": 0.0026,
-        "contribution": 0.00044,
+        "pick_weight_share": 0.1703,
+        "winrate_delta": -0.002,
+        "contribution": -0.00034,
         "patch_notes_context": {
           "direction": "mixed",
           "summary": "Mistwoods Wayfarer proc chance slightly reduced; Sharpshooter mana cost increased; Shard Hunter's Boomerang cooldown increased."
@@ -4612,8 +4612,8 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
         "hero_id": 106,
         "hero_name": "Ember Spirit",
         "pick_weight_share": 0.16,
-        "winrate_delta": -0.0056,
-        "contribution": -0.0009,
+        "winrate_delta": 0.0041,
+        "contribution": 0.00066,
         "patch_notes_context": {
           "direction": "nerfed",
           "summary": "Base movement speed reduced from 300 to 295."
@@ -4623,40 +4623,40 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
         "hero_id": 108,
         "hero_name": "Underlord",
         "pick_weight_share": 0.1253,
-        "winrate_delta": -0.0034,
-        "contribution": -0.00043,
+        "winrate_delta": 0.0032,
+        "contribution": 0.0004,
         "patch_notes_context": null
       },
       {
         "hero_id": 131,
         "hero_name": "Ringmaster",
         "pick_weight_share": 0.1209,
-        "winrate_delta": -0.0055,
-        "contribution": -0.00067,
+        "winrate_delta": 0.0041,
+        "contribution": 0.0005,
         "patch_notes_context": null
       },
       {
         "hero_id": 54,
         "hero_name": "Lifestealer",
         "pick_weight_share": 0.12,
-        "winrate_delta": -0.0029,
-        "contribution": -0.00035,
+        "winrate_delta": -0.001,
+        "contribution": -0.00012,
         "patch_notes_context": null
       },
       {
         "hero_id": 13,
         "hero_name": "Puck",
         "pick_weight_share": 0.1096,
-        "winrate_delta": -0.0017,
-        "contribution": -0.00019,
+        "winrate_delta": 0.0046,
+        "contribution": 0.0005,
         "patch_notes_context": null
       },
       {
         "hero_id": 51,
         "hero_name": "Clockwerk",
-        "pick_weight_share": 0.1021,
-        "winrate_delta": -0.0003,
-        "contribution": -0.00003,
+        "pick_weight_share": 0.102,
+        "winrate_delta": 0.0013,
+        "contribution": 0.00013,
         "patch_notes_context": {
           "direction": "nerfed",
           "summary": "Mana Shock mana burn reduced; attack push distance decreased progressively; Power Cogs no longer block neutral camps."
@@ -4665,9 +4665,9 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 107,
         "hero_name": "Earth Spirit",
-        "pick_weight_share": 0.092,
-        "winrate_delta": -0.0031,
-        "contribution": -0.00029,
+        "pick_weight_share": 0.0919,
+        "winrate_delta": 0.0021,
+        "contribution": 0.00019,
         "patch_notes_context": {
           "direction": "nerfed",
           "summary": "Base intelligence reduced from 18 to 17; Magnetize talent bonus decreased by 5%."
@@ -4677,15 +4677,15 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
   },
   "10150413": {
     "team_name": "Iron Wing",
-    "patch_impact_score": -0.00065,
+    "patch_impact_score": 0.00145,
     "scored_pick_weight_coverage": 1,
     "pool_heroes": [
       {
         "hero_id": 123,
         "hero_name": "Hoodwink",
-        "pick_weight_share": 0.143,
-        "winrate_delta": 0.0026,
-        "contribution": 0.00037,
+        "pick_weight_share": 0.1429,
+        "winrate_delta": -0.002,
+        "contribution": -0.00029,
         "patch_notes_context": {
           "direction": "mixed",
           "summary": "Mistwoods Wayfarer proc chance slightly reduced; Sharpshooter mana cost increased; Shard Hunter's Boomerang cooldown increased."
@@ -4695,8 +4695,8 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
         "hero_id": 69,
         "hero_name": "Doom",
         "pick_weight_share": 0.134,
-        "winrate_delta": -0.0002,
-        "contribution": -0.00003,
+        "winrate_delta": 0.0037,
+        "contribution": 0.0005,
         "patch_notes_context": {
           "direction": "mixed",
           "summary": "Base attack range reduced from 200 to 175; Infernal Blade base damage increased but its health-scaling component rescaled downward."
@@ -4705,9 +4705,9 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 90,
         "hero_name": "Keeper of the Light",
-        "pick_weight_share": 0.1321,
-        "winrate_delta": -0.0023,
-        "contribution": -0.0003,
+        "pick_weight_share": 0.132,
+        "winrate_delta": -0.0021,
+        "contribution": -0.00028,
         "patch_notes_context": {
           "direction": "mixed",
           "summary": "False Promise cast range increased from 700/800/900 to 800/850/900 (buff), but Solar Bind cast range reduced from 850 to 750 and Chakra Magic cooldown increased (nerf). See known_review_flags."
@@ -4716,33 +4716,33 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 155,
         "hero_name": "Largo",
-        "pick_weight_share": 0.1191,
-        "winrate_delta": -0.0058,
-        "contribution": -0.00069,
+        "pick_weight_share": 0.119,
+        "winrate_delta": 0.0023,
+        "contribution": 0.00027,
         "patch_notes_context": null
       },
       {
         "hero_id": 145,
         "hero_name": "Kez",
         "pick_weight_share": 0.1188,
-        "winrate_delta": -0.0009,
-        "contribution": -0.00011,
+        "winrate_delta": 0.0138,
+        "contribution": 0.00164,
         "patch_notes_context": null
       },
       {
         "hero_id": 27,
         "hero_name": "Shadow Shaman",
-        "pick_weight_share": 0.1182,
-        "winrate_delta": 0.0007,
-        "contribution": 0.00008,
+        "pick_weight_share": 0.1183,
+        "winrate_delta": -0.0016,
+        "contribution": -0.00019,
         "patch_notes_context": null
       },
       {
         "hero_id": 74,
         "hero_name": "Invoker",
-        "pick_weight_share": 0.1176,
-        "winrate_delta": 0.0005,
-        "contribution": 0.00006,
+        "pick_weight_share": 0.1177,
+        "winrate_delta": 0,
+        "contribution": 0,
         "patch_notes_context": {
           "direction": "nerfed",
           "summary": "Ghost Walk duration reduced from 60 to 50; Shard no longer adds slow radius."
@@ -4751,24 +4751,24 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 110,
         "hero_name": "Phoenix",
-        "pick_weight_share": 0.1172,
-        "winrate_delta": -0.0003,
-        "contribution": -0.00004,
+        "pick_weight_share": 0.1173,
+        "winrate_delta": -0.0018,
+        "contribution": -0.00021,
         "patch_notes_context": null
       }
     ]
   },
   "10150538": {
     "team_name": "LGD Gaming",
-    "patch_impact_score": 0.00081,
+    "patch_impact_score": -0.00029,
     "scored_pick_weight_coverage": 1,
     "pool_heroes": [
       {
         "hero_id": 123,
         "hero_name": "Hoodwink",
-        "pick_weight_share": 0.167,
-        "winrate_delta": 0.0026,
-        "contribution": 0.00043,
+        "pick_weight_share": 0.1669,
+        "winrate_delta": -0.002,
+        "contribution": -0.00033,
         "patch_notes_context": {
           "direction": "mixed",
           "summary": "Mistwoods Wayfarer proc chance slightly reduced; Sharpshooter mana cost increased; Shard Hunter's Boomerang cooldown increased."
@@ -4777,9 +4777,9 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 51,
         "hero_name": "Clockwerk",
-        "pick_weight_share": 0.15,
-        "winrate_delta": -0.0003,
-        "contribution": -0.00004,
+        "pick_weight_share": 0.1499,
+        "winrate_delta": 0.0013,
+        "contribution": 0.00019,
         "patch_notes_context": {
           "direction": "nerfed",
           "summary": "Mana Shock mana burn reduced; attack push distance decreased progressively; Power Cogs no longer block neutral camps."
@@ -4788,25 +4788,25 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 13,
         "hero_name": "Puck",
-        "pick_weight_share": 0.1374,
-        "winrate_delta": -0.0017,
-        "contribution": -0.00023,
+        "pick_weight_share": 0.1373,
+        "winrate_delta": 0.0046,
+        "contribution": 0.00063,
         "patch_notes_context": null
       },
       {
         "hero_id": 47,
         "hero_name": "Viper",
-        "pick_weight_share": 0.1181,
-        "winrate_delta": -0.0004,
-        "contribution": -0.00005,
+        "pick_weight_share": 0.1182,
+        "winrate_delta": -0.0019,
+        "contribution": -0.00022,
         "patch_notes_context": null
       },
       {
         "hero_id": 3,
         "hero_name": "Bane",
         "pick_weight_share": 0.1164,
-        "winrate_delta": -0.0014,
-        "contribution": -0.00016,
+        "winrate_delta": 0.0026,
+        "contribution": 0.0003,
         "patch_notes_context": {
           "direction": "mixed",
           "summary": "Ichor stacks increased to 6 but status resistance reduction per stack lowered; Nightmare duration reduced; Scepter upgrade cooldown bonus decreased."
@@ -4815,17 +4815,17 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 98,
         "hero_name": "Timbersaw",
-        "pick_weight_share": 0.1051,
-        "winrate_delta": 0.0005,
-        "contribution": 0.00005,
+        "pick_weight_share": 0.105,
+        "winrate_delta": -0.0009,
+        "contribution": -0.00009,
         "patch_notes_context": null
       },
       {
         "hero_id": 38,
         "hero_name": "Beastmaster",
-        "pick_weight_share": 0.1034,
-        "winrate_delta": 0.0035,
-        "contribution": 0.00036,
+        "pick_weight_share": 0.1035,
+        "winrate_delta": -0.0024,
+        "contribution": -0.00025,
         "patch_notes_context": {
           "direction": "nerfed",
           "summary": "Level 20 talent (+30 Damage Aura) reduced to +25; Level 25 talent (-25s Primal Roar cooldown) reduced to -20s."
@@ -4834,9 +4834,9 @@ export const teamPatchImpact: Record<string, TeamPatchImpact> = {
       {
         "hero_id": 100,
         "hero_name": "Tusk",
-        "pick_weight_share": 0.1026,
-        "winrate_delta": 0.0044,
-        "contribution": 0.00045,
+        "pick_weight_share": 0.1029,
+        "winrate_delta": -0.005,
+        "contribution": -0.00051,
         "patch_notes_context": null
       }
     ]

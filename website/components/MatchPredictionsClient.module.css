@@ -1,0 +1,89 @@
+.matchList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.matchRow {
+  display: grid;
+  grid-template-columns: 1fr 120px 1fr auto;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  background: var(--surface-2);
+  border-radius: 6px;
+}
+
+.teamSide {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.teamSide:last-child {
+  justify-content: flex-end;
+}
+
+.favored {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.bar {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(248, 81, 73, 0.35);
+  overflow: hidden;
+}
+
+.barFillA {
+  height: 100%;
+  background: var(--win);
+}
+
+.removeBtn {
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 1;
+  padding: 2px 6px;
+}
+
+.removeBtn:hover {
+  color: var(--loss);
+}
+
+.addRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.select {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--foreground);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+.addBtn {
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  color: #0b0d12;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.addBtn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}

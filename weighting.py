@@ -48,3 +48,25 @@ def tierWeight(league_id, league_tiers):
 
 def matchWeight(start_time, league_id, league_tiers, now_ts=None):
     return recencyWeight(start_time, now_ts) * tierWeight(league_id, league_tiers)
+
+
+# Roster-integrity penalty: a flat multiplier applied to a team's WIN credit
+# (not losses) when computing decayed win rate / overall win rate - i.e. every
+# win this team earned across the tracked history counts for less than a full
+# win. This is distinct from recency/tier weighting; it reflects that a chunk
+# of a team's historical results were earned with a roster that no longer
+# exists, so shouldn't fully carry over to the TI2026 win-probability estimate.
+#
+# 2026-08-07: LGD Gaming's TaiLung was permanently banned from competing and
+# is replaced by Topson for TI2026 - user-specified -25% (0.75x) win-credit
+# deduction, applied identically wherever a team's win credit feeds the rating
+# pipeline (compute_ratings.py's form component, compute_overall_winrate.py)
+# so it propagates through to the simulated win probability rather than being
+# a one-off adjustment applied only at the end.
+TEAM_WIN_CREDIT_MULTIPLIER = {
+    10150538: 0.75,  # LGD Gaming
+}
+
+
+def winCreditMultiplier(team_id):
+    return TEAM_WIN_CREDIT_MULTIPLIER.get(team_id, 1.0)

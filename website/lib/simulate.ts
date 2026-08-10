@@ -74,7 +74,11 @@ function pairRound(
   return pairings;
 }
 
-function runSwissTrial(trialRatings: Map<number, number>, rng: Rng): Map<number, Record2> {
+function runSwissTrial(
+  trialRatings: Map<number, number>,
+  rng: Rng,
+  forcedFirstRound?: [number, number][]
+): Map<number, Record2> {
   const records = new Map<number, Record2>();
   const allTeams = [...trialRatings.keys()];
   for (const tid of allTeams) records.set(tid, [0, 0]);
@@ -84,7 +88,10 @@ function runSwissTrial(trialRatings: Map<number, number>, rng: Rng): Map<number,
     const active = allTeams.filter((tid) => !isTerminal(records.get(tid)!));
     if (active.length === 0) break;
 
-    const pairings = pairRound(active, allTeams, records, playedPairs, rng);
+    const pairings: Pairing[] =
+      round === 0 && forcedFirstRound
+        ? forcedFirstRound.map(([a, b]) => ({ a, b, updateB: true }))
+        : pairRound(active, allTeams, records, playedPairs, rng);
     for (const { a, b, updateB } of pairings) {
       playedPairs.add(`${a}_${b}`);
       const pA = winProbability(trialRatings.get(a)!, trialRatings.get(b)!);
@@ -111,7 +118,8 @@ export interface SimulationOutcome {
 export function runSwissSimulation(
   teamRatings: TeamRatingInput[],
   numTrials: number,
-  seed = 42
+  seed = 42,
+  forcedFirstRound?: [number, number][]
 ): SimulationOutcome[] {
   const rng = new Rng(seed);
   const outcomeCounts = new Map<number, Map<string, number>>();
@@ -121,7 +129,7 @@ export function runSwissSimulation(
     const trialRatings = new Map<number, number>();
     for (const t of teamRatings) trialRatings.set(t.teamId, rng.gauss(t.mean, t.sigma));
 
-    const finalRecords = runSwissTrial(trialRatings, rng);
+    const finalRecords = runSwissTrial(trialRatings, rng, forcedFirstRound);
     for (const [tid, [w, l]] of finalRecords) {
       const key = `${w}-${l}`;
       const counts = outcomeCounts.get(tid)!;
@@ -137,4 +145,20 @@ export function runSwissSimulation(
     }
     return { teamId: t.teamId, outcomePct };
   });
+}
+
+// Single best-of-one matchup win probability (not a group-stage run) - samples
+// both teams' rating distributions repeatedly and counts how often A beats B.
+// Used for the Day 1 / custom "who wins this single match" tool, kept separate
+// from the Swiss simulation above since it isn't part of the tracked group
+// stage outcome distribution.
+export function simulatePairwise(a: TeamRatingInput, b: TeamRatingInput, trials = 20000, seed = 42): number {
+  const rng = new Rng(seed);
+  let aWins = 0;
+  for (let i = 0; i < trials; i++) {
+    const ratingA = rng.gauss(a.mean, a.sigma);
+    const ratingB = rng.gauss(b.mean, b.sigma);
+    if (rng.random() < winProbability(ratingA, ratingB)) aWins++;
+  }
+  return aWins / trials;
 }

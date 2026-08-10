@@ -55,9 +55,11 @@ console.log("Building website/data/*.ts from prediction/*.json ...");
       "  team_name: string;",
       "  glicko_rating: number | null;",
       "  glicko_phi: number | null;",
+      "  glicko_stale: boolean;",
       "  decayed_win_rate: number | null;",
       "  effective_n: number;",
       "  raw_match_count: number;",
+      "  win_credit_multiplier: number;",
       "  z_elo: number;",
       "  sigma_elo_z: number;",
       "  z_form: number;",
@@ -78,6 +80,7 @@ console.log("Building website/data/*.ts from prediction/*.json ...");
       "  glicko_mean: number;",
       "  glicko_std: number;",
       "  note: string;",
+      "  win_credit_multiplier_note: string;",
       "}",
       "",
     ].join("\n"),
@@ -292,6 +295,7 @@ console.log("Building website/data/*.ts from prediction/*.json ...");
       "  tier_and_recency_weighted_win_rate: number | null;",
       "  tier_and_recency_weighted_effective_n: number;",
       "  avg_match_duration_seconds: number | null;",
+      "  win_credit_multiplier: number;",
       "  by_tier: Record<string, TierBreakdown>;",
       "}",
       "",
@@ -305,10 +309,9 @@ console.log("Building website/data/*.ts from prediction/*.json ...");
   );
 }
 
-// ---- simulation.ts (both precomputed trial counts) ----
+// ---- simulation.ts (single canonical 1,000,000-trial run) ----
 {
-  const sim10k = readJson("group_stage_simulation_results.json");
-  const sim100k = readJson("group_stage_simulation_results_100000.json");
+  const sim = readJson("group_stage_simulation_results.json");
   writeModule(
     "simulation.ts",
     [
@@ -317,17 +320,24 @@ console.log("Building website/data/*.ts from prediction/*.json ...");
       "  outcome_pct: Record<string, number>;",
       "}",
       "",
+      "export interface SimulationMeta {",
+      "  num_trials: number;",
+      "  max_rounds: number;",
+      "  wins_to_advance: number;",
+      "  losses_to_eliminate: number;",
+      "  day1_pairings_forced: boolean;",
+      "  day1_pairings: [number, number][];",
+      "  day1_note: string;",
+      "}",
+      "",
       "export interface SimulationRun {",
-      "  meta: { num_trials: number; max_rounds: number; wins_to_advance: number; losses_to_eliminate: number };",
+      "  meta: SimulationMeta;",
       "  teams: Record<string, TeamSimOutcome>;",
       "}",
       "",
     ].join("\n"),
     [
-      "export const precomputedSimulations: Record<number, SimulationRun> = {",
-      `  10000: { meta: ${JSON.stringify(sim10k._meta)}, teams: ${JSON.stringify(sim10k.teams, null, 2)} },`,
-      `  100000: { meta: ${JSON.stringify(sim100k._meta)}, teams: ${JSON.stringify(sim100k.teams, null, 2)} },`,
-      "};",
+      `export const precomputedSimulation: SimulationRun = { meta: ${JSON.stringify(sim._meta, null, 2)}, teams: ${JSON.stringify(sim.teams, null, 2)} };`,
       "",
     ].join("\n")
   );

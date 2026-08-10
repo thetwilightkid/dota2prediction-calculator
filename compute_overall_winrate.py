@@ -3,7 +3,7 @@ import os
 from datetime import datetime, timezone
 
 from team_config import TEAM_CANONICAL
-from weighting import recencyWeight as _recencyWeight, RECENCY_OLD_CUTOFF, OLD_FLOOR_WEIGHT
+from weighting import recencyWeight as _recencyWeight, RECENCY_OLD_CUTOFF, OLD_FLOOR_WEIGHT, winCreditMultiplier
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -69,15 +69,17 @@ for m in supplementary_matches.values():
     team_matches[tid].append((won, tier, tw, rw, m.get("duration")))
 
 
-def weightedRate(entries, weight_fn):
-    """weight_fn(tier, tier_weight, recency_weight) -> the weight to use for this match."""
+def weightedRate(entries, weight_fn, win_credit_multiplier=1.0):
+    """weight_fn(tier, tier_weight, recency_weight) -> the weight to use for this match.
+    win_credit_multiplier scales WIN credit only, same roster-integrity penalty
+    mechanism as compute_ratings.py's decayedWinRate."""
     total_w = 0.0
     win_w = 0.0
     for won, tier, tw, rw, _dur in entries:
         w = weight_fn(tw, rw)
         total_w += w
         if won:
-            win_w += w
+            win_w += w * win_credit_multiplier
     return (win_w / total_w if total_w > 0 else None), total_w
 
 
@@ -89,8 +91,9 @@ for tid, name in TEAM_CANONICAL.items():
     raw_wins = sum(1 for won, *_ in entries if won)
     raw_win_rate = raw_wins / raw_total if raw_total > 0 else None
 
-    tier_weighted_rate, tier_effective_n = weightedRate(entries, lambda tw, rw: tw)
-    decayed_rate, decayed_effective_n = weightedRate(entries, lambda tw, rw: tw * rw)
+    wcm = winCreditMultiplier(tid)
+    tier_weighted_rate, tier_effective_n = weightedRate(entries, lambda tw, rw: tw, wcm)
+    decayed_rate, decayed_effective_n = weightedRate(entries, lambda tw, rw: tw * rw, wcm)
 
     durations = [dur for *_, dur in entries if dur]
     avg_duration = round(sum(durations) / len(durations)) if durations else None
@@ -114,6 +117,7 @@ for tid, name in TEAM_CANONICAL.items():
         "tier_and_recency_weighted_win_rate": round(decayed_rate, 4) if decayed_rate is not None else None,
         "tier_and_recency_weighted_effective_n": round(decayed_effective_n, 2),
         "avg_match_duration_seconds": avg_duration,
+        "win_credit_multiplier": wcm,
         "by_tier": by_tier,
     }
 
@@ -142,6 +146,7 @@ with open(localPath("team_overall_winrate.json"), "w", encoding="utf-8") as f:
             "tier_weights": {"S": 1.0, "A": 0.8, "B": 0.5, "C": 0.25, "excluded": 0.0, "unknown": 0.5},
             "recency_old_cutoff": RECENCY_OLD_CUTOFF.isoformat(),
             "recency_old_floor_weight": OLD_FLOOR_WEIGHT,
+            "win_credit_multiplier_note": "win_credit_multiplier < 1.0 applies a roster-integrity penalty to that team's WIN credit only, in tier_weighted_win_rate and tier_and_recency_weighted_win_rate (raw_win_rate stays a true unadjusted historical figure) - see weighting.py's TEAM_WIN_CREDIT_MULTIPLIER.",
         },
         "teams": results,
     }, f, ensure_ascii=False, indent=4)

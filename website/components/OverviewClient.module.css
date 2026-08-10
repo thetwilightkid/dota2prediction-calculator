@@ -32,6 +32,12 @@
   font-size: 13px;
 }
 
+.legend {
+  color: var(--muted);
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
 .sliderSection {
   position: sticky;
   top: 76px;

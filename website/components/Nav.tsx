@@ -5,10 +5,11 @@ import { usePathname } from "next/navigation";
 import styles from "./Nav.module.css";
 
 const LINKS = [
-  { href: "/", label: "Overview" },
-  { href: "/matchups", label: "Matchups" },
-  { href: "/simulation", label: "Simulation" },
-  { href: "/drafts", label: "Drafts & Patch" },
+  { href: "/", label: "Rankings" },
+  { href: "/matches", label: "Match predictions" },
+  { href: "/matchups", label: "Head-to-head" },
+  { href: "/simulation", label: "Simulated results" },
+  { href: "/drafts", label: "Heroes & patch" },
 ];
 
 export default function Nav() {

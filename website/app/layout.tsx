@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
+import { WeightsProvider } from "@/lib/WeightsContext";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -11,8 +12,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en">
       <body>
-        <Nav />
-        {children}
+        <WeightsProvider>
+          <Nav />
+          {children}
+        </WeightsProvider>
       </body>
     </html>
   );

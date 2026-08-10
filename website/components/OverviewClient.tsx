@@ -4,24 +4,21 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import SliderPanel from "./SliderPanel";
 import styles from "./OverviewClient.module.css";
-import { DEFAULT_WEIGHTS, computeComposite, type RatingWeights } from "@/lib/rating";
+import { useWeights } from "@/lib/WeightsContext";
+import { computeComposite } from "@/lib/rating";
 import { runSwissSimulation } from "@/lib/simulate";
-import { precomputedSimulations } from "@/data/simulation";
+import { precomputedSimulation } from "@/data/simulation";
 
 const LIVE_TRIALS = 4000;
 const OUTCOME_ORDER = ["4-0", "4-1", "3-2", "2-3", "1-4", "0-4"];
+const DAY1_PAIRINGS = precomputedSimulation.meta.day1_pairings as [number, number][];
 
 function advanceChance(outcomePct: Record<string, number>): number {
   return (outcomePct["4-0"] ?? 0) + (outcomePct["4-1"] ?? 0) + (outcomePct["3-2"] ?? 0);
 }
 
 export default function OverviewClient() {
-  const [weights, setWeights] = useState<RatingWeights>(DEFAULT_WEIGHTS);
-  const isDefault = useMemo(
-    () => (Object.keys(weights) as (keyof RatingWeights)[]).every((k) => weights[k] === DEFAULT_WEIGHTS[k]),
-    [weights]
-  );
-
+  const { weights, isDefault } = useWeights();
   const composite = useMemo(() => computeComposite(weights), [weights]);
 
   const [liveOutcomes, setLiveOutcomes] = useState<Map<number, Record<string, number>> | null>(null);
@@ -34,7 +31,7 @@ export default function OverviewClient() {
     const startHandle = setTimeout(() => setIsSimulating(true), 0);
     const runHandle = setTimeout(() => {
       const ratings = composite.map((c) => ({ teamId: c.teamId, mean: c.ratingScaleMean, sigma: c.ratingScaleSigma }));
-      const results = runSwissSimulation(ratings, LIVE_TRIALS);
+      const results = runSwissSimulation(ratings, LIVE_TRIALS, 42, DAY1_PAIRINGS);
       const map = new Map(results.map((r) => [r.teamId, r.outcomePct]));
       setLiveOutcomes(map);
       setIsSimulating(false);
@@ -49,41 +46,42 @@ export default function OverviewClient() {
   // than clearing liveOutcomes state from inside the effect above.
   const displayOutcomes = isDefault ? null : liveOutcomes;
 
-  const precomputed10k = precomputedSimulations[10000];
-
   const rows = useMemo(() => {
     return [...composite]
       .sort((a, b) => b.compositeMean - a.compositeMean)
       .map((c, idx) => {
-        const outcomePct = displayOutcomes?.get(c.teamId) ?? precomputed10k.teams[String(c.teamId)]?.outcome_pct;
+        const outcomePct = displayOutcomes?.get(c.teamId) ?? precomputedSimulation.teams[String(c.teamId)]?.outcome_pct;
         return { rank: idx + 1, ...c, outcomePct };
       });
-  }, [composite, displayOutcomes, precomputed10k]);
+  }, [composite, displayOutcomes]);
 
   return (
     <div className={styles.layout}>
       <div className={styles.tableSection}>
         <div className={styles.tableHeader}>
-          <h1>Group stage ranking</h1>
+          <h1>Team rankings</h1>
           <span className={styles.sourceNote}>
             {isDefault
-              ? "Showing default composite rating + precomputed 10,000-trial simulation"
+              ? "Our standard prediction, based on 1,000,000 simulated tournaments"
               : isSimulating
-                ? `Recomputing (${LIVE_TRIALS.toLocaleString()} live trials)...`
-                : `Live: reweighted composite + ${LIVE_TRIALS.toLocaleString()}-trial re-simulation`}
+                ? "Recalculating with your settings..."
+                : "Updated for your settings (quick estimate)"}
           </span>
         </div>
+        <p className={styles.legend}>
+          Records show wins-losses. 4-0 through 3-2 advance to the next stage; 2-3 through 0-4 are eliminated.
+        </p>
         <div className="tableWrap">
           <table className="dataTable">
             <thead>
               <tr>
                 <th>#</th>
                 <th>Team</th>
-                <th>Rating</th>
-                <th title="Elo/Glicko z-score component">Elo</th>
-                <th title="Own decayed win-rate z-score component">Form</th>
-                <th title="EPT/ESL/Liquipedia market z-score component">Market</th>
-                <th>Advance %</th>
+                <th title="A single combined strength score - higher is better">Power score</th>
+                <th title="Based on an independent rating service that tracks pro matches">Track record</th>
+                <th title="How well they've played recently">Recent form</th>
+                <th title="What other prediction sites think of them">Experts</th>
+                <th title="Chance of finishing 3-2 or better">Chance to advance</th>
                 {OUTCOME_ORDER.map((o) => (
                   <th key={o}>{o}</th>
                 ))}
@@ -116,7 +114,7 @@ export default function OverviewClient() {
       </div>
 
       <div className={styles.sliderSection}>
-        <SliderPanel weights={weights} onChange={setWeights} />
+        <SliderPanel />
       </div>
     </div>
   );

@@ -51,20 +51,23 @@ export default async function TeamDetailPage({ params }: PageProps<"/teams/[team
 
       <div className={styles.grid}>
         <div className="card">
-          <h3>Composite rating</h3>
+          <h3>Power score</h3>
           <div className={styles.bigNumber}>
             {rating.rating_scale_mean.toFixed(0)} <span className="muted">± {rating.rating_scale_sigma.toFixed(0)}</span>
           </div>
+          <p className="muted" style={{ fontSize: 12, marginBottom: 10 }}>
+            One combined strength number (higher is better), with a ± range showing how uncertain we are.
+          </p>
           <dl className={styles.detailList}>
-            <dt>Elo (z)</dt>
+            <dt>Track record</dt>
             <dd className="mono">{rating.z_elo.toFixed(2)}</dd>
-            <dt>Form (z)</dt>
+            <dt>Recent form</dt>
             <dd className="mono">{rating.z_form.toFixed(2)}</dd>
-            <dt>Market (z)</dt>
+            <dt>Expert opinion</dt>
             <dd className="mono">
               {rating.z_market.toFixed(2)} <span className="muted">({rating.market_n_sources} sources)</span>
             </dd>
-            <dt>datdota Glicko-2</dt>
+            <dt>Independent rating service</dt>
             <dd className="mono">
               {rating.glicko_rating != null ? `${rating.glicko_rating.toFixed(0)} ± ${rating.glicko_phi?.toFixed(0)}` : "n/a"}
             </dd>
@@ -75,15 +78,15 @@ export default async function TeamDetailPage({ params }: PageProps<"/teams/[team
           <h3>Overall win rate</h3>
           {winrate ? (
             <dl className={styles.detailList}>
-              <dt>Raw</dt>
+              <dt>All matches</dt>
               <dd className="mono">
                 {pct(winrate.raw_win_rate)} ({winrate.raw_win_count}/{winrate.raw_match_count})
               </dd>
-              <dt>Tier-weighted</dt>
+              <dt>Adjusted for tournament importance</dt>
               <dd className="mono">{pct(winrate.tier_weighted_win_rate)}</dd>
-              <dt>Tier + recency-weighted</dt>
+              <dt>Adjusted for importance &amp; recency</dt>
               <dd className="mono">{pct(winrate.tier_and_recency_weighted_win_rate)}</dd>
-              <dt>Avg match duration</dt>
+              <dt>Average match length</dt>
               <dd className="mono">
                 {winrate.avg_match_duration_seconds
                   ? `${Math.floor(winrate.avg_match_duration_seconds / 60)}:${Math.round(winrate.avg_match_duration_seconds % 60)
@@ -98,20 +101,20 @@ export default async function TeamDetailPage({ params }: PageProps<"/teams/[team
         </div>
 
         <div className="card">
-          <h3>Stability &amp; draft strength</h3>
+          <h3>Consistency</h3>
           {stability ? (
             <dl className={styles.detailList}>
-              <dt>Draft-stage predicted win rate</dt>
+              <dt>Predicted win chance right after draft</dt>
               <dd className="mono">{pct(stability.avg_draft_stage_win_rate)}</dd>
-              <dt>Win rate when draft-favored</dt>
+              <dt>How often they close it out when favored after draft</dt>
               <dd className="mono">{pct(stability.draft_favored_win_rate)}</dd>
-              <dt>Win rate when draft-underdog</dt>
+              <dt>How often they win anyway as the draft underdog</dt>
               <dd className="mono">{pct(stability.draft_underdog_win_rate)}</dd>
-              <dt>Choke rate</dt>
+              <dt>How often they lose from a winning position</dt>
               <dd className="mono">{pct(stability.choke_rate)}</dd>
-              <dt>Comeback rate</dt>
+              <dt>How often they win from a losing position</dt>
               <dd className="mono">{pct(stability.comeback_rate)}</dd>
-              <dt>Avg volatility</dt>
+              <dt>How much their games swing back and forth</dt>
               <dd className="mono">{stability.avg_volatility?.toFixed(3) ?? "-"}</dd>
             </dl>
           ) : (
@@ -120,7 +123,7 @@ export default async function TeamDetailPage({ params }: PageProps<"/teams/[team
         </div>
 
         <div className="card">
-          <h3>Patch 7.41e impact</h3>
+          <h3>Latest patch effect</h3>
           {patch ? (
             <>
               <div className={styles.bigNumber}>{patch.patch_impact_score?.toFixed(4) ?? "n/a"}</div>
@@ -159,7 +162,7 @@ export default async function TeamDetailPage({ params }: PageProps<"/teams/[team
                   <th>Opponent</th>
                   <th>Record</th>
                   <th>Win rate</th>
-                  <th>Decayed win rate</th>
+                  <th>Recent-weighted win rate</th>
                 </tr>
               </thead>
               <tbody>

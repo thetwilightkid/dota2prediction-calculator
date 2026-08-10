@@ -53,9 +53,9 @@ export default function DraftsClient() {
         <div className={styles.tabs}>
           {(
             [
-              ["league", "League data (Mode A)"],
-              ["players", "Player history (Mode B)"],
-              ["patch", "Patch 7.41e impact"],
+              ["league", "Tournament picks & bans"],
+              ["players", "Players' favorite heroes"],
+              ["patch", "Patch impact"],
             ] as [Tab, string][]
           ).map(([key, label]) => (
             <button key={key} className={tab === key ? styles.tabActive : styles.tab} onClick={() => setTab(key)}>
@@ -110,13 +110,13 @@ export default function DraftsClient() {
           </div>
 
           <div className="card">
-            <h3>Banned against them</h3>
+            <h3>Heroes opponents ban against them</h3>
             <table className={`${styles.miniTable} dataTable`}>
               <thead>
                 <tr>
                   <th>Hero</th>
                   <th>Count</th>
-                  <th>Top opponent</th>
+                  <th>Most often by</th>
                 </tr>
               </thead>
               <tbody>
@@ -142,7 +142,7 @@ export default function DraftsClient() {
             <div className="card" key={name}>
               <h3>{name}</h3>
               <p className="muted" style={{ fontSize: 12, marginBottom: 8 }}>
-                Most recently played (independent of team drafts)
+                Heroes they&apos;ve played most recently, in any match (not just tournament games for this team)
               </p>
               <ul className={styles.heroList}>
                 {p.top5_recent?.map((h) => (
@@ -162,21 +162,22 @@ export default function DraftsClient() {
       {tab === "patch" && patch && (
         <div className="card">
           <h3>
-            {TEAM_CANONICAL[teamId]} - patch impact score:{" "}
+            {TEAM_CANONICAL[teamId]} - patch impact:{" "}
             <span className="mono">{patch.patch_impact_score != null ? patch.patch_impact_score.toFixed(4) : "n/a"}</span>
           </h3>
           <p className="muted" style={{ fontSize: 12, margin: "8px 0 16px" }}>
-            Weighted by how central each hero is to the team&apos;s pick pool (top {patch.pool_heroes.length} heroes).
-            Positive = pool trending toward higher win rates post-7.41e.
+            A rough estimate of whether the newest balance patch helps or hurts this team, based on their{" "}
+            {patch.pool_heroes.length} most-picked heroes. A positive number means their favorite heroes have gotten
+            stronger since the patch; negative means weaker.
           </p>
           <table className={`${styles.miniTable} dataTable`}>
             <thead>
               <tr>
                 <th>Hero</th>
-                <th>Pool share</th>
-                <th>Winrate delta</th>
-                <th>Contribution</th>
-                <th>Patch note (context only)</th>
+                <th>How often they pick it</th>
+                <th>Win rate change since patch</th>
+                <th>Effect on score</th>
+                <th>What changed</th>
               </tr>
             </thead>
             <tbody>

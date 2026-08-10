@@ -90,25 +90,25 @@ export default function MatchupGrid() {
             </h3>
             {selectedCell.matches_played > 0 ? (
               <dl className={styles.detailList}>
-                <dt>Record</dt>
+                <dt>Head-to-head record</dt>
                 <dd>
                   {selectedCell.wins}W - {selectedCell.losses}L ({selectedCell.matches_played} matches)
                 </dd>
-                <dt>Raw win rate</dt>
+                <dt>Win rate, all matches</dt>
                 <dd>{(selectedCell.win_rate! * 100).toFixed(1)}%</dd>
-                <dt>Decayed (recency+tier) win rate</dt>
+                <dt>Win rate, weighted toward recent matches</dt>
                 <dd>{(selectedCell.decayed_win_rate! * 100).toFixed(1)}%</dd>
-                <dt>Avg duration</dt>
+                <dt>Average match length</dt>
                 <dd>{formatDuration(selectedCell.avg_duration_seconds)}</dd>
-                <dt>Last meeting</dt>
+                <dt>Last time they played</dt>
                 <dd>{selectedCell.last_meeting ? new Date(selectedCell.last_meeting).toLocaleDateString() : "-"}</dd>
               </dl>
             ) : (
-              <p className="muted">These teams have not played a roster-verified match in the tracked window.</p>
+              <p className="muted">These two teams haven&apos;t played each other with their current rosters in the matches we&apos;ve tracked.</p>
             )}
           </>
         ) : (
-          <p className="muted">Click a cell to see matchup detail. Row team&apos;s perspective; green = favored.</p>
+          <p className="muted">Click a cell to see the matchup detail. Numbers are from the row team&apos;s perspective; green means they&apos;re favored.</p>
         )}
       </div>
     </div>

@@ -634,84 +634,6 @@ export const playerRecentHeroes: Record<string, PlayerRecentHeroes> = {
       }
     ]
   },
-  "TaiLung": {
-    "account_id": 1026694469,
-    "resolution_method": "matched_team",
-    "top5_recent": [
-      {
-        "hero": "Ember Spirit",
-        "hero_id": 106,
-        "last_played": 1785788940,
-        "games": 62,
-        "win": 29
-      },
-      {
-        "hero": "Earth Spirit",
-        "hero_id": 107,
-        "last_played": 1785783780,
-        "games": 13,
-        "win": 9
-      },
-      {
-        "hero": "Viper",
-        "hero_id": 47,
-        "last_played": 1785779653,
-        "games": 31,
-        "win": 17
-      },
-      {
-        "hero": "Puck",
-        "hero_id": 13,
-        "last_played": 1785751169,
-        "games": 55,
-        "win": 36
-      },
-      {
-        "hero": "Keeper of the Light",
-        "hero_id": 90,
-        "last_played": 1785703871,
-        "games": 58,
-        "win": 35
-      }
-    ],
-    "top5_by_volume": [
-      {
-        "hero": "Tiny",
-        "hero_id": 19,
-        "games": 123,
-        "win": 91,
-        "last_played": 1783862341
-      },
-      {
-        "hero": "Pangolier",
-        "hero_id": 120,
-        "games": 77,
-        "win": 37,
-        "last_played": 1785412902
-      },
-      {
-        "hero": "Ember Spirit",
-        "hero_id": 106,
-        "games": 62,
-        "win": 29,
-        "last_played": 1785788940
-      },
-      {
-        "hero": "Keeper of the Light",
-        "hero_id": 90,
-        "games": 58,
-        "win": 35,
-        "last_played": 1785703871
-      },
-      {
-        "hero": "Puck",
-        "hero_id": 13,
-        "games": 55,
-        "win": 36,
-        "last_played": 1785751169
-      }
-    ]
-  },
   "Thiolicor": {
     "account_id": 105045291,
     "resolution_method": "matched_team",
@@ -6247,6 +6169,84 @@ export const playerRecentHeroes: Record<string, PlayerRecentHeroes> = {
         "games": 185,
         "win": 96,
         "last_played": 1782563399
+      }
+    ]
+  },
+  "Topson": {
+    "account_id": 94054712,
+    "resolution_method": "manual_roster_swap",
+    "top5_recent": [
+      {
+        "hero": "Snapfire",
+        "hero_id": 128,
+        "last_played": 1781206413,
+        "games": 141,
+        "win": 71
+      },
+      {
+        "hero": "Earth Spirit",
+        "hero_id": 107,
+        "last_played": 1781193400,
+        "games": 976,
+        "win": 603
+      },
+      {
+        "hero": "Arc Warden",
+        "hero_id": 113,
+        "last_played": 1781188622,
+        "games": 342,
+        "win": 187
+      },
+      {
+        "hero": "Kez",
+        "hero_id": 145,
+        "last_played": 1781185647,
+        "games": 1,
+        "win": 1
+      },
+      {
+        "hero": "Storm Spirit",
+        "hero_id": 17,
+        "last_played": 1781032863,
+        "games": 410,
+        "win": 245
+      }
+    ],
+    "top5_by_volume": [
+      {
+        "hero": "Invoker",
+        "hero_id": 74,
+        "games": 1390,
+        "win": 756,
+        "last_played": 1766253747
+      },
+      {
+        "hero": "Earth Spirit",
+        "hero_id": 107,
+        "games": 976,
+        "win": 603,
+        "last_played": 1781193400
+      },
+      {
+        "hero": "Monkey King",
+        "hero_id": 114,
+        "games": 810,
+        "win": 481,
+        "last_played": 1751738648
+      },
+      {
+        "hero": "Rubick",
+        "hero_id": 86,
+        "games": 543,
+        "win": 260,
+        "last_played": 1748900184
+      },
+      {
+        "hero": "Tiny",
+        "hero_id": 19,
+        "games": 475,
+        "win": 273,
+        "last_played": 1721309388
       }
     ]
   }

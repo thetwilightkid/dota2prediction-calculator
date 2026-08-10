@@ -7,11 +7,27 @@ from collections import Counter
 from team_config import TEAM_CANONICAL
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-DEFAULT_NUM_TRIALS = 10000
-TRIAL_CHOICES = (10000, 100000)  # the two scales the website should let a user pick between
+DEFAULT_NUM_TRIALS = 1_000_000
 MAX_ROUNDS = 5
 WINS_TO_ADVANCE = 4
 LOSSES_TO_ELIMINATE = 4
+
+# TI2026 group-stage Round 1 pairings, announced for August 13 - these are real,
+# not simulated, so every trial's first round uses them directly instead of the
+# standings-based pairing approximation (which round 1 would otherwise reduce to
+# an arbitrary pairing anyway, since every team starts 0-0). This measurably
+# shifts the 4-0/4-1/.../0-4 placement odds versus a fully random draw, since a
+# team's actual first opponent is now known rather than averaged over.
+DAY1_PAIRINGS = [
+    (9247354, 10150538),   # Team Falcons vs LGD Gaming
+    (10150413, 10136357),  # Iron Wing vs Nigma Galaxy
+    (8255888, 2586976),    # BoomBoys vs OG
+    (9572001, 5017210),    # Team Vision vs Team Resilience
+    (7119388, 8261500),    # Team Spirit vs Xtreme Gaming
+    (2163, 726228),        # Team Liquid vs Vici Gaming
+    (9467224, 9964962),    # Aurora Gaming vs GamerLegion
+    (9823272, 10149530),   # Team Yandex vs HULIGANI
+]
 
 
 def localPath(filename):
@@ -61,19 +77,24 @@ def pairRound(active_teams, all_teams, records, played_pairs, rng):
     return pairings
 
 
-def runSwissTrial(trial_ratings, rng):
+def runSwissTrial(trial_ratings, rng, forced_first_round=None):
     """One full group-stage trial. trial_ratings: {team_id: sampled rating}.
-    Returns {team_id: (wins, losses)} final records."""
+    forced_first_round: optional list of (team_a, team_b) - if given, round 1
+    uses these exact pairings (the real announced Day 1 matches) instead of the
+    standings-based approximation. Returns {team_id: (wins, losses)} final records."""
     records = {tid: (0, 0) for tid in trial_ratings}
     played_pairs = set()
     all_teams = list(trial_ratings.keys())
 
-    for _round_num in range(MAX_ROUNDS):
+    for round_num in range(MAX_ROUNDS):
         active = [tid for tid in all_teams if not isTerminal(records[tid])]
         if not active:
             break
 
-        pairings = pairRound(active, all_teams, records, played_pairs, rng)
+        if round_num == 0 and forced_first_round:
+            pairings = [(a, b, True) for a, b in forced_first_round]
+        else:
+            pairings = pairRound(active, all_teams, records, played_pairs, rng)
         for a, b, update_b in pairings:
             played_pairs.add((a, b))
             p_a = winProbability(trial_ratings[a], trial_ratings[b])
@@ -89,7 +110,7 @@ def runSwissTrial(trial_ratings, rng):
     return records
 
 
-def runSwissSimulation(team_ratings, num_trials, rng=None):
+def runSwissSimulation(team_ratings, num_trials, rng=None, forced_first_round=None):
     """team_ratings: {team_id: {"mean": float, "sigma": float}}.
     Runs num_trials independent group-stage simulations, sampling a fresh
     rating per team per trial from Normal(mean, sigma). Returns
@@ -102,7 +123,7 @@ def runSwissSimulation(team_ratings, num_trials, rng=None):
             tid: rng.gauss(params["mean"], params["sigma"])
             for tid, params in team_ratings.items()
         }
-        final_records = runSwissTrial(trial_ratings, rng)
+        final_records = runSwissTrial(trial_ratings, rng, forced_first_round)
         for tid, record in final_records.items():
             outcome_counts[tid][record] += 1
 
@@ -111,8 +132,9 @@ def runSwissSimulation(team_ratings, num_trials, rng=None):
 
 if __name__ == "__main__":
     # usage: python simulate_group_stage.py [num_trials]
-    # num_trials defaults to DEFAULT_NUM_TRIALS (10,000); pass 100000 for the higher-precision
-    # run. The website is expected to offer both as a user-facing choice - see TRIAL_CHOICES.
+    # num_trials defaults to DEFAULT_NUM_TRIALS (1,000,000) - the single canonical
+    # precision the website's precomputed data uses. A CLI override is for local
+    # experimentation only and still writes to the same canonical output file.
     num_trials = DEFAULT_NUM_TRIALS
     if len(sys.argv) > 1:
         num_trials = int(sys.argv[1])
@@ -125,12 +147,12 @@ if __name__ == "__main__":
         for tid, v in composite.items()
     }
 
-    print(f"=== Running {num_trials} Swiss group-stage simulations ===")
+    print(f"=== Running {num_trials} Swiss group-stage simulations (Round 1 fixed to announced Day 1 pairings) ===")
     for tid, params in sorted(team_ratings.items(), key=lambda kv: -kv[1]["mean"]):
         print(f"  {TEAM_CANONICAL[tid]:16s} mean={params['mean']:.1f} sigma={params['sigma']:.1f}")
 
     rng = random.Random(42)
-    outcomes = runSwissSimulation(team_ratings, num_trials, rng)
+    outcomes = runSwissSimulation(team_ratings, num_trials, rng, forced_first_round=DAY1_PAIRINGS)
 
     all_records = sorted({r for counts in outcomes.values() for r in counts}, key=lambda r: (-r[0], r[1]))
 
@@ -149,13 +171,18 @@ if __name__ == "__main__":
         print(row)
         results[str(tid)] = {"team_name": TEAM_CANONICAL[tid], "outcome_pct": row_pcts}
 
-    # default trial count keeps the original filename (backward compatible); any other
-    # trial count (e.g. the 100,000-trial high-precision run) gets its own suffixed file,
-    # so both scales can coexist on disk for the website to offer as a choice.
-    out_filename = "group_stage_simulation_results.json" if num_trials == DEFAULT_NUM_TRIALS else f"group_stage_simulation_results_{num_trials}.json"
+    out_filename = "group_stage_simulation_results.json"
     with open(localPath(out_filename), "w", encoding="utf-8") as f:
         json.dump({
-            "_meta": {"num_trials": num_trials, "max_rounds": MAX_ROUNDS, "wins_to_advance": WINS_TO_ADVANCE, "losses_to_eliminate": LOSSES_TO_ELIMINATE},
+            "_meta": {
+                "num_trials": num_trials,
+                "max_rounds": MAX_ROUNDS,
+                "wins_to_advance": WINS_TO_ADVANCE,
+                "losses_to_eliminate": LOSSES_TO_ELIMINATE,
+                "day1_pairings_forced": True,
+                "day1_pairings": [[a, b] for a, b in DAY1_PAIRINGS],
+                "day1_note": "Round 1 of every trial uses these announced Day 1 (Aug 13) pairings directly instead of the standings-based approximation, so the outcome distribution already reflects each team's real first opponent.",
+            },
             "teams": results,
         }, f, ensure_ascii=False, indent=4)
 

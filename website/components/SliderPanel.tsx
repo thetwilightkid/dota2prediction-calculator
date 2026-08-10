@@ -1,39 +1,32 @@
 "use client";
 
 import styles from "./SliderPanel.module.css";
-import { DEFAULT_WEIGHTS, type RatingWeights } from "@/lib/rating";
-
-interface SliderPanelProps {
-  weights: RatingWeights;
-  onChange: (weights: RatingWeights) => void;
-}
+import { useWeights } from "@/lib/WeightsContext";
+import type { RatingWeights } from "@/lib/rating";
 
 const SLIDERS: { key: keyof RatingWeights; label: string; hint: string }[] = [
-  { key: "elo", label: "ELO (datdota Glicko-2)", hint: "External market rating consensus signal" },
-  { key: "form", label: "Current form", hint: "Our own decayed, tier-weighted win rate" },
-  { key: "market", label: "Market consensus", hint: "EPT / ESL / Liquipedia rating agreement" },
-  { key: "stability", label: "Stability (resilience)", hint: "Comeback rate minus choke rate - off by default" },
-  { key: "patchImpact", label: "Patch 7.41e impact", hint: "Live winrate-trend of each team's pick pool - off by default" },
+  { key: "elo", label: "Team strength rating", hint: "Based on an independent rating service that tracks pro matches worldwide" },
+  { key: "form", label: "Recent results", hint: "How often they've been winning lately, weighted by how big those tournaments were" },
+  { key: "market", label: "Expert predictions", hint: "Average ranking from other Dota prediction sites and tournament organizers" },
+  { key: "stability", label: "Comeback ability", hint: "How often they win after falling behind, minus how often they lose after being ahead - off by default" },
+  { key: "patchImpact", label: "Latest patch effect", hint: "Whether the newest balance update helps or hurts the heroes they like to play - off by default" },
 ];
 
-export default function SliderPanel({ weights, onChange }: SliderPanelProps) {
-  function setWeight(key: keyof RatingWeights, value: number) {
-    onChange({ ...weights, [key]: value });
-  }
+export default function SliderPanel() {
+  const { weights, setWeights, saveWeights, resetWeights, isDefault, hasSavedPreset } = useWeights();
 
-  const isDefault = SLIDERS.every((s) => weights[s.key] === DEFAULT_WEIGHTS[s.key]);
+  function setWeight(key: keyof RatingWeights, value: number) {
+    setWeights({ ...weights, [key]: value });
+  }
 
   return (
     <div className={styles.panel}>
       <div className={styles.header}>
-        <h2>Criteria weighting</h2>
-        <button className={styles.resetBtn} onClick={() => onChange(DEFAULT_WEIGHTS)} disabled={isDefault}>
-          Reset to default
-        </button>
+        <h2>Adjust what matters most</h2>
       </div>
       <p className={styles.subtitle}>
-        Drag to see how re-weighting each signal reorders the teams and shifts placement odds, computed live in your
-        browser from the same components stored in team_composite_ratings.json.
+        Drag the sliders to see how focusing on different factors changes the team rankings and predicted results,
+        right here in your browser.
       </p>
       <div className={styles.sliders}>
         {SLIDERS.map((s) => (
@@ -56,6 +49,15 @@ export default function SliderPanel({ weights, onChange }: SliderPanelProps) {
           </div>
         ))}
       </div>
+      <div className={styles.actions}>
+        <button className={styles.saveBtn} onClick={saveWeights}>
+          Save my settings
+        </button>
+        <button className={styles.resetBtn} onClick={resetWeights} disabled={isDefault}>
+          Reset to default
+        </button>
+      </div>
+      {hasSavedPreset && <p className={styles.savedNote}>Saved settings will load automatically next time you visit.</p>}
     </div>
   );
 }

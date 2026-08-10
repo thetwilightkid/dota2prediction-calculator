@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 import cloudscraper
 
 from team_config import TEAM_CANONICAL, TEAM_ALL_IDS
-from weighting import recencyWeight as _recencyWeight, tierWeight as _tierWeight
+from weighting import recencyWeight as _recencyWeight, tierWeight as _tierWeight, winCreditMultiplier
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -72,21 +72,25 @@ for m in supplementary_matches.values():
     team_matches[tid].append((w, won))
 
 
-def decayedWinRate(matches):
+def decayedWinRate(matches, win_credit_multiplier=1.0):
+    """win_credit_multiplier scales WIN credit only (not the total-weight
+    denominator) - a roster-integrity penalty for teams whose historical
+    record was partly earned by a player no longer on the roster."""
     total_w = sum(w for w, _ in matches)
     if total_w <= 0:
         return None, 0.0
-    win_w = sum(w for w, won in matches if won)
+    win_w = sum(w for w, won in matches if won) * win_credit_multiplier
     return win_w / total_w, total_w
 
 
 form_stats = {}
 for tid, matches in team_matches.items():
-    p, effective_n = decayedWinRate(matches)
+    p, effective_n = decayedWinRate(matches, winCreditMultiplier(tid))
     form_stats[tid] = {
         "decayed_win_rate": p,
         "effective_n": effective_n,
         "raw_match_count": len(matches),
+        "win_credit_multiplier": winCreditMultiplier(tid),
     }
 
 print("=== Step 1: decayed, tier-weighted win rate (own data) ===")
@@ -99,14 +103,26 @@ for tid in TEAM_CANONICAL:
 # datdota's ratings too, e.g. Team Vision's GLICKO_2 only exists under their
 # PVISION alias id) and keeps whichever registration has the most recently
 # started GLICKO_2 window.
+#
+# Falls back to the previous run's cached glicko_rating/glicko_phi (from the
+# existing team_composite_ratings.json, if any) per-team when datdota can't be
+# reached for that team - e.g. a Cloudflare block on the whole site, not just
+# missing data for one team. Preserves the last known-good signal instead of
+# crashing or silently zeroing every team out; each such team is flagged with
+# "glicko_stale": true in the output so it's visible, not silently stale.
+previous_ratings = loadJson(localPath("team_composite_ratings.json"), {}).get("teams", {})
+
 print("\n=== Step 2: fetching datdota Glicko-2 rating + phi (checking all known registrations) ===")
 scraper = cloudscraper.create_scraper()
 glicko_stats = {}
+datdota_unreachable_count = 0
 for tid, name in TEAM_CANONICAL.items():
     best = None
+    any_200 = False
     for query_id in TEAM_ALL_IDS[tid]:
         r = scraper.get(f"https://api.datdota.com/api/teams/{query_id}")
         if r.status_code == 200:
+            any_200 = True
             g = (r.json().get("data", {}).get("ratings", {}) or {}).get("GLICKO_2")
             if g and (best is None or g["startPeriod"] > best["startPeriod"]):
                 best = g
@@ -114,12 +130,24 @@ for tid, name in TEAM_CANONICAL.items():
         time.sleep(0.5)
 
     if best:
-        glicko_stats[tid] = {"rating": best["rating"], "phi": best["phi"]}
+        glicko_stats[tid] = {"rating": best["rating"], "phi": best["phi"], "stale": False}
         alias_note = f" (via id {best['source_id']})" if best["source_id"] != tid else ""
         print(f"  {name:16s} rating={best['rating']:.1f} phi={best['phi']:.1f} start={best['startPeriod']}{alias_note}")
-    else:
-        glicko_stats[tid] = {"rating": None, "phi": None}
-        print(f"  {name:16s} GLICKO_2 missing across all {len(TEAM_ALL_IDS[tid])} known registrations")
+        continue
+
+    if not any_200:
+        datdota_unreachable_count += 1
+        prev = previous_ratings.get(str(tid), {})
+        if prev.get("glicko_rating") is not None:
+            glicko_stats[tid] = {"rating": prev["glicko_rating"], "phi": prev["glicko_phi"], "stale": True}
+            print(f"  {name:16s} datdota unreachable - using cached rating={prev['glicko_rating']:.1f} phi={prev['glicko_phi']:.1f} from previous run")
+            continue
+
+    glicko_stats[tid] = {"rating": None, "phi": None, "stale": False}
+    print(f"  {name:16s} GLICKO_2 missing across all {len(TEAM_ALL_IDS[tid])} known registrations (no cached fallback either)")
+
+if datdota_unreachable_count == len(TEAM_CANONICAL):
+    print("  NOTE: datdota was unreachable for all 16 teams this run (likely blocked/down) - entire glicko_stats came from the cached previous run.")
 
 # ---- Step 3: EPT/ESL/Liquipedia "market consensus" ----
 # These 3 sources have no native uncertainty measure and are missing Team
@@ -212,9 +240,11 @@ for tid, name in TEAM_CANONICAL.items():
         "team_name": name,
         "glicko_rating": g["rating"],
         "glicko_phi": g["phi"],
+        "glicko_stale": g.get("stale", False),
         "decayed_win_rate": fs["decayed_win_rate"],
         "effective_n": fs["effective_n"],
         "raw_match_count": fs["raw_match_count"],
+        "win_credit_multiplier": fs["win_credit_multiplier"],
         "z_elo": z_elo,
         "sigma_elo_z": sigma_elo_z,
         "z_form": z_form,
@@ -244,6 +274,7 @@ output = {
         "glicko_mean": glicko_mean,
         "glicko_std": glicko_std,
         "note": "rating_scale_mean/sigma is the composite z-score converted back onto the Glicko rating scale (mean + z*std) - use this for any Elo-style win-probability formula, not the raw composite_mean/sigma z-scores.",
+        "win_credit_multiplier_note": "win_credit_multiplier < 1.0 means a roster-integrity penalty was applied to that team's WIN credit only (not their total match-weight) when computing decayed_win_rate - see weighting.py's TEAM_WIN_CREDIT_MULTIPLIER for which teams and why.",
     },
     "teams": {str(tid): v for tid, v in composite.items()},
 }

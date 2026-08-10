@@ -46,6 +46,9 @@ TEAM_ALL_IDS = {
 
 # local, self-contained copy of config.py's PLAYER_TO_TEAM (nickname -> canonical
 # team_id) - keys match player_recent_heroes.json's top-level keys directly.
+# 2026-08-07: LGD's TaiLung was permanently banned from competing; replaced by
+# Topson for TI2026. See weighting.py's TEAM_WIN_CREDIT_MULTIPLIER for the
+# roster-integrity rating penalty this triggered for LGD.
 PLAYER_TO_TEAM = {
     "Satanic": 9572001,
     "Noticed": 9572001,
@@ -54,7 +57,7 @@ PLAYER_TO_TEAM = {
     "Dukalis": 9572001,
     "Yuma": 10150538,
     "Wisper": 10150538,
-    "TaiLung": 10150538,
+    "Topson": 10150538,
     "Thiolicor": 10150538,
     "KingJungles": 10150538,
     "Ame": 8261500,

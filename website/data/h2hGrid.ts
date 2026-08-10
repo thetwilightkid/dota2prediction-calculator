@@ -49,7 +49,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 8,
       "losses": 3,
       "win_rate": 0.7273,
-      "decayed_win_rate": 0.722,
+      "decayed_win_rate": 0.7222,
       "avg_duration_seconds": 2535,
       "last_meeting": "2026-08-03T21:13:19+00:00"
     },
@@ -58,7 +58,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 10,
       "losses": 2,
       "win_rate": 0.8333,
-      "decayed_win_rate": 0.8464,
+      "decayed_win_rate": 0.8462,
       "avg_duration_seconds": 2493,
       "last_meeting": "2026-05-29T17:35:49+00:00"
     },
@@ -76,7 +76,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 14,
       "losses": 20,
       "win_rate": 0.4118,
-      "decayed_win_rate": 0.3815,
+      "decayed_win_rate": 0.3816,
       "avg_duration_seconds": 2467,
       "last_meeting": "2026-07-15T13:56:07+00:00"
     },
@@ -85,7 +85,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 19,
       "losses": 20,
       "win_rate": 0.4872,
-      "decayed_win_rate": 0.5665,
+      "decayed_win_rate": 0.5663,
       "avg_duration_seconds": 2567,
       "last_meeting": "2026-07-31T17:15:33+00:00"
     },
@@ -94,7 +94,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 9,
       "losses": 4,
       "win_rate": 0.6923,
-      "decayed_win_rate": 0.6729,
+      "decayed_win_rate": 0.6732,
       "avg_duration_seconds": 2856,
       "last_meeting": "2026-07-14T14:56:01+00:00"
     },
@@ -121,7 +121,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 23,
       "losses": 17,
       "win_rate": 0.575,
-      "decayed_win_rate": 0.5494,
+      "decayed_win_rate": 0.5499,
       "avg_duration_seconds": 2414,
       "last_meeting": "2026-05-29T11:27:03+00:00"
     },
@@ -130,7 +130,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 4,
       "losses": 9,
       "win_rate": 0.3077,
-      "decayed_win_rate": 0.3335,
+      "decayed_win_rate": 0.3337,
       "avg_duration_seconds": 2712,
       "last_meeting": "2026-05-26T13:47:11+00:00"
     },
@@ -139,7 +139,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 13,
       "losses": 1,
       "win_rate": 0.9286,
-      "decayed_win_rate": 0.9143,
+      "decayed_win_rate": 0.9144,
       "avg_duration_seconds": 2376,
       "last_meeting": "2026-08-01T20:45:39+00:00"
     },
@@ -148,7 +148,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 10,
       "losses": 5,
       "win_rate": 0.6667,
-      "decayed_win_rate": 0.3574,
+      "decayed_win_rate": 0.3588,
       "avg_duration_seconds": 2637,
       "last_meeting": "2026-07-09T13:47:00+00:00"
     },
@@ -157,7 +157,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 3,
       "losses": 2,
       "win_rate": 0.6,
-      "decayed_win_rate": 0.8502,
+      "decayed_win_rate": 0.8499,
       "avg_duration_seconds": 2232,
       "last_meeting": "2026-07-10T12:33:00+00:00"
     },
@@ -166,7 +166,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 20,
       "losses": 13,
       "win_rate": 0.6061,
-      "decayed_win_rate": 0.5282,
+      "decayed_win_rate": 0.5281,
       "avg_duration_seconds": 2295,
       "last_meeting": "2026-08-05T14:19:06+00:00"
     },
@@ -175,7 +175,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 18,
       "losses": 12,
       "win_rate": 0.6,
-      "decayed_win_rate": 0.6797,
+      "decayed_win_rate": 0.6794,
       "avg_duration_seconds": 2568,
       "last_meeting": "2026-06-05T13:03:24+00:00"
     }
@@ -186,7 +186,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 3,
       "losses": 8,
       "win_rate": 0.2727,
-      "decayed_win_rate": 0.278,
+      "decayed_win_rate": 0.2778,
       "avg_duration_seconds": 2535,
       "last_meeting": "2026-08-03T21:13:19+00:00"
     },
@@ -195,7 +195,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 4,
       "losses": 1,
       "win_rate": 0.8,
-      "decayed_win_rate": 0.7961,
+      "decayed_win_rate": 0.7957,
       "avg_duration_seconds": 2789,
       "last_meeting": "2026-08-02T17:54:57+00:00"
     },
@@ -213,7 +213,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 1,
       "losses": 8,
       "win_rate": 0.1111,
-      "decayed_win_rate": 0.0994,
+      "decayed_win_rate": 0.0995,
       "avg_duration_seconds": 2671,
       "last_meeting": "2026-07-09T16:43:01+00:00"
     },
@@ -222,7 +222,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 1,
       "losses": 4,
       "win_rate": 0.2,
-      "decayed_win_rate": 0.1692,
+      "decayed_win_rate": 0.1693,
       "avg_duration_seconds": 2761,
       "last_meeting": "2026-07-18T12:08:02+00:00"
     },
@@ -312,7 +312,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 3,
       "losses": 2,
       "win_rate": 0.6,
-      "decayed_win_rate": 0.6322,
+      "decayed_win_rate": 0.6318,
       "avg_duration_seconds": 2706,
       "last_meeting": "2026-05-15T18:49:02+00:00"
     }
@@ -323,7 +323,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 2,
       "losses": 10,
       "win_rate": 0.1667,
-      "decayed_win_rate": 0.1536,
+      "decayed_win_rate": 0.1538,
       "avg_duration_seconds": 2493,
       "last_meeting": "2026-05-29T17:35:49+00:00"
     },
@@ -332,7 +332,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 1,
       "losses": 4,
       "win_rate": 0.2,
-      "decayed_win_rate": 0.2039,
+      "decayed_win_rate": 0.2043,
       "avg_duration_seconds": 2789,
       "last_meeting": "2026-08-02T17:54:57+00:00"
     },
@@ -350,7 +350,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 2,
       "losses": 6,
       "win_rate": 0.25,
-      "decayed_win_rate": 0.1763,
+      "decayed_win_rate": 0.1771,
       "avg_duration_seconds": 2688,
       "last_meeting": "2026-05-30T13:08:54+00:00"
     },
@@ -359,7 +359,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 8,
       "losses": 8,
       "win_rate": 0.5,
-      "decayed_win_rate": 0.4608,
+      "decayed_win_rate": 0.4614,
       "avg_duration_seconds": 2756,
       "last_meeting": "2026-08-04T12:08:14+00:00"
     },
@@ -368,7 +368,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 1,
       "losses": 4,
       "win_rate": 0.2,
-      "decayed_win_rate": 0.1419,
+      "decayed_win_rate": 0.1425,
       "avg_duration_seconds": 2489,
       "last_meeting": "2026-05-26T14:46:36+00:00"
     },
@@ -377,7 +377,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 4,
       "losses": 5,
       "win_rate": 0.4444,
-      "decayed_win_rate": 0.4595,
+      "decayed_win_rate": 0.4587,
       "avg_duration_seconds": 2698,
       "last_meeting": "2026-08-01T18:34:15+00:00"
     },
@@ -395,7 +395,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 3,
       "losses": 5,
       "win_rate": 0.375,
-      "decayed_win_rate": 0.3136,
+      "decayed_win_rate": 0.3143,
       "avg_duration_seconds": 2716,
       "last_meeting": "2026-05-26T08:01:27+00:00"
     },
@@ -404,7 +404,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 7,
       "losses": 6,
       "win_rate": 0.5385,
-      "decayed_win_rate": 0.5305,
+      "decayed_win_rate": 0.5306,
       "avg_duration_seconds": 2259,
       "last_meeting": "2026-07-07T19:48:00+00:00"
     },
@@ -440,7 +440,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 7,
       "losses": 8,
       "win_rate": 0.4667,
-      "decayed_win_rate": 0.4886,
+      "decayed_win_rate": 0.4883,
       "avg_duration_seconds": 2608,
       "last_meeting": "2026-08-01T12:38:58+00:00"
     },
@@ -449,7 +449,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 6,
       "losses": 4,
       "win_rate": 0.6,
-      "decayed_win_rate": 0.4827,
+      "decayed_win_rate": 0.4838,
       "avg_duration_seconds": 2310,
       "last_meeting": "2026-07-08T18:25:00+00:00"
     }
@@ -505,7 +505,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 2,
       "losses": 2,
       "win_rate": 0.5,
-      "decayed_win_rate": 0.6043,
+      "decayed_win_rate": 0.6029,
       "avg_duration_seconds": 2299,
       "last_meeting": "2026-05-02T09:41:02+00:00"
     },
@@ -597,7 +597,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 20,
       "losses": 14,
       "win_rate": 0.5882,
-      "decayed_win_rate": 0.6185,
+      "decayed_win_rate": 0.6184,
       "avg_duration_seconds": 2467,
       "last_meeting": "2026-07-15T13:56:07+00:00"
     },
@@ -606,7 +606,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 8,
       "losses": 1,
       "win_rate": 0.8889,
-      "decayed_win_rate": 0.9006,
+      "decayed_win_rate": 0.9005,
       "avg_duration_seconds": 2671,
       "last_meeting": "2026-07-09T16:43:01+00:00"
     },
@@ -615,7 +615,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 6,
       "losses": 2,
       "win_rate": 0.75,
-      "decayed_win_rate": 0.8237,
+      "decayed_win_rate": 0.8229,
       "avg_duration_seconds": 2688,
       "last_meeting": "2026-05-30T13:08:54+00:00"
     },
@@ -633,7 +633,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 14,
       "losses": 14,
       "win_rate": 0.5,
-      "decayed_win_rate": 0.5048,
+      "decayed_win_rate": 0.5052,
       "avg_duration_seconds": 2396,
       "last_meeting": "2026-05-26T17:57:19+00:00"
     },
@@ -642,7 +642,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 10,
       "losses": 9,
       "win_rate": 0.5263,
-      "decayed_win_rate": 0.5561,
+      "decayed_win_rate": 0.5562,
       "avg_duration_seconds": 2848,
       "last_meeting": "2026-05-28T12:28:43+00:00"
     },
@@ -651,7 +651,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 20,
       "losses": 28,
       "win_rate": 0.4167,
-      "decayed_win_rate": 0.328,
+      "decayed_win_rate": 0.3283,
       "avg_duration_seconds": 2690,
       "last_meeting": "2026-05-28T08:54:48+00:00"
     },
@@ -660,7 +660,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 10,
       "losses": 11,
       "win_rate": 0.4762,
-      "decayed_win_rate": 0.5041,
+      "decayed_win_rate": 0.5043,
       "avg_duration_seconds": 2552,
       "last_meeting": "2026-05-27T15:12:22+00:00"
     },
@@ -669,7 +669,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 25,
       "losses": 18,
       "win_rate": 0.5814,
-      "decayed_win_rate": 0.6389,
+      "decayed_win_rate": 0.6394,
       "avg_duration_seconds": 2564,
       "last_meeting": "2026-07-12T10:15:00+00:00"
     },
@@ -678,7 +678,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 6,
       "losses": 15,
       "win_rate": 0.2857,
-      "decayed_win_rate": 0.165,
+      "decayed_win_rate": 0.1654,
       "avg_duration_seconds": 2403,
       "last_meeting": "2026-07-16T12:27:06+00:00"
     },
@@ -696,7 +696,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 7,
       "losses": 3,
       "win_rate": 0.7,
-      "decayed_win_rate": 0.7293,
+      "decayed_win_rate": 0.7294,
       "avg_duration_seconds": 2811,
       "last_meeting": "2026-06-25T13:43:20+00:00"
     },
@@ -714,7 +714,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 11,
       "losses": 12,
       "win_rate": 0.4783,
-      "decayed_win_rate": 0.6262,
+      "decayed_win_rate": 0.6256,
       "avg_duration_seconds": 2458,
       "last_meeting": "2026-05-26T13:43:07+00:00"
     },
@@ -723,7 +723,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 13,
       "losses": 5,
       "win_rate": 0.7222,
-      "decayed_win_rate": 0.7203,
+      "decayed_win_rate": 0.7206,
       "avg_duration_seconds": 2366,
       "last_meeting": "2026-05-27T12:25:11+00:00"
     }
@@ -734,7 +734,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 20,
       "losses": 19,
       "win_rate": 0.5128,
-      "decayed_win_rate": 0.4335,
+      "decayed_win_rate": 0.4337,
       "avg_duration_seconds": 2567,
       "last_meeting": "2026-07-31T17:15:33+00:00"
     },
@@ -743,7 +743,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 4,
       "losses": 1,
       "win_rate": 0.8,
-      "decayed_win_rate": 0.8308,
+      "decayed_win_rate": 0.8307,
       "avg_duration_seconds": 2761,
       "last_meeting": "2026-07-18T12:08:02+00:00"
     },
@@ -752,7 +752,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 8,
       "losses": 8,
       "win_rate": 0.5,
-      "decayed_win_rate": 0.5392,
+      "decayed_win_rate": 0.5386,
       "avg_duration_seconds": 2756,
       "last_meeting": "2026-08-04T12:08:14+00:00"
     },
@@ -770,7 +770,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 14,
       "losses": 14,
       "win_rate": 0.5,
-      "decayed_win_rate": 0.4952,
+      "decayed_win_rate": 0.4948,
       "avg_duration_seconds": 2396,
       "last_meeting": "2026-05-26T17:57:19+00:00"
     },
@@ -779,7 +779,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 9,
       "losses": 6,
       "win_rate": 0.6,
-      "decayed_win_rate": 0.7331,
+      "decayed_win_rate": 0.7327,
       "avg_duration_seconds": 2559,
       "last_meeting": "2026-07-10T10:21:00+00:00"
     },
@@ -788,7 +788,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 15,
       "losses": 23,
       "win_rate": 0.3947,
-      "decayed_win_rate": 0.4833,
+      "decayed_win_rate": 0.4829,
       "avg_duration_seconds": 2562,
       "last_meeting": "2026-08-03T16:14:01+00:00"
     },
@@ -797,7 +797,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 11,
       "losses": 9,
       "win_rate": 0.55,
-      "decayed_win_rate": 0.5978,
+      "decayed_win_rate": 0.5973,
       "avg_duration_seconds": 2549,
       "last_meeting": "2026-05-26T12:51:01+00:00"
     },
@@ -806,7 +806,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 13,
       "losses": 31,
       "win_rate": 0.2955,
-      "decayed_win_rate": 0.3309,
+      "decayed_win_rate": 0.3312,
       "avg_duration_seconds": 2748,
       "last_meeting": "2026-07-19T17:49:01+00:00"
     },
@@ -815,7 +815,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 7,
       "losses": 9,
       "win_rate": 0.4375,
-      "decayed_win_rate": 0.4104,
+      "decayed_win_rate": 0.4105,
       "avg_duration_seconds": 2604,
       "last_meeting": "2026-06-06T12:57:00+00:00"
     },
@@ -824,7 +824,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 8,
       "losses": 1,
       "win_rate": 0.8889,
-      "decayed_win_rate": 0.9283,
+      "decayed_win_rate": 0.9279,
       "avg_duration_seconds": 2629,
       "last_meeting": "2026-08-01T15:09:12+00:00"
     },
@@ -860,7 +860,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 15,
       "losses": 6,
       "win_rate": 0.7143,
-      "decayed_win_rate": 0.6606,
+      "decayed_win_rate": 0.6604,
       "avg_duration_seconds": 2267,
       "last_meeting": "2026-08-01T10:23:51+00:00"
     }
@@ -871,7 +871,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 4,
       "losses": 9,
       "win_rate": 0.3077,
-      "decayed_win_rate": 0.3271,
+      "decayed_win_rate": 0.3268,
       "avg_duration_seconds": 2856,
       "last_meeting": "2026-07-14T14:56:01+00:00"
     },
@@ -889,7 +889,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 4,
       "losses": 1,
       "win_rate": 0.8,
-      "decayed_win_rate": 0.8581,
+      "decayed_win_rate": 0.8575,
       "avg_duration_seconds": 2489,
       "last_meeting": "2026-05-26T14:46:36+00:00"
     },
@@ -898,7 +898,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 2,
       "losses": 2,
       "win_rate": 0.5,
-      "decayed_win_rate": 0.3957,
+      "decayed_win_rate": 0.3971,
       "avg_duration_seconds": 2299,
       "last_meeting": "2026-05-02T09:41:02+00:00"
     },
@@ -907,7 +907,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 9,
       "losses": 10,
       "win_rate": 0.4737,
-      "decayed_win_rate": 0.4439,
+      "decayed_win_rate": 0.4438,
       "avg_duration_seconds": 2848,
       "last_meeting": "2026-05-28T12:28:43+00:00"
     },
@@ -916,7 +916,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 6,
       "losses": 9,
       "win_rate": 0.4,
-      "decayed_win_rate": 0.2669,
+      "decayed_win_rate": 0.2673,
       "avg_duration_seconds": 2559,
       "last_meeting": "2026-07-10T10:21:00+00:00"
     },
@@ -925,7 +925,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 9,
       "losses": 15,
       "win_rate": 0.375,
-      "decayed_win_rate": 0.2673,
+      "decayed_win_rate": 0.2678,
       "avg_duration_seconds": 2981,
       "last_meeting": "2026-07-11T10:45:00+00:00"
     },
@@ -934,7 +934,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 5,
       "losses": 10,
       "win_rate": 0.3333,
-      "decayed_win_rate": 0.3227,
+      "decayed_win_rate": 0.3228,
       "avg_duration_seconds": 2229,
       "last_meeting": "2026-05-29T13:30:26+00:00"
     },
@@ -952,7 +952,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 5,
       "losses": 6,
       "win_rate": 0.4545,
-      "decayed_win_rate": 0.4087,
+      "decayed_win_rate": 0.4093,
       "avg_duration_seconds": 2683,
       "last_meeting": "2026-05-27T11:49:02+00:00"
     },
@@ -961,7 +961,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 4,
       "losses": 1,
       "win_rate": 0.8,
-      "decayed_win_rate": 0.8516,
+      "decayed_win_rate": 0.8512,
       "avg_duration_seconds": 2892,
       "last_meeting": "2026-07-08T10:28:00+00:00"
     },
@@ -970,7 +970,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 8,
       "losses": 5,
       "win_rate": 0.6154,
-      "decayed_win_rate": 0.416,
+      "decayed_win_rate": 0.417,
       "avg_duration_seconds": 2461,
       "last_meeting": "2026-05-15T14:29:01+00:00"
     },
@@ -988,7 +988,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 7,
       "losses": 11,
       "win_rate": 0.3889,
-      "decayed_win_rate": 0.3931,
+      "decayed_win_rate": 0.3932,
       "avg_duration_seconds": 2934,
       "last_meeting": "2026-05-27T16:41:00+00:00"
     },
@@ -997,7 +997,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 3,
       "losses": 3,
       "win_rate": 0.5,
-      "decayed_win_rate": 0.4604,
+      "decayed_win_rate": 0.461,
       "avg_duration_seconds": 3342,
       "last_meeting": "2026-05-29T10:09:03+00:00"
     }
@@ -1026,7 +1026,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 5,
       "losses": 4,
       "win_rate": 0.5556,
-      "decayed_win_rate": 0.5405,
+      "decayed_win_rate": 0.5413,
       "avg_duration_seconds": 2698,
       "last_meeting": "2026-08-01T18:34:15+00:00"
     },
@@ -1044,7 +1044,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 28,
       "losses": 20,
       "win_rate": 0.5833,
-      "decayed_win_rate": 0.672,
+      "decayed_win_rate": 0.6717,
       "avg_duration_seconds": 2690,
       "last_meeting": "2026-05-28T08:54:48+00:00"
     },
@@ -1053,7 +1053,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 23,
       "losses": 15,
       "win_rate": 0.6053,
-      "decayed_win_rate": 0.5167,
+      "decayed_win_rate": 0.5171,
       "avg_duration_seconds": 2562,
       "last_meeting": "2026-08-03T16:14:01+00:00"
     },
@@ -1062,7 +1062,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 15,
       "losses": 9,
       "win_rate": 0.625,
-      "decayed_win_rate": 0.7327,
+      "decayed_win_rate": 0.7322,
       "avg_duration_seconds": 2981,
       "last_meeting": "2026-07-11T10:45:00+00:00"
     },
@@ -1089,7 +1089,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 6,
       "losses": 5,
       "win_rate": 0.5455,
-      "decayed_win_rate": 0.5408,
+      "decayed_win_rate": 0.5403,
       "avg_duration_seconds": 2513,
       "last_meeting": "2026-05-27T15:22:46+00:00"
     },
@@ -1098,7 +1098,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 7,
       "losses": 3,
       "win_rate": 0.7,
-      "decayed_win_rate": 0.7524,
+      "decayed_win_rate": 0.7519,
       "avg_duration_seconds": 2758,
       "last_meeting": "2026-07-09T10:55:01+00:00"
     },
@@ -1125,7 +1125,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 24,
       "losses": 25,
       "win_rate": 0.4898,
-      "decayed_win_rate": 0.6939,
+      "decayed_win_rate": 0.6932,
       "avg_duration_seconds": 2693,
       "last_meeting": "2026-08-02T14:56:32+00:00"
     },
@@ -1134,7 +1134,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 15,
       "losses": 3,
       "win_rate": 0.8333,
-      "decayed_win_rate": 0.9132,
+      "decayed_win_rate": 0.9129,
       "avg_duration_seconds": 2632,
       "last_meeting": "2026-05-26T15:06:51+00:00"
     }
@@ -1181,7 +1181,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 11,
       "losses": 10,
       "win_rate": 0.5238,
-      "decayed_win_rate": 0.4959,
+      "decayed_win_rate": 0.4957,
       "avg_duration_seconds": 2552,
       "last_meeting": "2026-05-27T15:12:22+00:00"
     },
@@ -1190,7 +1190,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 9,
       "losses": 11,
       "win_rate": 0.45,
-      "decayed_win_rate": 0.4022,
+      "decayed_win_rate": 0.4027,
       "avg_duration_seconds": 2549,
       "last_meeting": "2026-05-26T12:51:01+00:00"
     },
@@ -1199,7 +1199,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 10,
       "losses": 5,
       "win_rate": 0.6667,
-      "decayed_win_rate": 0.6773,
+      "decayed_win_rate": 0.6772,
       "avg_duration_seconds": 2229,
       "last_meeting": "2026-05-29T13:30:26+00:00"
     },
@@ -1217,7 +1217,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 11,
       "losses": 10,
       "win_rate": 0.5238,
-      "decayed_win_rate": 0.4982,
+      "decayed_win_rate": 0.4984,
       "avg_duration_seconds": 2608,
       "last_meeting": "2026-05-28T15:37:36+00:00"
     },
@@ -1226,7 +1226,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 7,
       "losses": 9,
       "win_rate": 0.4375,
-      "decayed_win_rate": 0.3957,
+      "decayed_win_rate": 0.3958,
       "avg_duration_seconds": 2794,
       "last_meeting": "2026-06-04T10:46:59+00:00"
     },
@@ -1244,7 +1244,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 10,
       "losses": 2,
       "win_rate": 0.8333,
-      "decayed_win_rate": 0.7401,
+      "decayed_win_rate": 0.7405,
       "avg_duration_seconds": 2539,
       "last_meeting": "2026-07-08T13:49:04+00:00"
     },
@@ -1262,7 +1262,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 13,
       "losses": 12,
       "win_rate": 0.52,
-      "decayed_win_rate": 0.5425,
+      "decayed_win_rate": 0.5422,
       "avg_duration_seconds": 2478,
       "last_meeting": "2026-05-30T14:25:01+00:00"
     },
@@ -1271,7 +1271,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 8,
       "losses": 11,
       "win_rate": 0.4211,
-      "decayed_win_rate": 0.4985,
+      "decayed_win_rate": 0.4983,
       "avg_duration_seconds": 2895,
       "last_meeting": "2026-06-06T17:38:56+00:00"
     }
@@ -1282,7 +1282,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 17,
       "losses": 23,
       "win_rate": 0.425,
-      "decayed_win_rate": 0.4506,
+      "decayed_win_rate": 0.4501,
       "avg_duration_seconds": 2414,
       "last_meeting": "2026-05-29T11:27:03+00:00"
     },
@@ -1300,7 +1300,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 5,
       "losses": 3,
       "win_rate": 0.625,
-      "decayed_win_rate": 0.6864,
+      "decayed_win_rate": 0.6857,
       "avg_duration_seconds": 2716,
       "last_meeting": "2026-05-26T08:01:27+00:00"
     },
@@ -1318,7 +1318,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 18,
       "losses": 25,
       "win_rate": 0.4186,
-      "decayed_win_rate": 0.3611,
+      "decayed_win_rate": 0.3606,
       "avg_duration_seconds": 2564,
       "last_meeting": "2026-07-12T10:15:00+00:00"
     },
@@ -1327,7 +1327,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 31,
       "losses": 13,
       "win_rate": 0.7045,
-      "decayed_win_rate": 0.6691,
+      "decayed_win_rate": 0.6688,
       "avg_duration_seconds": 2748,
       "last_meeting": "2026-07-19T17:49:01+00:00"
     },
@@ -1354,7 +1354,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 10,
       "losses": 11,
       "win_rate": 0.4762,
-      "decayed_win_rate": 0.5018,
+      "decayed_win_rate": 0.5016,
       "avg_duration_seconds": 2608,
       "last_meeting": "2026-05-28T15:37:36+00:00"
     },
@@ -1363,7 +1363,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 5,
       "losses": 6,
       "win_rate": 0.4545,
-      "decayed_win_rate": 0.4835,
+      "decayed_win_rate": 0.4833,
       "avg_duration_seconds": 2695,
       "last_meeting": "2026-07-18T16:32:00+00:00"
     },
@@ -1372,7 +1372,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 5,
       "losses": 2,
       "win_rate": 0.7143,
-      "decayed_win_rate": 0.6041,
+      "decayed_win_rate": 0.6046,
       "avg_duration_seconds": 2531,
       "last_meeting": "2026-04-08T09:13:31+00:00"
     },
@@ -1399,7 +1399,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 14,
       "losses": 14,
       "win_rate": 0.5,
-      "decayed_win_rate": 0.396,
+      "decayed_win_rate": 0.3956,
       "avg_duration_seconds": 2446,
       "last_meeting": "2026-05-27T10:11:23+00:00"
     },
@@ -1408,7 +1408,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 16,
       "losses": 3,
       "win_rate": 0.8421,
-      "decayed_win_rate": 0.651,
+      "decayed_win_rate": 0.6512,
       "avg_duration_seconds": 2695,
       "last_meeting": "2026-05-28T11:18:55+00:00"
     }
@@ -1419,7 +1419,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 9,
       "losses": 4,
       "win_rate": 0.6923,
-      "decayed_win_rate": 0.6665,
+      "decayed_win_rate": 0.6663,
       "avg_duration_seconds": 2712,
       "last_meeting": "2026-05-26T13:47:11+00:00"
     },
@@ -1437,7 +1437,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 6,
       "losses": 7,
       "win_rate": 0.4615,
-      "decayed_win_rate": 0.4695,
+      "decayed_win_rate": 0.4694,
       "avg_duration_seconds": 2259,
       "last_meeting": "2026-07-07T19:48:00+00:00"
     },
@@ -1455,7 +1455,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 15,
       "losses": 6,
       "win_rate": 0.7143,
-      "decayed_win_rate": 0.835,
+      "decayed_win_rate": 0.8346,
       "avg_duration_seconds": 2403,
       "last_meeting": "2026-07-16T12:27:06+00:00"
     },
@@ -1464,7 +1464,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 9,
       "losses": 7,
       "win_rate": 0.5625,
-      "decayed_win_rate": 0.5896,
+      "decayed_win_rate": 0.5895,
       "avg_duration_seconds": 2604,
       "last_meeting": "2026-06-06T12:57:00+00:00"
     },
@@ -1473,7 +1473,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 6,
       "losses": 5,
       "win_rate": 0.5455,
-      "decayed_win_rate": 0.5913,
+      "decayed_win_rate": 0.5907,
       "avg_duration_seconds": 2683,
       "last_meeting": "2026-05-27T11:49:02+00:00"
     },
@@ -1482,7 +1482,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 5,
       "losses": 6,
       "win_rate": 0.4545,
-      "decayed_win_rate": 0.4592,
+      "decayed_win_rate": 0.4597,
       "avg_duration_seconds": 2513,
       "last_meeting": "2026-05-27T15:22:46+00:00"
     },
@@ -1491,7 +1491,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 9,
       "losses": 7,
       "win_rate": 0.5625,
-      "decayed_win_rate": 0.6043,
+      "decayed_win_rate": 0.6042,
       "avg_duration_seconds": 2794,
       "last_meeting": "2026-06-04T10:46:59+00:00"
     },
@@ -1500,7 +1500,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 6,
       "losses": 5,
       "win_rate": 0.5455,
-      "decayed_win_rate": 0.5165,
+      "decayed_win_rate": 0.5167,
       "avg_duration_seconds": 2695,
       "last_meeting": "2026-07-18T16:32:00+00:00"
     },
@@ -1509,7 +1509,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 2,
       "losses": 1,
       "win_rate": 0.6667,
-      "decayed_win_rate": 0.7031,
+      "decayed_win_rate": 0.7026,
       "avg_duration_seconds": 1945,
       "last_meeting": "2026-03-24T13:05:00+00:00"
     },
@@ -1536,7 +1536,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 9,
       "losses": 13,
       "win_rate": 0.4091,
-      "decayed_win_rate": 0.4513,
+      "decayed_win_rate": 0.4508,
       "avg_duration_seconds": 2621,
       "last_meeting": "2026-07-12T13:02:00+00:00"
     },
@@ -1545,7 +1545,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 13,
       "losses": 7,
       "win_rate": 0.65,
-      "decayed_win_rate": 0.652,
+      "decayed_win_rate": 0.6518,
       "avg_duration_seconds": 2669,
       "last_meeting": "2026-07-10T18:27:00+00:00"
     }
@@ -1556,7 +1556,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 1,
       "losses": 13,
       "win_rate": 0.0714,
-      "decayed_win_rate": 0.0857,
+      "decayed_win_rate": 0.0856,
       "avg_duration_seconds": 2376,
       "last_meeting": "2026-08-01T20:45:39+00:00"
     },
@@ -1601,7 +1601,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 1,
       "losses": 8,
       "win_rate": 0.1111,
-      "decayed_win_rate": 0.0717,
+      "decayed_win_rate": 0.0721,
       "avg_duration_seconds": 2629,
       "last_meeting": "2026-08-01T15:09:12+00:00"
     },
@@ -1610,7 +1610,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 1,
       "losses": 4,
       "win_rate": 0.2,
-      "decayed_win_rate": 0.1484,
+      "decayed_win_rate": 0.1488,
       "avg_duration_seconds": 2892,
       "last_meeting": "2026-07-08T10:28:00+00:00"
     },
@@ -1619,7 +1619,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 3,
       "losses": 7,
       "win_rate": 0.3,
-      "decayed_win_rate": 0.2476,
+      "decayed_win_rate": 0.2481,
       "avg_duration_seconds": 2758,
       "last_meeting": "2026-07-09T10:55:01+00:00"
     },
@@ -1637,7 +1637,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 2,
       "losses": 5,
       "win_rate": 0.2857,
-      "decayed_win_rate": 0.3959,
+      "decayed_win_rate": 0.3954,
       "avg_duration_seconds": 2531,
       "last_meeting": "2026-04-08T09:13:31+00:00"
     },
@@ -1646,7 +1646,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 1,
       "losses": 2,
       "win_rate": 0.3333,
-      "decayed_win_rate": 0.2969,
+      "decayed_win_rate": 0.2974,
       "avg_duration_seconds": 1945,
       "last_meeting": "2026-03-24T13:05:00+00:00"
     },
@@ -1673,7 +1673,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 1,
       "losses": 4,
       "win_rate": 0.2,
-      "decayed_win_rate": 0.2163,
+      "decayed_win_rate": 0.2161,
       "avg_duration_seconds": 2155,
       "last_meeting": "2026-03-23T13:14:04+00:00"
     },
@@ -1682,7 +1682,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 5,
       "losses": 7,
       "win_rate": 0.4167,
-      "decayed_win_rate": 0.3492,
+      "decayed_win_rate": 0.3501,
       "avg_duration_seconds": 2682,
       "last_meeting": "2026-05-13T11:38:03+00:00"
     }
@@ -1693,7 +1693,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 5,
       "losses": 10,
       "win_rate": 0.3333,
-      "decayed_win_rate": 0.6426,
+      "decayed_win_rate": 0.6412,
       "avg_duration_seconds": 2637,
       "last_meeting": "2026-07-09T13:47:00+00:00"
     },
@@ -1729,7 +1729,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 3,
       "losses": 7,
       "win_rate": 0.3,
-      "decayed_win_rate": 0.2707,
+      "decayed_win_rate": 0.2706,
       "avg_duration_seconds": 2811,
       "last_meeting": "2026-06-25T13:43:20+00:00"
     },
@@ -1747,7 +1747,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 5,
       "losses": 8,
       "win_rate": 0.3846,
-      "decayed_win_rate": 0.584,
+      "decayed_win_rate": 0.583,
       "avg_duration_seconds": 2461,
       "last_meeting": "2026-05-15T14:29:01+00:00"
     },
@@ -1765,7 +1765,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 2,
       "losses": 10,
       "win_rate": 0.1667,
-      "decayed_win_rate": 0.2599,
+      "decayed_win_rate": 0.2595,
       "avg_duration_seconds": 2539,
       "last_meeting": "2026-07-08T13:49:04+00:00"
     },
@@ -1810,7 +1810,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 7,
       "losses": 9,
       "win_rate": 0.4375,
-      "decayed_win_rate": 0.3474,
+      "decayed_win_rate": 0.3481,
       "avg_duration_seconds": 2430,
       "last_meeting": "2026-07-30T10:36:44+00:00"
     },
@@ -1830,7 +1830,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 2,
       "losses": 3,
       "win_rate": 0.4,
-      "decayed_win_rate": 0.1498,
+      "decayed_win_rate": 0.1501,
       "avg_duration_seconds": 2232,
       "last_meeting": "2026-07-10T12:33:00+00:00"
     },
@@ -1967,7 +1967,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 13,
       "losses": 20,
       "win_rate": 0.3939,
-      "decayed_win_rate": 0.4718,
+      "decayed_win_rate": 0.4719,
       "avg_duration_seconds": 2295,
       "last_meeting": "2026-08-05T14:19:06+00:00"
     },
@@ -1985,7 +1985,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 8,
       "losses": 7,
       "win_rate": 0.5333,
-      "decayed_win_rate": 0.5114,
+      "decayed_win_rate": 0.5117,
       "avg_duration_seconds": 2608,
       "last_meeting": "2026-08-01T12:38:58+00:00"
     },
@@ -2003,7 +2003,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 12,
       "losses": 11,
       "win_rate": 0.5217,
-      "decayed_win_rate": 0.3738,
+      "decayed_win_rate": 0.3744,
       "avg_duration_seconds": 2458,
       "last_meeting": "2026-05-26T13:43:07+00:00"
     },
@@ -2021,7 +2021,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 11,
       "losses": 7,
       "win_rate": 0.6111,
-      "decayed_win_rate": 0.6069,
+      "decayed_win_rate": 0.6068,
       "avg_duration_seconds": 2934,
       "last_meeting": "2026-05-27T16:41:00+00:00"
     },
@@ -2030,7 +2030,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 25,
       "losses": 24,
       "win_rate": 0.5102,
-      "decayed_win_rate": 0.3061,
+      "decayed_win_rate": 0.3068,
       "avg_duration_seconds": 2693,
       "last_meeting": "2026-08-02T14:56:32+00:00"
     },
@@ -2039,7 +2039,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 12,
       "losses": 13,
       "win_rate": 0.48,
-      "decayed_win_rate": 0.4575,
+      "decayed_win_rate": 0.4578,
       "avg_duration_seconds": 2478,
       "last_meeting": "2026-05-30T14:25:01+00:00"
     },
@@ -2048,7 +2048,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 14,
       "losses": 14,
       "win_rate": 0.5,
-      "decayed_win_rate": 0.604,
+      "decayed_win_rate": 0.6044,
       "avg_duration_seconds": 2446,
       "last_meeting": "2026-05-27T10:11:23+00:00"
     },
@@ -2057,7 +2057,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 13,
       "losses": 9,
       "win_rate": 0.5909,
-      "decayed_win_rate": 0.5487,
+      "decayed_win_rate": 0.5492,
       "avg_duration_seconds": 2621,
       "last_meeting": "2026-07-12T13:02:00+00:00"
     },
@@ -2066,7 +2066,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 4,
       "losses": 1,
       "win_rate": 0.8,
-      "decayed_win_rate": 0.7837,
+      "decayed_win_rate": 0.7839,
       "avg_duration_seconds": 2155,
       "last_meeting": "2026-03-23T13:14:04+00:00"
     },
@@ -2075,7 +2075,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 9,
       "losses": 7,
       "win_rate": 0.5625,
-      "decayed_win_rate": 0.6526,
+      "decayed_win_rate": 0.6519,
       "avg_duration_seconds": 2430,
       "last_meeting": "2026-07-30T10:36:44+00:00"
     },
@@ -2093,7 +2093,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 18,
       "losses": 9,
       "win_rate": 0.6667,
-      "decayed_win_rate": 0.5671,
+      "decayed_win_rate": 0.5665,
       "avg_duration_seconds": 2474,
       "last_meeting": "2026-08-03T09:59:29+00:00"
     }
@@ -2104,7 +2104,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 12,
       "losses": 18,
       "win_rate": 0.4,
-      "decayed_win_rate": 0.3203,
+      "decayed_win_rate": 0.3206,
       "avg_duration_seconds": 2568,
       "last_meeting": "2026-06-05T13:03:24+00:00"
     },
@@ -2113,7 +2113,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 2,
       "losses": 3,
       "win_rate": 0.4,
-      "decayed_win_rate": 0.3678,
+      "decayed_win_rate": 0.3682,
       "avg_duration_seconds": 2706,
       "last_meeting": "2026-05-15T18:49:02+00:00"
     },
@@ -2122,7 +2122,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 4,
       "losses": 6,
       "win_rate": 0.4,
-      "decayed_win_rate": 0.5173,
+      "decayed_win_rate": 0.5162,
       "avg_duration_seconds": 2310,
       "last_meeting": "2026-07-08T18:25:00+00:00"
     },
@@ -2140,7 +2140,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 5,
       "losses": 13,
       "win_rate": 0.2778,
-      "decayed_win_rate": 0.2797,
+      "decayed_win_rate": 0.2794,
       "avg_duration_seconds": 2366,
       "last_meeting": "2026-05-27T12:25:11+00:00"
     },
@@ -2149,7 +2149,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 6,
       "losses": 15,
       "win_rate": 0.2857,
-      "decayed_win_rate": 0.3394,
+      "decayed_win_rate": 0.3396,
       "avg_duration_seconds": 2267,
       "last_meeting": "2026-08-01T10:23:51+00:00"
     },
@@ -2158,7 +2158,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 3,
       "losses": 3,
       "win_rate": 0.5,
-      "decayed_win_rate": 0.5396,
+      "decayed_win_rate": 0.539,
       "avg_duration_seconds": 3342,
       "last_meeting": "2026-05-29T10:09:03+00:00"
     },
@@ -2167,7 +2167,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 3,
       "losses": 15,
       "win_rate": 0.1667,
-      "decayed_win_rate": 0.0868,
+      "decayed_win_rate": 0.0871,
       "avg_duration_seconds": 2632,
       "last_meeting": "2026-05-26T15:06:51+00:00"
     },
@@ -2176,7 +2176,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 11,
       "losses": 8,
       "win_rate": 0.5789,
-      "decayed_win_rate": 0.5015,
+      "decayed_win_rate": 0.5017,
       "avg_duration_seconds": 2895,
       "last_meeting": "2026-06-06T17:38:56+00:00"
     },
@@ -2185,7 +2185,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 3,
       "losses": 16,
       "win_rate": 0.1579,
-      "decayed_win_rate": 0.349,
+      "decayed_win_rate": 0.3488,
       "avg_duration_seconds": 2695,
       "last_meeting": "2026-05-28T11:18:55+00:00"
     },
@@ -2194,7 +2194,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 7,
       "losses": 13,
       "win_rate": 0.35,
-      "decayed_win_rate": 0.348,
+      "decayed_win_rate": 0.3482,
       "avg_duration_seconds": 2669,
       "last_meeting": "2026-07-10T18:27:00+00:00"
     },
@@ -2203,7 +2203,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 7,
       "losses": 5,
       "win_rate": 0.5833,
-      "decayed_win_rate": 0.6508,
+      "decayed_win_rate": 0.6499,
       "avg_duration_seconds": 2682,
       "last_meeting": "2026-05-13T11:38:03+00:00"
     },
@@ -2230,7 +2230,7 @@ export const h2hGrid: Record<string, Record<string, H2HCell>> = {
       "wins": 9,
       "losses": 18,
       "win_rate": 0.3333,
-      "decayed_win_rate": 0.4329,
+      "decayed_win_rate": 0.4335,
       "avg_duration_seconds": 2474,
       "last_meeting": "2026-08-03T09:59:29+00:00"
     }
@@ -2248,8 +2248,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 3,
     "team_a_win_rate": 0.7273,
     "team_b_win_rate": 0.2727,
-    "team_a_decayed_win_rate": 0.722,
-    "team_b_decayed_win_rate": 0.278,
+    "team_a_decayed_win_rate": 0.7222,
+    "team_b_decayed_win_rate": 0.2778,
     "avg_duration_seconds": 2535,
     "last_meeting": "2026-08-03T21:13:19+00:00",
     "never_played": false
@@ -2264,8 +2264,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 2,
     "team_a_win_rate": 0.8333,
     "team_b_win_rate": 0.1667,
-    "team_a_decayed_win_rate": 0.8464,
-    "team_b_decayed_win_rate": 0.1536,
+    "team_a_decayed_win_rate": 0.8462,
+    "team_b_decayed_win_rate": 0.1538,
     "avg_duration_seconds": 2493,
     "last_meeting": "2026-05-29T17:35:49+00:00",
     "never_played": false
@@ -2296,8 +2296,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 20,
     "team_a_win_rate": 0.4118,
     "team_b_win_rate": 0.5882,
-    "team_a_decayed_win_rate": 0.3815,
-    "team_b_decayed_win_rate": 0.6185,
+    "team_a_decayed_win_rate": 0.3816,
+    "team_b_decayed_win_rate": 0.6184,
     "avg_duration_seconds": 2467,
     "last_meeting": "2026-07-15T13:56:07+00:00",
     "never_played": false
@@ -2312,8 +2312,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 20,
     "team_a_win_rate": 0.4872,
     "team_b_win_rate": 0.5128,
-    "team_a_decayed_win_rate": 0.5665,
-    "team_b_decayed_win_rate": 0.4335,
+    "team_a_decayed_win_rate": 0.5663,
+    "team_b_decayed_win_rate": 0.4337,
     "avg_duration_seconds": 2567,
     "last_meeting": "2026-07-31T17:15:33+00:00",
     "never_played": false
@@ -2328,8 +2328,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 4,
     "team_a_win_rate": 0.6923,
     "team_b_win_rate": 0.3077,
-    "team_a_decayed_win_rate": 0.6729,
-    "team_b_decayed_win_rate": 0.3271,
+    "team_a_decayed_win_rate": 0.6732,
+    "team_b_decayed_win_rate": 0.3268,
     "avg_duration_seconds": 2856,
     "last_meeting": "2026-07-14T14:56:01+00:00",
     "never_played": false
@@ -2376,8 +2376,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 17,
     "team_a_win_rate": 0.575,
     "team_b_win_rate": 0.425,
-    "team_a_decayed_win_rate": 0.5494,
-    "team_b_decayed_win_rate": 0.4506,
+    "team_a_decayed_win_rate": 0.5499,
+    "team_b_decayed_win_rate": 0.4501,
     "avg_duration_seconds": 2414,
     "last_meeting": "2026-05-29T11:27:03+00:00",
     "never_played": false
@@ -2392,8 +2392,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 9,
     "team_a_win_rate": 0.3077,
     "team_b_win_rate": 0.6923,
-    "team_a_decayed_win_rate": 0.3335,
-    "team_b_decayed_win_rate": 0.6665,
+    "team_a_decayed_win_rate": 0.3337,
+    "team_b_decayed_win_rate": 0.6663,
     "avg_duration_seconds": 2712,
     "last_meeting": "2026-05-26T13:47:11+00:00",
     "never_played": false
@@ -2408,8 +2408,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 1,
     "team_a_win_rate": 0.9286,
     "team_b_win_rate": 0.0714,
-    "team_a_decayed_win_rate": 0.9143,
-    "team_b_decayed_win_rate": 0.0857,
+    "team_a_decayed_win_rate": 0.9144,
+    "team_b_decayed_win_rate": 0.0856,
     "avg_duration_seconds": 2376,
     "last_meeting": "2026-08-01T20:45:39+00:00",
     "never_played": false
@@ -2424,8 +2424,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 5,
     "team_a_win_rate": 0.6667,
     "team_b_win_rate": 0.3333,
-    "team_a_decayed_win_rate": 0.3574,
-    "team_b_decayed_win_rate": 0.6426,
+    "team_a_decayed_win_rate": 0.3588,
+    "team_b_decayed_win_rate": 0.6412,
     "avg_duration_seconds": 2637,
     "last_meeting": "2026-07-09T13:47:00+00:00",
     "never_played": false
@@ -2440,8 +2440,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 2,
     "team_a_win_rate": 0.6,
     "team_b_win_rate": 0.4,
-    "team_a_decayed_win_rate": 0.8502,
-    "team_b_decayed_win_rate": 0.1498,
+    "team_a_decayed_win_rate": 0.8499,
+    "team_b_decayed_win_rate": 0.1501,
     "avg_duration_seconds": 2232,
     "last_meeting": "2026-07-10T12:33:00+00:00",
     "never_played": false
@@ -2456,8 +2456,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 13,
     "team_a_win_rate": 0.6061,
     "team_b_win_rate": 0.3939,
-    "team_a_decayed_win_rate": 0.5282,
-    "team_b_decayed_win_rate": 0.4718,
+    "team_a_decayed_win_rate": 0.5281,
+    "team_b_decayed_win_rate": 0.4719,
     "avg_duration_seconds": 2295,
     "last_meeting": "2026-08-05T14:19:06+00:00",
     "never_played": false
@@ -2472,8 +2472,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 12,
     "team_a_win_rate": 0.6,
     "team_b_win_rate": 0.4,
-    "team_a_decayed_win_rate": 0.6797,
-    "team_b_decayed_win_rate": 0.3203,
+    "team_a_decayed_win_rate": 0.6794,
+    "team_b_decayed_win_rate": 0.3206,
     "avg_duration_seconds": 2568,
     "last_meeting": "2026-06-05T13:03:24+00:00",
     "never_played": false
@@ -2488,8 +2488,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 1,
     "team_a_win_rate": 0.8,
     "team_b_win_rate": 0.2,
-    "team_a_decayed_win_rate": 0.7961,
-    "team_b_decayed_win_rate": 0.2039,
+    "team_a_decayed_win_rate": 0.7957,
+    "team_b_decayed_win_rate": 0.2043,
     "avg_duration_seconds": 2789,
     "last_meeting": "2026-08-02T17:54:57+00:00",
     "never_played": false
@@ -2520,8 +2520,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 8,
     "team_a_win_rate": 0.1111,
     "team_b_win_rate": 0.8889,
-    "team_a_decayed_win_rate": 0.0994,
-    "team_b_decayed_win_rate": 0.9006,
+    "team_a_decayed_win_rate": 0.0995,
+    "team_b_decayed_win_rate": 0.9005,
     "avg_duration_seconds": 2671,
     "last_meeting": "2026-07-09T16:43:01+00:00",
     "never_played": false
@@ -2536,8 +2536,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 4,
     "team_a_win_rate": 0.2,
     "team_b_win_rate": 0.8,
-    "team_a_decayed_win_rate": 0.1692,
-    "team_b_decayed_win_rate": 0.8308,
+    "team_a_decayed_win_rate": 0.1693,
+    "team_b_decayed_win_rate": 0.8307,
     "avg_duration_seconds": 2761,
     "last_meeting": "2026-07-18T12:08:02+00:00",
     "never_played": false
@@ -2696,8 +2696,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 2,
     "team_a_win_rate": 0.6,
     "team_b_win_rate": 0.4,
-    "team_a_decayed_win_rate": 0.6322,
-    "team_b_decayed_win_rate": 0.3678,
+    "team_a_decayed_win_rate": 0.6318,
+    "team_b_decayed_win_rate": 0.3682,
     "avg_duration_seconds": 2706,
     "last_meeting": "2026-05-15T18:49:02+00:00",
     "never_played": false
@@ -2728,8 +2728,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 6,
     "team_a_win_rate": 0.25,
     "team_b_win_rate": 0.75,
-    "team_a_decayed_win_rate": 0.1763,
-    "team_b_decayed_win_rate": 0.8237,
+    "team_a_decayed_win_rate": 0.1771,
+    "team_b_decayed_win_rate": 0.8229,
     "avg_duration_seconds": 2688,
     "last_meeting": "2026-05-30T13:08:54+00:00",
     "never_played": false
@@ -2744,8 +2744,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 8,
     "team_a_win_rate": 0.5,
     "team_b_win_rate": 0.5,
-    "team_a_decayed_win_rate": 0.4608,
-    "team_b_decayed_win_rate": 0.5392,
+    "team_a_decayed_win_rate": 0.4614,
+    "team_b_decayed_win_rate": 0.5386,
     "avg_duration_seconds": 2756,
     "last_meeting": "2026-08-04T12:08:14+00:00",
     "never_played": false
@@ -2760,8 +2760,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 4,
     "team_a_win_rate": 0.2,
     "team_b_win_rate": 0.8,
-    "team_a_decayed_win_rate": 0.1419,
-    "team_b_decayed_win_rate": 0.8581,
+    "team_a_decayed_win_rate": 0.1425,
+    "team_b_decayed_win_rate": 0.8575,
     "avg_duration_seconds": 2489,
     "last_meeting": "2026-05-26T14:46:36+00:00",
     "never_played": false
@@ -2776,8 +2776,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 5,
     "team_a_win_rate": 0.4444,
     "team_b_win_rate": 0.5556,
-    "team_a_decayed_win_rate": 0.4595,
-    "team_b_decayed_win_rate": 0.5405,
+    "team_a_decayed_win_rate": 0.4587,
+    "team_b_decayed_win_rate": 0.5413,
     "avg_duration_seconds": 2698,
     "last_meeting": "2026-08-01T18:34:15+00:00",
     "never_played": false
@@ -2808,8 +2808,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 5,
     "team_a_win_rate": 0.375,
     "team_b_win_rate": 0.625,
-    "team_a_decayed_win_rate": 0.3136,
-    "team_b_decayed_win_rate": 0.6864,
+    "team_a_decayed_win_rate": 0.3143,
+    "team_b_decayed_win_rate": 0.6857,
     "avg_duration_seconds": 2716,
     "last_meeting": "2026-05-26T08:01:27+00:00",
     "never_played": false
@@ -2824,8 +2824,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 6,
     "team_a_win_rate": 0.5385,
     "team_b_win_rate": 0.4615,
-    "team_a_decayed_win_rate": 0.5305,
-    "team_b_decayed_win_rate": 0.4695,
+    "team_a_decayed_win_rate": 0.5306,
+    "team_b_decayed_win_rate": 0.4694,
     "avg_duration_seconds": 2259,
     "last_meeting": "2026-07-07T19:48:00+00:00",
     "never_played": false
@@ -2888,8 +2888,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 8,
     "team_a_win_rate": 0.4667,
     "team_b_win_rate": 0.5333,
-    "team_a_decayed_win_rate": 0.4886,
-    "team_b_decayed_win_rate": 0.5114,
+    "team_a_decayed_win_rate": 0.4883,
+    "team_b_decayed_win_rate": 0.5117,
     "avg_duration_seconds": 2608,
     "last_meeting": "2026-08-01T12:38:58+00:00",
     "never_played": false
@@ -2904,8 +2904,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 4,
     "team_a_win_rate": 0.6,
     "team_b_win_rate": 0.4,
-    "team_a_decayed_win_rate": 0.4827,
-    "team_b_decayed_win_rate": 0.5173,
+    "team_a_decayed_win_rate": 0.4838,
+    "team_b_decayed_win_rate": 0.5162,
     "avg_duration_seconds": 2310,
     "last_meeting": "2026-07-08T18:25:00+00:00",
     "never_played": false
@@ -2952,8 +2952,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 2,
     "team_a_win_rate": 0.5,
     "team_b_win_rate": 0.5,
-    "team_a_decayed_win_rate": 0.6043,
-    "team_b_decayed_win_rate": 0.3957,
+    "team_a_decayed_win_rate": 0.6029,
+    "team_b_decayed_win_rate": 0.3971,
     "avg_duration_seconds": 2299,
     "last_meeting": "2026-05-02T09:41:02+00:00",
     "never_played": false
@@ -3112,8 +3112,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 14,
     "team_a_win_rate": 0.5,
     "team_b_win_rate": 0.5,
-    "team_a_decayed_win_rate": 0.5048,
-    "team_b_decayed_win_rate": 0.4952,
+    "team_a_decayed_win_rate": 0.5052,
+    "team_b_decayed_win_rate": 0.4948,
     "avg_duration_seconds": 2396,
     "last_meeting": "2026-05-26T17:57:19+00:00",
     "never_played": false
@@ -3128,8 +3128,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 9,
     "team_a_win_rate": 0.5263,
     "team_b_win_rate": 0.4737,
-    "team_a_decayed_win_rate": 0.5561,
-    "team_b_decayed_win_rate": 0.4439,
+    "team_a_decayed_win_rate": 0.5562,
+    "team_b_decayed_win_rate": 0.4438,
     "avg_duration_seconds": 2848,
     "last_meeting": "2026-05-28T12:28:43+00:00",
     "never_played": false
@@ -3144,8 +3144,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 28,
     "team_a_win_rate": 0.4167,
     "team_b_win_rate": 0.5833,
-    "team_a_decayed_win_rate": 0.328,
-    "team_b_decayed_win_rate": 0.672,
+    "team_a_decayed_win_rate": 0.3283,
+    "team_b_decayed_win_rate": 0.6717,
     "avg_duration_seconds": 2690,
     "last_meeting": "2026-05-28T08:54:48+00:00",
     "never_played": false
@@ -3160,8 +3160,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 11,
     "team_a_win_rate": 0.4762,
     "team_b_win_rate": 0.5238,
-    "team_a_decayed_win_rate": 0.5041,
-    "team_b_decayed_win_rate": 0.4959,
+    "team_a_decayed_win_rate": 0.5043,
+    "team_b_decayed_win_rate": 0.4957,
     "avg_duration_seconds": 2552,
     "last_meeting": "2026-05-27T15:12:22+00:00",
     "never_played": false
@@ -3176,8 +3176,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 18,
     "team_a_win_rate": 0.5814,
     "team_b_win_rate": 0.4186,
-    "team_a_decayed_win_rate": 0.6389,
-    "team_b_decayed_win_rate": 0.3611,
+    "team_a_decayed_win_rate": 0.6394,
+    "team_b_decayed_win_rate": 0.3606,
     "avg_duration_seconds": 2564,
     "last_meeting": "2026-07-12T10:15:00+00:00",
     "never_played": false
@@ -3192,8 +3192,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 15,
     "team_a_win_rate": 0.2857,
     "team_b_win_rate": 0.7143,
-    "team_a_decayed_win_rate": 0.165,
-    "team_b_decayed_win_rate": 0.835,
+    "team_a_decayed_win_rate": 0.1654,
+    "team_b_decayed_win_rate": 0.8346,
     "avg_duration_seconds": 2403,
     "last_meeting": "2026-07-16T12:27:06+00:00",
     "never_played": false
@@ -3224,8 +3224,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 3,
     "team_a_win_rate": 0.7,
     "team_b_win_rate": 0.3,
-    "team_a_decayed_win_rate": 0.7293,
-    "team_b_decayed_win_rate": 0.2707,
+    "team_a_decayed_win_rate": 0.7294,
+    "team_b_decayed_win_rate": 0.2706,
     "avg_duration_seconds": 2811,
     "last_meeting": "2026-06-25T13:43:20+00:00",
     "never_played": false
@@ -3256,8 +3256,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 12,
     "team_a_win_rate": 0.4783,
     "team_b_win_rate": 0.5217,
-    "team_a_decayed_win_rate": 0.6262,
-    "team_b_decayed_win_rate": 0.3738,
+    "team_a_decayed_win_rate": 0.6256,
+    "team_b_decayed_win_rate": 0.3744,
     "avg_duration_seconds": 2458,
     "last_meeting": "2026-05-26T13:43:07+00:00",
     "never_played": false
@@ -3272,8 +3272,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 5,
     "team_a_win_rate": 0.7222,
     "team_b_win_rate": 0.2778,
-    "team_a_decayed_win_rate": 0.7203,
-    "team_b_decayed_win_rate": 0.2797,
+    "team_a_decayed_win_rate": 0.7206,
+    "team_b_decayed_win_rate": 0.2794,
     "avg_duration_seconds": 2366,
     "last_meeting": "2026-05-27T12:25:11+00:00",
     "never_played": false
@@ -3288,8 +3288,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 6,
     "team_a_win_rate": 0.6,
     "team_b_win_rate": 0.4,
-    "team_a_decayed_win_rate": 0.7331,
-    "team_b_decayed_win_rate": 0.2669,
+    "team_a_decayed_win_rate": 0.7327,
+    "team_b_decayed_win_rate": 0.2673,
     "avg_duration_seconds": 2559,
     "last_meeting": "2026-07-10T10:21:00+00:00",
     "never_played": false
@@ -3304,8 +3304,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 23,
     "team_a_win_rate": 0.3947,
     "team_b_win_rate": 0.6053,
-    "team_a_decayed_win_rate": 0.4833,
-    "team_b_decayed_win_rate": 0.5167,
+    "team_a_decayed_win_rate": 0.4829,
+    "team_b_decayed_win_rate": 0.5171,
     "avg_duration_seconds": 2562,
     "last_meeting": "2026-08-03T16:14:01+00:00",
     "never_played": false
@@ -3320,8 +3320,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 9,
     "team_a_win_rate": 0.55,
     "team_b_win_rate": 0.45,
-    "team_a_decayed_win_rate": 0.5978,
-    "team_b_decayed_win_rate": 0.4022,
+    "team_a_decayed_win_rate": 0.5973,
+    "team_b_decayed_win_rate": 0.4027,
     "avg_duration_seconds": 2549,
     "last_meeting": "2026-05-26T12:51:01+00:00",
     "never_played": false
@@ -3336,8 +3336,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 31,
     "team_a_win_rate": 0.2955,
     "team_b_win_rate": 0.7045,
-    "team_a_decayed_win_rate": 0.3309,
-    "team_b_decayed_win_rate": 0.6691,
+    "team_a_decayed_win_rate": 0.3312,
+    "team_b_decayed_win_rate": 0.6688,
     "avg_duration_seconds": 2748,
     "last_meeting": "2026-07-19T17:49:01+00:00",
     "never_played": false
@@ -3352,8 +3352,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 9,
     "team_a_win_rate": 0.4375,
     "team_b_win_rate": 0.5625,
-    "team_a_decayed_win_rate": 0.4104,
-    "team_b_decayed_win_rate": 0.5896,
+    "team_a_decayed_win_rate": 0.4105,
+    "team_b_decayed_win_rate": 0.5895,
     "avg_duration_seconds": 2604,
     "last_meeting": "2026-06-06T12:57:00+00:00",
     "never_played": false
@@ -3368,8 +3368,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 1,
     "team_a_win_rate": 0.8889,
     "team_b_win_rate": 0.1111,
-    "team_a_decayed_win_rate": 0.9283,
-    "team_b_decayed_win_rate": 0.0717,
+    "team_a_decayed_win_rate": 0.9279,
+    "team_b_decayed_win_rate": 0.0721,
     "avg_duration_seconds": 2629,
     "last_meeting": "2026-08-01T15:09:12+00:00",
     "never_played": false
@@ -3432,8 +3432,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 6,
     "team_a_win_rate": 0.7143,
     "team_b_win_rate": 0.2857,
-    "team_a_decayed_win_rate": 0.6606,
-    "team_b_decayed_win_rate": 0.3394,
+    "team_a_decayed_win_rate": 0.6604,
+    "team_b_decayed_win_rate": 0.3396,
     "avg_duration_seconds": 2267,
     "last_meeting": "2026-08-01T10:23:51+00:00",
     "never_played": false
@@ -3448,8 +3448,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 15,
     "team_a_win_rate": 0.375,
     "team_b_win_rate": 0.625,
-    "team_a_decayed_win_rate": 0.2673,
-    "team_b_decayed_win_rate": 0.7327,
+    "team_a_decayed_win_rate": 0.2678,
+    "team_b_decayed_win_rate": 0.7322,
     "avg_duration_seconds": 2981,
     "last_meeting": "2026-07-11T10:45:00+00:00",
     "never_played": false
@@ -3464,8 +3464,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 10,
     "team_a_win_rate": 0.3333,
     "team_b_win_rate": 0.6667,
-    "team_a_decayed_win_rate": 0.3227,
-    "team_b_decayed_win_rate": 0.6773,
+    "team_a_decayed_win_rate": 0.3228,
+    "team_b_decayed_win_rate": 0.6772,
     "avg_duration_seconds": 2229,
     "last_meeting": "2026-05-29T13:30:26+00:00",
     "never_played": false
@@ -3496,8 +3496,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 6,
     "team_a_win_rate": 0.4545,
     "team_b_win_rate": 0.5455,
-    "team_a_decayed_win_rate": 0.4087,
-    "team_b_decayed_win_rate": 0.5913,
+    "team_a_decayed_win_rate": 0.4093,
+    "team_b_decayed_win_rate": 0.5907,
     "avg_duration_seconds": 2683,
     "last_meeting": "2026-05-27T11:49:02+00:00",
     "never_played": false
@@ -3512,8 +3512,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 1,
     "team_a_win_rate": 0.8,
     "team_b_win_rate": 0.2,
-    "team_a_decayed_win_rate": 0.8516,
-    "team_b_decayed_win_rate": 0.1484,
+    "team_a_decayed_win_rate": 0.8512,
+    "team_b_decayed_win_rate": 0.1488,
     "avg_duration_seconds": 2892,
     "last_meeting": "2026-07-08T10:28:00+00:00",
     "never_played": false
@@ -3528,8 +3528,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 5,
     "team_a_win_rate": 0.6154,
     "team_b_win_rate": 0.3846,
-    "team_a_decayed_win_rate": 0.416,
-    "team_b_decayed_win_rate": 0.584,
+    "team_a_decayed_win_rate": 0.417,
+    "team_b_decayed_win_rate": 0.583,
     "avg_duration_seconds": 2461,
     "last_meeting": "2026-05-15T14:29:01+00:00",
     "never_played": false
@@ -3560,8 +3560,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 11,
     "team_a_win_rate": 0.3889,
     "team_b_win_rate": 0.6111,
-    "team_a_decayed_win_rate": 0.3931,
-    "team_b_decayed_win_rate": 0.6069,
+    "team_a_decayed_win_rate": 0.3932,
+    "team_b_decayed_win_rate": 0.6068,
     "avg_duration_seconds": 2934,
     "last_meeting": "2026-05-27T16:41:00+00:00",
     "never_played": false
@@ -3576,8 +3576,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 3,
     "team_a_win_rate": 0.5,
     "team_b_win_rate": 0.5,
-    "team_a_decayed_win_rate": 0.4604,
-    "team_b_decayed_win_rate": 0.5396,
+    "team_a_decayed_win_rate": 0.461,
+    "team_b_decayed_win_rate": 0.539,
     "avg_duration_seconds": 3342,
     "last_meeting": "2026-05-29T10:09:03+00:00",
     "never_played": false
@@ -3624,8 +3624,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 5,
     "team_a_win_rate": 0.5455,
     "team_b_win_rate": 0.4545,
-    "team_a_decayed_win_rate": 0.5408,
-    "team_b_decayed_win_rate": 0.4592,
+    "team_a_decayed_win_rate": 0.5403,
+    "team_b_decayed_win_rate": 0.4597,
     "avg_duration_seconds": 2513,
     "last_meeting": "2026-05-27T15:22:46+00:00",
     "never_played": false
@@ -3640,8 +3640,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 3,
     "team_a_win_rate": 0.7,
     "team_b_win_rate": 0.3,
-    "team_a_decayed_win_rate": 0.7524,
-    "team_b_decayed_win_rate": 0.2476,
+    "team_a_decayed_win_rate": 0.7519,
+    "team_b_decayed_win_rate": 0.2481,
     "avg_duration_seconds": 2758,
     "last_meeting": "2026-07-09T10:55:01+00:00",
     "never_played": false
@@ -3688,8 +3688,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 25,
     "team_a_win_rate": 0.4898,
     "team_b_win_rate": 0.5102,
-    "team_a_decayed_win_rate": 0.6939,
-    "team_b_decayed_win_rate": 0.3061,
+    "team_a_decayed_win_rate": 0.6932,
+    "team_b_decayed_win_rate": 0.3068,
     "avg_duration_seconds": 2693,
     "last_meeting": "2026-08-02T14:56:32+00:00",
     "never_played": false
@@ -3704,8 +3704,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 3,
     "team_a_win_rate": 0.8333,
     "team_b_win_rate": 0.1667,
-    "team_a_decayed_win_rate": 0.9132,
-    "team_b_decayed_win_rate": 0.0868,
+    "team_a_decayed_win_rate": 0.9129,
+    "team_b_decayed_win_rate": 0.0871,
     "avg_duration_seconds": 2632,
     "last_meeting": "2026-05-26T15:06:51+00:00",
     "never_played": false
@@ -3720,8 +3720,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 10,
     "team_a_win_rate": 0.5238,
     "team_b_win_rate": 0.4762,
-    "team_a_decayed_win_rate": 0.4982,
-    "team_b_decayed_win_rate": 0.5018,
+    "team_a_decayed_win_rate": 0.4984,
+    "team_b_decayed_win_rate": 0.5016,
     "avg_duration_seconds": 2608,
     "last_meeting": "2026-05-28T15:37:36+00:00",
     "never_played": false
@@ -3736,8 +3736,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 9,
     "team_a_win_rate": 0.4375,
     "team_b_win_rate": 0.5625,
-    "team_a_decayed_win_rate": 0.3957,
-    "team_b_decayed_win_rate": 0.6043,
+    "team_a_decayed_win_rate": 0.3958,
+    "team_b_decayed_win_rate": 0.6042,
     "avg_duration_seconds": 2794,
     "last_meeting": "2026-06-04T10:46:59+00:00",
     "never_played": false
@@ -3768,8 +3768,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 2,
     "team_a_win_rate": 0.8333,
     "team_b_win_rate": 0.1667,
-    "team_a_decayed_win_rate": 0.7401,
-    "team_b_decayed_win_rate": 0.2599,
+    "team_a_decayed_win_rate": 0.7405,
+    "team_b_decayed_win_rate": 0.2595,
     "avg_duration_seconds": 2539,
     "last_meeting": "2026-07-08T13:49:04+00:00",
     "never_played": false
@@ -3800,8 +3800,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 12,
     "team_a_win_rate": 0.52,
     "team_b_win_rate": 0.48,
-    "team_a_decayed_win_rate": 0.5425,
-    "team_b_decayed_win_rate": 0.4575,
+    "team_a_decayed_win_rate": 0.5422,
+    "team_b_decayed_win_rate": 0.4578,
     "avg_duration_seconds": 2478,
     "last_meeting": "2026-05-30T14:25:01+00:00",
     "never_played": false
@@ -3816,8 +3816,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 11,
     "team_a_win_rate": 0.4211,
     "team_b_win_rate": 0.5789,
-    "team_a_decayed_win_rate": 0.4985,
-    "team_b_decayed_win_rate": 0.5015,
+    "team_a_decayed_win_rate": 0.4983,
+    "team_b_decayed_win_rate": 0.5017,
     "avg_duration_seconds": 2895,
     "last_meeting": "2026-06-06T17:38:56+00:00",
     "never_played": false
@@ -3832,8 +3832,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 6,
     "team_a_win_rate": 0.4545,
     "team_b_win_rate": 0.5455,
-    "team_a_decayed_win_rate": 0.4835,
-    "team_b_decayed_win_rate": 0.5165,
+    "team_a_decayed_win_rate": 0.4833,
+    "team_b_decayed_win_rate": 0.5167,
     "avg_duration_seconds": 2695,
     "last_meeting": "2026-07-18T16:32:00+00:00",
     "never_played": false
@@ -3848,8 +3848,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 2,
     "team_a_win_rate": 0.7143,
     "team_b_win_rate": 0.2857,
-    "team_a_decayed_win_rate": 0.6041,
-    "team_b_decayed_win_rate": 0.3959,
+    "team_a_decayed_win_rate": 0.6046,
+    "team_b_decayed_win_rate": 0.3954,
     "avg_duration_seconds": 2531,
     "last_meeting": "2026-04-08T09:13:31+00:00",
     "never_played": false
@@ -3896,8 +3896,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 14,
     "team_a_win_rate": 0.5,
     "team_b_win_rate": 0.5,
-    "team_a_decayed_win_rate": 0.396,
-    "team_b_decayed_win_rate": 0.604,
+    "team_a_decayed_win_rate": 0.3956,
+    "team_b_decayed_win_rate": 0.6044,
     "avg_duration_seconds": 2446,
     "last_meeting": "2026-05-27T10:11:23+00:00",
     "never_played": false
@@ -3912,8 +3912,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 3,
     "team_a_win_rate": 0.8421,
     "team_b_win_rate": 0.1579,
-    "team_a_decayed_win_rate": 0.651,
-    "team_b_decayed_win_rate": 0.349,
+    "team_a_decayed_win_rate": 0.6512,
+    "team_b_decayed_win_rate": 0.3488,
     "avg_duration_seconds": 2695,
     "last_meeting": "2026-05-28T11:18:55+00:00",
     "never_played": false
@@ -3928,8 +3928,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 1,
     "team_a_win_rate": 0.6667,
     "team_b_win_rate": 0.3333,
-    "team_a_decayed_win_rate": 0.7031,
-    "team_b_decayed_win_rate": 0.2969,
+    "team_a_decayed_win_rate": 0.7026,
+    "team_b_decayed_win_rate": 0.2974,
     "avg_duration_seconds": 1945,
     "last_meeting": "2026-03-24T13:05:00+00:00",
     "never_played": false
@@ -3976,8 +3976,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 13,
     "team_a_win_rate": 0.4091,
     "team_b_win_rate": 0.5909,
-    "team_a_decayed_win_rate": 0.4513,
-    "team_b_decayed_win_rate": 0.5487,
+    "team_a_decayed_win_rate": 0.4508,
+    "team_b_decayed_win_rate": 0.5492,
     "avg_duration_seconds": 2621,
     "last_meeting": "2026-07-12T13:02:00+00:00",
     "never_played": false
@@ -3992,8 +3992,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 7,
     "team_a_win_rate": 0.65,
     "team_b_win_rate": 0.35,
-    "team_a_decayed_win_rate": 0.652,
-    "team_b_decayed_win_rate": 0.348,
+    "team_a_decayed_win_rate": 0.6518,
+    "team_b_decayed_win_rate": 0.3482,
     "avg_duration_seconds": 2669,
     "last_meeting": "2026-07-10T18:27:00+00:00",
     "never_played": false
@@ -4040,8 +4040,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 4,
     "team_a_win_rate": 0.2,
     "team_b_win_rate": 0.8,
-    "team_a_decayed_win_rate": 0.2163,
-    "team_b_decayed_win_rate": 0.7837,
+    "team_a_decayed_win_rate": 0.2161,
+    "team_b_decayed_win_rate": 0.7839,
     "avg_duration_seconds": 2155,
     "last_meeting": "2026-03-23T13:14:04+00:00",
     "never_played": false
@@ -4056,8 +4056,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 7,
     "team_a_win_rate": 0.4167,
     "team_b_win_rate": 0.5833,
-    "team_a_decayed_win_rate": 0.3492,
-    "team_b_decayed_win_rate": 0.6508,
+    "team_a_decayed_win_rate": 0.3501,
+    "team_b_decayed_win_rate": 0.6499,
     "avg_duration_seconds": 2682,
     "last_meeting": "2026-05-13T11:38:03+00:00",
     "never_played": false
@@ -4088,8 +4088,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 9,
     "team_a_win_rate": 0.4375,
     "team_b_win_rate": 0.5625,
-    "team_a_decayed_win_rate": 0.3474,
-    "team_b_decayed_win_rate": 0.6526,
+    "team_a_decayed_win_rate": 0.3481,
+    "team_b_decayed_win_rate": 0.6519,
     "avg_duration_seconds": 2430,
     "last_meeting": "2026-07-30T10:36:44+00:00",
     "never_played": false
@@ -4152,8 +4152,8 @@ export const h2hPairs: Record<string, H2HPair> = {
     "team_b_wins": 9,
     "team_a_win_rate": 0.6667,
     "team_b_win_rate": 0.3333,
-    "team_a_decayed_win_rate": 0.5671,
-    "team_b_decayed_win_rate": 0.4329,
+    "team_a_decayed_win_rate": 0.5665,
+    "team_b_decayed_win_rate": 0.4335,
     "avg_duration_seconds": 2474,
     "last_meeting": "2026-08-03T09:59:29+00:00",
     "never_played": false
