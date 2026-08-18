@@ -1,0 +1,114 @@
+.diagram {
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.section {
+  min-width: 760px;
+}
+
+.section + .section {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--border);
+}
+
+.columns {
+  display: flex;
+  align-items: stretch;
+  gap: 28px;
+  /* Fixed height so justify-content:space-around centers each round's boxes
+     exactly between their two feeders in the round before it - works cleanly
+     for a binary merge (4 -> 2 -> 1 matches per column). */
+  height: 360px;
+}
+
+.section:last-child .columns {
+  height: 220px;
+}
+
+.column {
+  flex: 1;
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+}
+
+.columnHeader {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 6px 8px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.columnBody {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.matchWrap {
+  position: relative;
+}
+
+.column:not(:last-child) .matchWrap::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -28px;
+  width: 28px;
+  height: 1px;
+  background: var(--border);
+}
+
+.matchBox {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.slotRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 6px 8px;
+  font-size: 12px;
+}
+
+.slotRow:first-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.slotRowFavored {
+  background: rgba(63, 185, 80, 0.1);
+}
+
+.slotTeam {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.slotName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.matchMeta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  padding: 3px 2px 0;
+}

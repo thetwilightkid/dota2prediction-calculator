@@ -111,12 +111,33 @@ export interface PlayoffOutcome {
   outcomePct: Record<string, number>;
 }
 
+// Per match_id: which team is likely to occupy slot "a"/"b", and who's
+// likely to win that specific match - {team_id: percent}, sorted descending,
+// zero-probability teams omitted. Mirrors simulate_playoffs.py's slots_out.
+export interface SlotDistribution {
+  a: Record<string, number>;
+  b: Record<string, number>;
+  winner: Record<string, number>;
+}
+
+function sortedPercent(counts: Map<number, number>, numTrials: number): Record<string, number> {
+  const out: Record<string, number> = {};
+  const entries = [...counts.entries()].sort((x, y) => y[1] - x[1]);
+  for (const [tid, count] of entries) out[String(tid)] = Math.round((10000 * count) / numTrials) / 100;
+  return out;
+}
+
+export interface PlayoffSimulationResult {
+  outcomes: PlayoffOutcome[];
+  slots: Record<string, SlotDistribution>;
+}
+
 export function runPlayoffSimulation(
   teamRatings: TeamRatingInput[],
   numTrials: number,
   seed: number,
   forcedUbR1: [number, number][]
-): PlayoffOutcome[] {
+): PlayoffSimulationResult {
   const rng = new Rng(seed);
   const reachCounts = new Map<number, Map<string, number>>();
   const outcomeCounts = new Map<number, Map<string, number>>();
@@ -124,12 +145,22 @@ export function runPlayoffSimulation(
     reachCounts.set(t.teamId, new Map());
     outcomeCounts.set(t.teamId, new Map());
   }
+  const slotCounts = new Map<string, { a: Map<number, number>; b: Map<number, number>; winner: Map<number, number> }>();
+  for (const mid of MATCH_ORDER) slotCounts.set(mid, { a: new Map(), b: new Map(), winner: new Map() });
 
   for (let trial = 0; trial < numTrials; trial++) {
     const trialRatings = new Map<number, number>();
     for (const t of teamRatings) trialRatings.set(t.teamId, rng.gauss(t.mean, t.sigma));
 
     const results = runBracketTrial(trialRatings, rng, forcedUbR1);
+
+    for (const mid of MATCH_ORDER) {
+      const slot = slotCounts.get(mid)!;
+      const r = results[mid];
+      slot.a.set(r.a, (slot.a.get(r.a) ?? 0) + 1);
+      slot.b.set(r.b, (slot.b.get(r.b) ?? 0) + 1);
+      slot.winner.set(r.winner, (slot.winner.get(r.winner) ?? 0) + 1);
+    }
 
     for (const t of teamRatings) {
       const tid = t.teamId;
@@ -167,7 +198,7 @@ export function runPlayoffSimulation(
     }
   }
 
-  return teamRatings.map((t) => {
+  const outcomes = teamRatings.map((t) => {
     const reach = reachCounts.get(t.teamId)!;
     const outcome = outcomeCounts.get(t.teamId)!;
     const reachPct: Record<string, number> = {};
@@ -176,4 +207,16 @@ export function runPlayoffSimulation(
     for (const k of OUTCOME_KEYS) outcomePct[k] = Math.round((10000 * (outcome.get(k) ?? 0)) / numTrials) / 100;
     return { teamId: t.teamId, reachPct, outcomePct };
   });
+
+  const slots: Record<string, SlotDistribution> = {};
+  for (const mid of MATCH_ORDER) {
+    const slot = slotCounts.get(mid)!;
+    slots[mid] = {
+      a: sortedPercent(slot.a, numTrials),
+      b: sortedPercent(slot.b, numTrials),
+      winner: sortedPercent(slot.winner, numTrials),
+    };
+  }
+
+  return { outcomes, slots };
 }

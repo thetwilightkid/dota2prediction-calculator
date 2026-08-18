@@ -6,11 +6,12 @@ import styles from "./PlayoffBracketClient.module.css";
 import TeamLogo from "./TeamLogo";
 import SliderPanel from "./SliderPanel";
 import MatchupGrid from "./MatchupGrid";
+import PlayoffBracketDiagram from "./PlayoffBracketDiagram";
 import { TEAM_CANONICAL } from "@/data/teams";
-import { playoffSimulation, playoffSimulationMeta, PLAYOFF_TEAM_IDS } from "@/data/playoffSimulation";
+import { playoffSimulation, playoffSlots, playoffSimulationMeta, PLAYOFF_TEAM_IDS, type PlayoffSlotDistribution } from "@/data/playoffSimulation";
 import { useWeights } from "@/lib/WeightsContext";
 import { computeComposite } from "@/lib/rating";
-import { runPlayoffSimulation, REACH_KEYS as REACH_KEY_LIST, OUTCOME_KEYS as OUTCOME_KEY_LIST } from "@/lib/simulatePlayoffs";
+import { runPlayoffSimulation } from "@/lib/simulatePlayoffs";
 
 const LIVE_TRIALS = 20000;
 const UB_R1_PAIRINGS = playoffSimulationMeta.ub_r1_pairings as [number, number][];
@@ -39,6 +40,7 @@ export default function PlayoffBracketClient() {
   const composite = useMemo(() => computeComposite(weights).filter((c) => PLAYOFF_TEAM_IDS.includes(c.teamId)), [weights]);
 
   const [liveResults, setLiveResults] = useState<Map<number, { reachPct: Record<string, number>; outcomePct: Record<string, number> }> | null>(null);
+  const [liveSlots, setLiveSlots] = useState<Record<string, PlayoffSlotDistribution> | null>(null);
   const [isSimulating, setIsSimulating] = useState(false);
 
   useEffect(() => {
@@ -46,9 +48,10 @@ export default function PlayoffBracketClient() {
     const startHandle = setTimeout(() => setIsSimulating(true), 0);
     const runHandle = setTimeout(() => {
       const ratings = composite.map((c) => ({ teamId: c.teamId, mean: c.ratingScaleMean, sigma: c.ratingScaleSigma }));
-      const results = runPlayoffSimulation(ratings, LIVE_TRIALS, 2026, UB_R1_PAIRINGS);
-      const map = new Map(results.map((r) => [r.teamId, { reachPct: r.reachPct, outcomePct: r.outcomePct }]));
+      const { outcomes, slots } = runPlayoffSimulation(ratings, LIVE_TRIALS, 2026, UB_R1_PAIRINGS);
+      const map = new Map(outcomes.map((r) => [r.teamId, { reachPct: r.reachPct, outcomePct: r.outcomePct }]));
       setLiveResults(map);
+      setLiveSlots(slots);
       setIsSimulating(false);
     }, 150);
     return () => {
@@ -58,6 +61,7 @@ export default function PlayoffBracketClient() {
   }, [composite, isDefault]);
 
   const displayResults = isDefault ? null : liveResults;
+  const displaySlots = isDefault ? playoffSlots : liveSlots ?? playoffSlots;
 
   function getResult(tid: number) {
     if (displayResults) return displayResults.get(tid);
@@ -73,24 +77,21 @@ export default function PlayoffBracketClient() {
 
   return (
     <div>
-      <div className={`${styles.seeding} card`}>
-        <h3 style={{ marginBottom: 10 }}>Upper Bracket Round 1 (real, announced seeding)</h3>
-        <div className={styles.seedGrid}>
-          {UB_R1_PAIRINGS.map(([a, b], i) => (
-            <div key={i} className={styles.seedMatch}>
-              <Link href={`/teams/${a}`} className={styles.seedTeam}>
-                <TeamLogo teamId={a} />
-                {TEAM_CANONICAL[a]}
-              </Link>
-              <span className="muted">vs</span>
-              <Link href={`/teams/${b}`} className={styles.seedTeam}>
-                <TeamLogo teamId={b} />
-                {TEAM_CANONICAL[b]}
-              </Link>
-            </div>
-          ))}
-        </div>
+      <div className={styles.sectionHeader}>
+        <h3>Bracket diagram</h3>
+        <span className={styles.sourceNote}>
+          {isDefault
+            ? "Predicted advancement, based on the standard prediction"
+            : isSimulating
+              ? "Recalculating with your settings..."
+              : "Updated for your settings"}
+        </span>
       </div>
+      <p className="muted" style={{ fontSize: 13, marginBottom: 10 }}>
+        UB Quarterfinals are the real, announced seeding - everything to the right of that is our most likely
+        prediction for who ends up in each slot, moving as you adjust the sliders.
+      </p>
+      <PlayoffBracketDiagram slots={displaySlots} />
 
       <div className={styles.mainLayout}>
         <div className={styles.tablesSection}>
