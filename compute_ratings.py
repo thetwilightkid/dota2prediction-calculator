@@ -46,19 +46,27 @@ def tierWeight(league_id):
     return _tierWeight(league_id, league_tiers)
 
 
+# TI2026's own league_id - used to bucket matches into "group stage" vs "everything else"
+# for the 70/30 categorical blend below. More precise than a date cutoff (immune to any other
+# tournament a team might play around the same dates).
+GROUP_STAGE_LEAGUE_ID = 19719
+GROUP_STAGE_BUCKET_WEIGHT = 0.7
+PRE_TOURNAMENT_BUCKET_WEIGHT = 0.3
+
 # ---- gather every roster-valid match per team, weighted ----
-team_matches = {tid: [] for tid in TEAM_CANONICAL}  # each entry: (weight, won: bool)
+team_matches = {tid: [] for tid in TEAM_CANONICAL}  # each entry: (weight, won: bool, is_group_stage: bool)
 
 for m in h2h_matches.values():
     w = recencyWeight(m.get("start_time")) * tierWeight(m.get("league_id"))
+    is_gs = m.get("league_id") == GROUP_STAGE_LEAGUE_ID
     if m.get("radiant_roster_valid"):
         tid = m["radiant_team_id"]
         if tid in team_matches:
-            team_matches[tid].append((w, bool(m.get("radiant_win"))))
+            team_matches[tid].append((w, bool(m.get("radiant_win")), is_gs))
     if m.get("dire_roster_valid"):
         tid = m["dire_team_id"]
         if tid in team_matches:
-            team_matches[tid].append((w, not bool(m.get("radiant_win"))))
+            team_matches[tid].append((w, not bool(m.get("radiant_win")), is_gs))
 
 for m in supplementary_matches.values():
     if not m.get("our_roster_valid"):
@@ -67,20 +75,58 @@ for m in supplementary_matches.values():
     if tid not in team_matches:
         continue
     w = recencyWeight(m.get("start_time")) * tierWeight(m.get("league_id"))
+    is_gs = m.get("league_id") == GROUP_STAGE_LEAGUE_ID
     is_radiant = m.get("is_radiant")
     won = bool(m.get("radiant_win")) if is_radiant else not bool(m.get("radiant_win"))
-    team_matches[tid].append((w, won))
+    team_matches[tid].append((w, won, is_gs))
+
+
+def _bucketWinRate(matches, win_credit_multiplier):
+    """Plain within-bucket decayed win rate - relative weighting between matches
+    inside the bucket is preserved (recency/tier still matter within a bucket),
+    only the BUCKET's overall contribution is fixed by the caller."""
+    total_w = sum(w for w, _, _ in matches)
+    if total_w <= 0:
+        return None
+    win_w = sum(w for w, won, _ in matches if won) * win_credit_multiplier
+    return win_w / total_w
 
 
 def decayedWinRate(matches, win_credit_multiplier=1.0):
-    """win_credit_multiplier scales WIN credit only (not the total-weight
+    """Real TI2026 Group Stage results (2026-08-13 onward, all under
+    GROUP_STAGE_LEAGUE_ID) are a much stronger signal for predicting the
+    playoffs than anything pre-tournament, so they're blended as a fixed
+    GROUP_STAGE_BUCKET_WEIGHT/PRE_TOURNAMENT_BUCKET_WEIGHT (70/30) split
+    between the two categories, rather than just letting recencyWeight's
+    continuous ramp handle it - this guarantees Group Stage form carries 70%
+    of the estimate regardless of how many pre-tournament matches exist (a
+    team with 40 old h2h matches and 6 Group Stage games would otherwise have
+    its Group Stage form diluted to a small fraction under pure pooling).
+    Falls back to 100% of whichever bucket has data if the other is empty.
+    win_credit_multiplier scales WIN credit only (not the total-weight
     denominator) - a roster-integrity penalty for teams whose historical
-    record was partly earned by a player no longer on the roster."""
-    total_w = sum(w for w, _ in matches)
+    record was partly earned by a player no longer on the roster.
+    effective_n (used downstream for the standard-error/uncertainty estimate)
+    is still the raw pooled weight across both buckets - the blend changes
+    which matches drive the point estimate, not how much total evidence
+    backs it."""
+    total_w = sum(w for w, _, _ in matches)
     if total_w <= 0:
         return None, 0.0
-    win_w = sum(w for w, won in matches if won) * win_credit_multiplier
-    return win_w / total_w, total_w
+
+    gs_matches = [x for x in matches if x[2]]
+    pre_matches = [x for x in matches if not x[2]]
+    gs_rate = _bucketWinRate(gs_matches, win_credit_multiplier)
+    pre_rate = _bucketWinRate(pre_matches, win_credit_multiplier)
+
+    if gs_rate is not None and pre_rate is not None:
+        blended = GROUP_STAGE_BUCKET_WEIGHT * gs_rate + PRE_TOURNAMENT_BUCKET_WEIGHT * pre_rate
+    elif gs_rate is not None:
+        blended = gs_rate
+    else:
+        blended = pre_rate
+
+    return blended, total_w
 
 
 form_stats = {}

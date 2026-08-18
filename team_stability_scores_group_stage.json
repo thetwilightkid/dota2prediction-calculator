@@ -1,0 +1,170 @@
+{
+    "_meta": {
+        "note": "Isolated (Group-Stage-only) comeback_rate/choke_rate, derived from OpenDota's own per-match `comeback` field (the winning team's biggest gold deficit overcome at any point) instead of Stratz predicted_win_rates curves (unavailable for these matches - see module docstring). comeback_rate = fraction of a team's Group Stage WINS where they overcame a deficit of at least comeback_gold_threshold gold. choke_rate = fraction of a team's Group Stage LOSSES where their opponent's comeback value crossed that same threshold - i.e. they held that lead and lost anyway. Field names match team_stability_scores.json for easy comparison, but this file's comeback_rate/choke_rate are NOT directly comparable in method to that file's.",
+        "comeback_gold_threshold": 5000,
+        "matches_included": 109,
+        "matches_skipped_no_comeback_field": 59
+    },
+    "teams": {
+        "9572001": {
+            "team_name": "Team Vision",
+            "group_stage_wins": 8,
+            "group_stage_losses": 2,
+            "comeback_rate": 0.0,
+            "comeback_wins": 0,
+            "choke_rate": 0.5,
+            "choke_losses": 1,
+            "matches_with_comeback_data": 5
+        },
+        "10150538": {
+            "team_name": "LGD Gaming",
+            "group_stage_wins": 8,
+            "group_stage_losses": 8,
+            "comeback_rate": 0.125,
+            "comeback_wins": 1,
+            "choke_rate": 0.375,
+            "choke_losses": 3,
+            "matches_with_comeback_data": 6
+        },
+        "8261500": {
+            "team_name": "Xtreme Gaming",
+            "group_stage_wins": 3,
+            "group_stage_losses": 8,
+            "comeback_rate": 0.3333,
+            "comeback_wins": 1,
+            "choke_rate": 0.125,
+            "choke_losses": 1,
+            "matches_with_comeback_data": 4
+        },
+        "9247354": {
+            "team_name": "Team Falcons",
+            "group_stage_wins": 10,
+            "group_stage_losses": 7,
+            "comeback_rate": 0.0,
+            "comeback_wins": 0,
+            "choke_rate": 0.1429,
+            "choke_losses": 1,
+            "matches_with_comeback_data": 7
+        },
+        "10150413": {
+            "team_name": "Iron Wing",
+            "group_stage_wins": 10,
+            "group_stage_losses": 6,
+            "comeback_rate": 0.1,
+            "comeback_wins": 1,
+            "choke_rate": 0.0,
+            "choke_losses": 0,
+            "matches_with_comeback_data": 9
+        },
+        "7119388": {
+            "team_name": "Team Spirit",
+            "group_stage_wins": 8,
+            "group_stage_losses": 6,
+            "comeback_rate": 0.125,
+            "comeback_wins": 1,
+            "choke_rate": 0.1667,
+            "choke_losses": 1,
+            "matches_with_comeback_data": 8
+        },
+        "2586976": {
+            "team_name": "OG",
+            "group_stage_wins": 2,
+            "group_stage_losses": 9,
+            "comeback_rate": 0.0,
+            "comeback_wins": 0,
+            "choke_rate": 0.1111,
+            "choke_losses": 1,
+            "matches_with_comeback_data": 6
+        },
+        "2163": {
+            "team_name": "Team Liquid",
+            "group_stage_wins": 9,
+            "group_stage_losses": 5,
+            "comeback_rate": 0.0,
+            "comeback_wins": 0,
+            "choke_rate": 0.2,
+            "choke_losses": 1,
+            "matches_with_comeback_data": 6
+        },
+        "9823272": {
+            "team_name": "Team Yandex",
+            "group_stage_wins": 9,
+            "group_stage_losses": 8,
+            "comeback_rate": 0.1111,
+            "comeback_wins": 1,
+            "choke_rate": 0.0,
+            "choke_losses": 0,
+            "matches_with_comeback_data": 4
+        },
+        "8255888": {
+            "team_name": "BoomBoys",
+            "group_stage_wins": 7,
+            "group_stage_losses": 7,
+            "comeback_rate": 0.1429,
+            "comeback_wins": 1,
+            "choke_rate": 0.1429,
+            "choke_losses": 1,
+            "matches_with_comeback_data": 6
+        },
+        "9467224": {
+            "team_name": "Aurora Gaming",
+            "group_stage_wins": 7,
+            "group_stage_losses": 7,
+            "comeback_rate": 0.1429,
+            "comeback_wins": 1,
+            "choke_rate": 0.1429,
+            "choke_losses": 1,
+            "matches_with_comeback_data": 6
+        },
+        "726228": {
+            "team_name": "Vici Gaming",
+            "group_stage_wins": 4,
+            "group_stage_losses": 10,
+            "comeback_rate": 0.25,
+            "comeback_wins": 1,
+            "choke_rate": 0.1,
+            "choke_losses": 1,
+            "matches_with_comeback_data": 8
+        },
+        "9964962": {
+            "team_name": "GamerLegion",
+            "group_stage_wins": 6,
+            "group_stage_losses": 8,
+            "comeback_rate": 0.0,
+            "comeback_wins": 0,
+            "choke_rate": 0.125,
+            "choke_losses": 1,
+            "matches_with_comeback_data": 10
+        },
+        "10136357": {
+            "team_name": "Nigma Galaxy",
+            "group_stage_wins": 8,
+            "group_stage_losses": 2,
+            "comeback_rate": 0.375,
+            "comeback_wins": 3,
+            "choke_rate": 0.0,
+            "choke_losses": 0,
+            "matches_with_comeback_data": 7
+        },
+        "5017210": {
+            "team_name": "Team Resilience",
+            "group_stage_wins": 8,
+            "group_stage_losses": 8,
+            "comeback_rate": 0.125,
+            "comeback_wins": 1,
+            "choke_rate": 0.0,
+            "choke_losses": 0,
+            "matches_with_comeback_data": 5
+        },
+        "10149530": {
+            "team_name": "HULIGANI",
+            "group_stage_wins": 2,
+            "group_stage_losses": 8,
+            "comeback_rate": 0.5,
+            "comeback_wins": 1,
+            "choke_rate": 0.0,
+            "choke_losses": 0,
+            "matches_with_comeback_data": 3
+        }
+    }
+}

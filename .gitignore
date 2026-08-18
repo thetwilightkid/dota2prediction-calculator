@@ -19,6 +19,8 @@ processed_h2h_matches.json
 processed_supplementary_matches.json
 team_ratings.json
 _player_to_team_tmp.json
+group_stage_2026_h2h_matches.json
+group_stage_2026_match_details.json
 *.bak
 *.bak2
 *.bak3
