@@ -5,9 +5,10 @@ import { useWeights } from "@/lib/WeightsContext";
 import type { RatingWeights } from "@/lib/rating";
 
 const SLIDERS: { key: keyof RatingWeights; label: string; hint: string }[] = [
-  { key: "elo", label: "Team strength rating", hint: "Based on an independent rating service that tracks pro matches worldwide" },
-  { key: "form", label: "Recent results", hint: "How often they've been winning lately, weighted by how big those tournaments were" },
-  { key: "market", label: "Expert predictions", hint: "Average ranking from other Dota prediction sites and tournament organizers" },
+  { key: "elo", label: "Datdota rating", hint: "Their Glicko-2 rating from datdota, an independent rating service that tracks pro matches worldwide" },
+  { key: "formPretournament", label: "Pre-International form", hint: "How often they were winning before TI2026 started, weighted by how big those tournaments were" },
+  { key: "formGroupStage", label: "Group Stage form", hint: "How often they won during TI2026's real Group Stage specifically - the freshest, most relevant signal" },
+  { key: "market", label: "Liquipedia / EPT / ESL ranking", hint: "Average pre-tournament ranking from Liquipedia, the Esports Power Tier list, and ESL's regional rankings" },
   { key: "stability", label: "Comeback ability", hint: "How often they win after falling behind, minus how often they lose after being ahead - off by default" },
   { key: "patchImpact", label: "Latest patch effect", hint: "Whether the newest balance update helps or hurts the heroes they like to play - off by default" },
 ];

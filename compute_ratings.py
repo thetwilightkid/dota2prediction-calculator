@@ -12,10 +12,15 @@ from weighting import recencyWeight as _recencyWeight, tierWeight as _tierWeight
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
-W_ELO = 0.5     # default composite weight for the external Glicko-2 signal
-W_FORM = 0.3    # default composite weight for our own decayed win-rate signal
-W_MARKET = 0.2  # default composite weight for the EPT/ESL/Liquipedia consensus signal
-# All three are also stored raw/unblended so a future slider UI can recombine freely.
+W_ELO = 0.5                    # default composite weight for the external Glicko-2 signal
+W_FORM_PRETOURNAMENT = 0.15    # default composite weight for pre-International decayed win-rate
+W_FORM_GROUPSTAGE = 0.15       # default composite weight for Group Stage decayed win-rate
+W_MARKET = 0.2                 # default composite weight for the EPT/ESL/Liquipedia consensus signal
+# Recent form used to be one blended 70/30 (Group Stage/pre-tournament) figure under a single
+# W_FORM=0.3 weight; split into two independent signals (each defaulting to half the old total
+# weight) so a slider UI can weigh "how they've done at this specific event" separately from
+# "how they were doing before it" instead of only ever seeing them pre-mixed.
+# All are also stored raw/unblended so a future slider UI can recombine freely.
 
 
 def localPath(filename):
@@ -50,8 +55,6 @@ def tierWeight(league_id):
 # for the 70/30 categorical blend below. More precise than a date cutoff (immune to any other
 # tournament a team might play around the same dates).
 GROUP_STAGE_LEAGUE_ID = 19719
-GROUP_STAGE_BUCKET_WEIGHT = 0.7
-PRE_TOURNAMENT_BUCKET_WEIGHT = 0.3
 
 # ---- gather every roster-valid match per team, weighted ----
 team_matches = {tid: [] for tid in TEAM_CANONICAL}  # each entry: (weight, won: bool, is_group_stage: bool)
@@ -93,56 +96,44 @@ def _bucketWinRate(matches, win_credit_multiplier):
 
 
 def decayedWinRate(matches, win_credit_multiplier=1.0):
-    """Real TI2026 Group Stage results (2026-08-13 onward, all under
-    GROUP_STAGE_LEAGUE_ID) are a much stronger signal for predicting the
-    playoffs than anything pre-tournament, so they're blended as a fixed
-    GROUP_STAGE_BUCKET_WEIGHT/PRE_TOURNAMENT_BUCKET_WEIGHT (70/30) split
-    between the two categories, rather than just letting recencyWeight's
-    continuous ramp handle it - this guarantees Group Stage form carries 70%
-    of the estimate regardless of how many pre-tournament matches exist (a
-    team with 40 old h2h matches and 6 Group Stage games would otherwise have
-    its Group Stage form diluted to a small fraction under pure pooling).
-    Falls back to 100% of whichever bucket has data if the other is empty.
+    """Splits a team's matches into the two buckets a slider UI can weigh
+    independently: real TI2026 Group Stage results (2026-08-13 onward, under
+    GROUP_STAGE_LEAGUE_ID) versus everything before the tournament. Each
+    bucket gets its own decayed/tier-weighted win rate and its own effective_n
+    (used downstream for that bucket's standard-error/uncertainty estimate) -
+    unlike the old single-blended-number version, there's no fixed 70/30 mix
+    baked in here anymore; the composite formula below applies its own
+    (slider-adjustable) weight to each bucket's z-score independently.
     win_credit_multiplier scales WIN credit only (not the total-weight
     denominator) - a roster-integrity penalty for teams whose historical
     record was partly earned by a player no longer on the roster.
-    effective_n (used downstream for the standard-error/uncertainty estimate)
-    is still the raw pooled weight across both buckets - the blend changes
-    which matches drive the point estimate, not how much total evidence
-    backs it."""
-    total_w = sum(w for w, _, _ in matches)
-    if total_w <= 0:
-        return None, 0.0
-
+    Returns (groupstage_rate, groupstage_n, pretournament_rate, pretournament_n) -
+    a rate is None when that bucket has no matches at all."""
     gs_matches = [x for x in matches if x[2]]
     pre_matches = [x for x in matches if not x[2]]
     gs_rate = _bucketWinRate(gs_matches, win_credit_multiplier)
     pre_rate = _bucketWinRate(pre_matches, win_credit_multiplier)
-
-    if gs_rate is not None and pre_rate is not None:
-        blended = GROUP_STAGE_BUCKET_WEIGHT * gs_rate + PRE_TOURNAMENT_BUCKET_WEIGHT * pre_rate
-    elif gs_rate is not None:
-        blended = gs_rate
-    else:
-        blended = pre_rate
-
-    return blended, total_w
+    gs_n = sum(w for w, _, _ in gs_matches)
+    pre_n = sum(w for w, _, _ in pre_matches)
+    return gs_rate, gs_n, pre_rate, pre_n
 
 
 form_stats = {}
 for tid, matches in team_matches.items():
-    p, effective_n = decayedWinRate(matches, winCreditMultiplier(tid))
+    gs_rate, gs_n, pre_rate, pre_n = decayedWinRate(matches, winCreditMultiplier(tid))
     form_stats[tid] = {
-        "decayed_win_rate": p,
-        "effective_n": effective_n,
+        "decayed_win_rate_groupstage": gs_rate,
+        "effective_n_groupstage": gs_n,
+        "decayed_win_rate_pretournament": pre_rate,
+        "effective_n_pretournament": pre_n,
         "raw_match_count": len(matches),
         "win_credit_multiplier": winCreditMultiplier(tid),
     }
 
-print("=== Step 1: decayed, tier-weighted win rate (own data) ===")
+print("=== Step 1: decayed, tier-weighted win rate (own data), split by bucket ===")
 for tid in TEAM_CANONICAL:
     fs = form_stats[tid]
-    print(f"  {TEAM_CANONICAL[tid]:16s} decayed_win_rate={fs['decayed_win_rate']} effective_n={fs['effective_n']:.1f} (raw {fs['raw_match_count']} matches)")
+    print(f"  {TEAM_CANONICAL[tid]:16s} group_stage={fs['decayed_win_rate_groupstage']} (n={fs['effective_n_groupstage']:.1f})  pre_tournament={fs['decayed_win_rate_pretournament']} (n={fs['effective_n_pretournament']:.1f})  (raw {fs['raw_match_count']} matches total)")
 
 # ---- fetch fresh datdota Glicko-2 (rating + phi) for all 16 teams ----
 # Checks every known registration per team (rebrand fragmentation applies to
@@ -264,11 +255,15 @@ glicko_values = [v["rating"] for v in glicko_stats.values() if v["rating"] is no
 glicko_mean = statistics.mean(glicko_values)
 glicko_std = statistics.pstdev(glicko_values)
 
-form_values = [v["decayed_win_rate"] for v in form_stats.values() if v["decayed_win_rate"] is not None]
-form_mean = statistics.mean(form_values)
-form_std = statistics.pstdev(form_values)
+form_gs_values = [v["decayed_win_rate_groupstage"] for v in form_stats.values() if v["decayed_win_rate_groupstage"] is not None]
+form_gs_mean = statistics.mean(form_gs_values)
+form_gs_std = statistics.pstdev(form_gs_values)
 
-print(f"\nPopulation stats: glicko mean={glicko_mean:.1f} std={glicko_std:.1f} | form mean={form_mean:.3f} std={form_std:.3f}")
+form_pre_values = [v["decayed_win_rate_pretournament"] for v in form_stats.values() if v["decayed_win_rate_pretournament"] is not None]
+form_pre_mean = statistics.mean(form_pre_values)
+form_pre_std = statistics.pstdev(form_pre_values)
+
+print(f"\nPopulation stats: glicko mean={glicko_mean:.1f} std={glicko_std:.1f} | group-stage form mean={form_gs_mean:.3f} std={form_gs_std:.3f} | pre-tournament form mean={form_pre_mean:.3f} std={form_pre_std:.3f}")
 
 composite = {}
 for tid, name in TEAM_CANONICAL.items():
@@ -278,23 +273,33 @@ for tid, name in TEAM_CANONICAL.items():
     z_elo = (g["rating"] - glicko_mean) / glicko_std if g["rating"] is not None and glicko_std > 0 else 0.0
     sigma_elo_z = (g["phi"] / glicko_std) if g["phi"] is not None and glicko_std > 0 else 1.0
 
-    if fs["decayed_win_rate"] is not None and form_std > 0:
-        z_form = (fs["decayed_win_rate"] - form_mean) / form_std
-        p_for_var = min(max(fs["decayed_win_rate"], 0.05), 0.95)  # guard against 0 SE at extreme p / small n
-        se_p = math.sqrt(p_for_var * (1 - p_for_var) / fs["effective_n"]) if fs["effective_n"] > 0 else 1.0
-        sigma_form_z = se_p / form_std
+    if fs["decayed_win_rate_groupstage"] is not None and form_gs_std > 0:
+        z_form_gs = (fs["decayed_win_rate_groupstage"] - form_gs_mean) / form_gs_std
+        p_for_var = min(max(fs["decayed_win_rate_groupstage"], 0.05), 0.95)
+        se_p = math.sqrt(p_for_var * (1 - p_for_var) / fs["effective_n_groupstage"]) if fs["effective_n_groupstage"] > 0 else 1.0
+        sigma_form_gs_z = se_p / form_gs_std
     else:
-        z_form = 0.0
-        sigma_form_z = 1.0  # no own data at all: maximally uncertain on this signal
+        z_form_gs = 0.0
+        sigma_form_gs_z = 1.0  # no Group Stage data at all: maximally uncertain on this signal
+
+    if fs["decayed_win_rate_pretournament"] is not None and form_pre_std > 0:
+        z_form_pre = (fs["decayed_win_rate_pretournament"] - form_pre_mean) / form_pre_std
+        p_for_var = min(max(fs["decayed_win_rate_pretournament"], 0.05), 0.95)
+        se_p = math.sqrt(p_for_var * (1 - p_for_var) / fs["effective_n_pretournament"]) if fs["effective_n_pretournament"] > 0 else 1.0
+        sigma_form_pre_z = se_p / form_pre_std
+    else:
+        z_form_pre = 0.0
+        sigma_form_pre_z = 1.0  # no pre-tournament data at all: maximally uncertain on this signal
 
     ms = market_stats[tid]
     z_market = ms["z_market"]
     sigma_market_z = ms["sigma_market_z"]
 
-    composite_mean = W_ELO * z_elo + W_FORM * z_form + W_MARKET * z_market
+    composite_mean = W_ELO * z_elo + W_FORM_PRETOURNAMENT * z_form_pre + W_FORM_GROUPSTAGE * z_form_gs + W_MARKET * z_market
     composite_sigma = math.sqrt(
         (W_ELO ** 2) * (sigma_elo_z ** 2)
-        + (W_FORM ** 2) * (sigma_form_z ** 2)
+        + (W_FORM_PRETOURNAMENT ** 2) * (sigma_form_pre_z ** 2)
+        + (W_FORM_GROUPSTAGE ** 2) * (sigma_form_gs_z ** 2)
         + (W_MARKET ** 2) * (sigma_market_z ** 2)
     )
 
@@ -303,19 +308,24 @@ for tid, name in TEAM_CANONICAL.items():
         "glicko_rating": g["rating"],
         "glicko_phi": g["phi"],
         "glicko_stale": g.get("stale", False),
-        "decayed_win_rate": fs["decayed_win_rate"],
-        "effective_n": fs["effective_n"],
+        "decayed_win_rate_groupstage": fs["decayed_win_rate_groupstage"],
+        "effective_n_groupstage": fs["effective_n_groupstage"],
+        "decayed_win_rate_pretournament": fs["decayed_win_rate_pretournament"],
+        "effective_n_pretournament": fs["effective_n_pretournament"],
         "raw_match_count": fs["raw_match_count"],
         "win_credit_multiplier": fs["win_credit_multiplier"],
         "z_elo": z_elo,
         "sigma_elo_z": sigma_elo_z,
-        "z_form": z_form,
-        "sigma_form_z": sigma_form_z,
+        "z_form_pretournament": z_form_pre,
+        "sigma_form_pretournament_z": sigma_form_pre_z,
+        "z_form_groupstage": z_form_gs,
+        "sigma_form_groupstage_z": sigma_form_gs_z,
         "z_market": z_market,
         "sigma_market_z": sigma_market_z,
         "market_n_sources": ms["n_sources"],
         "w_elo": W_ELO,
-        "w_form": W_FORM,
+        "w_form_pretournament": W_FORM_PRETOURNAMENT,
+        "w_form_groupstage": W_FORM_GROUPSTAGE,
         "w_market": W_MARKET,
         "composite_mean": composite_mean,
         "composite_sigma": composite_sigma,
@@ -329,7 +339,7 @@ for tid, name in TEAM_CANONICAL.items():
 
 print("\n=== Composite ratings (z-score scale, higher = stronger) ===")
 for tid, c in sorted(composite.items(), key=lambda kv: -kv[1]["composite_mean"]):
-    print(f"  {c['team_name']:16s} composite = {c['composite_mean']:+.3f} ± {c['composite_sigma']:.3f}   -> rating_scale = {c['rating_scale_mean']:.1f} ± {c['rating_scale_sigma']:.1f}   (elo_z={c['z_elo']:+.2f}, form_z={c['z_form']:+.2f}, market_z={c['z_market']:+.2f}, n_eff={c['effective_n']:.0f})")
+    print(f"  {c['team_name']:16s} composite = {c['composite_mean']:+.3f} ± {c['composite_sigma']:.3f}   -> rating_scale = {c['rating_scale_mean']:.1f} ± {c['rating_scale_sigma']:.1f}   (elo_z={c['z_elo']:+.2f}, pretour_form_z={c['z_form_pretournament']:+.2f}, gs_form_z={c['z_form_groupstage']:+.2f}, market_z={c['z_market']:+.2f}, n_eff={c['effective_n_groupstage'] + c['effective_n_pretournament']:.0f})")
 
 output = {
     "_meta": {

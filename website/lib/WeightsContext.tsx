@@ -22,7 +22,7 @@ function loadSaved(): RatingWeights | null {
     const raw = window.localStorage.getItem(STORAGE_KEY);
     if (!raw) return null;
     const parsed = JSON.parse(raw);
-    const keys: (keyof RatingWeights)[] = ["elo", "form", "market", "stability", "patchImpact"];
+    const keys: (keyof RatingWeights)[] = ["elo", "formPretournament", "formGroupStage", "market", "stability", "patchImpact"];
     if (keys.every((k) => typeof parsed[k] === "number")) return parsed as RatingWeights;
     return null;
   } catch {

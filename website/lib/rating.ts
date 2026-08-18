@@ -8,18 +8,20 @@ import { teamPatchImpact } from "@/data/patchImpact";
 
 export interface RatingWeights {
   elo: number;
-  form: number;
+  formPretournament: number;
+  formGroupStage: number;
   market: number;
   stability: number;
   patchImpact: number;
 }
 
-// Matches compute_ratings.py's W_ELO/W_FORM/W_MARKET defaults; the two extra
-// terms default to 0 so the default-weights output exactly reproduces
-// team_composite_ratings.json's precomputed composite_mean/sigma.
+// Matches compute_ratings.py's W_ELO/W_FORM_PRETOURNAMENT/W_FORM_GROUPSTAGE/W_MARKET
+// defaults; the two extra terms default to 0 so the default-weights output exactly
+// reproduces team_composite_ratings.json's precomputed composite_mean/sigma.
 export const DEFAULT_WEIGHTS: RatingWeights = {
   elo: 0.5,
-  form: 0.3,
+  formPretournament: 0.15,
+  formGroupStage: 0.15,
   market: 0.2,
   stability: 0,
   patchImpact: 0,
@@ -33,7 +35,8 @@ export interface TeamCompositeResult {
   ratingScaleMean: number;
   ratingScaleSigma: number;
   zElo: number;
-  zForm: number;
+  zFormPretournament: number;
+  zFormGroupStage: number;
   zMarket: number;
   zStability: number;
   zPatchImpact: number;
@@ -83,14 +86,16 @@ export function computeComposite(weights: RatingWeights = DEFAULT_WEIGHTS): Team
 
     const compositeMean =
       weights.elo * r.z_elo +
-      weights.form * r.z_form +
+      weights.formPretournament * r.z_form_pretournament +
+      weights.formGroupStage * r.z_form_groupstage +
       weights.market * r.z_market +
       weights.stability * zStability[tid] +
       weights.patchImpact * zPatch[tid];
 
     const compositeSigma = Math.sqrt(
       weights.elo ** 2 * r.sigma_elo_z ** 2 +
-        weights.form ** 2 * r.sigma_form_z ** 2 +
+        weights.formPretournament ** 2 * r.sigma_form_pretournament_z ** 2 +
+        weights.formGroupStage ** 2 * r.sigma_form_groupstage_z ** 2 +
         weights.market ** 2 * r.sigma_market_z ** 2 +
         weights.stability ** 2 * STABILITY_PATCH_FIXED_SIGMA_Z ** 2 +
         weights.patchImpact ** 2 * STABILITY_PATCH_FIXED_SIGMA_Z ** 2
@@ -104,7 +109,8 @@ export function computeComposite(weights: RatingWeights = DEFAULT_WEIGHTS): Team
       ratingScaleMean: glicko_mean + compositeMean * glicko_std,
       ratingScaleSigma: compositeSigma * glicko_std,
       zElo: r.z_elo,
-      zForm: r.z_form,
+      zFormPretournament: r.z_form_pretournament,
+      zFormGroupStage: r.z_form_groupstage,
       zMarket: r.z_market,
       zStability: zStability[tid],
       zPatchImpact: zPatch[tid],

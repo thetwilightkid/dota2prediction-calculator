@@ -94,9 +94,10 @@ export default function OverviewClient() {
                   <th>Team</th>
                   <th title="Which half of the draw they play in">Group</th>
                   <th title="A single combined strength score - higher is better">Power score</th>
-                  <th title="Based on an independent rating service that tracks pro matches">Track record</th>
-                  <th title="How well they've played recently">Recent form</th>
-                  <th title="What other prediction sites think of them">Experts</th>
+                  <th title="Their datdota Glicko-2 rating, based on pro matches worldwide">Datdota</th>
+                  <th title="How they were doing before TI2026 started">Pre-Int form</th>
+                  <th title="How they've done in TI2026's real Group Stage">GS form</th>
+                  <th title="Liquipedia / EPT / ESL pre-tournament ranking consensus">Experts</th>
                   <th title="Chance of making it out of the group stage">Chance to advance</th>
                   {OUTCOME_ORDER.map((o) => (
                     <th key={o}>{outcomeLabel(o)}</th>
@@ -118,7 +119,8 @@ export default function OverviewClient() {
                       {r.ratingScaleMean.toFixed(0)} <span className="muted">± {r.ratingScaleSigma.toFixed(0)}</span>
                     </td>
                     <td className="mono muted">{r.zElo.toFixed(2)}</td>
-                    <td className="mono muted">{r.zForm.toFixed(2)}</td>
+                    <td className="mono muted">{r.zFormPretournament.toFixed(2)}</td>
+                    <td className="mono muted">{r.zFormGroupStage.toFixed(2)}</td>
                     <td className="mono muted">{r.zMarket.toFixed(2)}</td>
                     <td className="mono">{r.outcomePct ? `${advanceChance(r.outcomePct).toFixed(1)}%` : "-"}</td>
                     {OUTCOME_ORDER.map((o) => (

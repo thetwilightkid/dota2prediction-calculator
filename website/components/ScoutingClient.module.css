@@ -40,8 +40,63 @@
 
 .profileGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 16px;
+}
+
+.eraTabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.eraTab,
+.eraTabActive {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.eraTabActive {
+  color: var(--foreground);
+  border-color: var(--accent);
+}
+
+.playerGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 8px;
+}
+
+.playerCard {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+
+.playerName {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.playerHeroList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.playerHeroList li {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  font-size: 12px;
 }
 
 .profileCard {
@@ -92,4 +147,17 @@
   font-size: 13px;
   padding: 3px 0;
   border-bottom: 1px solid var(--border);
+}
+
+.banTargetsBox {
+  margin: 14px 0;
+  padding: 10px 12px;
+  background: rgba(248, 81, 73, 0.08);
+  border: 1px solid rgba(248, 81, 73, 0.3);
+  border-radius: var(--radius);
+}
+
+.banTargetsBox .subHeading {
+  margin-top: 0;
+  color: var(--loss);
 }

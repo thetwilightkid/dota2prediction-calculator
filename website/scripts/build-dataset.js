@@ -56,19 +56,24 @@ console.log("Building website/data/*.ts from prediction/*.json ...");
       "  glicko_rating: number | null;",
       "  glicko_phi: number | null;",
       "  glicko_stale: boolean;",
-      "  decayed_win_rate: number | null;",
-      "  effective_n: number;",
+      "  decayed_win_rate_groupstage: number | null;",
+      "  effective_n_groupstage: number;",
+      "  decayed_win_rate_pretournament: number | null;",
+      "  effective_n_pretournament: number;",
       "  raw_match_count: number;",
       "  win_credit_multiplier: number;",
       "  z_elo: number;",
       "  sigma_elo_z: number;",
-      "  z_form: number;",
-      "  sigma_form_z: number;",
+      "  z_form_pretournament: number;",
+      "  sigma_form_pretournament_z: number;",
+      "  z_form_groupstage: number;",
+      "  sigma_form_groupstage_z: number;",
       "  z_market: number;",
       "  sigma_market_z: number;",
       "  market_n_sources: number;",
       "  w_elo: number;",
-      "  w_form: number;",
+      "  w_form_pretournament: number;",
+      "  w_form_groupstage: number;",
       "  w_market: number;",
       "  composite_mean: number;",
       "  composite_sigma: number;",
@@ -443,13 +448,18 @@ console.log("Building website/data/*.ts from prediction/*.json ...");
   writeModule(
     "playoffScouting.ts",
     [
-      "export interface ScoutingHeroPick { hero_id: number; hero_name: string; weighted_pick_count: number; raw_pick_count: number; weighted_wins: number; win_rate: number | null; }",
-      "export interface ScoutingHeroBan { hero_id: number; hero_name: string; weighted_count: number; raw_count: number; }",
-      "export interface ScoutingHeroBanAgainst { hero_id: number; hero_name: string; raw_count: number; }",
+      "export interface ScoutingHeroPick { hero_id: number; hero_name: string; pick_count: number; pick_rate: number | null; wins: number; win_rate: number | null; }",
+      "export interface ScoutingHeroBan { hero_id: number; hero_name: string; count: number; rate: number | null; }",
+      "export interface ScoutingHeroBanAgainst { hero_id: number; hero_name: string; count: number; }",
+      "export interface ScoutingBanTarget { hero_id: number; hero_name: string; pick_count: number; pick_rate: number; win_rate: number; threat_score: number; }",
       "",
-      "export interface ScoutingTeamProfile {",
-      "  team_id: number;",
-      "  team_name: string;",
+      "export interface ScoutingPlayerPretournamentPick { hero_id: number; hero_name: string; games: number; win_rate: number | null; }",
+      "export interface ScoutingPlayerPretournament { player_name: string; top_picks: ScoutingPlayerPretournamentPick[]; }",
+      "export interface ScoutingPlayerGroupStagePick { hero_id: number; hero_name: string; pick_count: number; pick_rate: number; win_rate: number; }",
+      "export interface ScoutingPlayerGroupStage { player_name: string; games_played: number; top_picks: ScoutingPlayerGroupStagePick[]; }",
+      "",
+      "export interface ScoutingEraProfile<TPlayer> {",
+      "  games: number;",
       "  top_picks: ScoutingHeroPick[];",
       "  top_bans_made: ScoutingHeroBan[];",
       "  bans_against_this_opponent: ScoutingHeroBanAgainst[];",
@@ -458,7 +468,15 @@ console.log("Building website/data/*.ts from prediction/*.json ...");
       "  draft_favored_win_rate: number | null;",
       "  draft_underdog_win_rate: number | null;",
       "  avg_draft_stage_win_rate: number | null;",
-      "  avg_volatility: number | null;",
+      "  player_picks: TPlayer[];",
+      "  probable_ban_targets?: ScoutingBanTarget[];",
+      "}",
+      "",
+      "export interface ScoutingTeamProfile {",
+      "  team_id: number;",
+      "  team_name: string;",
+      "  pretournament: ScoutingEraProfile<ScoutingPlayerPretournament>;",
+      "  group_stage: ScoutingEraProfile<ScoutingPlayerGroupStage>;",
       "}",
       "",
       "export interface ScoutingPairing {",
@@ -484,28 +502,48 @@ console.log("Building website/data/*.ts from prediction/*.json ...");
   );
 }
 
+// ---- isolatedPickBans shared shape (used by both groupStagePickBans.ts and pretournamentPickBans.ts - ----
+// ---- the two scripts that produce these files share aggregation code, so the generated types match too) ----
+const ISOLATED_PICK_BAN_TYPES = [
+  "export interface IsolatedHeroPick { hero_name: string; pick_count: number; pick_rate: number | null; wins: number; win_rate: number | null; }",
+  "export interface IsolatedHeroBan { hero_name: string; count: number; rate: number | null; }",
+  "export interface IsolatedHeroBanAgainst extends IsolatedHeroBan { by_opponent: Record<string, { team_name: string; count: number }>; }",
+  "",
+  "export interface IsolatedTeamDrafts {",
+  "  team_name: string;",
+  "  games: number;",
+  "  picks: Record<string, IsolatedHeroPick>;",
+  "  bans_made: Record<string, IsolatedHeroBan>;",
+  "  bans_against: Record<string, IsolatedHeroBanAgainst>;",
+  "}",
+  "",
+].join("\n");
+
 // ---- groupStagePickBans.ts (isolated - Group Stage matches only) ----
 {
   const pb = readJson("team_pick_ban_stats_group_stage.json");
   writeModule(
     "groupStagePickBans.ts",
-    [
-      "export interface GSHeroPick { hero_name: string; pick_count: number; wins: number; win_rate: number | null; }",
-      "export interface GSHeroBan { hero_name: string; count: number; }",
-      "export interface GSHeroBanAgainst extends GSHeroBan { by_opponent: Record<string, { team_name: string; count: number }>; }",
-      "",
-      "export interface GSTeamDrafts {",
-      "  team_name: string;",
-      "  picks: Record<string, GSHeroPick>;",
-      "  bans_made: Record<string, GSHeroBan>;",
-      "  bans_against: Record<string, GSHeroBanAgainst>;",
-      "}",
-      "",
-    ].join("\n"),
+    ISOLATED_PICK_BAN_TYPES,
     [
       `export const groupStagePickBansMeta = ${JSON.stringify(pb._meta, null, 2)};`,
       "",
-      `export const groupStagePickBans: Record<string, GSTeamDrafts> = ${JSON.stringify(pb.teams, null, 2)};`,
+      `export const groupStagePickBans: Record<string, IsolatedTeamDrafts> = ${JSON.stringify(pb.teams, null, 2)};`,
+      "",
+    ].join("\n")
+  );
+}
+
+// ---- pretournamentPickBans.ts (isolated - everything BEFORE the Group Stage) ----
+{
+  const pb = readJson("team_pick_ban_stats_pretournament.json");
+  writeModule(
+    "pretournamentPickBans.ts",
+    ISOLATED_PICK_BAN_TYPES.replace(/IsolatedHeroPick|IsolatedHeroBan|IsolatedHeroBanAgainst|IsolatedTeamDrafts/g, (m) => m.replace("Isolated", "Pretournament")),
+    [
+      `export const pretournamentPickBansMeta = ${JSON.stringify(pb._meta, null, 2)};`,
+      "",
+      `export const pretournamentPickBans: Record<string, PretournamentTeamDrafts> = ${JSON.stringify(pb.teams, null, 2)};`,
       "",
     ].join("\n")
   );
@@ -565,6 +603,7 @@ console.log("Building website/data/*.ts from prediction/*.json ...");
       "  primary_lane_role: string | null;",
       "  avg_rune_pickups: number | null;",
       "  games_with_rune_data: number;",
+      "  top_picks: { hero_id: number; hero_name: string; pick_count: number; pick_rate: number; win_rate: number }[];",
       "}",
       "",
     ].join("\n"),

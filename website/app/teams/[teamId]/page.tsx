@@ -68,11 +68,13 @@ export default async function TeamDetailPage({ params }: PageProps<"/teams/[team
             One combined strength number (higher is better), with a ± range showing how uncertain we are.
           </p>
           <dl className={styles.detailList}>
-            <dt>Track record</dt>
+            <dt>Datdota rating</dt>
             <dd className="mono">{rating.z_elo.toFixed(2)}</dd>
-            <dt>Recent form</dt>
-            <dd className="mono">{rating.z_form.toFixed(2)}</dd>
-            <dt>Expert opinion</dt>
+            <dt>Pre-International form</dt>
+            <dd className="mono">{rating.z_form_pretournament.toFixed(2)}</dd>
+            <dt>Group Stage form</dt>
+            <dd className="mono">{rating.z_form_groupstage.toFixed(2)}</dd>
+            <dt>Liquipedia / EPT / ESL ranking</dt>
             <dd className="mono">
               {rating.z_market.toFixed(2)} <span className="muted">({rating.market_n_sources} sources)</span>
             </dd>

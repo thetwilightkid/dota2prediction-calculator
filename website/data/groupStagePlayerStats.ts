@@ -22,10 +22,11 @@ export interface GSPlayerStats {
   primary_lane_role: string | null;
   avg_rune_pickups: number | null;
   games_with_rune_data: number;
+  top_picks: { hero_id: number; hero_name: string; pick_count: number; pick_rate: number; win_rate: number }[];
 }
 
 export const groupStagePlayerStatsMeta = {
-  "note": "Per-player raw performance averages across each tracked player's real TI2026 Group Stage games only (109 matches). avg_rune_pickups/games_with_rune_data are computed only over games where the match was fully parsed by OpenDota (is_parsed=true) and the field was present - never silently averaged over missing data. primary_lane_role is the most common OpenDota lane_role across the player's games (1=safe, 2=mid, 3=off, 4=jungle) - power-rune control (avg_rune_pickups) is most meaningful for mid players specifically.",
+  "note": "Per-player raw performance averages across each tracked player's real TI2026 Group Stage games only (109 matches). avg_rune_pickups/games_with_rune_data are computed only over games where the match was fully parsed by OpenDota (is_parsed=true) and the field was present - never silently averaged over missing data. primary_lane_role is the most common OpenDota lane_role across the player's games (1=safe, 2=mid, 3=off, 4=jungle) - power-rune control (avg_rune_pickups) is most meaningful for mid players specifically. top_picks is this player's own most-played heroes across their Group Stage games (from the actual match roster, not the team-level draft order, since picks_bans doesn't attribute a pick to a specific player).",
   "matches_scanned": 109,
   "players_resolved": 79
 };
@@ -51,7 +52,51 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 1004.06,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 3.94,
-    "games_with_rune_data": 17
+    "games_with_rune_data": 17,
+    "top_picks": [
+      {
+        "hero_id": 58,
+        "hero_name": "Enchantress",
+        "pick_count": 4,
+        "pick_rate": 0.2353,
+        "win_rate": 0.25
+      },
+      {
+        "hero_id": 85,
+        "hero_name": "Undying",
+        "pick_count": 4,
+        "pick_rate": 0.2353,
+        "win_rate": 0.75
+      },
+      {
+        "hero_id": 5,
+        "hero_name": "Crystal Maiden",
+        "pick_count": 3,
+        "pick_rate": 0.1765,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 9,
+        "hero_name": "Mirana",
+        "pick_count": 3,
+        "pick_rate": 0.1765,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 83,
+        "hero_name": "Treant Protector",
+        "pick_count": 2,
+        "pick_rate": 0.1176,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 110,
+        "hero_name": "Phoenix",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 1
+      }
+    ]
   },
   "16497807": {
     "player_name": "tOfu",
@@ -73,7 +118,51 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 335.71,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 2.5,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 123,
+        "hero_name": "Hoodwink",
+        "pick_count": 5,
+        "pick_rate": 0.3571,
+        "win_rate": 0.4
+      },
+      {
+        "hero_id": 79,
+        "hero_name": "Shadow Demon",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 112,
+        "hero_name": "Winter Wyvern",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 83,
+        "hero_name": "Treant Protector",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 30,
+        "hero_name": "Witch Doctor",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 9,
+        "hero_name": "Mirana",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      }
+    ]
   },
   "25907144": {
     "player_name": "Cr1t-",
@@ -95,7 +184,58 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 438.12,
     "primary_lane_role": "off",
     "avg_rune_pickups": 3.12,
-    "games_with_rune_data": 17
+    "games_with_rune_data": 17,
+    "top_picks": [
+      {
+        "hero_id": 79,
+        "hero_name": "Shadow Demon",
+        "pick_count": 4,
+        "pick_rate": 0.2353,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 51,
+        "hero_name": "Clockwerk",
+        "pick_count": 4,
+        "pick_rate": 0.2353,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 26,
+        "hero_name": "Lion",
+        "pick_count": 4,
+        "pick_rate": 0.2353,
+        "win_rate": 0.75
+      },
+      {
+        "hero_id": 58,
+        "hero_name": "Enchantress",
+        "pick_count": 2,
+        "pick_rate": 0.1176,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 123,
+        "hero_name": "Hoodwink",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 119,
+        "hero_name": "Dark Willow",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 9,
+        "hero_name": "Mirana",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 0
+      }
+    ]
   },
   "56351509": {
     "player_name": "DM",
@@ -117,7 +257,58 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 838.59,
     "primary_lane_role": "off",
     "avg_rune_pickups": 3.35,
-    "games_with_rune_data": 17
+    "games_with_rune_data": 17,
+    "top_picks": [
+      {
+        "hero_id": 69,
+        "hero_name": "Doom",
+        "pick_count": 5,
+        "pick_rate": 0.2941,
+        "win_rate": 0.6
+      },
+      {
+        "hero_id": 55,
+        "hero_name": "Dark Seer",
+        "pick_count": 3,
+        "pick_rate": 0.1765,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 96,
+        "hero_name": "Centaur Warrunner",
+        "pick_count": 3,
+        "pick_rate": 0.1765,
+        "win_rate": 0.3333
+      },
+      {
+        "hero_id": 108,
+        "hero_name": "Underlord",
+        "pick_count": 2,
+        "pick_rate": 0.1176,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 36,
+        "hero_name": "Necrophos",
+        "pick_count": 2,
+        "pick_rate": 0.1176,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 2,
+        "hero_name": "Axe",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 98,
+        "hero_name": "Timbersaw",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 1
+      }
+    ]
   },
   "73401082": {
     "player_name": "Dukalis",
@@ -139,7 +330,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 1373.1,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 2.2,
-    "games_with_rune_data": 10
+    "games_with_rune_data": 10,
+    "top_picks": [
+      {
+        "hero_id": 85,
+        "hero_name": "Undying",
+        "pick_count": 2,
+        "pick_rate": 0.2,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 58,
+        "hero_name": "Enchantress",
+        "pick_count": 2,
+        "pick_rate": 0.2,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 9,
+        "hero_name": "Mirana",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 105,
+        "hero_name": "Techies",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 123,
+        "hero_name": "Hoodwink",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 103,
+        "hero_name": "Elder Titan",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 83,
+        "hero_name": "Treant Protector",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 112,
+        "hero_name": "Winter Wyvern",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      }
+    ]
   },
   "77490514": {
     "player_name": "Boxi",
@@ -161,7 +410,44 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 748.36,
     "primary_lane_role": "off",
     "avg_rune_pickups": 2.57,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 21,
+        "hero_name": "Windranger",
+        "pick_count": 4,
+        "pick_rate": 0.2857,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 90,
+        "hero_name": "Keeper of the Light",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 123,
+        "hero_name": "Hoodwink",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 51,
+        "hero_name": "Clockwerk",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 100,
+        "hero_name": "Tusk",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      }
+    ]
   },
   "81306398": {
     "player_name": "KingJungles",
@@ -183,7 +469,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 155.81,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 4,
-    "games_with_rune_data": 16
+    "games_with_rune_data": 16,
+    "top_picks": [
+      {
+        "hero_id": 123,
+        "hero_name": "Hoodwink",
+        "pick_count": 3,
+        "pick_rate": 0.1875,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 9,
+        "hero_name": "Mirana",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 112,
+        "hero_name": "Winter Wyvern",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 51,
+        "hero_name": "Clockwerk",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 96,
+        "hero_name": "Centaur Warrunner",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 85,
+        "hero_name": "Undying",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 3,
+        "hero_name": "Bane",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 110,
+        "hero_name": "Phoenix",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 0
+      }
+    ]
   },
   "86698277": {
     "player_name": "33",
@@ -205,7 +549,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 2964.88,
     "primary_lane_role": "off",
     "avg_rune_pickups": 2.38,
-    "games_with_rune_data": 16
+    "games_with_rune_data": 16,
+    "top_picks": [
+      {
+        "hero_id": 96,
+        "hero_name": "Centaur Warrunner",
+        "pick_count": 3,
+        "pick_rate": 0.1875,
+        "win_rate": 0.3333
+      },
+      {
+        "hero_id": 55,
+        "hero_name": "Dark Seer",
+        "pick_count": 3,
+        "pick_rate": 0.1875,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 69,
+        "hero_name": "Doom",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 107,
+        "hero_name": "Earth Spirit",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 77,
+        "hero_name": "Lycan",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 60,
+        "hero_name": "Night Stalker",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 155,
+        "hero_name": "Largo",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 78,
+        "hero_name": "Brewmaster",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 0
+      }
+    ]
   },
   "90423751": {
     "player_name": "Bignum",
@@ -227,7 +629,51 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 154,
     "primary_lane_role": "off",
     "avg_rune_pickups": 4.5,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 119,
+        "hero_name": "Dark Willow",
+        "pick_count": 6,
+        "pick_rate": 0.4286,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 123,
+        "hero_name": "Hoodwink",
+        "pick_count": 4,
+        "pick_rate": 0.2857,
+        "win_rate": 0.25
+      },
+      {
+        "hero_id": 9,
+        "hero_name": "Mirana",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 79,
+        "hero_name": "Shadow Demon",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 51,
+        "hero_name": "Clockwerk",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 100,
+        "hero_name": "Tusk",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      }
+    ]
   },
   "92487440": {
     "player_name": "Corrupted",
@@ -249,7 +695,37 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 1300.7,
     "primary_lane_role": "off",
     "avg_rune_pickups": 2.5,
-    "games_with_rune_data": 10
+    "games_with_rune_data": 10,
+    "top_picks": [
+      {
+        "hero_id": 96,
+        "hero_name": "Centaur Warrunner",
+        "pick_count": 5,
+        "pick_rate": 0.5,
+        "win_rate": 0.4
+      },
+      {
+        "hero_id": 55,
+        "hero_name": "Dark Seer",
+        "pick_count": 3,
+        "pick_rate": 0.3,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 108,
+        "hero_name": "Underlord",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 135,
+        "hero_name": "Dawnbreaker",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      }
+    ]
   },
   "93618577": {
     "player_name": "bzm",
@@ -271,7 +747,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 2855.06,
     "primary_lane_role": "mid",
     "avg_rune_pickups": 12.5,
-    "games_with_rune_data": 16
+    "games_with_rune_data": 16,
+    "top_picks": [
+      {
+        "hero_id": 107,
+        "hero_name": "Earth Spirit",
+        "pick_count": 5,
+        "pick_rate": 0.3125,
+        "win_rate": 0.8
+      },
+      {
+        "hero_id": 106,
+        "hero_name": "Ember Spirit",
+        "pick_count": 3,
+        "pick_rate": 0.1875,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 7,
+        "hero_name": "Earthshaker",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 25,
+        "hero_name": "Lina",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 19,
+        "hero_name": "Tiny",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 113,
+        "hero_name": "Arc Warden",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 16,
+        "hero_name": "Sand King",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 17,
+        "hero_name": "Storm Spirit",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 1
+      }
+    ]
   },
   "93817671": {
     "player_name": "Maladych",
@@ -293,7 +827,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 651.12,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 2.71,
-    "games_with_rune_data": 17
+    "games_with_rune_data": 17,
+    "top_picks": [
+      {
+        "hero_id": 85,
+        "hero_name": "Undying",
+        "pick_count": 4,
+        "pick_rate": 0.2353,
+        "win_rate": 0.75
+      },
+      {
+        "hero_id": 112,
+        "hero_name": "Winter Wyvern",
+        "pick_count": 3,
+        "pick_rate": 0.1765,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 64,
+        "hero_name": "Jakiro",
+        "pick_count": 2,
+        "pick_rate": 0.1176,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 51,
+        "hero_name": "Clockwerk",
+        "pick_count": 2,
+        "pick_rate": 0.1176,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 30,
+        "hero_name": "Witch Doctor",
+        "pick_count": 2,
+        "pick_rate": 0.1176,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 3,
+        "hero_name": "Bane",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 83,
+        "hero_name": "Treant Protector",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 100,
+        "hero_name": "Tusk",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 0
+      }
+    ]
   },
   "94296097": {
     "player_name": "xNova",
@@ -315,7 +907,51 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 70.36,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 2.91,
-    "games_with_rune_data": 11
+    "games_with_rune_data": 11,
+    "top_picks": [
+      {
+        "hero_id": 112,
+        "hero_name": "Winter Wyvern",
+        "pick_count": 3,
+        "pick_rate": 0.2727,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 9,
+        "hero_name": "Mirana",
+        "pick_count": 3,
+        "pick_rate": 0.2727,
+        "win_rate": 0.3333
+      },
+      {
+        "hero_id": 103,
+        "hero_name": "Elder Titan",
+        "pick_count": 2,
+        "pick_rate": 0.1818,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 131,
+        "hero_name": "Ringmaster",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 83,
+        "hero_name": "Treant Protector",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 123,
+        "hero_name": "Hoodwink",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      }
+    ]
   },
   "97590558": {
     "player_name": "Ace ♠",
@@ -337,7 +973,58 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 2083.14,
     "primary_lane_role": "off",
     "avg_rune_pickups": 1.07,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 108,
+        "hero_name": "Underlord",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 0.3333
+      },
+      {
+        "hero_id": 29,
+        "hero_name": "Tidehunter",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 96,
+        "hero_name": "Centaur Warrunner",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 0.3333
+      },
+      {
+        "hero_id": 135,
+        "hero_name": "Dawnbreaker",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 28,
+        "hero_name": "Slardar",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 77,
+        "hero_name": "Lycan",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 55,
+        "hero_name": "Dark Seer",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      }
+    ]
   },
   "100058342": {
     "player_name": "skiter",
@@ -359,7 +1046,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 11115.24,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 4.94,
-    "games_with_rune_data": 17
+    "games_with_rune_data": 17,
+    "top_picks": [
+      {
+        "hero_id": 18,
+        "hero_name": "Sven",
+        "pick_count": 4,
+        "pick_rate": 0.2353,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 56,
+        "hero_name": "Clinkz",
+        "pick_count": 4,
+        "pick_rate": 0.2353,
+        "win_rate": 0.75
+      },
+      {
+        "hero_id": 73,
+        "hero_name": "Alchemist",
+        "pick_count": 3,
+        "pick_rate": 0.1765,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 19,
+        "hero_name": "Tiny",
+        "pick_count": 2,
+        "pick_rate": 0.1176,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 21,
+        "hero_name": "Windranger",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 109,
+        "hero_name": "Terrorblade",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 11,
+        "hero_name": "Shadow Fiend",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 54,
+        "hero_name": "Lifestealer",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 0
+      }
+    ]
   },
   "100594231": {
     "player_name": "skem",
@@ -381,7 +1126,51 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 275,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 4,
-    "games_with_rune_data": 11
+    "games_with_rune_data": 11,
+    "top_picks": [
+      {
+        "hero_id": 9,
+        "hero_name": "Mirana",
+        "pick_count": 3,
+        "pick_rate": 0.2727,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 21,
+        "hero_name": "Windranger",
+        "pick_count": 2,
+        "pick_rate": 0.1818,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 85,
+        "hero_name": "Undying",
+        "pick_count": 2,
+        "pick_rate": 0.1818,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 30,
+        "hero_name": "Witch Doctor",
+        "pick_count": 2,
+        "pick_rate": 0.1818,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 62,
+        "hero_name": "Bounty Hunter",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 5,
+        "hero_name": "Crystal Maiden",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      }
+    ]
   },
   "101356886": {
     "player_name": "GH",
@@ -403,7 +1192,37 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 568.3,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 3.9,
-    "games_with_rune_data": 10
+    "games_with_rune_data": 10,
+    "top_picks": [
+      {
+        "hero_id": 9,
+        "hero_name": "Mirana",
+        "pick_count": 3,
+        "pick_rate": 0.3,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 50,
+        "hero_name": "Dazzle",
+        "pick_count": 3,
+        "pick_rate": 0.3,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 112,
+        "hero_name": "Winter Wyvern",
+        "pick_count": 3,
+        "pick_rate": 0.3,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 3,
+        "hero_name": "Bane",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      }
+    ]
   },
   "101695162": {
     "player_name": "fy",
@@ -425,7 +1244,51 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 193.55,
     "primary_lane_role": "off",
     "avg_rune_pickups": 3,
-    "games_with_rune_data": 11
+    "games_with_rune_data": 11,
+    "top_picks": [
+      {
+        "hero_id": 71,
+        "hero_name": "Spirit Breaker",
+        "pick_count": 3,
+        "pick_rate": 0.2727,
+        "win_rate": 0.3333
+      },
+      {
+        "hero_id": 119,
+        "hero_name": "Dark Willow",
+        "pick_count": 2,
+        "pick_rate": 0.1818,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 9,
+        "hero_name": "Mirana",
+        "pick_count": 2,
+        "pick_rate": 0.1818,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 86,
+        "hero_name": "Rubick",
+        "pick_count": 2,
+        "pick_rate": 0.1818,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 7,
+        "hero_name": "Earthshaker",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 100,
+        "hero_name": "Tusk",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      }
+    ]
   },
   "103735745": {
     "player_name": "Saksa",
@@ -447,7 +1310,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 565.76,
     "primary_lane_role": "off",
     "avg_rune_pickups": 5.53,
-    "games_with_rune_data": 17
+    "games_with_rune_data": 17,
+    "top_picks": [
+      {
+        "hero_id": 62,
+        "hero_name": "Bounty Hunter",
+        "pick_count": 3,
+        "pick_rate": 0.1765,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 9,
+        "hero_name": "Mirana",
+        "pick_count": 3,
+        "pick_rate": 0.1765,
+        "win_rate": 0.3333
+      },
+      {
+        "hero_id": 123,
+        "hero_name": "Hoodwink",
+        "pick_count": 3,
+        "pick_rate": 0.1765,
+        "win_rate": 0.3333
+      },
+      {
+        "hero_id": 90,
+        "hero_name": "Keeper of the Light",
+        "pick_count": 2,
+        "pick_rate": 0.1176,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 86,
+        "hero_name": "Rubick",
+        "pick_count": 2,
+        "pick_rate": 0.1176,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 53,
+        "hero_name": "Nature's Prophet",
+        "pick_count": 2,
+        "pick_rate": 0.1176,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 79,
+        "hero_name": "Shadow Demon",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 26,
+        "hero_name": "Lion",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 0
+      }
+    ]
   },
   "105045291": {
     "player_name": "Thiolicor",
@@ -469,7 +1390,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 198.19,
     "primary_lane_role": "off",
     "avg_rune_pickups": 5.06,
-    "games_with_rune_data": 16
+    "games_with_rune_data": 16,
+    "top_picks": [
+      {
+        "hero_id": 119,
+        "hero_name": "Dark Willow",
+        "pick_count": 5,
+        "pick_rate": 0.3125,
+        "win_rate": 0.4
+      },
+      {
+        "hero_id": 100,
+        "hero_name": "Tusk",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 90,
+        "hero_name": "Keeper of the Light",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 9,
+        "hero_name": "Mirana",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 79,
+        "hero_name": "Shadow Demon",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 121,
+        "hero_name": "Grimstroke",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 71,
+        "hero_name": "Spirit Breaker",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 123,
+        "hero_name": "Hoodwink",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 0
+      }
+    ]
   },
   "106305042": {
     "player_name": "Larl",
@@ -491,7 +1470,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 1611.64,
     "primary_lane_role": "mid",
     "avg_rune_pickups": 10.5,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 107,
+        "hero_name": "Earth Spirit",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 49,
+        "hero_name": "Dragon Knight",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 28,
+        "hero_name": "Slardar",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 106,
+        "hero_name": "Ember Spirit",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 17,
+        "hero_name": "Storm Spirit",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 91,
+        "hero_name": "Io",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 13,
+        "hero_name": "Puck",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 25,
+        "hero_name": "Lina",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      }
+    ]
   },
   "106573901": {
     "player_name": "No[o]ne-",
@@ -513,7 +1550,51 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 1339.4,
     "primary_lane_role": "mid",
     "avg_rune_pickups": 13.2,
-    "games_with_rune_data": 10
+    "games_with_rune_data": 10,
+    "top_picks": [
+      {
+        "hero_id": 107,
+        "hero_name": "Earth Spirit",
+        "pick_count": 4,
+        "pick_rate": 0.4,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 106,
+        "hero_name": "Ember Spirit",
+        "pick_count": 2,
+        "pick_rate": 0.2,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 25,
+        "hero_name": "Lina",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 28,
+        "hero_name": "Slardar",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 128,
+        "hero_name": "Snapfire",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 47,
+        "hero_name": "Viper",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      }
+    ]
   },
   "111114687": {
     "player_name": "y`",
@@ -535,7 +1616,58 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 351.29,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 2.43,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 100,
+        "hero_name": "Tusk",
+        "pick_count": 4,
+        "pick_rate": 0.2857,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 85,
+        "hero_name": "Undying",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 9,
+        "hero_name": "Mirana",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 3,
+        "hero_name": "Bane",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 64,
+        "hero_name": "Jakiro",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 103,
+        "hero_name": "Elder Titan",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 155,
+        "hero_name": "Largo",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      }
+    ]
   },
   "111620041": {
     "player_name": "SumaiL-",
@@ -557,7 +1689,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 12864.7,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 3.7,
-    "games_with_rune_data": 10
+    "games_with_rune_data": 10,
+    "top_picks": [
+      {
+        "hero_id": 56,
+        "hero_name": "Clinkz",
+        "pick_count": 2,
+        "pick_rate": 0.2,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 53,
+        "hero_name": "Nature's Prophet",
+        "pick_count": 2,
+        "pick_rate": 0.2,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 54,
+        "hero_name": "Lifestealer",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 36,
+        "hero_name": "Necrophos",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 11,
+        "hero_name": "Shadow Fiend",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 18,
+        "hero_name": "Sven",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 106,
+        "hero_name": "Ember Spirit",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 21,
+        "hero_name": "Windranger",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      }
+    ]
   },
   "118134220": {
     "player_name": "Bach",
@@ -579,7 +1769,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 1687.5,
     "primary_lane_role": "off",
     "avg_rune_pickups": 1.71,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 28,
+        "hero_name": "Slardar",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 69,
+        "hero_name": "Doom",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 55,
+        "hero_name": "Dark Seer",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 38,
+        "hero_name": "Beastmaster",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 47,
+        "hero_name": "Viper",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 78,
+        "hero_name": "Brewmaster",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 97,
+        "hero_name": "Magnus",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 120,
+        "hero_name": "Pangolier",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      }
+    ]
   },
   "123787715": {
     "player_name": "RESPECT",
@@ -601,7 +1849,44 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 84.5,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 2.7,
-    "games_with_rune_data": 10
+    "games_with_rune_data": 10,
+    "top_picks": [
+      {
+        "hero_id": 123,
+        "hero_name": "Hoodwink",
+        "pick_count": 4,
+        "pick_rate": 0.4,
+        "win_rate": 0.25
+      },
+      {
+        "hero_id": 112,
+        "hero_name": "Winter Wyvern",
+        "pick_count": 2,
+        "pick_rate": 0.2,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 85,
+        "hero_name": "Undying",
+        "pick_count": 2,
+        "pick_rate": 0.2,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 131,
+        "hero_name": "Ringmaster",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 103,
+        "hero_name": "Elder Titan",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      }
+    ]
   },
   "124801257": {
     "player_name": "Nightfall",
@@ -623,7 +1908,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 5948.5,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 2.21,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 19,
+        "hero_name": "Tiny",
+        "pick_count": 4,
+        "pick_rate": 0.2857,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 11,
+        "hero_name": "Shadow Fiend",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 0.3333
+      },
+      {
+        "hero_id": 21,
+        "hero_name": "Windranger",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 18,
+        "hero_name": "Sven",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 54,
+        "hero_name": "Lifestealer",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 80,
+        "hero_name": "Lone Druid",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 12,
+        "hero_name": "Phantom Lancer",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 67,
+        "hero_name": "Spectre",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      }
+    ]
   },
   "126842529": {
     "player_name": "Ws`",
@@ -645,7 +1988,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 2628.14,
     "primary_lane_role": "off",
     "avg_rune_pickups": 3,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 98,
+        "hero_name": "Timbersaw",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 2,
+        "hero_name": "Axe",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 96,
+        "hero_name": "Centaur Warrunner",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 108,
+        "hero_name": "Underlord",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 36,
+        "hero_name": "Necrophos",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 38,
+        "hero_name": "Beastmaster",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 77,
+        "hero_name": "Lycan",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 135,
+        "hero_name": "Dawnbreaker",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      }
+    ]
   },
   "129958758": {
     "player_name": "Xxs",
@@ -667,7 +2068,58 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 869.45,
     "primary_lane_role": "off",
     "avg_rune_pickups": 1.18,
-    "games_with_rune_data": 11
+    "games_with_rune_data": 11,
+    "top_picks": [
+      {
+        "hero_id": 98,
+        "hero_name": "Timbersaw",
+        "pick_count": 3,
+        "pick_rate": 0.2727,
+        "win_rate": 0.3333
+      },
+      {
+        "hero_id": 135,
+        "hero_name": "Dawnbreaker",
+        "pick_count": 2,
+        "pick_rate": 0.1818,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 108,
+        "hero_name": "Underlord",
+        "pick_count": 2,
+        "pick_rate": 0.1818,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 55,
+        "hero_name": "Dark Seer",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 155,
+        "hero_name": "Largo",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 96,
+        "hero_name": "Centaur Warrunner",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 28,
+        "hero_name": "Slardar",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      }
+    ]
   },
   "132309493": {
     "player_name": "Raven",
@@ -689,7 +2141,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 1530.82,
     "primary_lane_role": "off",
     "avg_rune_pickups": 1.64,
-    "games_with_rune_data": 11
+    "games_with_rune_data": 11,
+    "top_picks": [
+      {
+        "hero_id": 33,
+        "hero_name": "Enigma",
+        "pick_count": 2,
+        "pick_rate": 0.1818,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 85,
+        "hero_name": "Undying",
+        "pick_count": 2,
+        "pick_rate": 0.1818,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 2,
+        "hero_name": "Axe",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 38,
+        "hero_name": "Beastmaster",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 96,
+        "hero_name": "Centaur Warrunner",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 60,
+        "hero_name": "Night Stalker",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 47,
+        "hero_name": "Viper",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 55,
+        "hero_name": "Dark Seer",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 1
+      }
+    ]
   },
   "136829091": {
     "player_name": "Whitemon",
@@ -711,7 +2221,51 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 398.56,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 2.62,
-    "games_with_rune_data": 16
+    "games_with_rune_data": 16,
+    "top_picks": [
+      {
+        "hero_id": 131,
+        "hero_name": "Ringmaster",
+        "pick_count": 7,
+        "pick_rate": 0.4375,
+        "win_rate": 0.5714
+      },
+      {
+        "hero_id": 85,
+        "hero_name": "Undying",
+        "pick_count": 3,
+        "pick_rate": 0.1875,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 100,
+        "hero_name": "Tusk",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 3,
+        "hero_name": "Bane",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 112,
+        "hero_name": "Winter Wyvern",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 9,
+        "hero_name": "Mirana",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 0
+      }
+    ]
   },
   "137129583": {
     "player_name": "Xm",
@@ -733,7 +2287,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 829.71,
     "primary_lane_role": "mid",
     "avg_rune_pickups": 9.21,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 120,
+        "hero_name": "Pangolier",
+        "pick_count": 4,
+        "pick_rate": 0.2857,
+        "win_rate": 0.75
+      },
+      {
+        "hero_id": 13,
+        "hero_name": "Puck",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 17,
+        "hero_name": "Storm Spirit",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 107,
+        "hero_name": "Earth Spirit",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 114,
+        "hero_name": "Monkey King",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 25,
+        "hero_name": "Lina",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 106,
+        "hero_name": "Ember Spirit",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 16,
+        "hero_name": "Sand King",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      }
+    ]
   },
   "138880576": {
     "player_name": "Davai",
@@ -755,7 +2367,58 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 1479.9,
     "primary_lane_role": "off",
     "avg_rune_pickups": 2.9,
-    "games_with_rune_data": 10
+    "games_with_rune_data": 10,
+    "top_picks": [
+      {
+        "hero_id": 155,
+        "hero_name": "Largo",
+        "pick_count": 4,
+        "pick_rate": 0.4,
+        "win_rate": 0.75
+      },
+      {
+        "hero_id": 28,
+        "hero_name": "Slardar",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 33,
+        "hero_name": "Enigma",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 36,
+        "hero_name": "Necrophos",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 98,
+        "hero_name": "Timbersaw",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 2,
+        "hero_name": "Axe",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 55,
+        "hero_name": "Dark Seer",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      }
+    ]
   },
   "140251702": {
     "player_name": "Mirage`雨",
@@ -777,7 +2440,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 1837.3,
     "primary_lane_role": "mid",
     "avg_rune_pickups": 10,
-    "games_with_rune_data": 10
+    "games_with_rune_data": 10,
+    "top_picks": [
+      {
+        "hero_id": 74,
+        "hero_name": "Invoker",
+        "pick_count": 2,
+        "pick_rate": 0.2,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 39,
+        "hero_name": "Queen of Pain",
+        "pick_count": 2,
+        "pick_rate": 0.2,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 106,
+        "hero_name": "Ember Spirit",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 120,
+        "hero_name": "Pangolier",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 25,
+        "hero_name": "Lina",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 28,
+        "hero_name": "Slardar",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 11,
+        "hero_name": "Shadow Fiend",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 7,
+        "hero_name": "Earthshaker",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      }
+    ]
   },
   "145065875": {
     "player_name": "sayuw",
@@ -799,7 +2520,51 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 107.9,
     "primary_lane_role": "off",
     "avg_rune_pickups": 2.7,
-    "games_with_rune_data": 10
+    "games_with_rune_data": 10,
+    "top_picks": [
+      {
+        "hero_id": 100,
+        "hero_name": "Tusk",
+        "pick_count": 4,
+        "pick_rate": 0.4,
+        "win_rate": 0.25
+      },
+      {
+        "hero_id": 119,
+        "hero_name": "Dark Willow",
+        "pick_count": 2,
+        "pick_rate": 0.2,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 123,
+        "hero_name": "Hoodwink",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 51,
+        "hero_name": "Clockwerk",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 90,
+        "hero_name": "Keeper of the Light",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 7,
+        "hero_name": "Earthshaker",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      }
+    ]
   },
   "145957968": {
     "player_name": "niu",
@@ -821,7 +2586,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 1357.31,
     "primary_lane_role": "off",
     "avg_rune_pickups": 2.25,
-    "games_with_rune_data": 16
+    "games_with_rune_data": 16,
+    "top_picks": [
+      {
+        "hero_id": 96,
+        "hero_name": "Centaur Warrunner",
+        "pick_count": 4,
+        "pick_rate": 0.25,
+        "win_rate": 0.25
+      },
+      {
+        "hero_id": 2,
+        "hero_name": "Axe",
+        "pick_count": 3,
+        "pick_rate": 0.1875,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 98,
+        "hero_name": "Timbersaw",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 120,
+        "hero_name": "Pangolier",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 108,
+        "hero_name": "Underlord",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 128,
+        "hero_name": "Snapfire",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 155,
+        "hero_name": "Largo",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 69,
+        "hero_name": "Doom",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 1
+      }
+    ]
   },
   "150961567": {
     "player_name": "planet",
@@ -843,7 +2666,58 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 756.69,
     "primary_lane_role": "off",
     "avg_rune_pickups": 2.5,
-    "games_with_rune_data": 16
+    "games_with_rune_data": 16,
+    "top_picks": [
+      {
+        "hero_id": 86,
+        "hero_name": "Rubick",
+        "pick_count": 4,
+        "pick_rate": 0.25,
+        "win_rate": 0.25
+      },
+      {
+        "hero_id": 9,
+        "hero_name": "Mirana",
+        "pick_count": 4,
+        "pick_rate": 0.25,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 123,
+        "hero_name": "Hoodwink",
+        "pick_count": 3,
+        "pick_rate": 0.1875,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 90,
+        "hero_name": "Keeper of the Light",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 51,
+        "hero_name": "Clockwerk",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 105,
+        "hero_name": "Techies",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 27,
+        "hero_name": "Shadow Shaman",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 0
+      }
+    ]
   },
   "152168157": {
     "player_name": "OmaR",
@@ -865,7 +2739,30 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 1289.5,
     "primary_lane_role": "off",
     "avg_rune_pickups": 3.8,
-    "games_with_rune_data": 10
+    "games_with_rune_data": 10,
+    "top_picks": [
+      {
+        "hero_id": 51,
+        "hero_name": "Clockwerk",
+        "pick_count": 5,
+        "pick_rate": 0.5,
+        "win_rate": 0.8
+      },
+      {
+        "hero_id": 27,
+        "hero_name": "Shadow Shaman",
+        "pick_count": 3,
+        "pick_rate": 0.3,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 123,
+        "hero_name": "Hoodwink",
+        "pick_count": 2,
+        "pick_rate": 0.2,
+        "win_rate": 1
+      }
+    ]
   },
   "152962063": {
     "player_name": "m1CKe",
@@ -887,7 +2784,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 10596.14,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 3.43,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 145,
+        "hero_name": "Kez",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 21,
+        "hero_name": "Windranger",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 114,
+        "hero_name": "Monkey King",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 11,
+        "hero_name": "Shadow Fiend",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 48,
+        "hero_name": "Luna",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 19,
+        "hero_name": "Tiny",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 18,
+        "hero_name": "Sven",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 67,
+        "hero_name": "Spectre",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      }
+    ]
   },
   "154974246": {
     "player_name": "RCY",
@@ -909,7 +2864,51 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 2893.64,
     "primary_lane_role": "mid",
     "avg_rune_pickups": 7.57,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 107,
+        "hero_name": "Earth Spirit",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 74,
+        "hero_name": "Invoker",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 96,
+        "hero_name": "Centaur Warrunner",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 106,
+        "hero_name": "Ember Spirit",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 145,
+        "hero_name": "Kez",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 126,
+        "hero_name": "Void Spirit",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      }
+    ]
   },
   "155494381": {
     "player_name": "TIMS",
@@ -931,7 +2930,58 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 187.27,
     "primary_lane_role": "off",
     "avg_rune_pickups": 3.45,
-    "games_with_rune_data": 11
+    "games_with_rune_data": 11,
+    "top_picks": [
+      {
+        "hero_id": 123,
+        "hero_name": "Hoodwink",
+        "pick_count": 5,
+        "pick_rate": 0.4545,
+        "win_rate": 0.2
+      },
+      {
+        "hero_id": 119,
+        "hero_name": "Dark Willow",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 86,
+        "hero_name": "Rubick",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 100,
+        "hero_name": "Tusk",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 21,
+        "hero_name": "Windranger",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 90,
+        "hero_name": "Keeper of the Light",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 9,
+        "hero_name": "Mirana",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      }
+    ]
   },
   "157475523": {
     "player_name": "XinQ",
@@ -953,7 +3003,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 420.21,
     "primary_lane_role": "off",
     "avg_rune_pickups": 2.43,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 119,
+        "hero_name": "Dark Willow",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 0.3333
+      },
+      {
+        "hero_id": 91,
+        "hero_name": "Io",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 86,
+        "hero_name": "Rubick",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 21,
+        "hero_name": "Windranger",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 90,
+        "hero_name": "Keeper of the Light",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 9,
+        "hero_name": "Mirana",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 123,
+        "hero_name": "Hoodwink",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 121,
+        "hero_name": "Grimstroke",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      }
+    ]
   },
   "160119017": {
     "player_name": "Fayde",
@@ -975,7 +3083,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 2818.93,
     "primary_lane_role": "off",
     "avg_rune_pickups": 3.64,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 96,
+        "hero_name": "Centaur Warrunner",
+        "pick_count": 4,
+        "pick_rate": 0.2857,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 33,
+        "hero_name": "Enigma",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 135,
+        "hero_name": "Dawnbreaker",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 38,
+        "hero_name": "Beastmaster",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 155,
+        "hero_name": "Largo",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 108,
+        "hero_name": "Underlord",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 2,
+        "hero_name": "Axe",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 28,
+        "hero_name": "Slardar",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      }
+    ]
   },
   "164199202": {
     "player_name": "9Class",
@@ -997,7 +3163,44 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 827.1,
     "primary_lane_role": "off",
     "avg_rune_pickups": 4,
-    "games_with_rune_data": 10
+    "games_with_rune_data": 10,
+    "top_picks": [
+      {
+        "hero_id": 119,
+        "hero_name": "Dark Willow",
+        "pick_count": 5,
+        "pick_rate": 0.5,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 62,
+        "hero_name": "Bounty Hunter",
+        "pick_count": 2,
+        "pick_rate": 0.2,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 86,
+        "hero_name": "Rubick",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 14,
+        "hero_name": "Pudge",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 21,
+        "hero_name": "Windranger",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      }
+    ]
   },
   "165564598": {
     "player_name": "MieRo",
@@ -1019,7 +3222,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 1795.71,
     "primary_lane_role": "off",
     "avg_rune_pickups": 2.14,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 155,
+        "hero_name": "Largo",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 108,
+        "hero_name": "Underlord",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 77,
+        "hero_name": "Lycan",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 104,
+        "hero_name": "Legion Commander",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 96,
+        "hero_name": "Centaur Warrunner",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 28,
+        "hero_name": "Slardar",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 33,
+        "hero_name": "Enigma",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 65,
+        "hero_name": "Batrider",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      }
+    ]
   },
   "170896543": {
     "player_name": "YSR-04E",
@@ -1041,7 +3302,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 9439.19,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 3.81,
-    "games_with_rune_data": 16
+    "games_with_rune_data": 16,
+    "top_picks": [
+      {
+        "hero_id": 6,
+        "hero_name": "Drow Ranger",
+        "pick_count": 3,
+        "pick_rate": 0.1875,
+        "win_rate": 0.3333
+      },
+      {
+        "hero_id": 11,
+        "hero_name": "Shadow Fiend",
+        "pick_count": 3,
+        "pick_rate": 0.1875,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 67,
+        "hero_name": "Spectre",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 19,
+        "hero_name": "Tiny",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 145,
+        "hero_name": "Kez",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 20,
+        "hero_name": "Vengeful Spirit",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 25,
+        "hero_name": "Lina",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 138,
+        "hero_name": "Muerta",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 1
+      }
+    ]
   },
   "171262902": {
     "player_name": "医者watson`",
@@ -1063,7 +3382,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 8184.65,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 3.76,
-    "games_with_rune_data": 17
+    "games_with_rune_data": 17,
+    "top_picks": [
+      {
+        "hero_id": 145,
+        "hero_name": "Kez",
+        "pick_count": 4,
+        "pick_rate": 0.2353,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 25,
+        "hero_name": "Lina",
+        "pick_count": 3,
+        "pick_rate": 0.1765,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 80,
+        "hero_name": "Lone Druid",
+        "pick_count": 2,
+        "pick_rate": 0.1176,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 11,
+        "hero_name": "Shadow Fiend",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 89,
+        "hero_name": "Naga Siren",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 36,
+        "hero_name": "Necrophos",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 53,
+        "hero_name": "Nature's Prophet",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 6,
+        "hero_name": "Drow Ranger",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 0
+      }
+    ]
   },
   "172099728": {
     "player_name": "Kiritych~",
@@ -1085,7 +3462,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 8961.43,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 4.57,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 36,
+        "hero_name": "Necrophos",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 145,
+        "hero_name": "Kez",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 80,
+        "hero_name": "Lone Druid",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 6,
+        "hero_name": "Drow Ranger",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 54,
+        "hero_name": "Lifestealer",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 18,
+        "hero_name": "Sven",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 91,
+        "hero_name": "Io",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 21,
+        "hero_name": "Windranger",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      }
+    ]
   },
   "173978074": {
     "player_name": "NothingToSay",
@@ -1107,7 +3542,58 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 681.18,
     "primary_lane_role": "mid",
     "avg_rune_pickups": 7.45,
-    "games_with_rune_data": 11
+    "games_with_rune_data": 11,
+    "top_picks": [
+      {
+        "hero_id": 13,
+        "hero_name": "Puck",
+        "pick_count": 3,
+        "pick_rate": 0.2727,
+        "win_rate": 0.3333
+      },
+      {
+        "hero_id": 106,
+        "hero_name": "Ember Spirit",
+        "pick_count": 2,
+        "pick_rate": 0.1818,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 120,
+        "hero_name": "Pangolier",
+        "pick_count": 2,
+        "pick_rate": 0.1818,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 34,
+        "hero_name": "Tinker",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 59,
+        "hero_name": "Huskar",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 97,
+        "hero_name": "Magnus",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 25,
+        "hero_name": "Lina",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      }
+    ]
   },
   "177203952": {
     "player_name": "Yuma",
@@ -1129,7 +3615,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 5810.62,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 4.88,
-    "games_with_rune_data": 16
+    "games_with_rune_data": 16,
+    "top_picks": [
+      {
+        "hero_id": 36,
+        "hero_name": "Necrophos",
+        "pick_count": 3,
+        "pick_rate": 0.1875,
+        "win_rate": 0.3333
+      },
+      {
+        "hero_id": 18,
+        "hero_name": "Sven",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 80,
+        "hero_name": "Lone Druid",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 20,
+        "hero_name": "Vengeful Spirit",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 12,
+        "hero_name": "Phantom Lancer",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 21,
+        "hero_name": "Windranger",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 46,
+        "hero_name": "Templar Assassin",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 4,
+        "hero_name": "Bloodseeker",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 1
+      }
+    ]
   },
   "183719386": {
     "player_name": "AMMAR_THE_F",
@@ -1151,7 +3695,58 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 1042.24,
     "primary_lane_role": "off",
     "avg_rune_pickups": 3.71,
-    "games_with_rune_data": 17
+    "games_with_rune_data": 17,
+    "top_picks": [
+      {
+        "hero_id": 36,
+        "hero_name": "Necrophos",
+        "pick_count": 5,
+        "pick_rate": 0.2941,
+        "win_rate": 0.6
+      },
+      {
+        "hero_id": 120,
+        "hero_name": "Pangolier",
+        "pick_count": 3,
+        "pick_rate": 0.1765,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 129,
+        "hero_name": "Mars",
+        "pick_count": 2,
+        "pick_rate": 0.1176,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 96,
+        "hero_name": "Centaur Warrunner",
+        "pick_count": 2,
+        "pick_rate": 0.1176,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 98,
+        "hero_name": "Timbersaw",
+        "pick_count": 2,
+        "pick_rate": 0.1176,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 69,
+        "hero_name": "Doom",
+        "pick_count": 2,
+        "pick_rate": 0.1176,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 28,
+        "hero_name": "Slardar",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 0
+      }
+    ]
   },
   "191362875": {
     "player_name": "Speeed",
@@ -1173,7 +3768,44 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 394.36,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 3.57,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 9,
+        "hero_name": "Mirana",
+        "pick_count": 7,
+        "pick_rate": 0.5,
+        "win_rate": 0.4286
+      },
+      {
+        "hero_id": 112,
+        "hero_name": "Winter Wyvern",
+        "pick_count": 4,
+        "pick_rate": 0.2857,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 62,
+        "hero_name": "Bounty Hunter",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 64,
+        "hero_name": "Jakiro",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 85,
+        "hero_name": "Undying",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      }
+    ]
   },
   "195108598": {
     "player_name": "Noticed",
@@ -1195,7 +3827,51 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 1763.7,
     "primary_lane_role": "off",
     "avg_rune_pickups": 3.1,
-    "games_with_rune_data": 10
+    "games_with_rune_data": 10,
+    "top_picks": [
+      {
+        "hero_id": 96,
+        "hero_name": "Centaur Warrunner",
+        "pick_count": 3,
+        "pick_rate": 0.3,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 69,
+        "hero_name": "Doom",
+        "pick_count": 2,
+        "pick_rate": 0.2,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 55,
+        "hero_name": "Dark Seer",
+        "pick_count": 2,
+        "pick_rate": 0.2,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 77,
+        "hero_name": "Lycan",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 28,
+        "hero_name": "Slardar",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 98,
+        "hero_name": "Timbersaw",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      }
+    ]
   },
   "196878136": {
     "player_name": "Kataomi`",
@@ -1217,7 +3893,44 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 70.71,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 2.79,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 85,
+        "hero_name": "Undying",
+        "pick_count": 5,
+        "pick_rate": 0.3571,
+        "win_rate": 0.6
+      },
+      {
+        "hero_id": 112,
+        "hero_name": "Winter Wyvern",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 0.3333
+      },
+      {
+        "hero_id": 3,
+        "hero_name": "Bane",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 103,
+        "hero_name": "Elder Titan",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 123,
+        "hero_name": "Hoodwink",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0
+      }
+    ]
   },
   "201358612": {
     "player_name": "Nisha",
@@ -1239,7 +3952,58 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 2461.86,
     "primary_lane_role": "mid",
     "avg_rune_pickups": 11.93,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 107,
+        "hero_name": "Earth Spirit",
+        "pick_count": 5,
+        "pick_rate": 0.3571,
+        "win_rate": 0.6
+      },
+      {
+        "hero_id": 25,
+        "hero_name": "Lina",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 106,
+        "hero_name": "Ember Spirit",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 59,
+        "hero_name": "Huskar",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 74,
+        "hero_name": "Invoker",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 120,
+        "hero_name": "Pangolier",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 17,
+        "hero_name": "Storm Spirit",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      }
+    ]
   },
   "206642367": {
     "player_name": "Ghost",
@@ -1261,7 +4025,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 6981.86,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 3.71,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 36,
+        "hero_name": "Necrophos",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 145,
+        "hero_name": "Kez",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 19,
+        "hero_name": "Tiny",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 21,
+        "hero_name": "Windranger",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 11,
+        "hero_name": "Shadow Fiend",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 73,
+        "hero_name": "Alchemist",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 56,
+        "hero_name": "Clinkz",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 25,
+        "hero_name": "Lina",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      }
+    ]
   },
   "210053851": {
     "player_name": "lorenof",
@@ -1283,7 +4105,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 9420.9,
     "primary_lane_role": "mid",
     "avg_rune_pickups": 12.5,
-    "games_with_rune_data": 10
+    "games_with_rune_data": 10,
+    "top_picks": [
+      {
+        "hero_id": 106,
+        "hero_name": "Ember Spirit",
+        "pick_count": 3,
+        "pick_rate": 0.3,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 59,
+        "hero_name": "Huskar",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 17,
+        "hero_name": "Storm Spirit",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 25,
+        "hero_name": "Lina",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 53,
+        "hero_name": "Nature's Prophet",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 13,
+        "hero_name": "Puck",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 47,
+        "hero_name": "Viper",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 126,
+        "hero_name": "Void Spirit",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      }
+    ]
   },
   "218231587": {
     "player_name": "not_me",
@@ -1305,7 +4185,58 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 661.29,
     "primary_lane_role": "off",
     "avg_rune_pickups": 2.57,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 86,
+        "hero_name": "Rubick",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 21,
+        "hero_name": "Windranger",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 119,
+        "hero_name": "Dark Willow",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 131,
+        "hero_name": "Ringmaster",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 9,
+        "hero_name": "Mirana",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 3,
+        "hero_name": "Bane",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 123,
+        "hero_name": "Hoodwink",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      }
+    ]
   },
   "249835593": {
     "player_name": "zzq",
@@ -1327,7 +4258,51 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 241.31,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 3,
-    "games_with_rune_data": 16
+    "games_with_rune_data": 16,
+    "top_picks": [
+      {
+        "hero_id": 112,
+        "hero_name": "Winter Wyvern",
+        "pick_count": 6,
+        "pick_rate": 0.375,
+        "win_rate": 0.3333
+      },
+      {
+        "hero_id": 85,
+        "hero_name": "Undying",
+        "pick_count": 5,
+        "pick_rate": 0.3125,
+        "win_rate": 0.6
+      },
+      {
+        "hero_id": 9,
+        "hero_name": "Mirana",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 110,
+        "hero_name": "Phoenix",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 58,
+        "hero_name": "Enchantress",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 105,
+        "hero_name": "Techies",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 0
+      }
+    ]
   },
   "256156323": {
     "player_name": "Mira",
@@ -1349,7 +4324,58 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 240.86,
     "primary_lane_role": "off",
     "avg_rune_pickups": 4.21,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 123,
+        "hero_name": "Hoodwink",
+        "pick_count": 4,
+        "pick_rate": 0.2857,
+        "win_rate": 0.25
+      },
+      {
+        "hero_id": 9,
+        "hero_name": "Mirana",
+        "pick_count": 4,
+        "pick_rate": 0.2857,
+        "win_rate": 0.75
+      },
+      {
+        "hero_id": 119,
+        "hero_name": "Dark Willow",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 100,
+        "hero_name": "Tusk",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 90,
+        "hero_name": "Keeper of the Light",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 79,
+        "hero_name": "Shadow Demon",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 26,
+        "hero_name": "Lion",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      }
+    ]
   },
   "292921272": {
     "player_name": "Wisper",
@@ -1371,7 +4397,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 4266.75,
     "primary_lane_role": "off",
     "avg_rune_pickups": 4,
-    "games_with_rune_data": 16
+    "games_with_rune_data": 16,
+    "top_picks": [
+      {
+        "hero_id": 98,
+        "hero_name": "Timbersaw",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 33,
+        "hero_name": "Enigma",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 97,
+        "hero_name": "Magnus",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 38,
+        "hero_name": "Beastmaster",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 96,
+        "hero_name": "Centaur Warrunner",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 128,
+        "hero_name": "Snapfire",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 65,
+        "hero_name": "Batrider",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 2,
+        "hero_name": "Axe",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 0
+      }
+    ]
   },
   "301750126": {
     "player_name": "Mikoto",
@@ -1393,7 +4477,44 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 1930.79,
     "primary_lane_role": "mid",
     "avg_rune_pickups": 10.29,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 25,
+        "hero_name": "Lina",
+        "pick_count": 4,
+        "pick_rate": 0.2857,
+        "win_rate": 0.25
+      },
+      {
+        "hero_id": 107,
+        "hero_name": "Earth Spirit",
+        "pick_count": 4,
+        "pick_rate": 0.2857,
+        "win_rate": 0.75
+      },
+      {
+        "hero_id": 106,
+        "hero_name": "Ember Spirit",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 0.3333
+      },
+      {
+        "hero_id": 74,
+        "hero_name": "Invoker",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 126,
+        "hero_name": "Void Spirit",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      }
+    ]
   },
   "302214028": {
     "player_name": "Collapse",
@@ -1415,7 +4536,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 808.14,
     "primary_lane_role": "off",
     "avg_rune_pickups": 2.86,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 108,
+        "hero_name": "Underlord",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 55,
+        "hero_name": "Dark Seer",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 69,
+        "hero_name": "Doom",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 60,
+        "hero_name": "Night Stalker",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 96,
+        "hero_name": "Centaur Warrunner",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 129,
+        "hero_name": "Mars",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 43,
+        "hero_name": "Death Prophet",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 2,
+        "hero_name": "Axe",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      }
+    ]
   },
   "312436974": {
     "player_name": "CHIRA_JUNIOR",
@@ -1437,7 +4616,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 2500.18,
     "primary_lane_role": "mid",
     "avg_rune_pickups": 6.18,
-    "games_with_rune_data": 17
+    "games_with_rune_data": 17,
+    "top_picks": [
+      {
+        "hero_id": 107,
+        "hero_name": "Earth Spirit",
+        "pick_count": 3,
+        "pick_rate": 0.1765,
+        "win_rate": 0.3333
+      },
+      {
+        "hero_id": 74,
+        "hero_name": "Invoker",
+        "pick_count": 3,
+        "pick_rate": 0.1765,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 128,
+        "hero_name": "Snapfire",
+        "pick_count": 3,
+        "pick_rate": 0.1765,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 93,
+        "hero_name": "Slark",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 137,
+        "hero_name": "Primal Beast",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 114,
+        "hero_name": "Monkey King",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 106,
+        "hero_name": "Ember Spirit",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 36,
+        "hero_name": "Necrophos",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 0
+      }
+    ]
   },
   "315272623": {
     "player_name": "Echozz",
@@ -1459,7 +4696,58 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 2017.88,
     "primary_lane_role": "mid",
     "avg_rune_pickups": 10,
-    "games_with_rune_data": 16
+    "games_with_rune_data": 16,
+    "top_picks": [
+      {
+        "hero_id": 74,
+        "hero_name": "Invoker",
+        "pick_count": 4,
+        "pick_rate": 0.25,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 107,
+        "hero_name": "Earth Spirit",
+        "pick_count": 3,
+        "pick_rate": 0.1875,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 16,
+        "hero_name": "Sand King",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 7,
+        "hero_name": "Earthshaker",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 13,
+        "hero_name": "Puck",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 106,
+        "hero_name": "Ember Spirit",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 120,
+        "hero_name": "Pangolier",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 0
+      }
+    ]
   },
   "317880638": {
     "player_name": "Save-",
@@ -1481,7 +4769,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 297.43,
     "primary_lane_role": "off",
     "avg_rune_pickups": 2.43,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 90,
+        "hero_name": "Keeper of the Light",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 0.3333
+      },
+      {
+        "hero_id": 131,
+        "hero_name": "Ringmaster",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 9,
+        "hero_name": "Mirana",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 86,
+        "hero_name": "Rubick",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 21,
+        "hero_name": "Windranger",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 119,
+        "hero_name": "Dark Willow",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 27,
+        "hero_name": "Shadow Shaman",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 79,
+        "hero_name": "Shadow Demon",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      }
+    ]
   },
   "320017600": {
     "player_name": "ssnovv1",
@@ -1503,7 +4849,58 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 6319.9,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 3.2,
-    "games_with_rune_data": 10
+    "games_with_rune_data": 10,
+    "top_picks": [
+      {
+        "hero_id": 109,
+        "hero_name": "Terrorblade",
+        "pick_count": 2,
+        "pick_rate": 0.2,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 18,
+        "hero_name": "Sven",
+        "pick_count": 2,
+        "pick_rate": 0.2,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 6,
+        "hero_name": "Drow Ranger",
+        "pick_count": 2,
+        "pick_rate": 0.2,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 73,
+        "hero_name": "Alchemist",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 36,
+        "hero_name": "Necrophos",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 53,
+        "hero_name": "Nature's Prophet",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 54,
+        "hero_name": "Lifestealer",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 0
+      }
+    ]
   },
   "320219866": {
     "player_name": "kaori",
@@ -1525,7 +4922,58 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 1641.79,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 3.07,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 64,
+        "hero_name": "Jakiro",
+        "pick_count": 6,
+        "pick_rate": 0.4286,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 112,
+        "hero_name": "Winter Wyvern",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 3,
+        "hero_name": "Bane",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 110,
+        "hero_name": "Phoenix",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 86,
+        "hero_name": "Rubick",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 85,
+        "hero_name": "Undying",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 83,
+        "hero_name": "Treant Protector",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      }
+    ]
   },
   "320252024": {
     "player_name": "shiro",
@@ -1547,7 +4995,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 6456.43,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 2.93,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 11,
+        "hero_name": "Shadow Fiend",
+        "pick_count": 4,
+        "pick_rate": 0.2857,
+        "win_rate": 0.25
+      },
+      {
+        "hero_id": 21,
+        "hero_name": "Windranger",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 19,
+        "hero_name": "Tiny",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 25,
+        "hero_name": "Lina",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 80,
+        "hero_name": "Lone Druid",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 114,
+        "hero_name": "Monkey King",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 54,
+        "hero_name": "Lifestealer",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 91,
+        "hero_name": "Io",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      }
+    ]
   },
   "321580662": {
     "player_name": "Yatoro",
@@ -1569,7 +5075,58 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 13139.57,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 4.64,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 6,
+        "hero_name": "Drow Ranger",
+        "pick_count": 5,
+        "pick_rate": 0.3571,
+        "win_rate": 0.4
+      },
+      {
+        "hero_id": 53,
+        "hero_name": "Nature's Prophet",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 80,
+        "hero_name": "Lone Druid",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 145,
+        "hero_name": "Kez",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 48,
+        "hero_name": "Luna",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 54,
+        "hero_name": "Lifestealer",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 109,
+        "hero_name": "Terrorblade",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      }
+    ]
   },
   "324277900": {
     "player_name": "Yopaj-",
@@ -1591,7 +5148,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 671.45,
     "primary_lane_role": "mid",
     "avg_rune_pickups": 9.64,
-    "games_with_rune_data": 11
+    "games_with_rune_data": 11,
+    "top_picks": [
+      {
+        "hero_id": 25,
+        "hero_name": "Lina",
+        "pick_count": 2,
+        "pick_rate": 0.1818,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 19,
+        "hero_name": "Tiny",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 7,
+        "hero_name": "Earthshaker",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 49,
+        "hero_name": "Dragon Knight",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 107,
+        "hero_name": "Earth Spirit",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 137,
+        "hero_name": "Primal Beast",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 28,
+        "hero_name": "Slardar",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 17,
+        "hero_name": "Storm Spirit",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 1
+      }
+    ]
   },
   "331855530": {
     "player_name": "Pure",
@@ -1613,7 +5228,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 9399.56,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 4.88,
-    "games_with_rune_data": 16
+    "games_with_rune_data": 16,
+    "top_picks": [
+      {
+        "hero_id": 145,
+        "hero_name": "Kez",
+        "pick_count": 5,
+        "pick_rate": 0.3125,
+        "win_rate": 0.8
+      },
+      {
+        "hero_id": 91,
+        "hero_name": "Io",
+        "pick_count": 3,
+        "pick_rate": 0.1875,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 54,
+        "hero_name": "Lifestealer",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 10,
+        "hero_name": "Morphling",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 73,
+        "hero_name": "Alchemist",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 46,
+        "hero_name": "Templar Assassin",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 21,
+        "hero_name": "Windranger",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 8,
+        "hero_name": "Juggernaut",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 0
+      }
+    ]
   },
   "346412363": {
     "player_name": "Ari",
@@ -1635,7 +5308,51 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 1046.81,
     "primary_lane_role": "off",
     "avg_rune_pickups": 3,
-    "games_with_rune_data": 16
+    "games_with_rune_data": 16,
+    "top_picks": [
+      {
+        "hero_id": 123,
+        "hero_name": "Hoodwink",
+        "pick_count": 8,
+        "pick_rate": 0.5,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 119,
+        "hero_name": "Dark Willow",
+        "pick_count": 3,
+        "pick_rate": 0.1875,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 26,
+        "hero_name": "Lion",
+        "pick_count": 2,
+        "pick_rate": 0.125,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 90,
+        "hero_name": "Keeper of the Light",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 27,
+        "hero_name": "Shadow Shaman",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 100,
+        "hero_name": "Tusk",
+        "pick_count": 1,
+        "pick_rate": 0.0625,
+        "win_rate": 0
+      }
+    ]
   },
   "355168766": {
     "player_name": "Natsumi",
@@ -1657,7 +5374,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 5112.64,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 2.73,
-    "games_with_rune_data": 11
+    "games_with_rune_data": 11,
+    "top_picks": [
+      {
+        "hero_id": 145,
+        "hero_name": "Kez",
+        "pick_count": 3,
+        "pick_rate": 0.2727,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 46,
+        "hero_name": "Templar Assassin",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 138,
+        "hero_name": "Muerta",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 72,
+        "hero_name": "Gyrocopter",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 54,
+        "hero_name": "Lifestealer",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 19,
+        "hero_name": "Tiny",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 12,
+        "hero_name": "Phantom Lancer",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 21,
+        "hero_name": "Windranger",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      }
+    ]
   },
   "480412663": {
     "player_name": "gpk~",
@@ -1679,7 +5454,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 4085.57,
     "primary_lane_role": "mid",
     "avg_rune_pickups": 9.79,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 13,
+        "hero_name": "Puck",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 0.3333
+      },
+      {
+        "hero_id": 25,
+        "hero_name": "Lina",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 128,
+        "hero_name": "Snapfire",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 28,
+        "hero_name": "Slardar",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 106,
+        "hero_name": "Ember Spirit",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 120,
+        "hero_name": "Pangolier",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 114,
+        "hero_name": "Monkey King",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 49,
+        "hero_name": "Dragon Knight",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      }
+    ]
   },
   "847565596": {
     "player_name": "rue",
@@ -1701,7 +5534,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 601.21,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 2.5,
-    "games_with_rune_data": 14
+    "games_with_rune_data": 14,
+    "top_picks": [
+      {
+        "hero_id": 51,
+        "hero_name": "Clockwerk",
+        "pick_count": 3,
+        "pick_rate": 0.2143,
+        "win_rate": 0.3333
+      },
+      {
+        "hero_id": 85,
+        "hero_name": "Undying",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 64,
+        "hero_name": "Jakiro",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 131,
+        "hero_name": "Ringmaster",
+        "pick_count": 2,
+        "pick_rate": 0.1429,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 3,
+        "hero_name": "Bane",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 112,
+        "hero_name": "Winter Wyvern",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 100,
+        "hero_name": "Tusk",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 123,
+        "hero_name": "Hoodwink",
+        "pick_count": 1,
+        "pick_rate": 0.0714,
+        "win_rate": 0
+      }
+    ]
   },
   "898455820": {
     "player_name": "Malr1ne",
@@ -1723,7 +5614,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 4428.71,
     "primary_lane_role": "mid",
     "avg_rune_pickups": 9.88,
-    "games_with_rune_data": 17
+    "games_with_rune_data": 17,
+    "top_picks": [
+      {
+        "hero_id": 25,
+        "hero_name": "Lina",
+        "pick_count": 3,
+        "pick_rate": 0.1765,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 107,
+        "hero_name": "Earth Spirit",
+        "pick_count": 3,
+        "pick_rate": 0.1765,
+        "win_rate": 0.3333
+      },
+      {
+        "hero_id": 120,
+        "hero_name": "Pangolier",
+        "pick_count": 3,
+        "pick_rate": 0.1765,
+        "win_rate": 0.6667
+      },
+      {
+        "hero_id": 59,
+        "hero_name": "Huskar",
+        "pick_count": 2,
+        "pick_rate": 0.1176,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 128,
+        "hero_name": "Snapfire",
+        "pick_count": 2,
+        "pick_rate": 0.1176,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 96,
+        "hero_name": "Centaur Warrunner",
+        "pick_count": 2,
+        "pick_rate": 0.1176,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 15,
+        "hero_name": "Razor",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 16,
+        "hero_name": "Sand King",
+        "pick_count": 1,
+        "pick_rate": 0.0588,
+        "win_rate": 1
+      }
+    ]
   },
   "898754153": {
     "player_name": "Ame",
@@ -1745,7 +5694,65 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 6807.36,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 2.64,
-    "games_with_rune_data": 11
+    "games_with_rune_data": 11,
+    "top_picks": [
+      {
+        "hero_id": 12,
+        "hero_name": "Phantom Lancer",
+        "pick_count": 2,
+        "pick_rate": 0.1818,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 6,
+        "hero_name": "Drow Ranger",
+        "pick_count": 2,
+        "pick_rate": 0.1818,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 19,
+        "hero_name": "Tiny",
+        "pick_count": 2,
+        "pick_rate": 0.1818,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 67,
+        "hero_name": "Spectre",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 54,
+        "hero_name": "Lifestealer",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 91,
+        "hero_name": "Io",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 53,
+        "hero_name": "Nature's Prophet",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 0
+      },
+      {
+        "hero_id": 25,
+        "hero_name": "Lina",
+        "pick_count": 1,
+        "pick_rate": 0.0909,
+        "win_rate": 1
+      }
+    ]
   },
   "1044002267": {
     "player_name": "Satanic",
@@ -1767,6 +5774,57 @@ export const groupStagePlayerStats: Record<string, GSPlayerStats> = {
     "avg_tower_damage": 15994.6,
     "primary_lane_role": "safe",
     "avg_rune_pickups": 7.6,
-    "games_with_rune_data": 10
+    "games_with_rune_data": 10,
+    "top_picks": [
+      {
+        "hero_id": 11,
+        "hero_name": "Shadow Fiend",
+        "pick_count": 2,
+        "pick_rate": 0.2,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 53,
+        "hero_name": "Nature's Prophet",
+        "pick_count": 2,
+        "pick_rate": 0.2,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 80,
+        "hero_name": "Lone Druid",
+        "pick_count": 2,
+        "pick_rate": 0.2,
+        "win_rate": 0.5
+      },
+      {
+        "hero_id": 19,
+        "hero_name": "Tiny",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 46,
+        "hero_name": "Templar Assassin",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 8,
+        "hero_name": "Juggernaut",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      },
+      {
+        "hero_id": 54,
+        "hero_name": "Lifestealer",
+        "pick_count": 1,
+        "pick_rate": 0.1,
+        "win_rate": 1
+      }
+    ]
   }
 };

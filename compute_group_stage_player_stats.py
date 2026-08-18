@@ -26,6 +26,7 @@ from roster_utils import resolvePlayerAccountIds
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 LANE_ROLE_LABELS = {1: "safe", 2: "mid", 3: "off", 4: "jungle"}
+TOP_N_HEROES = 8
 
 
 def localPath(filename):
@@ -43,6 +44,12 @@ def loadJson(path, default):
 details = loadJson(localPath("group_stage_2026_match_details.json"), {})
 if not details:
     raise SystemExit("group_stage_2026_match_details.json is empty - run collect_group_stage_match_details.py first.")
+
+hero_names = loadJson(localPath("hero_names.json"), {})
+
+
+def heroName(hero_id):
+    return hero_names.get(str(hero_id), f"hero_{hero_id}")
 
 print("Resolving tracked player account_ids...")
 name_to_account = resolvePlayerAccountIds()
@@ -62,6 +69,7 @@ def newPlayerBucket():
         "games_with_rune_data": 0,
         "rune_pickups_sum": 0,
         "lane_role_counts": {},
+        "hero_picks": {},  # hero_id -> {"count": int, "wins": int}
     }
 
 
@@ -92,6 +100,15 @@ for match_id, m in details.items():
             bucket["games_with_rune_data"] += 1
             bucket["rune_pickups_sum"] += rune_pickups
 
+        hero_id = p.get("hero_id")
+        if hero_id is not None:
+            is_radiant = p.get("isRadiant")
+            won = bool(m.get("radiant_win")) if is_radiant else not bool(m.get("radiant_win"))
+            entry = bucket["hero_picks"].setdefault(hero_id, {"count": 0, "wins": 0})
+            entry["count"] += 1
+            if won:
+                entry["wins"] += 1
+
 print(f"=== Aggregated stats for {len(players_agg)} tracked players across {matches_scanned} Group Stage matches ===\n")
 
 players_out = {}
@@ -107,6 +124,18 @@ for account_id, bucket in players_agg.items():
     primary_lane_role = max(lane_role_counts, key=lane_role_counts.get) if lane_role_counts else None
 
     avg_rune_pickups = round(bucket["rune_pickups_sum"] / bucket["games_with_rune_data"], 2) if bucket["games_with_rune_data"] else None
+
+    top_picks = sorted(bucket["hero_picks"].items(), key=lambda kv: -kv[1]["count"])[:TOP_N_HEROES]
+    top_picks_out = [
+        {
+            "hero_id": hid,
+            "hero_name": heroName(hid),
+            "pick_count": v["count"],
+            "pick_rate": round(v["count"] / n, 4),
+            "win_rate": round(v["wins"] / v["count"], 4),
+        }
+        for hid, v in top_picks
+    ]
 
     players_out[str(account_id)] = {
         "player_name": player_name,
@@ -129,6 +158,7 @@ for account_id, bucket in players_agg.items():
         "primary_lane_role": LANE_ROLE_LABELS.get(primary_lane_role),
         "avg_rune_pickups": avg_rune_pickups,
         "games_with_rune_data": bucket["games_with_rune_data"],
+        "top_picks": top_picks_out,
     }
 
 for tid, team_name in TEAM_CANONICAL.items():
@@ -152,7 +182,9 @@ with open(localPath("player_group_stage_stats.json"), "w", encoding="utf-8") as 
                 "where the match was fully parsed by OpenDota (is_parsed=true) and the field was present - "
                 "never silently averaged over missing data. primary_lane_role is the most common OpenDota "
                 "lane_role across the player's games (1=safe, 2=mid, 3=off, 4=jungle) - power-rune control "
-                "(avg_rune_pickups) is most meaningful for mid players specifically."
+                "(avg_rune_pickups) is most meaningful for mid players specifically. top_picks is this player's "
+                "own most-played heroes across their Group Stage games (from the actual match roster, not the "
+                "team-level draft order, since picks_bans doesn't attribute a pick to a specific player)."
             ),
             "matches_scanned": matches_scanned,
             "players_resolved": len(players_out),
