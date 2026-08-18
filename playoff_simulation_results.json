@@ -121,161 +121,161 @@
         "9572001": {
             "team_name": "Team Vision",
             "reach_pct": {
-                "ub_r1_win": 99.02,
-                "ub_r2_win": 97.54,
-                "ub_final_reach": 97.54,
-                "ub_final_win": 95.91,
-                "lb_final_reach": 3.89,
-                "grand_final_reach": 99.66,
-                "champion": 98.98
+                "ub_r1_win": 69.88,
+                "ub_r2_win": 48.2,
+                "ub_final_reach": 48.2,
+                "ub_final_win": 31.73,
+                "lb_final_reach": 35.88,
+                "grand_final_reach": 55.71,
+                "champion": 38.51
             },
             "outcome_pct": {
-                "eliminated_lb_r1": 0.03,
-                "eliminated_lb_r2": 0.09,
-                "eliminated_lb_r3": 0.08,
-                "eliminated_lb_final": 0.15,
-                "runner_up": 0.67,
-                "champion": 98.98
+                "eliminated_lb_r1": 9.12,
+                "eliminated_lb_r2": 13.91,
+                "eliminated_lb_r3": 9.36,
+                "eliminated_lb_final": 11.89,
+                "runner_up": 17.2,
+                "champion": 38.51
             }
         },
         "9247354": {
             "team_name": "Team Falcons",
             "reach_pct": {
-                "ub_r1_win": 72.44,
-                "ub_r2_win": 39.96,
-                "ub_final_reach": 39.96,
-                "ub_final_win": 1.34,
-                "lb_final_reach": 54.23,
-                "grand_final_reach": 31.51,
-                "champion": 0.35
+                "ub_r1_win": 67.04,
+                "ub_r2_win": 34.99,
+                "ub_final_reach": 34.99,
+                "ub_final_win": 16.36,
+                "lb_final_reach": 32.52,
+                "grand_final_reach": 33.13,
+                "champion": 15.27
             },
             "outcome_pct": {
-                "eliminated_lb_r1": 12.66,
-                "eliminated_lb_r2": 20.03,
-                "eliminated_lb_r3": 11.75,
-                "eliminated_lb_final": 24.06,
-                "runner_up": 31.15,
-                "champion": 0.35
+                "eliminated_lb_r1": 15.76,
+                "eliminated_lb_r2": 23.41,
+                "eliminated_lb_r3": 11.95,
+                "eliminated_lb_final": 15.76,
+                "runner_up": 17.86,
+                "champion": 15.27
             }
         },
         "9823272": {
             "team_name": "Team Yandex",
             "reach_pct": {
-                "ub_r1_win": 50.36,
-                "ub_r2_win": 25.84,
-                "ub_final_reach": 25.84,
-                "ub_final_win": 0.73,
-                "lb_final_reach": 39.88,
-                "grand_final_reach": 20.39,
-                "champion": 0.18
+                "ub_r1_win": 50.98,
+                "ub_r2_win": 27.45,
+                "ub_final_reach": 27.45,
+                "ub_final_win": 12.45,
+                "lb_final_reach": 28.53,
+                "grand_final_reach": 26.75,
+                "champion": 11.76
             },
             "outcome_pct": {
-                "eliminated_lb_r1": 19.1,
-                "eliminated_lb_r2": 26.28,
-                "eliminated_lb_r3": 14.02,
-                "eliminated_lb_final": 20.21,
-                "runner_up": 20.22,
-                "champion": 0.18
+                "eliminated_lb_r1": 19.8,
+                "eliminated_lb_r2": 26.04,
+                "eliminated_lb_r3": 13.18,
+                "eliminated_lb_final": 14.23,
+                "runner_up": 14.99,
+                "champion": 11.76
             }
         },
         "2163": {
             "team_name": "Team Liquid",
             "reach_pct": {
-                "ub_r1_win": 49.64,
-                "ub_r2_win": 25.1,
-                "ub_final_reach": 25.1,
-                "ub_final_win": 0.66,
-                "lb_final_reach": 39.01,
-                "grand_final_reach": 19.5,
-                "champion": 0.16
+                "ub_r1_win": 49.02,
+                "ub_r2_win": 25.92,
+                "ub_final_reach": 25.92,
+                "ub_final_win": 11.39,
+                "lb_final_reach": 27.6,
+                "grand_final_reach": 24.82,
+                "champion": 10.54
             },
             "outcome_pct": {
-                "eliminated_lb_r1": 19.3,
+                "eliminated_lb_r1": 20.99,
                 "eliminated_lb_r2": 26.65,
-                "eliminated_lb_r3": 14.38,
-                "eliminated_lb_final": 20.17,
-                "runner_up": 19.34,
-                "champion": 0.16
+                "eliminated_lb_r3": 13.39,
+                "eliminated_lb_final": 14.17,
+                "runner_up": 14.28,
+                "champion": 10.54
             }
         },
         "7119388": {
             "team_name": "Team Spirit",
             "reach_pct": {
-                "ub_r1_win": 54.99,
-                "ub_r2_win": 1.06,
-                "ub_final_reach": 1.06,
-                "ub_final_win": 0.51,
-                "lb_final_reach": 21.4,
-                "grand_final_reach": 10.52,
-                "champion": 0.11
+                "ub_r1_win": 53.59,
+                "ub_r2_win": 20.32,
+                "ub_final_reach": 20.32,
+                "ub_final_win": 9.79,
+                "lb_final_reach": 23.66,
+                "grand_final_reach": 20.24,
+                "champion": 8.62
             },
             "outcome_pct": {
-                "eliminated_lb_r1": 19.9,
-                "eliminated_lb_r2": 37.81,
-                "eliminated_lb_r3": 20.38,
-                "eliminated_lb_final": 11.39,
-                "runner_up": 10.4,
-                "champion": 0.11
-            }
-        },
-        "10150413": {
-            "team_name": "Iron Wing",
-            "reach_pct": {
-                "ub_r1_win": 45.01,
-                "ub_r2_win": 0.94,
-                "ub_final_reach": 0.94,
-                "ub_final_win": 0.51,
-                "lb_final_reach": 18.0,
-                "grand_final_reach": 9.45,
-                "champion": 0.15
-            },
-            "outcome_pct": {
-                "eliminated_lb_r1": 28.75,
-                "eliminated_lb_r2": 35.59,
-                "eliminated_lb_r3": 17.16,
-                "eliminated_lb_final": 9.05,
-                "runner_up": 9.3,
-                "champion": 0.15
+                "eliminated_lb_r1": 25.09,
+                "eliminated_lb_r2": 27.22,
+                "eliminated_lb_r3": 14.25,
+                "eliminated_lb_final": 13.21,
+                "runner_up": 11.62,
+                "champion": 8.62
             }
         },
         "8255888": {
             "team_name": "BoomBoys",
             "reach_pct": {
-                "ub_r1_win": 0.98,
-                "ub_r2_win": 0.47,
-                "ub_final_reach": 0.47,
-                "ub_final_win": 0.21,
-                "lb_final_reach": 9.67,
-                "grand_final_reach": 4.31,
-                "champion": 0.05
+                "ub_r1_win": 30.12,
+                "ub_r2_win": 14.98,
+                "ub_final_reach": 14.98,
+                "ub_final_win": 6.96,
+                "lb_final_reach": 18.43,
+                "grand_final_reach": 15.0,
+                "champion": 6.29
             },
             "outcome_pct": {
-                "eliminated_lb_r1": 51.32,
-                "eliminated_lb_r2": 26.62,
-                "eliminated_lb_r3": 12.18,
-                "eliminated_lb_final": 5.57,
-                "runner_up": 4.27,
-                "champion": 0.05
+                "eliminated_lb_r1": 34.6,
+                "eliminated_lb_r2": 26.22,
+                "eliminated_lb_r3": 13.79,
+                "eliminated_lb_final": 10.4,
+                "runner_up": 8.71,
+                "champion": 6.29
+            }
+        },
+        "10150413": {
+            "team_name": "Iron Wing",
+            "reach_pct": {
+                "ub_r1_win": 46.41,
+                "ub_r2_win": 16.51,
+                "ub_final_reach": 16.51,
+                "ub_final_win": 7.69,
+                "lb_final_reach": 19.79,
+                "grand_final_reach": 16.08,
+                "champion": 6.74
+            },
+            "outcome_pct": {
+                "eliminated_lb_r1": 31.19,
+                "eliminated_lb_r2": 27.81,
+                "eliminated_lb_r3": 13.51,
+                "eliminated_lb_final": 11.39,
+                "runner_up": 9.35,
+                "champion": 6.74
             }
         },
         "10136357": {
             "team_name": "Nigma Galaxy",
             "reach_pct": {
-                "ub_r1_win": 27.56,
-                "ub_r2_win": 9.1,
-                "ub_final_reach": 9.1,
-                "ub_final_win": 0.13,
-                "lb_final_reach": 13.92,
-                "grand_final_reach": 4.67,
-                "champion": 0.02
+                "ub_r1_win": 32.96,
+                "ub_r2_win": 11.64,
+                "ub_final_reach": 11.64,
+                "ub_final_win": 3.63,
+                "lb_final_reach": 13.59,
+                "grand_final_reach": 8.27,
+                "champion": 2.27
             },
             "outcome_pct": {
-                "eliminated_lb_r1": 48.94,
-                "eliminated_lb_r2": 26.94,
-                "eliminated_lb_r3": 10.06,
-                "eliminated_lb_final": 9.39,
-                "runner_up": 4.65,
-                "champion": 0.02
+                "eliminated_lb_r1": 43.45,
+                "eliminated_lb_r2": 28.74,
+                "eliminated_lb_r3": 10.59,
+                "eliminated_lb_final": 8.96,
+                "runner_up": 6.0,
+                "champion": 2.27
             }
         }
     }

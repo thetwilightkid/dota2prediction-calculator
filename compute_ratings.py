@@ -170,9 +170,25 @@ for tid, name in TEAM_CANONICAL.items():
         if r.status_code == 200:
             any_200 = True
             g = (r.json().get("data", {}).get("ratings", {}) or {}).get("GLICKO_2")
-            if g and (best is None or g["startPeriod"] > best["startPeriod"]):
-                best = g
-                best["source_id"] = query_id
+            if g:
+                # Prefer the newer rating window, but when two registrations'
+                # windows happen to start on the same calendar day (datdota
+                # refreshes windows uniformly across all teams), fall back to
+                # whichever has lower phi (Glicko's own confidence measure) -
+                # a brand-new registration (e.g. right after a rebrand) starts
+                # from a fresh, high-phi prior and can swing wildly after just
+                # a handful of games, while an established registration with
+                # a long match history is far more trustworthy at an equal
+                # "most recent" tiebreak. Caught 2026-08-18: Team Vision's new
+                # "TEAM VISION" id (9572001, 10 games total, all this Group
+                # Stage) was outranking their real "PVISION" id (9824702,
+                # hundreds of games since 2024) purely because both windows
+                # started on the same day - inflating their rating by ~700pts.
+                candidate_key = (g["startPeriod"], -g["phi"])
+                best_key = (best["startPeriod"], -best["phi"]) if best else None
+                if best is None or candidate_key > best_key:
+                    best = g
+                    best["source_id"] = query_id
         time.sleep(0.5)
 
     if best:

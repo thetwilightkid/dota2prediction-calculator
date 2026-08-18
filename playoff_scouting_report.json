@@ -23,7 +23,7 @@
             "predicted_win_probability_b": 0.6243,
             "predicted_source": "h2h",
             "h2h_predicted_a": 0.3757,
-            "elo_predicted_a": 0.5079,
+            "elo_predicted_a": 0.5164,
             "h2h_summary": {
                 "matches_played": 37,
                 "team_a_wins": 15,
@@ -1108,7 +1108,7 @@
             "predicted_win_probability_b": 0.434,
             "predicted_source": "h2h",
             "h2h_predicted_a": 0.566,
-            "elo_predicted_a": 0.5599,
+            "elo_predicted_a": 0.5304,
             "h2h_summary": {
                 "matches_played": 39,
                 "team_a_wins": 19,
@@ -2213,7 +2213,7 @@
             "predicted_win_probability_b": 0.4971,
             "predicted_source": "h2h",
             "h2h_predicted_a": 0.5029,
-            "elo_predicted_a": 0.4608,
+            "elo_predicted_a": 0.4808,
             "h2h_summary": {
                 "matches_played": 43,
                 "team_a_wins": 17,
@@ -3268,7 +3268,7 @@
             "predicted_win_probability_b": 0.4492,
             "predicted_source": "h2h",
             "h2h_predicted_a": 0.5508,
-            "elo_predicted_a": 0.0518,
+            "elo_predicted_a": 0.3903,
             "h2h_summary": {
                 "matches_played": 40,
                 "team_a_wins": 23,
@@ -4413,7 +4413,7 @@
             "predicted_win_probability_b": 0.6005,
             "predicted_source": "h2h",
             "h2h_predicted_a": 0.3995,
-            "elo_predicted_a": 0.4975,
+            "elo_predicted_a": 0.4934,
             "h2h_summary": {
                 "matches_played": 16,
                 "team_a_wins": 6,
@@ -5178,7 +5178,7 @@
             "predicted_win_probability_b": 0.6385,
             "predicted_source": "h2h",
             "h2h_predicted_a": 0.3615,
-            "elo_predicted_a": 0.6266,
+            "elo_predicted_a": 0.6001,
             "h2h_summary": {
                 "matches_played": 15,
                 "team_a_wins": 10,
@@ -6033,7 +6033,7 @@
             "predicted_win_probability_b": 0.4509,
             "predicted_source": "h2h",
             "h2h_predicted_a": 0.5491,
-            "elo_predicted_a": 0.545,
+            "elo_predicted_a": 0.5414,
             "h2h_summary": {
                 "matches_played": 36,
                 "team_a_wins": 22,
@@ -7098,7 +7098,7 @@
             "predicted_win_probability_b": 0.4941,
             "predicted_source": "h2h",
             "h2h_predicted_a": 0.5059,
-            "elo_predicted_a": 0.5521,
+            "elo_predicted_a": 0.5139,
             "h2h_summary": {
                 "matches_played": 28,
                 "team_a_wins": 14,
@@ -8093,7 +8093,7 @@
             "predicted_win_probability_b": 0.6712,
             "predicted_source": "h2h",
             "h2h_predicted_a": 0.3288,
-            "elo_predicted_a": 0.453,
+            "elo_predicted_a": 0.4644,
             "h2h_summary": {
                 "matches_played": 48,
                 "team_a_wins": 20,
@@ -9153,7 +9153,7 @@
             "predicted_win_probability_b": 0.4283,
             "predicted_source": "h2h",
             "h2h_predicted_a": 0.5717,
-            "elo_predicted_a": 0.0502,
+            "elo_predicted_a": 0.3747,
             "h2h_summary": {
                 "matches_played": 45,
                 "team_a_wins": 25,
@@ -10273,7 +10273,7 @@
             "predicted_win_probability_b": 0.8339,
             "predicted_source": "h2h",
             "h2h_predicted_a": 0.1661,
-            "elo_predicted_a": 0.4897,
+            "elo_predicted_a": 0.477,
             "h2h_summary": {
                 "matches_played": 21,
                 "team_a_wins": 6,
@@ -11203,7 +11203,7 @@
             "predicted_win_probability_b": 0.4542,
             "predicted_source": "h2h",
             "h2h_predicted_a": 0.5458,
-            "elo_predicted_a": 0.6192,
+            "elo_predicted_a": 0.5842,
             "h2h_summary": {
                 "matches_played": 12,
                 "team_a_wins": 7,
@@ -11933,7 +11933,7 @@
             "predicted_win_probability_b": 0.3755,
             "predicted_source": "h2h",
             "h2h_predicted_a": 0.6245,
-            "elo_predicted_a": 0.5372,
+            "elo_predicted_a": 0.5251,
             "h2h_summary": {
                 "matches_played": 23,
                 "team_a_wins": 11,
@@ -12848,7 +12848,7 @@
             "predicted_win_probability_b": 0.5383,
             "predicted_source": "h2h",
             "h2h_predicted_a": 0.4617,
-            "elo_predicted_a": 0.4019,
+            "elo_predicted_a": 0.4506,
             "h2h_summary": {
                 "matches_played": 41,
                 "team_a_wins": 16,
@@ -13893,7 +13893,7 @@
             "predicted_win_probability_b": 0.6921,
             "predicted_source": "h2h",
             "h2h_predicted_a": 0.3079,
-            "elo_predicted_a": 0.0411,
+            "elo_predicted_a": 0.3618,
             "h2h_summary": {
                 "matches_played": 46,
                 "team_a_wins": 13,
@@ -15028,7 +15028,7 @@
             "predicted_win_probability_b": 0.5893,
             "predicted_source": "h2h",
             "h2h_predicted_a": 0.4107,
-            "elo_predicted_a": 0.4377,
+            "elo_predicted_a": 0.4631,
             "h2h_summary": {
                 "matches_played": 16,
                 "team_a_wins": 7,
@@ -15848,7 +15848,7 @@
             "predicted_win_probability_b": 0.0,
             "predicted_source": "h2h",
             "h2h_predicted_a": 1.0,
-            "elo_predicted_a": 0.5688,
+            "elo_predicted_a": 0.5706,
             "h2h_summary": {
                 "matches_played": 12,
                 "team_a_wins": 9,
@@ -16633,7 +16633,7 @@
             "predicted_win_probability_b": 0.5949,
             "predicted_source": "h2h",
             "h2h_predicted_a": 0.4051,
-            "elo_predicted_a": 0.485,
+            "elo_predicted_a": 0.5111,
             "h2h_summary": {
                 "matches_played": 34,
                 "team_a_wins": 11,
@@ -17708,7 +17708,7 @@
             "predicted_win_probability_b": 0.6322,
             "predicted_source": "h2h",
             "h2h_predicted_a": 0.3678,
-            "elo_predicted_a": 0.06,
+            "elo_predicted_a": 0.4087,
             "h2h_summary": {
                 "matches_played": 35,
                 "team_a_wins": 14,
@@ -18723,7 +18723,7 @@
             "predicted_win_probability_b": 0.4606,
             "predicted_source": "h2h",
             "h2h_predicted_a": 0.5394,
-            "elo_predicted_a": 0.5367,
+            "elo_predicted_a": 0.5126,
             "h2h_summary": {
                 "matches_played": 11,
                 "team_a_wins": 6,
@@ -19418,7 +19418,7 @@
             "predicted_win_probability_b": 0.0,
             "predicted_source": "h2h",
             "h2h_predicted_a": 1.0,
-            "elo_predicted_a": 0.6625,
+            "elo_predicted_a": 0.6184,
             "h2h_summary": {
                 "matches_played": 7,
                 "team_a_wins": 6,
@@ -20033,7 +20033,7 @@
             "predicted_win_probability_b": 0.3617,
             "predicted_source": "h2h",
             "h2h_predicted_a": 0.6383,
-            "elo_predicted_a": 0.5836,
+            "elo_predicted_a": 0.5604,
             "h2h_summary": {
                 "matches_played": 52,
                 "team_a_wins": 25,
@@ -21098,7 +21098,7 @@
             "predicted_win_probability_b": 0.517,
             "predicted_source": "h2h",
             "h2h_predicted_a": 0.483,
-            "elo_predicted_a": 0.9478,
+            "elo_predicted_a": 0.6035,
             "h2h_summary": {
                 "matches_played": 11,
                 "team_a_wins": 5,
@@ -21838,7 +21838,7 @@
             "predicted_win_probability_b": 0.0,
             "predicted_source": "h2h",
             "h2h_predicted_a": 1.0,
-            "elo_predicted_a": 0.9685,
+            "elo_predicted_a": 0.701,
             "h2h_summary": {
                 "matches_played": 20,
                 "team_a_wins": 15,
@@ -22763,7 +22763,7 @@
             "predicted_win_probability_b": 0.6052,
             "predicted_source": "h2h",
             "h2h_predicted_a": 0.3948,
-            "elo_predicted_a": 0.9564,
+            "elo_predicted_a": 0.6485,
             "h2h_summary": {
                 "matches_played": 28,
                 "team_a_wins": 14,
@@ -23739,11 +23739,11 @@
             "team_a_name": "Team Yandex",
             "team_b": 10136357,
             "team_b_name": "Nigma Galaxy",
-            "predicted_win_probability_a": 0.6289,
-            "predicted_win_probability_b": 0.3711,
+            "predicted_win_probability_a": 0.6064,
+            "predicted_win_probability_b": 0.3936,
             "predicted_source": "elo",
             "h2h_predicted_a": null,
-            "elo_predicted_a": 0.6289,
+            "elo_predicted_a": 0.6064,
             "h2h_summary": {
                 "matches_played": 0,
                 "team_a_wins": 0,
@@ -24172,7 +24172,7 @@
             "predicted_win_probability_b": 0.5646,
             "predicted_source": "h2h",
             "h2h_predicted_a": 0.4354,
-            "elo_predicted_a": 0.5475,
+            "elo_predicted_a": 0.548,
             "h2h_summary": {
                 "matches_played": 25,
                 "team_a_wins": 10,
@@ -25127,7 +25127,7 @@
             "predicted_win_probability_b": 0.7195,
             "predicted_source": "h2h",
             "h2h_predicted_a": 0.2805,
-            "elo_predicted_a": 0.4166,
+            "elo_predicted_a": 0.4403,
             "h2h_summary": {
                 "matches_played": 18,
                 "team_a_wins": 7,
