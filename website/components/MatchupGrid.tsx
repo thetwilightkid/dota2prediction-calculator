@@ -6,7 +6,7 @@ import styles from "./MatchupGrid.module.css";
 import { TEAM_CANONICAL } from "@/data/teams";
 import { h2hGrid, type H2HCell } from "@/data/h2hGrid";
 
-const TEAM_IDS = Object.keys(TEAM_CANONICAL).map(Number);
+const ALL_TEAM_IDS = Object.keys(TEAM_CANONICAL).map(Number);
 
 function cellColor(cell: H2HCell | undefined): string {
   if (!cell || cell.matches_played === 0 || cell.decayed_win_rate == null) return "transparent";
@@ -27,7 +27,8 @@ function formatDuration(seconds: number | null): string {
   return `${m}:${s.toString().padStart(2, "0")}`;
 }
 
-export default function MatchupGrid() {
+export default function MatchupGrid({ teamIds = ALL_TEAM_IDS }: { teamIds?: number[] }) {
+  const TEAM_IDS = teamIds;
   const [selected, setSelected] = useState<{ row: number; col: number } | null>(null);
 
   const selectedCell = selected ? h2hGrid[String(selected.row)]?.[String(selected.col)] : null;

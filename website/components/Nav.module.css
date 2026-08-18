@@ -17,6 +17,11 @@
   flex-wrap: wrap;
 }
 
+.inner + .inner {
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+
 .brand {
   font-weight: 700;
   font-size: 16px;
@@ -26,9 +31,35 @@
   color: var(--accent);
 }
 
+.tabs {
+  display: flex;
+  gap: 6px;
+}
+
+.tab,
+.tabActive {
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.tab:hover {
+  color: var(--foreground);
+}
+
+.tabActive {
+  color: #0b0d12;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
 .links {
   display: flex;
   gap: 4px;
+  flex-wrap: wrap;
 }
 
 .link,

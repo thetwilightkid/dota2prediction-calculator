@@ -31,3 +31,42 @@
   align-items: center;
   gap: 8px;
 }
+
+.mainLayout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 20px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .mainLayout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tablesSection {
+  min-width: 0;
+}
+
+.sectionHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.sectionHeader h3 {
+  font-size: 16px;
+}
+
+.sourceNote {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.sliderSection {
+  position: sticky;
+  top: 76px;
+}
