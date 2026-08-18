@@ -400,4 +400,181 @@ console.log("Building website/data/*.ts from prediction/*.json ...");
   );
 }
 
+// ---- playoffSimulation.ts ----
+{
+  const sim = readJson("playoff_simulation_results.json");
+  writeModule(
+    "playoffSimulation.ts",
+    [
+      "export interface PlayoffTeamResult {",
+      "  team_name: string;",
+      "  reach_pct: Record<string, number>;",
+      "  outcome_pct: Record<string, number>;",
+      "}",
+      "",
+      "export interface PlayoffSimulationMeta {",
+      "  num_trials: number;",
+      "  format: string;",
+      "  best_of: { grand_final: number; default: number };",
+      "  no_bracket_reset: boolean;",
+      "  ub_r1_pairings_forced: boolean;",
+      "  ub_r1_pairings: [number, number][];",
+      "  bracket_routing: Record<string, { best_of: number; winner_to: string | null; loser_to: string | null }>;",
+      "  match_order: string[];",
+      "  reach_pct_note: string;",
+      "  outcome_pct_note: string;",
+      "}",
+      "",
+    ].join("\n"),
+    [
+      `export const playoffSimulationMeta: PlayoffSimulationMeta = ${JSON.stringify(sim._meta, null, 2)};`,
+      "",
+      `export const playoffSimulation: Record<string, PlayoffTeamResult> = ${JSON.stringify(sim.teams, null, 2)};`,
+      "",
+      `export const PLAYOFF_TEAM_IDS: number[] = ${JSON.stringify(Object.keys(sim.teams).map(Number))};`,
+      "",
+    ].join("\n")
+  );
+}
+
+// ---- playoffScouting.ts ----
+{
+  const scouting = readJson("playoff_scouting_report.json");
+  writeModule(
+    "playoffScouting.ts",
+    [
+      "export interface ScoutingHeroPick { hero_id: number; hero_name: string; weighted_pick_count: number; raw_pick_count: number; weighted_wins: number; win_rate: number | null; }",
+      "export interface ScoutingHeroBan { hero_id: number; hero_name: string; weighted_count: number; raw_count: number; }",
+      "export interface ScoutingHeroBanAgainst { hero_id: number; hero_name: string; raw_count: number; }",
+      "",
+      "export interface ScoutingTeamProfile {",
+      "  team_id: number;",
+      "  team_name: string;",
+      "  top_picks: ScoutingHeroPick[];",
+      "  top_bans_made: ScoutingHeroBan[];",
+      "  bans_against_this_opponent: ScoutingHeroBanAgainst[];",
+      "  comeback_rate: number | null;",
+      "  choke_rate: number | null;",
+      "  draft_favored_win_rate: number | null;",
+      "  draft_underdog_win_rate: number | null;",
+      "  avg_draft_stage_win_rate: number | null;",
+      "  avg_volatility: number | null;",
+      "}",
+      "",
+      "export interface ScoutingPairing {",
+      "  team_a: number; team_a_name: string;",
+      "  team_b: number; team_b_name: string;",
+      "  predicted_win_probability_a: number | null;",
+      "  predicted_win_probability_b: number | null;",
+      "  predicted_source: 'h2h' | 'elo';",
+      "  h2h_predicted_a: number | null;",
+      "  elo_predicted_a: number | null;",
+      "  h2h_summary: { matches_played: number; team_a_wins: number | null; team_b_wins: number | null; last_meeting: string | null; never_played: boolean };",
+      "  team_a_profile: ScoutingTeamProfile;",
+      "  team_b_profile: ScoutingTeamProfile;",
+      "}",
+      "",
+    ].join("\n"),
+    [
+      `export const playoffScoutingMeta = ${JSON.stringify(scouting._meta, null, 2)};`,
+      "",
+      `export const playoffScoutingPairings: Record<string, ScoutingPairing> = ${JSON.stringify(scouting.pairings, null, 2)};`,
+      "",
+    ].join("\n")
+  );
+}
+
+// ---- groupStagePickBans.ts (isolated - Group Stage matches only) ----
+{
+  const pb = readJson("team_pick_ban_stats_group_stage.json");
+  writeModule(
+    "groupStagePickBans.ts",
+    [
+      "export interface GSHeroPick { hero_name: string; pick_count: number; wins: number; win_rate: number | null; }",
+      "export interface GSHeroBan { hero_name: string; count: number; }",
+      "export interface GSHeroBanAgainst extends GSHeroBan { by_opponent: Record<string, { team_name: string; count: number }>; }",
+      "",
+      "export interface GSTeamDrafts {",
+      "  team_name: string;",
+      "  picks: Record<string, GSHeroPick>;",
+      "  bans_made: Record<string, GSHeroBan>;",
+      "  bans_against: Record<string, GSHeroBanAgainst>;",
+      "}",
+      "",
+    ].join("\n"),
+    [
+      `export const groupStagePickBansMeta = ${JSON.stringify(pb._meta, null, 2)};`,
+      "",
+      `export const groupStagePickBans: Record<string, GSTeamDrafts> = ${JSON.stringify(pb.teams, null, 2)};`,
+      "",
+    ].join("\n")
+  );
+}
+
+// ---- groupStageStability.ts (isolated comeback/choke - Group Stage matches only) ----
+{
+  const stab = readJson("team_stability_scores_group_stage.json");
+  writeModule(
+    "groupStageStability.ts",
+    [
+      "export interface GSTeamStability {",
+      "  team_name: string;",
+      "  group_stage_wins: number;",
+      "  group_stage_losses: number;",
+      "  comeback_rate: number | null;",
+      "  comeback_wins: number;",
+      "  choke_rate: number | null;",
+      "  choke_losses: number;",
+      "  matches_with_comeback_data: number;",
+      "}",
+      "",
+    ].join("\n"),
+    [
+      `export const groupStageStabilityMeta = ${JSON.stringify(stab._meta, null, 2)};`,
+      "",
+      `export const groupStageStability: Record<string, GSTeamStability> = ${JSON.stringify(stab.teams, null, 2)};`,
+      "",
+    ].join("\n")
+  );
+}
+
+// ---- groupStagePlayerStats.ts (isolated - Group Stage matches only) ----
+{
+  const ps = readJson("player_group_stage_stats.json");
+  writeModule(
+    "groupStagePlayerStats.ts",
+    [
+      "export interface GSPlayerStats {",
+      "  player_name: string;",
+      "  team_id: number | null;",
+      "  team_name: string;",
+      "  games_played: number;",
+      "  kda: number;",
+      "  avg_kills: number;",
+      "  avg_deaths: number;",
+      "  avg_assists: number;",
+      "  avg_gold_per_min: number;",
+      "  avg_xp_per_min: number;",
+      "  avg_last_hits: number;",
+      "  avg_denies: number;",
+      "  avg_obs_placed: number;",
+      "  avg_sen_placed: number;",
+      "  avg_hero_damage: number;",
+      "  avg_hero_healing: number;",
+      "  avg_tower_damage: number;",
+      "  primary_lane_role: string | null;",
+      "  avg_rune_pickups: number | null;",
+      "  games_with_rune_data: number;",
+      "}",
+      "",
+    ].join("\n"),
+    [
+      `export const groupStagePlayerStatsMeta = ${JSON.stringify(ps._meta, null, 2)};`,
+      "",
+      `export const groupStagePlayerStats: Record<string, GSPlayerStats> = ${JSON.stringify(ps.players, null, 2)};`,
+      "",
+    ].join("\n")
+  );
+}
+
 console.log("Done.");

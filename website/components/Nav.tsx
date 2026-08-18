@@ -10,6 +10,9 @@ const LINKS = [
   { href: "/matchups", label: "Head-to-head" },
   { href: "/simulation", label: "Simulated results" },
   { href: "/drafts", label: "Heroes & patch" },
+  { href: "/playoffs", label: "Playoffs" },
+  { href: "/playoffs/scouting", label: "Scouting report" },
+  { href: "/group-stage", label: "Group Stage stats" },
 ];
 
 export default function Nav() {

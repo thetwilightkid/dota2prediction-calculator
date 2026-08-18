@@ -1,0 +1,95 @@
+.pickerRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.select {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--foreground);
+  padding: 8px 10px;
+  font-size: 14px;
+  min-width: 180px;
+}
+
+.probCard {
+  margin-bottom: 16px;
+}
+
+.probBar {
+  height: 10px;
+  border-radius: 999px;
+  background: var(--loss);
+  overflow: hidden;
+}
+
+.probBarFillA {
+  height: 100%;
+  background: var(--win);
+}
+
+.probLabels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.profileGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.profileCard {
+  min-width: 0;
+}
+
+.profileHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.statList {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px 8px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.statList dt {
+  color: var(--muted);
+}
+
+.statList dd {
+  text-align: right;
+}
+
+.subHeading {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+  margin: 12px 0 6px;
+}
+
+.heroList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.heroList li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  padding: 3px 0;
+  border-bottom: 1px solid var(--border);
+}

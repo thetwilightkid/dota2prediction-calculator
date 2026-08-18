@@ -1,0 +1,33 @@
+.seeding {
+  margin-bottom: 8px;
+}
+
+.seedGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.seedMatch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.seedTeam {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+}
+
+.teamCell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
