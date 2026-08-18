@@ -134,27 +134,61 @@ def runBracketTrial(trial_ratings, rng, forced_ub_r1):
     return results
 
 
+def predictBracket(team_ratings, forced_ub_r1=None):
+    """A single deterministic walk through the bracket - at every match, the
+    side with the higher win probability (compared using each team's mean
+    rating only, no sampling) is taken as the predicted winner, and that
+    EXACT team is what fills the next slot they're routed to. This is what
+    keeps the diagram internally coherent: the team shown losing a match is
+    necessarily the same team shown occupying the corresponding lower-bracket
+    slot next, unlike aggregating many independent Monte Carlo trials (whose
+    per-slot marginals don't have to agree with each other at all - two
+    teams can each be reported the top pick for a shared slot's counterpart
+    without ever being the actual predicted pairing together). Not a
+    replacement for the Monte Carlo reach_pct/outcome_pct tables (those
+    still need real trial variance) - this is specifically for rendering one
+    coherent predicted bracket. Returns {match_id: {"a", "b", "winner",
+    "loser", "win_prob"}} (win_prob is the predicted winner's own probability
+    of winning that match)."""
+    forced_ub_r1 = forced_ub_r1 or UB_R1_PAIRINGS
+    slot_fill = {}
+    for i, (a, b) in enumerate(forced_ub_r1, start=1):
+        slot_fill[f"ub_r1_{i}:a"] = a
+        slot_fill[f"ub_r1_{i}:b"] = b
+
+    predicted = {}
+    for match_id in MATCH_ORDER:
+        spec = BRACKET_MATCHES[match_id]
+        team_a = slot_fill[f"{match_id}:a"]
+        team_b = slot_fill[f"{match_id}:b"]
+        p_a = winProbability(team_ratings[team_a]["mean"], team_ratings[team_b]["mean"])
+        if p_a >= 0.5:
+            winner, loser, win_prob = team_a, team_b, p_a
+        else:
+            winner, loser, win_prob = team_b, team_a, 1.0 - p_a
+        predicted[match_id] = {"a": team_a, "b": team_b, "winner": winner, "loser": loser, "win_prob": round(win_prob, 4)}
+
+        if spec["winner_to"]:
+            slot_fill[spec["winner_to"]] = winner
+        if spec["loser_to"]:
+            slot_fill[spec["loser_to"]] = loser
+
+    return predicted
+
+
 def runPlayoffSimulation(team_ratings, num_trials, rng=None, forced_ub_r1=None):
     """team_ratings: {team_id: {"mean": float, "sigma": float}}. Returns
-    (reach_counts, outcome_counts, slot_counts) - the first two are
-    {team_id: Counter}, slot_counts is {match_id: {"a": Counter, "b": Counter,
-    "winner": Counter}} for the bracket-diagram UI: which team is likely to
-    occupy each slot of each match, and who's likely to win that specific
-    match, before any of it is actually known."""
+    (reach_counts, outcome_counts), both {team_id: Counter} - the Monte Carlo
+    per-team reach/outcome distribution used by the odds tables. See
+    predictBracket() above for the single-coherent-path bracket diagram."""
     rng = rng or random.Random()
     forced_ub_r1 = forced_ub_r1 or UB_R1_PAIRINGS
     reach_counts = {tid: Counter() for tid in team_ratings}
     outcome_counts = {tid: Counter() for tid in team_ratings}
-    slot_counts = {mid: {"a": Counter(), "b": Counter(), "winner": Counter()} for mid in MATCH_ORDER}
 
     for _ in range(num_trials):
         trial_ratings = {tid: rng.gauss(p["mean"], p["sigma"]) for tid, p in team_ratings.items()}
         results = runBracketTrial(trial_ratings, rng, forced_ub_r1)
-
-        for mid in MATCH_ORDER:
-            slot_counts[mid]["a"][results[mid]["a"]] += 1
-            slot_counts[mid]["b"][results[mid]["b"]] += 1
-            slot_counts[mid]["winner"][results[mid]["winner"]] += 1
 
         for tid in team_ratings:
             appearances = [i for i, mid in enumerate(MATCH_ORDER) if tid in (results[mid]["a"], results[mid]["b"])]
@@ -187,7 +221,7 @@ def runPlayoffSimulation(team_ratings, num_trials, rng=None, forced_ub_r1=None):
             else:
                 outcome_counts[tid][ELIMINATION_LABEL[last_match]] += 1
 
-    return reach_counts, outcome_counts, slot_counts
+    return reach_counts, outcome_counts
 
 
 REACH_KEYS = ["ub_r1_win", "ub_r2_win", "ub_final_reach", "ub_final_win", "lb_final_reach", "grand_final_reach", "champion"]
@@ -216,7 +250,7 @@ if __name__ == "__main__":
         print(f"  {TEAM_CANONICAL[tid]:16s} mean={params['mean']:.1f} sigma={params['sigma']:.1f}")
 
     rng = random.Random(2026)
-    reach_counts, outcome_counts, slot_counts = runPlayoffSimulation(team_ratings, num_trials, rng, forced_ub_r1=UB_R1_PAIRINGS)
+    reach_counts, outcome_counts = runPlayoffSimulation(team_ratings, num_trials, rng, forced_ub_r1=UB_R1_PAIRINGS)
 
     print("\n=== Reach %% per team (probability of being alive entering each stage) ===")
     header = "Team".ljust(16) + "".join(k.rjust(16) for k in REACH_KEYS)
@@ -238,15 +272,11 @@ if __name__ == "__main__":
         }
     print(f"\n  champion %% across all 8 teams sums to {champion_total:.2f}% (should be ~100%)")
 
-    slots_out = {}
+    predicted_bracket = predictBracket(team_ratings, forced_ub_r1=UB_R1_PAIRINGS)
+    print("\n=== Predicted bracket (single coherent path - always the favored side, no sampling) ===")
     for mid in MATCH_ORDER:
-        def distribution(counter):
-            return {str(tid): round(100.0 * count / num_trials, 2) for tid, count in counter.most_common()}
-        slots_out[mid] = {
-            "a": distribution(slot_counts[mid]["a"]),
-            "b": distribution(slot_counts[mid]["b"]),
-            "winner": distribution(slot_counts[mid]["winner"]),
-        }
+        p = predicted_bracket[mid]
+        print(f"  [{mid:12s}]  {TEAM_CANONICAL[p['a']]:16s} vs {TEAM_CANONICAL[p['b']]:16s}  ->  {TEAM_CANONICAL[p['winner']]} ({p['win_prob']:.1%})")
 
     out_filename = "playoff_simulation_results.json"
     with open(localPath(out_filename), "w", encoding="utf-8") as f:
@@ -262,10 +292,10 @@ if __name__ == "__main__":
                 "match_order": MATCH_ORDER,
                 "reach_pct_note": "Probability of being alive entering / winning each named stage. ub_r1_win/ub_r2_win/ub_final_win are P(won that specific upper-bracket match); ub_final_reach/lb_final_reach/grand_final_reach are P(played in that match, win or lose); champion is P(won the Grand Final).",
                 "outcome_pct_note": "Probability of being eliminated at each specific stage (mutually exclusive, sums to ~100% per team). A team is never 'eliminated' by an upper-bracket loss - it drops to the corresponding lower-bracket match and keeps playing, so the earliest possible elimination is eliminated_lb_r1.",
-                "slots_note": "For the bracket-diagram UI: per match_id, 'a'/'b' are the probability distribution (percent, sorted descending) of which team ends up occupying that slot - a delta at 100% for the 4 known UB R1 matches, genuinely spread out for everything downstream. 'winner' is the probability distribution of which team wins that specific match. Zero-probability teams are omitted (not every team can reach every slot).",
+                "predicted_bracket_note": "For the bracket-diagram UI: a single deterministic walk through the bracket (see predictBracket()) - at every match the higher win-probability side (by mean rating, no sampling) is taken as the winner and is exactly what fills the next slot they're routed to, so the lower bracket always stays synchronized with who actually 'lost' in the upper bracket. Not the same as reach_pct/outcome_pct above, which come from real Monte Carlo trial variance.",
             },
             "teams": results,
-            "slots": slots_out,
+            "predicted_bracket": predicted_bracket,
         }, f, ensure_ascii=False, indent=4)
 
     print(f"\nSaved prediction/{out_filename}")

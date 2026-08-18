@@ -18,13 +18,15 @@ export interface PlayoffSimulationMeta {
   match_order: string[];
   reach_pct_note: string;
   outcome_pct_note: string;
-  slots_note: string;
+  predicted_bracket_note: string;
 }
 
-export interface PlayoffSlotDistribution {
-  a: Record<string, number>;
-  b: Record<string, number>;
-  winner: Record<string, number>;
+export interface PredictedMatch {
+  a: number;
+  b: number;
+  winner: number;
+  loser: number;
+  win_prob: number;
 }
 
 export const playoffSimulationMeta: PlayoffSimulationMeta = {
@@ -144,7 +146,7 @@ export const playoffSimulationMeta: PlayoffSimulationMeta = {
   ],
   "reach_pct_note": "Probability of being alive entering / winning each named stage. ub_r1_win/ub_r2_win/ub_final_win are P(won that specific upper-bracket match); ub_final_reach/lb_final_reach/grand_final_reach are P(played in that match, win or lose); champion is P(won the Grand Final).",
   "outcome_pct_note": "Probability of being eliminated at each specific stage (mutually exclusive, sums to ~100% per team). A team is never 'eliminated' by an upper-bracket loss - it drops to the corresponding lower-bracket match and keeps playing, so the earliest possible elimination is eliminated_lb_r1.",
-  "slots_note": "For the bracket-diagram UI: per match_id, 'a'/'b' are the probability distribution (percent, sorted descending) of which team ends up occupying that slot - a delta at 100% for the 4 known UB R1 matches, genuinely spread out for everything downstream. 'winner' is the probability distribution of which team wins that specific match. Zero-probability teams are omitted (not every team can reach every slot)."
+  "predicted_bracket_note": "For the bracket-diagram UI: a single deterministic walk through the bracket (see predictBracket()) - at every match the higher win-probability side (by mean rating, no sampling) is taken as the winner and is exactly what fills the next slot they're routed to, so the lower bracket always stays synchronized with who actually 'lost' in the upper bracket. Not the same as reach_pct/outcome_pct above, which come from real Monte Carlo trial variance."
 };
 
 export const playoffSimulation: Record<string, PlayoffTeamResult> = {
@@ -310,286 +312,104 @@ export const playoffSimulation: Record<string, PlayoffTeamResult> = {
   }
 };
 
-export const playoffSlots: Record<string, PlayoffSlotDistribution> = {
+export const playoffPredictedBracket: Record<string, PredictedMatch> = {
   "ub_r1_1": {
-    "a": {
-      "10150413": 100
-    },
-    "b": {
-      "7119388": 100
-    },
-    "winner": {
-      "7119388": 54.49,
-      "10150413": 45.51
-    }
+    "a": 10150413,
+    "b": 7119388,
+    "winner": 7119388,
+    "loser": 10150413,
+    "win_prob": 0.5313
   },
   "ub_r1_2": {
-    "a": {
-      "9572001": 100
-    },
-    "b": {
-      "8255888": 100
-    },
-    "winner": {
-      "8255888": 33.55,
-      "9572001": 66.45
-    }
+    "a": 9572001,
+    "b": 8255888,
+    "winner": 9572001,
+    "loser": 8255888,
+    "win_prob": 0.6153
   },
   "ub_r1_3": {
-    "a": {
-      "2163": 100
-    },
-    "b": {
-      "9823272": 100
-    },
-    "winner": {
-      "2163": 46.99,
-      "9823272": 53.01
-    }
+    "a": 2163,
+    "b": 9823272,
+    "winner": 9823272,
+    "loser": 2163,
+    "win_prob": 0.5206
   },
   "ub_r1_4": {
-    "a": {
-      "10136357": 100
-    },
-    "b": {
-      "9247354": 100
-    },
-    "winner": {
-      "9247354": 72,
-      "10136357": 28
-    }
+    "a": 10136357,
+    "b": 9247354,
+    "winner": 9247354,
+    "loser": 10136357,
+    "win_prob": 0.6558
   },
   "ub_r2_1": {
-    "a": {
-      "7119388": 54.49,
-      "10150413": 45.51
-    },
-    "b": {
-      "8255888": 33.55,
-      "9572001": 66.45
-    },
-    "winner": {
-      "7119388": 21.75,
-      "8255888": 17.13,
-      "9572001": 44.37,
-      "10150413": 16.76
-    }
+    "a": 7119388,
+    "b": 9572001,
+    "winner": 9572001,
+    "loser": 7119388,
+    "win_prob": 0.6081
   },
   "ub_r2_2": {
-    "a": {
-      "2163": 46.99,
-      "9823272": 53.01
-    },
-    "b": {
-      "9247354": 72,
-      "10136357": 28
-    },
-    "winner": {
-      "2163": 24.79,
-      "9247354": 37.32,
-      "9823272": 29.51,
-      "10136357": 8.38
-    }
+    "a": 9823272,
+    "b": 9247354,
+    "winner": 9247354,
+    "loser": 9823272,
+    "win_prob": 0.5046
   },
   "lb_r1_1": {
-    "a": {
-      "7119388": 45.51,
-      "10150413": 54.49
-    },
-    "b": {
-      "8255888": 66.45,
-      "9572001": 33.55
-    },
-    "winner": {
-      "7119388": 20.71,
-      "8255888": 34.47,
-      "9572001": 22.73,
-      "10150413": 22.09
-    }
+    "a": 10150413,
+    "b": 8255888,
+    "winner": 8255888,
+    "loser": 10150413,
+    "win_prob": 0.5238
   },
   "lb_r1_2": {
-    "a": {
-      "2163": 53.01,
-      "9823272": 46.99
-    },
-    "b": {
-      "9247354": 28,
-      "10136357": 72
-    },
-    "winner": {
-      "2163": 33.24,
-      "9247354": 14.52,
-      "9823272": 30.61,
-      "10136357": 21.64
-    }
+    "a": 2163,
+    "b": 10136357,
+    "winner": 2163,
+    "loser": 10136357,
+    "win_prob": 0.6327
   },
   "ub_final": {
-    "a": {
-      "7119388": 21.75,
-      "8255888": 17.13,
-      "9572001": 44.37,
-      "10150413": 16.76
-    },
-    "b": {
-      "2163": 24.79,
-      "9247354": 37.32,
-      "9823272": 29.51,
-      "10136357": 8.38
-    },
-    "winner": {
-      "2163": 11.24,
-      "7119388": 10.39,
-      "8255888": 8.09,
-      "9247354": 18.22,
-      "9572001": 27.86,
-      "9823272": 14.25,
-      "10136357": 2.34,
-      "10150413": 7.61
-    }
+    "a": 9572001,
+    "b": 9247354,
+    "winner": 9572001,
+    "loser": 9247354,
+    "win_prob": 0.5717
   },
   "lb_r2_1": {
-    "a": {
-      "2163": 22.21,
-      "9247354": 34.68,
-      "9823272": 23.49,
-      "10136357": 19.62
-    },
-    "b": {
-      "7119388": 20.71,
-      "8255888": 34.47,
-      "9572001": 22.73,
-      "10150413": 22.09
-    },
-    "winner": {
-      "2163": 11.06,
-      "7119388": 10.35,
-      "8255888": 16.93,
-      "9247354": 18.32,
-      "9572001": 14.7,
-      "9823272": 12.3,
-      "10136357": 6.2,
-      "10150413": 10.12
-    }
+    "a": 9823272,
+    "b": 8255888,
+    "winner": 9823272,
+    "loser": 8255888,
+    "win_prob": 0.5405
   },
   "lb_r2_2": {
-    "a": {
-      "7119388": 32.74,
-      "8255888": 16.43,
-      "9572001": 22.08,
-      "10150413": 28.75
-    },
-    "b": {
-      "2163": 33.24,
-      "9247354": 14.52,
-      "9823272": 30.61,
-      "10136357": 21.64
-    },
-    "winner": {
-      "2163": 16.49,
-      "7119388": 16.71,
-      "8255888": 8.22,
-      "9247354": 7.67,
-      "9572001": 14.49,
-      "9823272": 15.99,
-      "10136357": 6.86,
-      "10150413": 13.56
-    }
+    "a": 7119388,
+    "b": 2163,
+    "winner": 2163,
+    "loser": 7119388,
+    "win_prob": 0.5125
   },
   "lb_r3": {
-    "a": {
-      "2163": 11.06,
-      "7119388": 10.35,
-      "8255888": 16.93,
-      "9247354": 18.32,
-      "9572001": 14.7,
-      "9823272": 12.3,
-      "10136357": 6.2,
-      "10150413": 10.12
-    },
-    "b": {
-      "2163": 16.49,
-      "7119388": 16.71,
-      "8255888": 8.22,
-      "9247354": 7.67,
-      "9572001": 14.49,
-      "9823272": 15.99,
-      "10136357": 6.86,
-      "10150413": 13.56
-    },
-    "winner": {
-      "2163": 13.41,
-      "7119388": 13.08,
-      "8255888": 11.24,
-      "9247354": 14.12,
-      "9572001": 18.93,
-      "9823272": 14.85,
-      "10136357": 3.9,
-      "10150413": 10.46
-    }
+    "a": 9823272,
+    "b": 2163,
+    "winner": 9823272,
+    "loser": 2163,
+    "win_prob": 0.5206
   },
   "lb_final": {
-    "a": {
-      "2163": 13.41,
-      "7119388": 13.08,
-      "8255888": 11.24,
-      "9247354": 14.12,
-      "9572001": 18.93,
-      "9823272": 14.85,
-      "10136357": 3.9,
-      "10150413": 10.46
-    },
-    "b": {
-      "2163": 13.55,
-      "7119388": 11.36,
-      "8255888": 9.04,
-      "9247354": 19.1,
-      "9572001": 16.5,
-      "9823272": 15.26,
-      "10136357": 6.04,
-      "10150413": 9.15
-    },
-    "winner": {
-      "2163": 12.99,
-      "7119388": 10.94,
-      "8255888": 9.26,
-      "9247354": 17.22,
-      "9572001": 22.8,
-      "9823272": 15.56,
-      "10136357": 2.97,
-      "10150413": 8.26
-    }
+    "a": 9823272,
+    "b": 9247354,
+    "winner": 9247354,
+    "loser": 9823272,
+    "win_prob": 0.5046
   },
   "grand_final": {
-    "a": {
-      "2163": 11.24,
-      "7119388": 10.39,
-      "8255888": 8.09,
-      "9247354": 18.22,
-      "9572001": 27.86,
-      "9823272": 14.25,
-      "10136357": 2.34,
-      "10150413": 7.61
-    },
-    "b": {
-      "2163": 12.99,
-      "7119388": 10.94,
-      "8255888": 9.26,
-      "9247354": 17.22,
-      "9572001": 22.8,
-      "9823272": 15.56,
-      "10136357": 2.97,
-      "10150413": 8.26
-    },
-    "winner": {
-      "2163": 10.65,
-      "7119388": 9.28,
-      "8255888": 7.63,
-      "9247354": 17.2,
-      "9572001": 33.08,
-      "9823272": 14.24,
-      "10136357": 1.3,
-      "10150413": 6.61
-    }
+    "a": 9572001,
+    "b": 9247354,
+    "winner": 9572001,
+    "loser": 9247354,
+    "win_prob": 0.5717
   }
 };
 

@@ -8,10 +8,18 @@ import SliderPanel from "./SliderPanel";
 import MatchupGrid from "./MatchupGrid";
 import PlayoffBracketDiagram from "./PlayoffBracketDiagram";
 import { TEAM_CANONICAL } from "@/data/teams";
-import { playoffSimulation, playoffSlots, playoffSimulationMeta, PLAYOFF_TEAM_IDS, type PlayoffSlotDistribution } from "@/data/playoffSimulation";
+import { playoffSimulation, playoffPredictedBracket, playoffSimulationMeta, PLAYOFF_TEAM_IDS } from "@/data/playoffSimulation";
 import { useWeights } from "@/lib/WeightsContext";
 import { computeComposite } from "@/lib/rating";
-import { runPlayoffSimulation } from "@/lib/simulatePlayoffs";
+import { runPlayoffSimulation, predictBracket, type PredictedMatch } from "@/lib/simulatePlayoffs";
+
+// The generated data/playoffSimulation.ts mirrors Python's snake_case JSON
+// (win_prob); lib/simulatePlayoffs.ts's live predictBracket() returns the
+// TS-native camelCase shape (winProb). Normalized once here so
+// PlayoffBracketDiagram only ever has to deal with one shape.
+const DEFAULT_PREDICTED_BRACKET: Record<string, PredictedMatch> = Object.fromEntries(
+  Object.entries(playoffPredictedBracket).map(([mid, m]) => [mid, { a: m.a, b: m.b, winner: m.winner, loser: m.loser, winProb: m.win_prob }])
+);
 
 const LIVE_TRIALS = 20000;
 const UB_R1_PAIRINGS = playoffSimulationMeta.ub_r1_pairings as [number, number][];
@@ -40,7 +48,7 @@ export default function PlayoffBracketClient() {
   const composite = useMemo(() => computeComposite(weights).filter((c) => PLAYOFF_TEAM_IDS.includes(c.teamId)), [weights]);
 
   const [liveResults, setLiveResults] = useState<Map<number, { reachPct: Record<string, number>; outcomePct: Record<string, number> }> | null>(null);
-  const [liveSlots, setLiveSlots] = useState<Record<string, PlayoffSlotDistribution> | null>(null);
+  const [livePredicted, setLivePredicted] = useState<Record<string, PredictedMatch> | null>(null);
   const [isSimulating, setIsSimulating] = useState(false);
 
   useEffect(() => {
@@ -48,10 +56,10 @@ export default function PlayoffBracketClient() {
     const startHandle = setTimeout(() => setIsSimulating(true), 0);
     const runHandle = setTimeout(() => {
       const ratings = composite.map((c) => ({ teamId: c.teamId, mean: c.ratingScaleMean, sigma: c.ratingScaleSigma }));
-      const { outcomes, slots } = runPlayoffSimulation(ratings, LIVE_TRIALS, 2026, UB_R1_PAIRINGS);
+      const outcomes = runPlayoffSimulation(ratings, LIVE_TRIALS, 2026, UB_R1_PAIRINGS);
       const map = new Map(outcomes.map((r) => [r.teamId, { reachPct: r.reachPct, outcomePct: r.outcomePct }]));
       setLiveResults(map);
-      setLiveSlots(slots);
+      setLivePredicted(predictBracket(ratings, UB_R1_PAIRINGS));
       setIsSimulating(false);
     }, 150);
     return () => {
@@ -61,7 +69,7 @@ export default function PlayoffBracketClient() {
   }, [composite, isDefault]);
 
   const displayResults = isDefault ? null : liveResults;
-  const displaySlots = isDefault ? playoffSlots : liveSlots ?? playoffSlots;
+  const displayPredicted = isDefault ? DEFAULT_PREDICTED_BRACKET : livePredicted ?? DEFAULT_PREDICTED_BRACKET;
 
   function getResult(tid: number) {
     if (displayResults) return displayResults.get(tid);
@@ -91,7 +99,7 @@ export default function PlayoffBracketClient() {
         UB Quarterfinals are the real, announced seeding - everything to the right of that is our most likely
         prediction for who ends up in each slot, moving as you adjust the sliders.
       </p>
-      <PlayoffBracketDiagram slots={displaySlots} />
+      <PlayoffBracketDiagram predicted={displayPredicted} />
 
       <div className={styles.mainLayout}>
         <div className={styles.tablesSection}>

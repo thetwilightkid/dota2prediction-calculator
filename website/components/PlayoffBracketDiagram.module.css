@@ -4,7 +4,7 @@
 }
 
 .section {
-  min-width: 820px;
+  min-width: 760px;
 }
 
 .section + .section {
@@ -20,16 +20,16 @@
   /* Fixed height so justify-content:space-around centers each round's boxes
      exactly between their two feeders in the round before it - works cleanly
      for a binary merge (4 -> 2 -> 1 matches per column). */
-  height: 620px;
+  height: 360px;
 }
 
 .section:last-child .columns {
-  height: 420px;
+  height: 220px;
 }
 
 .column {
   flex: 1;
-  min-width: 170px;
+  min-width: 160px;
   display: flex;
   flex-direction: column;
 }
@@ -76,28 +76,17 @@
   overflow: hidden;
 }
 
-.slotGroup {
-  display: flex;
-  flex-direction: column;
-}
-
-.slotDivider {
-  height: 1px;
-  background: var(--border);
-}
-
 .slotRow {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 6px;
-  padding: 5px 8px;
+  padding: 6px 8px;
   font-size: 12px;
 }
 
-.slotGroup .slotRow:nth-child(2) {
-  opacity: 0.65;
-  font-size: 11px;
+.slotRow:first-child {
+  border-bottom: 1px solid var(--border);
 }
 
 .slotRowFavored {
@@ -115,13 +104,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.slotStats {
-  display: flex;
-  gap: 6px;
-  flex-shrink: 0;
-  font-size: 11px;
 }
 
 .matchMeta {
